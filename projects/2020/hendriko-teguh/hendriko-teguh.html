@@ -1,0 +1,587 @@
+<!-- SUTD MArc Template – V1.0  -->
+<!-- Please read the guide before editing -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <base href="/projects/"> -->
+    <meta charset="utf-8"><meta name="description" content="SUTD ASD M.Arch Virtual GradShow 2021">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="icon" href="../../../favicon.ico" type="image/gif">
+
+    <link rel="stylesheet" href="../student-style.css">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+      $(function() {
+        $("#header").load("../../../partials/projectnav.html");
+        $("#footer").load("../../../partials/footer.html");
+
+      });
+
+        function goToTop(){
+        window.scrollTo(0,0)
+        return false; //prevent page from reloading
+        }
+    </script>
+	<style>
+		.center {
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		  width: 50%;
+		}
+		.splimage2 {
+		  text-align: center;
+		  margin: 2vw 0vw 4vw 0vw;
+		  max-height: 100%;
+		  overflow-y: hidden;
+		}
+		.splimage2 img {
+		  width: 100vw;
+		  max-width: 100%;
+		}
+		* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+	</style>
+</head>
+
+<style>
+    body {
+        background-color: pink;
+        background-color: rgb(231, 231, 231);
+        background-color: rgb(183, 251, 253);
+        background-color: rgb(206, 253, 162);
+        background-color: rgb(255, 226, 192);
+        background-color: white;
+    }
+
+</style>
+<body >
+    <div id="header"></div>
+
+    <section class="cover" >
+        <div class="mainimage">
+		<br><br><br><br><br>
+            <img src="./data/Hero Into 1.jpg" alt="" >
+        </div>
+    </section>
+
+    <section class="content">
+
+	<div  class="titletext">
+		Layered Adaptation for Spatial Diversification
+	</div>
+
+
+    <div class="twocols invert">
+        <div class="abstract" style="text-align:justify;">
+            <h2>Summary</h2>
+For over 300 years, Capitalism has been the main driver of our world development, the ambition to achieve the most profit has brought the idea of achieving the highest efficiency, productivity and innovation which fueled our world to undergo rapid development. Now, 80% of the world's work able body (more than 15 years old) population has basic education, which is a 400% boost compared to the beginning of 1820 <a href="https://ourworldindata.org/global-education">(Roser and Ortiz-Ospina, 2016)</a>, and we are reaching 100% sooner or later. In today’s development, the World Economic Forum noted that the 4th Industrial Revolution is currently happening, driven by the exponential growth of Artificial Intelligence. <a href="https://www.weforum.org/platforms/shaping-the-future-of-technology-governance-artificial-intelligence-and-machine-learning#:~:text=Artificial%20Intelligence%20(AI)%20is%20a,for%20the%20young%20and%20elderly.">(WEF, 2020)</a> With that, the possibility of ultimate productivity and efficiency is just years ahead of us.  This thesis would like to speculate what will happen if we work less? It is estimated an average person would work for as long as 90,000 hours of their life time or around 10 years of their life in a normal 50 years span of working life <a href="https://onlinelibrary.wiley.com/doi/book/10.1002/9780470666845">(Pryce-Jones, 2010)</a>. With that much increase of free time, what would happen? Imagining the world with less work would question the future of these buildings and this thesis would do exactly that. Even now, the COVID-19 pandemic has brought many firms to allow their firms to work from home <a href="https://www.forbes.com/sites/jackkelly/2020/05/24/the-work-from-home-revolution-is-quickly-gaining-momentum/?sh=7723b5a1848a">(Kelly, 2020)</a>, catalysing the reduction of office space needs. This design thesis lays down a possible solution to the reclamation of single-use office buildings in the world where we work less. Coupled with the trend that now creative visions could start making a good living, brough the demand for diversity of spaces. Through ideas of digital material and design for disassembly we will attempt to do a layered adaptation to create diverse space for the needs of the future.
+            <br><br>
+            <h4>About Me</h4>
+           Self-motivated architectural graduate with a massive interest in creative out-of-the-box designs that brings humans together through design. Seen by colleagues as a passionate team player and a creative thinker, I always strive to exceed expectations by constantly seeking new ideas, and learning from others as I have done in multiple local and global multidisciplinary practices.
+
+        </div>
+
+
+
+        <div class="table">
+            <div class="thumb">
+                <img src="./hendriko-teguh.jpg" alt=""></div>
+                <div class="fields">
+                <h3>Name</h3>
+                <p>Hendriko Teguh</p></div>
+                <div class="fields">
+                  <h3>Mentor</h3>
+                  <p>Kenneth Tracy/Christine Yogiaman</p></div>
+                  <div class="fields">
+                  </div>
+                <div class="fields">
+                <h3 >Typology</h3>
+                <p>Tall Building</p>
+                </div>
+                <div class="fields">
+                <h3>Site Location</h3>
+                <p>Singapore</p>
+                </div>
+
+                    <div class="contact">
+                        <a href="mailto:sangkanpara_hendriko@mymail.sutd.edu.sg">
+                            <img class="icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgLjAyYy02LjYyNyAwLTEyIDUuMzczLTEyIDEyczUuMzczIDEyIDEyIDEyIDEyLTUuMzczIDEyLTEyLTUuMzczLTEyLTEyLTEyem02Ljk5IDYuOThsLTYuOTkgNS42NjYtNi45OTEtNS42NjZoMTMuOTgxem0uMDEgMTBoLTE0di04LjUwNWw3IDUuNjczIDctNS42NzJ2OC41MDR6Ii8+PC9zdmc+">
+                        </a>
+
+                        <a href="https://issuu.com/hendrikoid/docs/hendriko_teguh_fall_2020">
+                            <img class="icon" src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1OTUuMjggNTk0Ljg5Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmlzc3V1LWljb24tMDwvdGl0bGU+PHBhdGggZD0iTTExLjU4LDEwLjcySDE4LjJjOTYuOSwwLDE5My44MS0uNjYsMjkwLjY5LjMzLDM3LjY3LjM4LDc0LDkuNzMsMTA4LjY4LDI1LjEyLDM2LDE2LDY2LjcsMzkuMyw5My4xOCw2OC4xMywyOC42OCwzMS4yMSw0OC44MSw2Ny4zOCw2MS42LDEwNy44OUM1ODQuMjYsMjUwLDU4Ni42NiwyODguNzMsNTg0LDMyNy42Yy0zLjc3LDU0LjcyLTIyLjI1LDEwNC41MS01NiwxNDguMzNhMjgwLjEzLDI4MC4xMywwLDAsMS04My4xNCw3Mi43M2MtMjguMzcsMTYuMjktNTksMjYuNS05MS4xLDMyLjQzLTIzLjYzLDQuMzYtNDcuNDMsMi4yNy03MS4xNSwyLjQ3LTM2LjUuMzEtNzAuNzItOS44NS0xMDMuODctMjQuMi0zMi42NC0xNC4xMy02MC44Ny0zNC42Ni04NS41Mi02MC4xMi0yNy44OS0yOC44Mi00OC42OS02Mi02MS4xMy0xMDAuMzctOC40LTI1Ljg3LTEyLjgzLTUyLjQ1LTE1LjkzLTc5LjQxLTQuNS0zOS00LjY4LTc4LjA5LTQuNi0xMTcuMjUuMTMtNjEuMDcsMC0xMjIuMTQsMC0xODMuMjFaTTEwNCwyOTkuMzJDMTAxLDQwNi4wNiwxOTIuODcsNDkzLjUsMjk3LjIyLDQ5NS4wN2MxMjMuNjksMS44NiwyMDEuNTYtOTMuNzksMjAzLTE5NC4xMSwxLjY2LTExNS43NS04Ni42MS0xOTYuMTktMTg3LjktMjAwQzE4OC45Myw5Ni4zLDEwMS42OSwxOTAuNzUsMTA0LDI5OS4zMloiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMDQsMjk5LjMyYy0yLjMtMTA4LjU3LDg0Ljk0LTIwMywyMDguMzItMTk4LjM3LDEwMS4yOSwzLjgyLDE4OS41Niw4NC4yNiwxODcuOSwyMDAtMS40MywxMDAuMzItNzkuMywxOTYtMjAzLDE5NC4xMUMxOTIuODcsNDkzLjUsMTAxLDQwNi4wNiwxMDQsMjk5LjMyWm01MS4zNi0yLjc0QzE1My43MSwzODAuNzIsMjIxLjI3LDQ0NCwyOTYuNjEsNDQ1LjRjODcuNDgsMS42OCwxNDkuMjQtNjMuNTMsMTUwLjUzLTE0My45MywxLjQ0LTg5LjkyLTYzLjM0LTE0NC44OC0xMzguNDMtMTQ3LjkxQzIxMi4zNywxNDkuNjksMTU1LjIsMjE5LjQ4LDE1NS4zNSwyOTYuNThaIi8+PHBhdGggZD0iTTE1NS4zNSwyOTYuNThjLS4xNS03Ny4xLDU3LTE0Ni44OSwxNTMuMzYtMTQzLDc1LjA5LDMsMTM5Ljg3LDU4LDEzOC40MywxNDcuOTEtMS4yOSw4MC40LTYzLjA1LDE0NS42MS0xNTAuNTMsMTQzLjkzQzIyMS4yNyw0NDQsMTUzLjcxLDM4MC43MiwxNTUuMzUsMjk2LjU4Wm0xNDguNzQtNjkuODRjLTQyLjUzLS41NC03My42MywyNy4wOS03My44OCw2OS0uMjYsNDQuNDQsMjkuNTEsNzYsNzIsNzUuNDcsNDMtLjUsNjkuNTgtMjcsNjkuNzEtNzMuODRDMzcyLjA2LDI1OC4yLDM0NS4zMSwyMjUuNywzMDQuMDksMjI2Ljc0WiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTMwNC4wOSwyMjYuNzRjNDEuMjItMSw2OCwzMS40Niw2Ny44Nyw3MC42NC0uMTMsNDYuODctMjYuNyw3My4zNC02OS43MSw3My44NC00Mi41My40OS03Mi4zLTMxLTcyLTc1LjQ3QzIzMC40NiwyNTMuODMsMjYxLjU2LDIyNi4yLDMwNC4wOSwyMjYuNzRaIi8+PC9zdmc+">
+                        </a>
+
+                        <a href="https://www.youtube.com/hendrikodito">
+                            <img class="icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMGMtNi42MjcgMC0xMiA1LjM3My0xMiAxMnM1LjM3MyAxMiAxMiAxMiAxMi01LjM3MyAxMi0xMi01LjM3My0xMi0xMi0xMnptNC40NDEgMTYuODkyYy0yLjEwMi4xNDQtNi43ODQuMTQ0LTguODgzIDAtMi4yNzYtLjE1Ni0yLjU0MS0xLjI3LTIuNTU4LTQuODkyLjAxNy0zLjYyOS4yODUtNC43MzYgMi41NTgtNC44OTIgMi4wOTktLjE0NCA2Ljc4Mi0uMTQ0IDguODgzIDAgMi4yNzcuMTU2IDIuNTQxIDEuMjcgMi41NTkgNC44OTItLjAxOCAzLjYyOS0uMjg1IDQuNzM2LTIuNTU5IDQuODkyem0tNi40NDEtNy4yMzRsNC45MTcgMi4zMzgtNC45MTcgMi4zNDZ2LTQuNjg0eiIvPjwvc3ZnPg==">
+                        </a>
+
+                        <a href="https://www.instagram.com/hendrikodito">
+                            <img class="icon" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoyOyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjEwMCUiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2VyaWY9Imh0dHA6Ly93d3cuc2VyaWYuY29tLyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNTYsMGMxNDEuMjksMCAyNTYsMTE0LjcxIDI1NiwyNTZjMCwxNDEuMjkgLTExNC43MSwyNTYgLTI1NiwyNTZjLTE0MS4yOSwwIC0yNTYsLTExNC43MSAtMjU2LC0yNTZjMCwtMTQxLjI5IDExNC43MSwtMjU2IDI1NiwtMjU2Wm0wLDk2Yy00My40NTMsMCAtNDguOTAyLDAuMTg0IC02NS45NjgsMC45NjNjLTE3LjAzLDAuNzc3IC0yOC42NjEsMy40ODIgLTM4LjgzOSw3LjQzN2MtMTAuNTIxLDQuMDg5IC0xOS40NDQsOS41NiAtMjguMzM5LDE4LjQ1NWMtOC44OTUsOC44OTUgLTE0LjM2NiwxNy44MTggLTE4LjQ1NSwyOC4zMzljLTMuOTU1LDEwLjE3NyAtNi42NTksMjEuODA4IC03LjQzNywzOC44MzhjLTAuNzc4LDE3LjA2NiAtMC45NjIsMjIuNTE1IC0wLjk2Miw2NS45NjhjMCw0My40NTMgMC4xODQsNDguOTAyIDAuOTYyLDY1Ljk2OGMwLjc3OCwxNy4wMyAzLjQ4MiwyOC42NjEgNy40MzcsMzguODM4YzQuMDg5LDEwLjUyMSA5LjU2LDE5LjQ0NCAxOC40NTUsMjguMzRjOC44OTUsOC44OTUgMTcuODE4LDE0LjM2NiAyOC4zMzksMTguNDU1YzEwLjE3OCwzLjk1NCAyMS44MDksNi42NTkgMzguODM5LDcuNDM2YzE3LjA2NiwwLjc3OSAyMi41MTUsMC45NjMgNjUuOTY4LDAuOTYzYzQzLjQ1MywwIDQ4LjkwMiwtMC4xODQgNjUuOTY4LC0wLjk2M2MxNy4wMywtMC43NzcgMjguNjYxLC0zLjQ4MiAzOC44MzgsLTcuNDM2YzEwLjUyMSwtNC4wODkgMTkuNDQ0LC05LjU2IDI4LjM0LC0xOC40NTVjOC44OTUsLTguODk2IDE0LjM2NiwtMTcuODE5IDE4LjQ1NSwtMjguMzRjMy45NTQsLTEwLjE3NyA2LjY1OSwtMjEuODA4IDcuNDM2LC0zOC44MzhjMC43NzksLTE3LjA2NiAwLjk2MywtMjIuNTE1IDAuOTYzLC02NS45NjhjMCwtNDMuNDUzIC0wLjE4NCwtNDguOTAyIC0wLjk2MywtNjUuOTY4Yy0wLjc3NywtMTcuMDMgLTMuNDgyLC0yOC42NjEgLTcuNDM2LC0zOC44MzhjLTQuMDg5LC0xMC41MjEgLTkuNTYsLTE5LjQ0NCAtMTguNDU1LC0yOC4zMzljLTguODk2LC04Ljg5NSAtMTcuODE5LC0xNC4zNjYgLTI4LjM0LC0xOC40NTVjLTEwLjE3NywtMy45NTUgLTIxLjgwOCwtNi42NiAtMzguODM4LC03LjQzN2MtMTcuMDY2LC0wLjc3OSAtMjIuNTE1LC0wLjk2MyAtNjUuOTY4LC0wLjk2M1ptMCwyOC44MjljNDIuNzIyLDAgNDcuNzgyLDAuMTYzIDY0LjY1NCwwLjkzM2MxNS42LDAuNzEyIDI0LjA3MSwzLjMxOCAyOS43MDksNS41MDljNy40NjksMi45MDIgMTIuNzk5LDYuMzcgMTguMzk3LDExLjk2OWM1LjYsNS41OTggOS4wNjcsMTAuOTI5IDExLjk2OSwxOC4zOTdjMi4xOTEsNS42MzggNC43OTgsMTQuMTA5IDUuNTA5LDI5LjcwOWMwLjc3LDE2Ljg3MiAwLjkzMywyMS45MzIgMC45MzMsNjQuNjU0YzAsNDIuNzIyIC0wLjE2Myw0Ny43ODIgLTAuOTMzLDY0LjY1NGMtMC43MTEsMTUuNiAtMy4zMTgsMjQuMDcxIC01LjUwOSwyOS43MDljLTIuOTAyLDcuNDY5IC02LjM2OSwxMi43OTkgLTExLjk2OSwxOC4zOTdjLTUuNTk4LDUuNiAtMTAuOTI4LDkuMDY3IC0xOC4zOTcsMTEuOTY5Yy01LjYzOCwyLjE5MSAtMTQuMTA5LDQuNzk4IC0yOS43MDksNS41MDljLTE2Ljg2OSwwLjc3IC0yMS45MjksMC45MzMgLTY0LjY1NCwwLjkzM2MtNDIuNzI1LDAgLTQ3Ljc4NCwtMC4xNjMgLTY0LjY1NCwtMC45MzNjLTE1LjYsLTAuNzExIC0yNC4wNzEsLTMuMzE4IC0yOS43MDksLTUuNTA5Yy03LjQ2OSwtMi45MDIgLTEyLjc5OSwtNi4zNjkgLTE4LjM5OCwtMTEuOTY5Yy01LjU5OSwtNS41OTggLTkuMDY2LC0xMC45MjggLTExLjk2OCwtMTguMzk3Yy0yLjE5MSwtNS42MzggLTQuNzk4LC0xNC4xMDkgLTUuNTEsLTI5LjcwOWMtMC43NywtMTYuODcyIC0wLjkzMiwtMjEuOTMyIC0wLjkzMiwtNjQuNjU0YzAsLTQyLjcyMiAwLjE2MiwtNDcuNzgyIDAuOTMyLC02NC42NTRjMC43MTIsLTE1LjYgMy4zMTksLTI0LjA3MSA1LjUxLC0yOS43MDljMi45MDIsLTcuNDY4IDYuMzY5LC0xMi43OTkgMTEuOTY4LC0xOC4zOTdjNS41OTksLTUuNTk5IDEwLjkyOSwtOS4wNjcgMTguMzk4LC0xMS45NjljNS42MzgsLTIuMTkxIDE0LjEwOSwtNC43OTcgMjkuNzA5LC01LjUwOWMxNi44NzIsLTAuNzcgMjEuOTMyLC0wLjkzMyA2NC42NTQsLTAuOTMzWm0wLDQ5LjAwOWMtNDUuMzc3LDAgLTgyLjE2MiwzNi43ODUgLTgyLjE2Miw4Mi4xNjJjMCw0NS4zNzcgMzYuNzg1LDgyLjE2MiA4Mi4xNjIsODIuMTYyYzQ1LjM3NywwIDgyLjE2MiwtMzYuNzg1IDgyLjE2MiwtODIuMTYyYzAsLTQ1LjM3NyAtMzYuNzg1LC04Mi4xNjIgLTgyLjE2MiwtODIuMTYyWm0wLDEzNS40OTVjLTI5LjQ1NSwwIC01My4zMzMsLTIzLjg3OCAtNTMuMzMzLC01My4zMzNjMCwtMjkuNDU1IDIzLjg3OCwtNTMuMzMzIDUzLjMzMywtNTMuMzMzYzI5LjQ1NSwwIDUzLjMzMywyMy44NzggNTMuMzMzLDUzLjMzM2MwLDI5LjQ1NSAtMjMuODc4LDUzLjMzMyAtNTMuMzMzLDUzLjMzM1ptMTA0LjYwOSwtMTM4Ljc0MWMwLDEwLjYwNCAtOC41OTcsMTkuMTk5IC0xOS4yMDEsMTkuMTk5Yy0xMC42MDMsMCAtMTkuMTk5LC04LjU5NSAtMTkuMTk5LC0xOS4xOTljMCwtMTAuNjA0IDguNTk2LC0xOS4yIDE5LjE5OSwtMTkuMmMxMC42MDQsMCAxOS4yMDEsOC41OTYgMTkuMjAxLDE5LjJaIi8+PC9zdmc+">
+                        </a>
+
+
+                        <a href="https://www.linkedin.com/in/hendriko-teguh-sangkanparan-5205519b/">
+                            <img class="icon" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoyOyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjEwMCUiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2VyaWY9Imh0dHA6Ly93d3cuc2VyaWYuY29tLyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNTYsMGMxNDEuMjksMCAyNTYsMTE0LjcxIDI1NiwyNTZjMCwxNDEuMjkgLTExNC43MSwyNTYgLTI1NiwyNTZjLTE0MS4yOSwwIC0yNTYsLTExNC43MSAtMjU2LC0yNTZjMCwtMTQxLjI5IDExNC43MSwtMjU2IDI1NiwtMjU2Wm0tODAuMDM3LDM5OS44NzFsMCwtMTk5LjkyMWwtNjYuNDY0LDBsMCwxOTkuOTIxbDY2LjQ2NCwwWm0yMzkuNjIsMGwwLC0xMTQuNjQ2YzAsLTYxLjQwOSAtMzIuNzg3LC04OS45NzYgLTc2LjUwOSwtODkuOTc2Yy0zNS4yNTUsMCAtNTEuMDQ3LDE5LjM4OSAtNTkuODg5LDMzLjAwN2wwLC0yOC4zMDZsLTY2LjQ0NywwYzAuODgxLDE4Ljc1NyAwLDE5OS45MjEgMCwxOTkuOTIxbDY2LjQ0NiwwbDAsLTExMS42NWMwLC01Ljk3NiAwLjQzLC0xMS45NSAyLjE5MSwtMTYuMjIxYzQuNzk1LC0xMS45MzUgMTUuNzM3LC0yNC4yOTkgMzQuMDk1LC0yNC4yOTljMjQuMDM0LDAgMzMuNjYzLDE4LjM0IDMzLjY2Myw0NS4yMDRsMCwxMDYuOTY2bDY2LjQ1LDBabS0yNzIuNDAzLC0yOTYuMzIxYy0yMi43NCwwIC0zNy41OTcsMTQuOTUgLTM3LjU5NywzNC41NDVjMCwxOS4xODIgMTQuNDA1LDM0LjU0NCAzNi43MTcsMzQuNTQ0bDAuNDI5LDBjMjMuMTc1LDAgMzcuNiwtMTUuMzYyIDM3LjYsLTM0LjU0NGMtMC40MywtMTkuNTk1IC0xNC40MjQsLTM0LjU0NSAtMzcuMTQ5LC0zNC41NDVaIi8+PC9zdmc+">
+                        </a>
+
+                    </div>
+
+        </div>
+    </div>
+    <div class="twocols" id="mir" style="text-align:justify;">
+
+        <img class="left" src="./data/Problems.jpg" alt="">
+
+        <div class="mir_abstract">
+            <h2>The Problems</h2>
+             The AI driven industry revolution and the increase of remote work, there is a trend that is showing the decrease of the demand of monolithic office space. Which consequently resulted in an oversupply of office buildings. The changing workscape is showing a trend towards the diversity of works, work people would collaborate spontaneously with anyone unlike the monolithic office scape. Creating a demand for diversity of work spaces which allows for incidental collaborations and networking. These, poses us with 2 main problems: The Oversupply of Office Space while there is The Increased Demand of Diverse Space.
+        </div>
+    </div>
+
+	<div class="twocols" id="nmir">
+        <div class="abstract" style="text-align:justify;">
+            <h2>The Oversupply of Office Space</h2>
+            The World Economic Forum have stated that we are entering the Industry 4.0 the Artificial Intelligence Age, which is different from the technological third revolution, today we see the world that is changed in an unprecedented velocity, scope and the systems impact. Where AI and automation is not limited to one industry, but it is happening across the board in an unprecedented speed. Even before the AI revolution in 2013 where the third industrial revolution was at it’s peak, 47% of the US workforce was already threatened by computerisation, and this was not by AI. The question is what would happen to people? World Economic Forum in the Future of Jobs 2020 journal, just last october, projects that across the board, there will be a 5% increase where human work hours would be replaced by machines, that is 3 days worth of work out of a months worth of work. <br> <br>
+			The covid-19 on the other hand, highlighted the digitization of businesses and ,ade many offices rethink the need of office spaces, microsoft, Twitter and Dropbox, has mandated that their employees are allowed to work from home even after the pandemic ends. And they are not the only ones. Further catalysing the reduction of office space needs.
+			<br> <br>
+			Architects, developers, and workspace planners, have since rediscovered what is the meaning of office and what should the office be in the future. And this thesis is questioning not only the future of office, but also about what should we do with the oversupply of office buildings. Tim Reusch in Vitra Summit 2020, mentioned that now, we can get work done anywhere, and the office space is now more of a meeting place. Though the industry 4.0 has not reached its full effect, we should start rethinking about office buildings design.
+        </div>
+
+        <img class="right" src="./data/Problem-1.gif" alt="">
+    </div>
+
+
+	<div class="twocols" id="mir">
+
+        <img class="left" src="./data/Problem-2.gif" alt="">
+
+        <div class="mir_abstract" style="text-align:justify;">
+            <h2>The Increased Demand of Diverse Space</h2>
+            We would associate Office to Work. Defining work, according to Oxford Dictionary work is an Activity involving mental or physical effort done in order to achieve a purpose or result. Working in the current sense have a purpose of making a living. But with the work are done by automation and AI, what would people do? Though it seems that AI would take over our jobs, the economist Brynjolfson and Mcafee believes that there will be an increase in safe and rewarding jobs. And we can already start to feel this to be true.
+			<br><br>
+			Kahlert from Midia Research stated that now the internet platforms are empowering creators to stay true with their creative visions, creating a much more rewarding job while still attainig a viable levels of profitability that once impossible. Social Media platforms takes a major role in this alternative idea of work.<br><br>
+			With the empowerment of individuals to learn, express, and create through the internet, a new wave of individual workers working on their interests is coming. Interest based communities has started to take over the physical, instead of just forums, creating real collaboration space, beyond the digital. While these creators and makers could use Back the social platforms. To create self brand awareness and promote their passion, social enterprises, and creations. With the advent of more and more fintechs services, avenues of income is no longer limited to the desk jobs but expanding through the direct to customer model of creators, while expanding the horizon of collaboration for interest based work throughout the world.
+			<br><br><br><br>
+        </div>
+    </div>
+
+
+    <div class="center" style="text-align:justify;">
+        <img src="./data/SummaryMethod.png" alt="" width=100% >
+		<div >
+            <h2>The Idea</h2>
+           Looking at the supply of office building, the first thing we would have in our mind is the idea of adaptive reuse. With an existing building, there is already existing structures, and by demolishing the building we would release the embodied carbon and require even more labors demolish and rebuild. The common practice of adaptive reuse often includes the transfer of function, changing the main function with improvements of the building, more often than not, the resilience of the building does not change, thus making the possibly, obsolete again. The monotony of response is also a consideration, More and more buildings are readapted into housing, artisan shops and many are museums, even Sally Stone in her book undoing buildings questions how many museums a society could support? This thesis hopes that we could break this cycle. Thus, to tackle the oversupply of office building, this thesis extends adaptive reuse idea Through layered adaptation, where we seek understanding if building technicality, looking for areas that we could possibly save and create a system to adapt the building into a sustainable and resilient one. <br><br>
+
+		   With the system of adaptation principle settled, we would move on to address the demand for diversity of spaces,  we look at the 2 established educators and practitioners, Bill Hillier of the Space Syntax about the depth and syntaxes of spaces and Herman Hertzberger of HH Architects about the inbetween, public domains, and relationships of spaces. Both herman herzberger and bill hillier concepts are spatial concepts that could be translated into rule based arrangment system. Through this system we envision a diverse spaces to meet the demand for spaces of the future.
+        </div>
+		<br> <br>
+
+		<h2> A critique on a world of less work and how we salvage the office building structure of the past to serve society of the future. </h2>
+		<h3> Through creation of a methodology that allows for spatial diversification through a layered adaptation. </h3>
+
+    </div>
+
+    <div class="gifs">
+        <img src="./data/Preparation.gif" alt="Preparation Stage">
+        <img src="./data/Stage-1.gif" alt="Stage 1">
+        <img src="./data/Expansion.gif" alt="Stage 2 & 3">
+    </div>
+
+
+    <div class="splimage2">
+	<h2> The Layered Adaptation for Spatial Diversification Methodology </h2>
+        <img src="./data/Methodology.png" alt="" height=80%>
+    </div>
+
+	<div class="center">
+
+		<div >
+            <h3 style="text-align:center;">Digital Material and Design for Disassembly </h3>
+           <p style="text-align:justify;">
+		   In the core of the subject, we explore the idea of Digital Material and design for disassembly deeply which enables all the LASD Method be possible. Where The idea of aggregative design using digital material as put forth by <a href=" https://www.retsin.org/" >Gilles Retsin</a> and <a href="http://ng.cba.mit.edu/neil/bio/">Neil Gershenfeld</a> in many of their works shows an almost unlimited potential of reconfigurability, which could be even more powerful coupled with the understanding of Design for Disassembly. The idea of a digital material as described by Neil Greshenfeld is an assembly of discrete elements that have a limited set of connection possibilities, which compared to an analogue material with continuous connections. Think of lego and toothpaste.
+			<br><br>
+		   To tackle the question on the sustainability and resilience of a building, this thesis looks at the concept of design for disassembly an idea where building materials are not only recyclable but also reusable. In a demolished building according to the paper by Yeo and Hwang from NUS, 50% of construction waste ends up in landfill. <a href="https://www.emerald.com/insight/content/doi/10.1108/09699981111145835/full/html">(Yeo & Hwang, 2011)</a> With the DFD idea we envision building materials that can be reused and replaced easily where the value of material continues at its course.
+			</p>
+        </div>
+		 <img src="./data/DMDFD.png" alt="" width=100% >
+
+
+    </div>
+	<div class="twocols" id="nmir" style="text-align:justify;">
+        <div class="abstract" style="text-justify:auto;">
+            <h2>A Possible Site: 6 Raffles Quay</h2>
+			<p style="text-align:justify;">
+            To make sense of the methodology easier, we will be introducing to you the site first. Living in Singapore, a city state that is one of the most competitive finance and business hub in the world, with its development heyday of in the 1970s to the 1990s we do have many tall buildings. In <a href=" https://www.skyscrapercenter.com/city/singapore" > Singapore alone there are 74 office buildings of more than 50 meters in height</a>, and the newest capita spring by BIG is soon to be completed. More than 30 office buildings are more than 25 years old. With the more desirable new office spaces this presents the question on what would happen to the older mundane looking offices.<br><br>
+			For this thesis, we will be looking at Raffles Place, where many tall buildings are located. Just accross the MRT, lay 6 Raffles Quay, a building that is surrounded by many taller buildings including the art deco former tallest building the Ascott Raffles Place. <br> <br>
+			 Located at the address of it's own name 6 raffles quay  is a building that is often missed. 6 Raffles Quaty was built in a simple core and slab arrangement with curtain wall and cladding system a building that we can safely describe as a typical office building Bringing the highligh to the methodology rather than the site specific.
+			 </p>
+
+
+
+
+
+        </div>
+
+        <img class="right" src="./data/TheSite.gif" alt="">
+    </div>
+
+    <div class="twocols" id="mir">
+
+        <img class="left" src="./data/Prep1.gif" alt="">
+
+        <div class="mir_abstract" style="text-align:justify;">
+            <h2>The Preparation</h2>
+             At this stage we are trying to understand the building system and identify the areas that we want to save from the building. In this case of the 6 Raffles Quay, we have identified that the building  services are located in the core of the building and the rest are a concrete column, beam and slab arrangment. Thus the core is what we are saving. By saving the core we are also saving the hassle of servicing the building as the vents and service system is located through this core. Thus, we first remove the facade system and with careful removal, maybe these cladding and glass could be reused. Leaving the core concrete monolithic structure behind. This leave us with a generic concrete column and slab system that we could edit.
+        </div>
+    </div>
+
+    <div class="twocols" id="mir">
+
+        <img class="left" src="./data/Stage1.gif" alt="">
+
+        <div class="mir_abstract" style="text-align:justify;">
+            <h2>Stage 1 - Removal of Volumes</h2>
+             At this stage we are trying to understand the building system and identify the areas that we want to save from the building. In this case of the 6 Raffles Quay, we have identified that the building  services are located in the core of the building and the rest are a concrete column, beam and slab arrangment. Thus the core is what we are saving. By saving the core we are also saving the hassle of servicing the building as the vents and service system is located through this core. Thus, we first remove the facade system and with careful removal, maybe these cladding and glass could be reused. Leaving the core concrete monolithic structure behind. This leave us with a generic concrete column and slab system that we could edit.
+        </div>
+    </div>
+	    <div class="twocols" id="mir">
+
+        <img class="left" src="./data/DM1.gif" alt="">
+
+        <div class="mir_abstract" style="text-align:justify;">
+            <h2>Stage 1 - Digital Material for Support</h2>
+             At this stage we are trying to understand the building system and identify the areas that we want to save from the building. In this case of the 6 Raffles Quay, we have identified that the building  services are located in the core of the building and the rest are a concrete column, beam and slab arrangment. Thus the core is what we are saving. By saving the core we are also saving the hassle of servicing the building as the vents and service system is located through this core. Thus, we first remove the facade system and with careful removal, maybe these cladding and glass could be reused. Leaving the core concrete monolithic structure behind. This leave us with a generic concrete column and slab system that we could edit.
+        </div>
+    </div>
+	<div class="twocols" id="mir">
+
+        <img class="left" src="./data/PlatformsDM.gif" alt="">
+
+        <div class="mir_abstract" style="text-align:justify;">
+            <h2>Stage 1 - Digital Material for Platforms</h2>
+			Through the same digital materiality and DfD Principles, platforms are created in 3 different main component shapes. Using the limited palette of 3 elements, we are able to create different spatial platforms which is beneficial for the diversity of space. The diagram shows the possibility of how the interface and the platform would connect to each other, forming the first degree of addition.
+			<br><br>
+			Shows the possibility of how the platforms from the first degree addition to be received by the columns that was used on the support interface. This is the versatility of digital material that this thesis would like to highlight.
+        </div>
+    </div>
+	<div class="twocols" id="mir">
+
+        <img class="left" src="./data/DetailingDM.gif" alt="">
+
+        <div class="mir_abstract" style="text-align:justify;">
+            <h2>Stage 1 - Detailing</h2>
+			Building up upon the idea of digital materiality, we are able to create special connections and possible methodology of connection for spatial elements of the intervention. There are 3 important aspects to it: <br>
+			1) Glass - the main spatial divider, <br>
+			2) Greenery - the main shading device, and <br>
+			3) Railings - the main safety device.
+
+			<br><br>
+			The simple Glass detailing enabling it to be attached anywhere in the development. Planters could replace the platform base enabling deeper planter boxes. The railing detail is versatile enough to be either attached through the platform or through the planter boxes.
+
+        </div>
+    </div>
+	<div class="twocols" id="nmir" style="text-align:auto;">
+        <div class="abstract" style="text-align:justify;">
+            <h2>Creating Diverse Spaces</h2>
+			To further apply the idea of space diversity better, we turn our head back to the thinkers, educators, and practitioners, Bill Hillier of the Space Syntax as well as Herman Hertzberger “the social architect”. <br><br> As we previously mentioned on the idea of depths and space syntax of bill hillier and the relationships in Herman Hertzberger works, we seek to apply the principles in this section.
+
+        </div>
+        <img class="right" src="./data/BillHertzSpace.png" alt="">
+    </div>
+	<div class="twocols" id="mir">
+
+        <img class="left" src="./data/BillHillier.gif" alt="">
+
+        <div class="mir_abstract" style="text-align:justify;">
+            <h2>Bill Hillier</h2>
+
+			Bill Hillier through his writing “Space is the Machine” we learn that there are 2 important things on understanding the syntax of a space, <i> 1) depths </i> and <i> 2) the space syntax </i>. In this thesis we translate these ideas into digital material rules, limiting connections and intersection of spaces, as shown by the diagram on the right. <br><br>
+
+			After much rigour and testing through the use of WASP a Rhino Grasshopper plugin, we have successfully create a diverse both depth and space syntax as shown on the two diagrams on the right. Creating a diverse space, both in depth and syntax. From using the simple spatial rules and combinations. Which we apply through out the building.
+
+        </div>
+    </div>
+		<div class="twocols" id="mir">
+
+        <img class="left" src="./data/HH.gif" alt="">
+
+        <div class="mir_abstract" style="text-align:justify;">
+            <h2>Herman Hertzberger</h2>
+			Herman Hertzberger through his book <i>“Lessons for Architecture Students”</i> we are inspired from 4 of the many ideas put forth by him as discussed in the previous chapter. These are the: <i> 1) Territorial Claims, 2) Public Domain, 3) The In-between, </i>and  <i> 4) Views </i>.Through using the same wasp method, we are able to create limits of expansions, creating purposeful voids and opening to tend to the ideas put forth before.
+
+			<br><br>
+			<b>Territorial claims</b> relates to the sense of ownership of the spaces, through the LASD Method we are able to create spaces with multiple ownerships, enabling spaces to be dynamic and unique from everywhere we stand. Creating a sense of unprecedented belonging. <b>The public domain</b> as the central idea brought together the public to be the centre space of a development, enabling versatile spaces for the intermingling of characters and activities. <b>The in-between</b> is the most important concept where we seek incidental meetings of users, creating spaces that have continual development and excitement of different groups collaborating and intermingling. Lastly, <b>views</b>, enables the relationship between users both into and beyond the development it self, creating a landscape of scenery within the same development, bringing diversity of spaces to even a higher level.
+        </div>
+    </div>
+	<div class="twocols" id="mir">
+
+        <img class="left" src="./data/SGApp.gif" alt="">
+
+        <div class="mir_abstract" style="text-align:justify;">
+            <h2>Applying to Singapore</h2>
+			 This shows the places where communal interest based activities are currently located. We  can see that there is a trend that draws such communal spaces to be in the centre of the city. As office buildings are mostly located in the city, this intervention shows a plausible programmatic combination that we could see in the future. With the source of inspiration, we draw possible spaces usage and its plausible dimensions for fitting into the project.
+			<br><br>
+			While, through understanding the exposure to sunlight, we are able to identify spaces prime for greenery and urban farms.
+
+        </div>
+    </div>
+	 <div class="splimage2">
+	<h2> The Programmatic Arrangement</h2>
+        <img src="./data/Programmatic.jpg" alt="" height=80%>
+    </div>
+
+	<div class="center">
+
+		<div >
+            <h3 style="text-align:center;">Stage 2 - Expansion</h3>
+
+		   The stage 2 of intervention, the expansion. The versatility of the methodology also enables for expansion beyond the current building and engulfing adjacent building step by step. With the digital materiality and the design for disassembly, it is possible for the building to be expanded during the occupation period itself.
+<br><br>
+        </div>
+		 <img src="./data/Stage2.gif" alt="" width=100% >
+		 <div >
+			The versatility of the methodology also enables for expansion beyond the current building and engulfing adjacent building step by step. Or even a building entirely to protect it’s cultural sentiments.
+<br><br>
+			The LASD Method enables old boring building into a versatile resilient building that could be adapted for the future use. Imagined to be the preferred adaptive reuse system of the future, we would be able to create spaces without demolishing old building entirely but through selective selection, keeping the embodied carbon while reducing the construction waste and costs.
+<br><br>
+			The choice of steel and Mass Engineered Wood and Carbon Fibre Composite ensures the sustainability of the building material creating a system of construction that had immensely reduced pollution while lengthening the building life.
+			<br><br><br><br>
+			 </div>
+
+
+
+    </div>
+	<div class="center">
+
+		<div >
+            <h3 style="text-align:center;">Stage 3 - Reconfiguration</h3>
+
+		   As the world changes and the needs changes, another cycle of revolution could happen, maybe removing the needs of spaces for creators as argued before, the LASD method enables possible reconfiguration or even total disassembly of added spaces making this building timeless and will have no end of life.
+        </div>
+		 <img src="./data/Stage3.gif" alt="" width=100% >
+	</div>
+
+
+    <div class="center">
+        <img src="./data/Sections.gif" alt=""  width=100% >
+		<br><br>
+    </div>
+
+
+	<div class="slideshow-container">
+
+	<div class="mySlides fade">
+	  <div class="numbertext">1 / 9</div>
+	  <img src="./data/renders/1.jpg" style="width:100%">
+	  <div class="text">The In-Between</div>
+	</div>
+
+
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 9</div>
+	  <img src="./data/renders/3.jpg" style="width:100%">
+	  <div class="text">The Relationships</div>
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 9</div>
+	  <img src="./data/renders/6.jpg" style="width:100%">
+	  <div class="text">Looking Into</div>
+	</div>
+	<div class="mySlides fade">
+	  <div class="numbertext">4 / 9</div>
+	  <img src="./data/renders/7.jpg" style="width:100%">
+	  <div class="text">Collaboration Terrace</div>
+	</div>
+	<div class="mySlides fade">
+	  <div class="numbertext">5 / 9</div>
+	  <img src="./data/renders/8.jpg" style="width:100%">
+	  <div class="text">View Beyond</div>
+	</div>
+	<div class="mySlides fade">
+	  <div class="numbertext">6 / 9</div>
+	  <img src="./data/renders/10.jpg" style="width:100%">
+	  <div class="text">Beyond LASD</div>
+	</div>
+		<div class="mySlides fade">
+	  <div class="numbertext">7 / 9</div>
+	  <img src="./data/renders/5.jpg" style="width:100%">
+	  <div class="text">The Landscape</div>
+	</div>
+		<div class="mySlides fade">
+	  <div class="numbertext">8 / 9</div>
+	  <img src="./data/renders/9.jpg" style="width:100%">
+	  <div class="text">Relations</div>
+	</div>
+	<div class="mySlides fade">
+	  <div class="numbertext">9 / 9</div>
+	  <img src="./data/renders/12.jpg" style="width:100%">
+	  <div class="text">Aerial</div>
+	</div>
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span>
+	  <span class="dot" onclick="currentSlide(2)"></span>
+	  <span class="dot" onclick="currentSlide(3)"></span>
+	  <span class="dot" onclick="currentSlide(4)"></span>
+	  <span class="dot" onclick="currentSlide(5)"></span>
+	  <span class="dot" onclick="currentSlide(6)"></span>
+	  <span class="dot" onclick="currentSlide(7)"></span>
+	  <span class="dot" onclick="currentSlide(8)"></span>
+	</div>
+
+    <div class="splimage2">
+        <img src="./data/renders/13.jpg" alt="From Raffles Place MRT">
+    </div>
+	<div class="splimage2">
+        <img src="./data/renders/3.jpg" alt="The LASD Relationships">
+    </div>
+    <div class="bottomlinks">
+        <h3><a href="javascript:goToTop()">Back to Top</a></h3>
+        <!-- <h3><a id="random">Randomise!</a></h3> -->
+    </div>
+
+</section>
+<div id="footer"></div>
+
+<script defer src="../../../js/navfixer.js"></script>
+<script src="../../../js/title.js"></script>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>

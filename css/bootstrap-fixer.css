@@ -1,0 +1,18 @@
+body {
+    line-height: revert;
+    }
+    
+*, ::after, ::before {
+box-sizing: revert;
+}
+    
+h1,h2,h3,h4,h5,h6 {
+font-weight: revert;
+line-height: revert;
+}
+
+/* .table {
+    width: inherit;
+    max-width: inherit;
+    margin-bottom: inherit;
+} */

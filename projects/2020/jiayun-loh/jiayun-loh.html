@@ -1,0 +1,428 @@
+<!-- SUTD MArc Template – V1.0  -->
+<!-- Please read the guide before editing -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <base href="/projects/"> -->
+    <meta charset="utf-8"><meta name="description" content="SUTD ASD M.Arch Virtual GradShow 2021">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="icon" href="../../../favicon.ico" type="image/gif">
+
+    <link rel="stylesheet" href="../student-style.css">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+      $(function() {
+        $("#header").load("../../../partials/projectnav.html");
+        $("#footer").load("../../../partials/footer.html");
+
+      });
+
+        function goToTop(){
+        window.scrollTo(0,0)
+        return false; //prevent page from reloading
+        }
+    </script>
+</head>
+
+<style>
+    body {
+        background-color: pink;
+        background-color: rgb(231, 231, 231);
+        background-color: rgb(183, 251, 253);
+        background-color: rgb(206, 253, 162);
+        background-color: rgb(255, 226, 192);
+        background-color: white;
+    }
+
+</style>
+<body >
+    <div id="header"></div>
+
+    <section class="cover">
+        <div class="mainimage">
+            <img src="./data/1.png" width="2000px" height="1000px">
+        </div>
+    </section>
+
+    <section class="content">
+
+        <div  class="titletext">
+            Affordance in Movement
+        </div>
+
+
+    <div class="twocols invert">
+        <div class="abstract">
+            <h2>Summary</h2>
+            The problem of urbanisation and rise in sedentary culture has globally makes us move less. This is crucial for over one billion children which now live in cities. The urban landscape of cities move vertically, accommodating a large number of high-density buildings, making open space for
+	    moving and exploring limited and restricted. The role of public spaces today adapts to place less emphasis on space for relaxation and participation but instead acts as a space of transition between destinations. While technology advancements have made our city an interconnected
+	    and accessible one, on a daily basis, the monotony of our routines has been reduced to a short walk between our housing estates to transport nodes. This makes it increasingly difficult for people to attain enough physical activity daily.
+	    <p><br>
+
+	    As such, this thesis seeks to provide a taxonomy of
+	    interventions as a tool to learn or regain active mobility by integrating them in their everyday lives, such that it improves public health in the community, especially for children. A field is generated based on attractor points towards destinations they are likely to visit such as bus
+	    stops, intersection points between the housing estates to the main corridor axis, amenities, town centre as well as points which slightly deviate from the pathways, creating a longer route. This creates a series of structures that are shaped by playfulness and invites people to transverse the
+	    architecture and nature through, weaving among the trees and connecting to scattered nodes across the site. This draws back from the curiosity that is innate within a child, wanting to explore and move freely.
+	    </p>
+            <br><br>
+            <h4>About Me</h4>
+            M.Arch Graduate of Singapore University of Technology and Design.
+	    Interested in AR/VR to aid architectural visualisations. Enjoys taking time to try new things. Willing to take on any kind of project that is given to me. Especially enjoys the moment when a drawing/render is about to be done, with the final few changes to be made.
+
+        </div>
+
+
+
+        <div class="table">
+            <div class="thumb">
+                <img src="./jiayun-loh.jpg" alt=""></div>
+                <div class="fields">
+                <h3>Name</h3>
+                <p>Loh Jia Yun</p></div>
+                <div class="fields">
+                <h3>Mentor</h3>
+                <p>Michael Budig</p></div>
+                <div class="fields">
+                </div>
+                <div class="fields">
+                <h3 >Typology</h3>
+                <p>Social Architecture, Public Space, Masterplan Integration</p>
+                </div>
+                <div class="fields">
+                <h3>Site Location</h3>
+                <p>Choa Chu Kang, Singapore</p>
+                </div>
+
+  				<div class="contact">
+
+                        <a href="mailto:JiaYun_Loh@sutd.edu.sg">
+                            <img class="icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgLjAyYy02LjYyNyAwLTEyIDUuMzczLTEyIDEyczUuMzczIDEyIDEyIDEyIDEyLTUuMzczIDEyLTEyLTUuMzczLTEyLTEyLTEyem02Ljk5IDYuOThsLTYuOTkgNS42NjYtNi45OTEtNS42NjZoMTMuOTgxem0uMDEgMTBoLTE0di04LjUwNWw3IDUuNjczIDctNS42NzJ2OC41MDR6Ii8+PC9zdmc+">
+                        </a>
+
+                        <a href="https://issuu.com/lohjiayun/docs/portfolio_summer_2019">
+                            <img class="icon" src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1OTUuMjggNTk0Ljg5Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmlzc3V1LWljb24tMDwvdGl0bGU+PHBhdGggZD0iTTExLjU4LDEwLjcySDE4LjJjOTYuOSwwLDE5My44MS0uNjYsMjkwLjY5LjMzLDM3LjY3LjM4LDc0LDkuNzMsMTA4LjY4LDI1LjEyLDM2LDE2LDY2LjcsMzkuMyw5My4xOCw2OC4xMywyOC42OCwzMS4yMSw0OC44MSw2Ny4zOCw2MS42LDEwNy44OUM1ODQuMjYsMjUwLDU4Ni42NiwyODguNzMsNTg0LDMyNy42Yy0zLjc3LDU0LjcyLTIyLjI1LDEwNC41MS01NiwxNDguMzNhMjgwLjEzLDI4MC4xMywwLDAsMS04My4xNCw3Mi43M2MtMjguMzcsMTYuMjktNTksMjYuNS05MS4xLDMyLjQzLTIzLjYzLDQuMzYtNDcuNDMsMi4yNy03MS4xNSwyLjQ3LTM2LjUuMzEtNzAuNzItOS44NS0xMDMuODctMjQuMi0zMi42NC0xNC4xMy02MC44Ny0zNC42Ni04NS41Mi02MC4xMi0yNy44OS0yOC44Mi00OC42OS02Mi02MS4xMy0xMDAuMzctOC40LTI1Ljg3LTEyLjgzLTUyLjQ1LTE1LjkzLTc5LjQxLTQuNS0zOS00LjY4LTc4LjA5LTQuNi0xMTcuMjUuMTMtNjEuMDcsMC0xMjIuMTQsMC0xODMuMjFaTTEwNCwyOTkuMzJDMTAxLDQwNi4wNiwxOTIuODcsNDkzLjUsMjk3LjIyLDQ5NS4wN2MxMjMuNjksMS44NiwyMDEuNTYtOTMuNzksMjAzLTE5NC4xMSwxLjY2LTExNS43NS04Ni42MS0xOTYuMTktMTg3LjktMjAwQzE4OC45Myw5Ni4zLDEwMS42OSwxOTAuNzUsMTA0LDI5OS4zMloiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMDQsMjk5LjMyYy0yLjMtMTA4LjU3LDg0Ljk0LTIwMywyMDguMzItMTk4LjM3LDEwMS4yOSwzLjgyLDE4OS41Niw4NC4yNiwxODcuOSwyMDAtMS40MywxMDAuMzItNzkuMywxOTYtMjAzLDE5NC4xMUMxOTIuODcsNDkzLjUsMTAxLDQwNi4wNiwxMDQsMjk5LjMyWm01MS4zNi0yLjc0QzE1My43MSwzODAuNzIsMjIxLjI3LDQ0NCwyOTYuNjEsNDQ1LjRjODcuNDgsMS42OCwxNDkuMjQtNjMuNTMsMTUwLjUzLTE0My45MywxLjQ0LTg5LjkyLTYzLjM0LTE0NC44OC0xMzguNDMtMTQ3LjkxQzIxMi4zNywxNDkuNjksMTU1LjIsMjE5LjQ4LDE1NS4zNSwyOTYuNThaIi8+PHBhdGggZD0iTTE1NS4zNSwyOTYuNThjLS4xNS03Ny4xLDU3LTE0Ni44OSwxNTMuMzYtMTQzLDc1LjA5LDMsMTM5Ljg3LDU4LDEzOC40MywxNDcuOTEtMS4yOSw4MC40LTYzLjA1LDE0NS42MS0xNTAuNTMsMTQzLjkzQzIyMS4yNyw0NDQsMTUzLjcxLDM4MC43MiwxNTUuMzUsMjk2LjU4Wm0xNDguNzQtNjkuODRjLTQyLjUzLS41NC03My42MywyNy4wOS03My44OCw2OS0uMjYsNDQuNDQsMjkuNTEsNzYsNzIsNzUuNDcsNDMtLjUsNjkuNTgtMjcsNjkuNzEtNzMuODRDMzcyLjA2LDI1OC4yLDM0NS4zMSwyMjUuNywzMDQuMDksMjI2Ljc0WiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTMwNC4wOSwyMjYuNzRjNDEuMjItMSw2OCwzMS40Niw2Ny44Nyw3MC42NC0uMTMsNDYuODctMjYuNyw3My4zNC02OS43MSw3My44NC00Mi41My40OS03Mi4zLTMxLTcyLTc1LjQ3QzIzMC40NiwyNTMuODMsMjYxLjU2LDIyNi4yLDMwNC4wOSwyMjYuNzRaIi8+PC9zdmc+">
+                        </a>
+
+                        <a href="mailto:jiayunnnn@gmail.com">
+                            <img class="icon" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSIyMHB4IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAyMCAyMCIgd2lkdGg9IjIwcHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48dGl0bGUvPjxkZXNjLz48ZGVmcy8+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSI+PGcgZmlsbD0iIzAwMDAwMCIgaWQ9IkNvcmUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yOTYuMDAwMDAwLCAtMjk2LjAwMDAwMCkiPjxnIGlkPSJsYW5ndWFnZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjk2LjAwMDAwMCwgMjk2LjAwMDAwMCkiPjxwYXRoIGQ9Ik0xMCwwIEM0LjUsMCAwLDQuNSAwLDEwIEMwLDE1LjUgNC41LDIwIDEwLDIwIEMxNS41LDIwIDIwLDE1LjUgMjAsMTAgQzIwLDQuNSAxNS41LDAgMTAsMCBMMTAsMCBaIE0xNi45LDYgTDE0LDYgQzEzLjcsNC43IDEzLjIsMy42IDEyLjYsMi40IEMxNC40LDMuMSAxNiw0LjMgMTYuOSw2IEwxNi45LDYgWiBNMTAsMiBDMTAuOCwzLjIgMTEuNSw0LjUgMTEuOSw2IEw4LjEsNiBDOC41LDQuNiA5LjIsMy4yIDEwLDIgTDEwLDIgWiBNMi4zLDEyIEMyLjEsMTEuNCAyLDEwLjcgMiwxMCBDMiw5LjMgMi4xLDguNiAyLjMsOCBMNS43LDggQzUuNiw4LjcgNS42LDkuMyA1LjYsMTAgQzUuNiwxMC43IDUuNywxMS4zIDUuNywxMiBMMi4zLDEyIEwyLjMsMTIgWiBNMy4xLDE0IEw2LDE0IEM2LjMsMTUuMyA2LjgsMTYuNCA3LjQsMTcuNiBDNS42LDE2LjkgNCwxNS43IDMuMSwxNCBMMy4xLDE0IFogTTYsNiBMMy4xLDYgQzQuMSw0LjMgNS42LDMuMSA3LjQsMi40IEM2LjgsMy42IDYuMyw0LjcgNiw2IEw2LDYgWiBNMTAsMTggQzkuMiwxNi44IDguNSwxNS41IDguMSwxNCBMMTEuOSwxNCBDMTEuNSwxNS40IDEwLjgsMTYuOCAxMCwxOCBMMTAsMTggWiBNMTIuMywxMiBMNy43LDEyIEM3LjYsMTEuMyA3LjUsMTAuNyA3LjUsMTAgQzcuNSw5LjMgNy42LDguNyA3LjcsOCBMMTIuNCw4IEMxMi41LDguNyAxMi42LDkuMyAxMi42LDEwIEMxMi42LDEwLjcgMTIuNCwxMS4zIDEyLjMsMTIgTDEyLjMsMTIgWiBNMTIuNiwxNy42IEMxMy4yLDE2LjUgMTMuNywxNS4zIDE0LDE0IEwxNi45LDE0IEMxNiwxNS43IDE0LjQsMTYuOSAxMi42LDE3LjYgTDEyLjYsMTcuNiBaIE0xNC40LDEyIEMxNC41LDExLjMgMTQuNSwxMC43IDE0LjUsMTAgQzE0LjUsOS4zIDE0LjQsOC43IDE0LjQsOCBMMTcuOCw4IEMxOCw4LjYgMTguMSw5LjMgMTguMSwxMCBDMTguMSwxMC43IDE4LDExLjQgMTcuOCwxMiBMMTQuNCwxMiBMMTQuNCwxMiBaIiBpZD0iU2hhcGUiLz48L2c+PC9nPjwvZz48L3N2Zz4=">
+                        </a>
+
+                        <a href="https://www.instagram.com/lohjiayun/">
+                            <img class="icon" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoyOyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjEwMCUiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2VyaWY9Imh0dHA6Ly93d3cuc2VyaWYuY29tLyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNTYsMGMxNDEuMjksMCAyNTYsMTE0LjcxIDI1NiwyNTZjMCwxNDEuMjkgLTExNC43MSwyNTYgLTI1NiwyNTZjLTE0MS4yOSwwIC0yNTYsLTExNC43MSAtMjU2LC0yNTZjMCwtMTQxLjI5IDExNC43MSwtMjU2IDI1NiwtMjU2Wm0wLDk2Yy00My40NTMsMCAtNDguOTAyLDAuMTg0IC02NS45NjgsMC45NjNjLTE3LjAzLDAuNzc3IC0yOC42NjEsMy40ODIgLTM4LjgzOSw3LjQzN2MtMTAuNTIxLDQuMDg5IC0xOS40NDQsOS41NiAtMjguMzM5LDE4LjQ1NWMtOC44OTUsOC44OTUgLTE0LjM2NiwxNy44MTggLTE4LjQ1NSwyOC4zMzljLTMuOTU1LDEwLjE3NyAtNi42NTksMjEuODA4IC03LjQzNywzOC44MzhjLTAuNzc4LDE3LjA2NiAtMC45NjIsMjIuNTE1IC0wLjk2Miw2NS45NjhjMCw0My40NTMgMC4xODQsNDguOTAyIDAuOTYyLDY1Ljk2OGMwLjc3OCwxNy4wMyAzLjQ4MiwyOC42NjEgNy40MzcsMzguODM4YzQuMDg5LDEwLjUyMSA5LjU2LDE5LjQ0NCAxOC40NTUsMjguMzRjOC44OTUsOC44OTUgMTcuODE4LDE0LjM2NiAyOC4zMzksMTguNDU1YzEwLjE3OCwzLjk1NCAyMS44MDksNi42NTkgMzguODM5LDcuNDM2YzE3LjA2NiwwLjc3OSAyMi41MTUsMC45NjMgNjUuOTY4LDAuOTYzYzQzLjQ1MywwIDQ4LjkwMiwtMC4xODQgNjUuOTY4LC0wLjk2M2MxNy4wMywtMC43NzcgMjguNjYxLC0zLjQ4MiAzOC44MzgsLTcuNDM2YzEwLjUyMSwtNC4wODkgMTkuNDQ0LC05LjU2IDI4LjM0LC0xOC40NTVjOC44OTUsLTguODk2IDE0LjM2NiwtMTcuODE5IDE4LjQ1NSwtMjguMzRjMy45NTQsLTEwLjE3NyA2LjY1OSwtMjEuODA4IDcuNDM2LC0zOC44MzhjMC43NzksLTE3LjA2NiAwLjk2MywtMjIuNTE1IDAuOTYzLC02NS45NjhjMCwtNDMuNDUzIC0wLjE4NCwtNDguOTAyIC0wLjk2MywtNjUuOTY4Yy0wLjc3NywtMTcuMDMgLTMuNDgyLC0yOC42NjEgLTcuNDM2LC0zOC44MzhjLTQuMDg5LC0xMC41MjEgLTkuNTYsLTE5LjQ0NCAtMTguNDU1LC0yOC4zMzljLTguODk2LC04Ljg5NSAtMTcuODE5LC0xNC4zNjYgLTI4LjM0LC0xOC40NTVjLTEwLjE3NywtMy45NTUgLTIxLjgwOCwtNi42NiAtMzguODM4LC03LjQzN2MtMTcuMDY2LC0wLjc3OSAtMjIuNTE1LC0wLjk2MyAtNjUuOTY4LC0wLjk2M1ptMCwyOC44MjljNDIuNzIyLDAgNDcuNzgyLDAuMTYzIDY0LjY1NCwwLjkzM2MxNS42LDAuNzEyIDI0LjA3MSwzLjMxOCAyOS43MDksNS41MDljNy40NjksMi45MDIgMTIuNzk5LDYuMzcgMTguMzk3LDExLjk2OWM1LjYsNS41OTggOS4wNjcsMTAuOTI5IDExLjk2OSwxOC4zOTdjMi4xOTEsNS42MzggNC43OTgsMTQuMTA5IDUuNTA5LDI5LjcwOWMwLjc3LDE2Ljg3MiAwLjkzMywyMS45MzIgMC45MzMsNjQuNjU0YzAsNDIuNzIyIC0wLjE2Myw0Ny43ODIgLTAuOTMzLDY0LjY1NGMtMC43MTEsMTUuNiAtMy4zMTgsMjQuMDcxIC01LjUwOSwyOS43MDljLTIuOTAyLDcuNDY5IC02LjM2OSwxMi43OTkgLTExLjk2OSwxOC4zOTdjLTUuNTk4LDUuNiAtMTAuOTI4LDkuMDY3IC0xOC4zOTcsMTEuOTY5Yy01LjYzOCwyLjE5MSAtMTQuMTA5LDQuNzk4IC0yOS43MDksNS41MDljLTE2Ljg2OSwwLjc3IC0yMS45MjksMC45MzMgLTY0LjY1NCwwLjkzM2MtNDIuNzI1LDAgLTQ3Ljc4NCwtMC4xNjMgLTY0LjY1NCwtMC45MzNjLTE1LjYsLTAuNzExIC0yNC4wNzEsLTMuMzE4IC0yOS43MDksLTUuNTA5Yy03LjQ2OSwtMi45MDIgLTEyLjc5OSwtNi4zNjkgLTE4LjM5OCwtMTEuOTY5Yy01LjU5OSwtNS41OTggLTkuMDY2LC0xMC45MjggLTExLjk2OCwtMTguMzk3Yy0yLjE5MSwtNS42MzggLTQuNzk4LC0xNC4xMDkgLTUuNTEsLTI5LjcwOWMtMC43NywtMTYuODcyIC0wLjkzMiwtMjEuOTMyIC0wLjkzMiwtNjQuNjU0YzAsLTQyLjcyMiAwLjE2MiwtNDcuNzgyIDAuOTMyLC02NC42NTRjMC43MTIsLTE1LjYgMy4zMTksLTI0LjA3MSA1LjUxLC0yOS43MDljMi45MDIsLTcuNDY4IDYuMzY5LC0xMi43OTkgMTEuOTY4LC0xOC4zOTdjNS41OTksLTUuNTk5IDEwLjkyOSwtOS4wNjcgMTguMzk4LC0xMS45NjljNS42MzgsLTIuMTkxIDE0LjEwOSwtNC43OTcgMjkuNzA5LC01LjUwOWMxNi44NzIsLTAuNzcgMjEuOTMyLC0wLjkzMyA2NC42NTQsLTAuOTMzWm0wLDQ5LjAwOWMtNDUuMzc3LDAgLTgyLjE2MiwzNi43ODUgLTgyLjE2Miw4Mi4xNjJjMCw0NS4zNzcgMzYuNzg1LDgyLjE2MiA4Mi4xNjIsODIuMTYyYzQ1LjM3NywwIDgyLjE2MiwtMzYuNzg1IDgyLjE2MiwtODIuMTYyYzAsLTQ1LjM3NyAtMzYuNzg1LC04Mi4xNjIgLTgyLjE2MiwtODIuMTYyWm0wLDEzNS40OTVjLTI5LjQ1NSwwIC01My4zMzMsLTIzLjg3OCAtNTMuMzMzLC01My4zMzNjMCwtMjkuNDU1IDIzLjg3OCwtNTMuMzMzIDUzLjMzMywtNTMuMzMzYzI5LjQ1NSwwIDUzLjMzMywyMy44NzggNTMuMzMzLDUzLjMzM2MwLDI5LjQ1NSAtMjMuODc4LDUzLjMzMyAtNTMuMzMzLDUzLjMzM1ptMTA0LjYwOSwtMTM4Ljc0MWMwLDEwLjYwNCAtOC41OTcsMTkuMTk5IC0xOS4yMDEsMTkuMTk5Yy0xMC42MDMsMCAtMTkuMTk5LC04LjU5NSAtMTkuMTk5LC0xOS4xOTljMCwtMTAuNjA0IDguNTk2LC0xOS4yIDE5LjE5OSwtMTkuMmMxMC42MDQsMCAxOS4yMDEsOC41OTYgMTkuMjAxLDE5LjJaIi8+PC9zdmc+">
+                        </a>
+
+
+                        <a href="https://www.linkedin.com/in/jia-yun-loh-b7142016a">
+                            <img class="icon" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoyOyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjEwMCUiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2VyaWY9Imh0dHA6Ly93d3cuc2VyaWYuY29tLyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNTYsMGMxNDEuMjksMCAyNTYsMTE0LjcxIDI1NiwyNTZjMCwxNDEuMjkgLTExNC43MSwyNTYgLTI1NiwyNTZjLTE0MS4yOSwwIC0yNTYsLTExNC43MSAtMjU2LC0yNTZjMCwtMTQxLjI5IDExNC43MSwtMjU2IDI1NiwtMjU2Wm0tODAuMDM3LDM5OS44NzFsMCwtMTk5LjkyMWwtNjYuNDY0LDBsMCwxOTkuOTIxbDY2LjQ2NCwwWm0yMzkuNjIsMGwwLC0xMTQuNjQ2YzAsLTYxLjQwOSAtMzIuNzg3LC04OS45NzYgLTc2LjUwOSwtODkuOTc2Yy0zNS4yNTUsMCAtNTEuMDQ3LDE5LjM4OSAtNTkuODg5LDMzLjAwN2wwLC0yOC4zMDZsLTY2LjQ0NywwYzAuODgxLDE4Ljc1NyAwLDE5OS45MjEgMCwxOTkuOTIxbDY2LjQ0NiwwbDAsLTExMS42NWMwLC01Ljk3NiAwLjQzLC0xMS45NSAyLjE5MSwtMTYuMjIxYzQuNzk1LC0xMS45MzUgMTUuNzM3LC0yNC4yOTkgMzQuMDk1LC0yNC4yOTljMjQuMDM0LDAgMzMuNjYzLDE4LjM0IDMzLjY2Myw0NS4yMDRsMCwxMDYuOTY2bDY2LjQ1LDBabS0yNzIuNDAzLC0yOTYuMzIxYy0yMi43NCwwIC0zNy41OTcsMTQuOTUgLTM3LjU5NywzNC41NDVjMCwxOS4xODIgMTQuNDA1LDM0LjU0NCAzNi43MTcsMzQuNTQ0bDAuNDI5LDBjMjMuMTc1LDAgMzcuNiwtMTUuMzYyIDM3LjYsLTM0LjU0NGMtMC40MywtMTkuNTk1IC0xNC40MjQsLTM0LjU0NSAtMzcuMTQ5LC0zNC41NDVaIi8+PC9zdmc+">
+                        </a>
+
+                    </div>
+
+        </div>
+    </div>
+
+    <div class="splimage">
+        <img src="./data/after.png" alt="">
+    </div>
+
+
+    <div class="twocols" id="nmir" style="margin-top: 0vw">
+        <div class="abstract" style="margin-top: 0vw">
+            <h2>Inspiration // Introduction</h2>
+	</div>
+    </div>
+
+    <div class ="single image" style="margin-top: 0vw">
+	<p>
+	The inspiration of the project started as I noticed that a child climbing up an inclined drain covers beside the stairwell. This occurred to almost every other child that walk by. It also brought back recollections of my own similar actions when I was younger.
+	<br><br>
+	Affordance in movement intends to challenge 2 main concepts, the montonony and efficiency of paths in our daily routines as well as the perspectives which children use architecture.
+	</p>
+    </div>
+
+
+    <div class="twocols" id="nmir">
+        <div class="abstract">
+            <h3>Efficiency // Inactivity</h3>
+            More and more, the building industry is shaped by efficiency and profitability.
+	    We hardly  see people exercise around the built environment as the conditions do not challenge them enough. Instead, to exercise, people generally have a tendency to go to nature or  gyms due to the kind of affordances they provide.  They allow for a textural change in grounds and also include paths of different terrain. Overcoming these routes can also serve as a sign of confidence in their ability.
+	    <br><br>
+	    Physical inactivity is the fourth leading cause of death. Despite Singapore's HPB efforts about 3/4 children still falls below the sufficient level of physical activity.  For children, most of their time being physically active surrounds playing. Playing is also innate for them. However, in recent years, the rise of technology has made the playgrounds a less desirable place to go to. Even if they do end up visiting playgrounds, they are often accompanied by an adult, and in asian contexts, mostly grandparents.
+
+
+        </div>
+        <img class="right" src="./data/3.png" width="1400px" height="1400px" alt="">
+    </div>
+
+    <div class="twocols" id="mir">
+
+        <img class="left" src="./data/20200716_170524.jpg" width="1400px" height="1400px" alt="">
+
+        <div class="mir_abstract">
+            <h3>Cybersapiens // Elderly</h3>
+             Cybersapiens, means part human part machine. It is not uncommon to see toddlers playing with cellphones or primary school children owning their own phones. So if we accept that most kids have, and will increasingly, have their own digital devices, how should playgrounds adapt to take advantage of this
+	     new technology to increase the amount of time kids spend in active outdoor play?
+	     <br><br>
+	     Many of the current playgrounds and elderly playgrounds are seperated into different portions. However, if the future design holds an integrated design that respects each party or works in tandem with both parties, that could possibly become the new norm for playgrounds and attaining sufficient exercise.
+
+
+        </div>
+    </div>
+
+    <div class="twocols" id="nmir" style="margin-top: 0vw">
+        <div class="abstract" style="margin-top: 0vw">
+            <h2>On Heights and Intensity</h2>
+	</div>
+    </div>
+
+    <div class ="single image" style="margin-top: 0vw">
+	<p>
+	Upon investigating and researching different case studies, I've extracted their  key strategies and elements, creating a toolkit of parts, breaking down the elements into 5 main gross motor skills that are crucial for children.
+	<br><br>
+        <img src="./data/ppt boards11.png" alt="">
+
+    </div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="twocols" id="nmir" style="margin-top: 0vw">
+        <div class="abstract" style="margin-top: 0vw">
+            <h2>Site</h2>
+	</div>
+    </div>
+
+    <div class ="single image" style="margin-top: 0vw">
+	<p>
+	A site that would be one of fitting criteria would be one that challenges the boundary between the built environment and the natural environment.
+	<br><br>
+	The winning proposal for the housing estate by MKPL Architects served as an inspiration for the project. Located along the rail corridor, its concept goes in line with the narrative of my project. The rail corridor further enhance the importance of the space that I will be creating as it acts as a
+	new interaction surface for young children to engage with the features of the history, linking different activities together. It is exposed to a wide group of users as it is open to the public to use, benefitting the community as a whole.
+	<br><br>
+	Within the design itself, its blurred boundaries between the green, the blue and the built environment brings opportunities for activities of different nature to take place. This would give rise to option to break away from the monotony.
+	</p>
+    </div>
+
+    <div class="twocols" id="nmir" style="margin-top: 0vw">
+        <div class="abstract" style="margin-top: 0vw">
+            <h2>Application to Site</h2>
+	</div>
+    </div>
+
+    <div class ="single image" style="margin-top: 0vw">
+        <img src="./data/masterplan 1.png" alt="">
+    </div>
+
+    <div class ="single image" style="margin-top: 0vw">
+	<p>
+	This is a perspective of the site that houses the interventions. A field is generated based on attractor points towards destinations they are likely to visit such as bus stops, housing, amenities, town centre as well as points which slightly deviate from the pathways, creating a longer route.
+	Paths then extend out of each node, connecting to one another.	This creates an undulating pathway that move and climbs from the base of the site towards the existing railway corridor.
+	</p>
+    </div>
+
+    <div class ="single image" style="margin-top: 0vw">
+        <img src="./data/ppt boards18.png" alt="">
+    </div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="twocols" id="nmir" style="margin-top: 0vw">
+        <div class="abstract" style="margin-top: 0vw">
+            <h2>Nodes</h2>
+	</div>
+    </div>
+
+    <div class ="single image" style="margin-top: 0vw">
+	<p>
+	Architectural agency that is used aims to engage the body into variety of actions, these includes actions such as climbing and sliding, bending and crawling, jumping and hopping, and lastly walking and balancing.
+	<br><br>
+	The design strategy is a series of structures that are shaped by animatedly and invites people to transverse the architecture and nature, weaving among the trees and connecting to scattered nodes across the site. Drawing back from the curiosity that is innate within a child, wanting to explore and move freely.
+	<br><br>
+	The design of the nodals geometries follow the heights which they are placed, with features that mimic nature.
+	<br><br>
+	On ground level, the geometric follow the field closely, and targets movements such as balancing and jumping. and upon moving upwards the geometries begins to spiral creating more into more circular geometries to facilitate intensified movements. Such as climbing or crawling.
+	The nodes on upper levels also connects between levels and is supported on a minimal footprint.
+
+    </div>
+
+<br><br>
+
+    <div class="splimage" style="margin-top: 0vw">
+	<img src="./data/15.png" alt="" style="width: 37vw;height: auto;">
+	<img src="./data/19.png" alt="" style="width: 37vw;height: auto;">
+    </div>
+
+    <div class="splimage" style="margin-top: 0vw">
+        <img src="./data/01.png" alt="" style="width: 37vw;height: auto;">
+        <img src="./data/02.png" alt="" style="width: 37vw;height: auto;">
+
+    </div>
+
+    <div class="splimage" style="margin-top: 0vw">
+        <img src="./data/03.png" alt="" style="width: 37vw;height: auto;">
+        <img src="./data/04.png" alt="" style="width: 37vw;height: auto;">
+
+    </div>
+
+    <div class="splimage" style="margin-top: 0vw">
+        <img src="./data/05.png" alt="" style="width: 37vw;height: auto;">
+
+
+    </div>
+
+    <div class="twocols" id="nmir">
+        <div class="abstract">
+            <h3>Lookout Point</h3>
+           These nodes are located near the bus stops and designed with seat features as well as a platform  to climb up towards, viewing the roads from a safe distance. Elevated ladders allow for older children that are more in control of their balance and surroundings to access these spaces without supervision.
+
+        </div>
+        <img class="right" src="./data/nodey 1-01.png" width="1400px" height="1400px" alt="">
+    </div>
+
+    <div class="twocols" id="mir">
+
+        <img class="left" src="./data/nodey 4-01.png" width="1400px" height="1400px" alt="">
+
+        <div class="mir_abstract">
+            <h3>Fisherman</h3>
+            Located along the boundary of the greenery and water.
+	    Paths are staggered on different height, such that when the flood plains are higher, only certain elements will be accessed. Features such as seating and lowered eye level are more prominent in theses nodes, to provide opportunities for both the children and their caretaker to slow down to enjoy their environment.
+
+
+        </div>
+
+    </div>
+
+    <div class="twocols" id="nmir">
+        <div class="abstract">
+            <h3>Plus One</h3>
+             Designed adjacent to existing facilities. The function will be to provide an additional space for children to inhabit.
+
+        </div>
+        <img class="right" src="./data/nodey 3-01.png" width="1400px" height="1400px" alt="">
+    </div>
+
+    <div class="twocols" id="mir">
+
+        <img class="left" src="./data/nodey 2-01.png" width="1400px" height="1400px" alt="">
+
+        <div class="mir_abstract">
+            <h3>Birdwatcher</h3>
+             Designed as an intersection to connect the rail corridor to the corridor between housing blocks. The pathway are designed in an upward movement. Informal social spaces are also present to provide a space for rest  as well as different perspectives of the estate.
+	     Pathways of different difficulties are incorporated to allow both a child to be challenged or the less abled to have equal opportunities.
+
+        </div>
+
+    </div>
+
+    <div class="twocols" id="nmir">
+        <div class="abstract">
+            <h3>Heritage Treehouse</h3>
+             Similar to the hierarchy of heights and trees in nature, the largest node, also called the treehouse serves as an education too as well as paths and social spaces for residents to inhabit.
+        </div>
+        <img class="right" src="./data/nodey 5-01.png" width="1400px" height="1400px" alt="">
+    </div>
+
+    <div class ="single image" style="margin-top: 0vw">
+
+        <img class="left" src="./data/Z1.png" width="1400px" height="1400px" alt="">
+    </div>
+
+    <div class ="single image" style="margin-top: 0vw">
+
+        <img class="left" src="./data/Z2.png" width="1400px" height="1400px" alt="">
+    </div>
+
+   <div class="twocols" id="nmir" style="margin-top: 0vw">
+        <div class="abstract" style="margin-top: 0vw">
+            <h2>Scenarios</h2>
+	</div>
+    </div>
+
+    <div class="twocols" id="mir">
+
+        <img class="left" src="./data/34.png" width="1400px" height="1400px" alt="">
+
+        <div class="mir_abstract">
+            Assuming that every child will have a device on them. On a daily basis, the application serves as a secondary motivation for children to be more active, and generates routes for children to meander and wander among the nodes.
+	    The varied intensity or desitnation of the routes can also be altered via the phone application, and points are gained upon the completion of each route. This can also act as a multi-generational bonding actvity, for both parents and children to be actively engaged. There are 4 preset scenarios.
+
+
+        </div>
+    </div>
+
+    <div class="gifs">
+        <img src="./data/s1.png" alt="" style="width: 20vw;height: auto;">>
+        <img src="./data/s2.png" alt="" style="width: 20vw;height: auto;">>
+        <img src="./data/s3.png" alt="" style="width: 20vw;height: auto;">>
+        <img src="./data/s4.png" alt="" style="width: 20vw;height: auto;">>
+    </div>
+
+
+    <div class="splimage">
+        <img src="./data/s dia.png" alt="">
+    </div>
+
+
+    <div class="twocols">
+        <div class="abstract">
+            <h3>Alone</h3>
+             A large deviation in the axial path, before he finally heads home. This goes back to the innate nature of a child wanting to roam and explore different places.
+        </div>
+        <div class="abstract">
+            <h3>Accompanied</h3>
+            In cases where a child is accompanied by an adult, a reduction in deviation from paths, as an activation of those that are only along the route home.
+        </div>
+        <div class="abstract">
+            <h3>Family Adventure</h3>
+             When families/ visitors visit the rail corridor for leisure. This gives the parents and children independent opportunities to explore the rail corridor.
+	     <br>
+	     Children are able to take the more challenging paths while the parents are able to take a less challenging path if they prefer.
+        </div>
+        <div class="abstract">
+            <h3>Bad Weather</h3>
+             In Singapore, rainy days are inevitable. The paths that are on the ground level are will be generated as they are slightly sheltered from the lush foliage.
+	     <br>
+	      Water nodes will also not be accessible as the probability of the flood plains rising.
+        </div>
+    </div>
+
+<br><br>
+
+    <div class="twocols" id="nmir" style="margin-top: 0vw">
+        <div class="abstract" style="margin-top: 0vw">
+            <h2>Broader Impact</h2>
+	</div>
+    </div>
+
+    <div class ="single image" style="margin-top: 0vw">
+	<p>
+	The use of alternative pathways and structures would bring about a richer and livelier experience through our everyday journeys, as well as provide the range of movements for children and elderly to achieve sufficient physical active for a healthier and more active society.
+`       Though the design currently only applies to a portion or the rail corridor, there is definitely a possibility of expansion through the entire stretch of the trial.
+    </div>
+     <div class="splimage">
+        <img src="./data/2.png" alt="">
+        </div>
+
+
+
+    </div>
+
+    <div class="bottomlinks">
+        <h3><a href="javascript:goToTop()">Back to Top</a></h3>
+        <!-- <h3><a id="random">Randomise!</a></h3> -->
+    </div>
+
+</section>
+<div id="footer"></div>
+
+<script defer src="../../../js/navfixer.js"></script>
+<script src="../../../js/title.js"></script>
+</body>
+</html>

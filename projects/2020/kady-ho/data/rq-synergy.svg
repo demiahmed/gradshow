@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 465" style="enable-background:new 0 0 400 465;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;stroke:#000000;stroke-width:9;stroke-linecap:round;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#000000;stroke-width:9;stroke-miterlimit:10;}
+	.st3{opacity:0.5;fill:none;stroke:#000000;stroke-width:6;stroke-miterlimit:10;}
+	.st4{opacity:0.9;fill:none;stroke:#000000;stroke-width:6;stroke-miterlimit:10;}
+	.st5{opacity:0.9;fill:none;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+	.st6{fill:none;}
+	.st7{font-family:'Roboto', sans-serif;}
+	.st8{font-size:40px;}
+</style>
+<g id="Layer_1">
+	<g>
+		<circle class="st0" cx="200.5" cy="200" r="172"/>
+		<g>
+			<path d="M200.5,35c44.07,0,85.51,17.16,116.67,48.33S365.5,155.93,365.5,200s-17.16,85.51-48.33,116.67S244.57,365,200.5,365
+				s-85.51-17.16-116.67-48.33S35.5,244.07,35.5,200s17.16-85.51,48.33-116.67S156.43,35,200.5,35 M200.5,21
+				c-98.86,0-179,80.14-179,179s80.14,179,179,179s179-80.14,179-179S299.36,21,200.5,21L200.5,21z"/>
+		</g>
+	</g>
+</g>
+<g id="Layer_2">
+	<ellipse class="st4" cx="199.5" cy="197" rx="33" ry="111"/>
+	<ellipse class="st4" cx="199.5" cy="197" rx="111" ry="33"/>
+	<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -80.8678 198.7678)" class="st5" cx="199.5" cy="197" rx="33" ry="111"/>
+	<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -80.8678 198.7678)" class="st5" cx="199.5" cy="197" rx="111" ry="33"/>
+</g>
+<g id="Layer_3">
+	<rect x="65.47" y="403.64" class="st6" width="269.81" height="33.36"/>
+	<text transform="matrix(1 0 0 1 128.606 433.6426)" class="st7 st8" font-weight="bold">Synergy</text>
+</g>
+</svg>

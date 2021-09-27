@@ -1,0 +1,380 @@
+<!-- SUTD MArc Template – V1.0  -->
+<!-- Please read the guide before editing -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <base href="/projects/"> -->
+    <meta charset="utf-8"><meta name="description" content="SUTD ASD M.Arch Virtual GradShow 2021">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="icon" href="../../../favicon.ico" type="image/gif">
+
+    <link rel="stylesheet" href="../student-style.css">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+      $(function() {
+        $("#header").load("../../../partials/projectnav.html");
+        $("#footer").load("../../../partials/footer.html");
+
+      });
+
+        function goToTop(){
+        window.scrollTo(0,0)
+        return false; //prevent page from reloading
+        }
+    </script>
+</head>
+
+<style>
+    body {
+        background-color: pink;
+        background-color: rgb(231, 231, 231);
+        background-color: rgb(183, 251, 253);
+        background-color: rgb(206, 253, 162);
+        background-color: rgb(255, 226, 192);
+        background-color: white;
+    }
+
+</style>
+<body >
+    <div id="header"></div>
+
+    <section class="cover">
+        <div class="mainimage">
+            <img src="./data/main.gif" alt="">
+        </div>
+    </section>
+
+    <section class="content">
+
+        <div  class="titletext">
+            Rebuilding Paradise: wildfire architecture & designing for adaptive resilience
+        </div>
+
+
+    <div class="twocols invert">
+        <div class="abstract">
+            <h2>Summary</h2>
+            As urban habitats and natural landscapes become increasingly intermixed, wildfires that are capable of devastating entire towns and communities have become commonplace in wildland-urban interface areas. This thesis takes a critical relook at wildfire resilience by understanding the wildfire crisis in the Californian context,
+			where the pursuit towards aggressively fortifying urban habitats has become modus operandi.
+			In proposing the alternative premise of wildfire inevitability and reframing the idea of resilience towards one that designs for wildfire-adapted rather than wildfire-resistant communities, this project takes reference to resilient wildfire ecosystems as its architectural design framework.
+			<br><br>
+			Ultimately, the vision for Rebuilding Paradise brings forward an alternative way of approaching wildfire resilience from an ecological perspective that allows suburban communities and their surrounding ecological systems to coexist synchronously with one another. It is a rebuttal against the typically loss-adverse, hyper-defensive narrative for resilience, proposing instead for an approach of targeted loss and regeneration.
+
+            <br><br>
+            <h4>About Me</h4>
+            Wen Qi is a Master of Architecture graduate from the Singapore University of Technology and Design. Her architectural thesis research on wildfire resilience was inspired by her time spent in a summer exchange programme at California, Berkeley, where a course on ecology and an appreciation for California’s natural landscape had provoked her to rethink the relationship between resilience, architectural design and the natural environment.
+
+        </div>
+
+
+
+        <div class="table">
+            <div class="thumb">
+                <img src="./wenqi-ng.jpg" alt=""></div>
+                <div class="fields">
+                <h3>Name</h3>
+                <p>Ng Wen Qi</p></div>
+                <div class="fields">
+                  <h3>Mentor</h3>
+                  <p>Peter Ortner</p></div>
+                  <div class="fields">
+                  </div>
+                <div class="fields">
+                <h3 >Typology</h3>
+                <p>Community, Residential</p>
+                </div>
+                <div class="fields">
+                <h3>Site Location</h3>
+                <p>Paradise, California</p>
+                </div>
+
+
+                    <div class="contact">
+                        <a href="mailto:wenqi_ng@mymail.sutd.edu.sg">
+                            <img class="icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgLjAyYy02LjYyNyAwLTEyIDUuMzczLTEyIDEyczUuMzczIDEyIDEyIDEyIDEyLTUuMzczIDEyLTEyLTUuMzczLTEyLTEyLTEyem02Ljk5IDYuOThsLTYuOTkgNS42NjYtNi45OTEtNS42NjZoMTMuOTgxem0uMDEgMTBoLTE0di04LjUwNWw3IDUuNjczIDctNS42NzJ2OC41MDR6Ii8+PC9zdmc+">
+                        </a>
+
+                        <a href="https://issuu.com/wenxqi">
+                            <img class="icon" src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1OTUuMjggNTk0Ljg5Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmlzc3V1LWljb24tMDwvdGl0bGU+PHBhdGggZD0iTTExLjU4LDEwLjcySDE4LjJjOTYuOSwwLDE5My44MS0uNjYsMjkwLjY5LjMzLDM3LjY3LjM4LDc0LDkuNzMsMTA4LjY4LDI1LjEyLDM2LDE2LDY2LjcsMzkuMyw5My4xOCw2OC4xMywyOC42OCwzMS4yMSw0OC44MSw2Ny4zOCw2MS42LDEwNy44OUM1ODQuMjYsMjUwLDU4Ni42NiwyODguNzMsNTg0LDMyNy42Yy0zLjc3LDU0LjcyLTIyLjI1LDEwNC41MS01NiwxNDguMzNhMjgwLjEzLDI4MC4xMywwLDAsMS04My4xNCw3Mi43M2MtMjguMzcsMTYuMjktNTksMjYuNS05MS4xLDMyLjQzLTIzLjYzLDQuMzYtNDcuNDMsMi4yNy03MS4xNSwyLjQ3LTM2LjUuMzEtNzAuNzItOS44NS0xMDMuODctMjQuMi0zMi42NC0xNC4xMy02MC44Ny0zNC42Ni04NS41Mi02MC4xMi0yNy44OS0yOC44Mi00OC42OS02Mi02MS4xMy0xMDAuMzctOC40LTI1Ljg3LTEyLjgzLTUyLjQ1LTE1LjkzLTc5LjQxLTQuNS0zOS00LjY4LTc4LjA5LTQuNi0xMTcuMjUuMTMtNjEuMDcsMC0xMjIuMTQsMC0xODMuMjFaTTEwNCwyOTkuMzJDMTAxLDQwNi4wNiwxOTIuODcsNDkzLjUsMjk3LjIyLDQ5NS4wN2MxMjMuNjksMS44NiwyMDEuNTYtOTMuNzksMjAzLTE5NC4xMSwxLjY2LTExNS43NS04Ni42MS0xOTYuMTktMTg3LjktMjAwQzE4OC45Myw5Ni4zLDEwMS42OSwxOTAuNzUsMTA0LDI5OS4zMloiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMDQsMjk5LjMyYy0yLjMtMTA4LjU3LDg0Ljk0LTIwMywyMDguMzItMTk4LjM3LDEwMS4yOSwzLjgyLDE4OS41Niw4NC4yNiwxODcuOSwyMDAtMS40MywxMDAuMzItNzkuMywxOTYtMjAzLDE5NC4xMUMxOTIuODcsNDkzLjUsMTAxLDQwNi4wNiwxMDQsMjk5LjMyWm01MS4zNi0yLjc0QzE1My43MSwzODAuNzIsMjIxLjI3LDQ0NCwyOTYuNjEsNDQ1LjRjODcuNDgsMS42OCwxNDkuMjQtNjMuNTMsMTUwLjUzLTE0My45MywxLjQ0LTg5LjkyLTYzLjM0LTE0NC44OC0xMzguNDMtMTQ3LjkxQzIxMi4zNywxNDkuNjksMTU1LjIsMjE5LjQ4LDE1NS4zNSwyOTYuNThaIi8+PHBhdGggZD0iTTE1NS4zNSwyOTYuNThjLS4xNS03Ny4xLDU3LTE0Ni44OSwxNTMuMzYtMTQzLDc1LjA5LDMsMTM5Ljg3LDU4LDEzOC40MywxNDcuOTEtMS4yOSw4MC40LTYzLjA1LDE0NS42MS0xNTAuNTMsMTQzLjkzQzIyMS4yNyw0NDQsMTUzLjcxLDM4MC43MiwxNTUuMzUsMjk2LjU4Wm0xNDguNzQtNjkuODRjLTQyLjUzLS41NC03My42MywyNy4wOS03My44OCw2OS0uMjYsNDQuNDQsMjkuNTEsNzYsNzIsNzUuNDcsNDMtLjUsNjkuNTgtMjcsNjkuNzEtNzMuODRDMzcyLjA2LDI1OC4yLDM0NS4zMSwyMjUuNywzMDQuMDksMjI2Ljc0WiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTMwNC4wOSwyMjYuNzRjNDEuMjItMSw2OCwzMS40Niw2Ny44Nyw3MC42NC0uMTMsNDYuODctMjYuNyw3My4zNC02OS43MSw3My44NC00Mi41My40OS03Mi4zLTMxLTcyLTc1LjQ3QzIzMC40NiwyNTMuODMsMjYxLjU2LDIyNi4yLDMwNC4wOSwyMjYuNzRaIi8+PC9zdmc+">
+                        </a>
+
+
+                        <a href="https://www.instagram.com/wen_qii/">
+                            <img class="icon" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoyOyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjEwMCUiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2VyaWY9Imh0dHA6Ly93d3cuc2VyaWYuY29tLyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNTYsMGMxNDEuMjksMCAyNTYsMTE0LjcxIDI1NiwyNTZjMCwxNDEuMjkgLTExNC43MSwyNTYgLTI1NiwyNTZjLTE0MS4yOSwwIC0yNTYsLTExNC43MSAtMjU2LC0yNTZjMCwtMTQxLjI5IDExNC43MSwtMjU2IDI1NiwtMjU2Wm0wLDk2Yy00My40NTMsMCAtNDguOTAyLDAuMTg0IC02NS45NjgsMC45NjNjLTE3LjAzLDAuNzc3IC0yOC42NjEsMy40ODIgLTM4LjgzOSw3LjQzN2MtMTAuNTIxLDQuMDg5IC0xOS40NDQsOS41NiAtMjguMzM5LDE4LjQ1NWMtOC44OTUsOC44OTUgLTE0LjM2NiwxNy44MTggLTE4LjQ1NSwyOC4zMzljLTMuOTU1LDEwLjE3NyAtNi42NTksMjEuODA4IC03LjQzNywzOC44MzhjLTAuNzc4LDE3LjA2NiAtMC45NjIsMjIuNTE1IC0wLjk2Miw2NS45NjhjMCw0My40NTMgMC4xODQsNDguOTAyIDAuOTYyLDY1Ljk2OGMwLjc3OCwxNy4wMyAzLjQ4MiwyOC42NjEgNy40MzcsMzguODM4YzQuMDg5LDEwLjUyMSA5LjU2LDE5LjQ0NCAxOC40NTUsMjguMzRjOC44OTUsOC44OTUgMTcuODE4LDE0LjM2NiAyOC4zMzksMTguNDU1YzEwLjE3OCwzLjk1NCAyMS44MDksNi42NTkgMzguODM5LDcuNDM2YzE3LjA2NiwwLjc3OSAyMi41MTUsMC45NjMgNjUuOTY4LDAuOTYzYzQzLjQ1MywwIDQ4LjkwMiwtMC4xODQgNjUuOTY4LC0wLjk2M2MxNy4wMywtMC43NzcgMjguNjYxLC0zLjQ4MiAzOC44MzgsLTcuNDM2YzEwLjUyMSwtNC4wODkgMTkuNDQ0LC05LjU2IDI4LjM0LC0xOC40NTVjOC44OTUsLTguODk2IDE0LjM2NiwtMTcuODE5IDE4LjQ1NSwtMjguMzRjMy45NTQsLTEwLjE3NyA2LjY1OSwtMjEuODA4IDcuNDM2LC0zOC44MzhjMC43NzksLTE3LjA2NiAwLjk2MywtMjIuNTE1IDAuOTYzLC02NS45NjhjMCwtNDMuNDUzIC0wLjE4NCwtNDguOTAyIC0wLjk2MywtNjUuOTY4Yy0wLjc3NywtMTcuMDMgLTMuNDgyLC0yOC42NjEgLTcuNDM2LC0zOC44MzhjLTQuMDg5LC0xMC41MjEgLTkuNTYsLTE5LjQ0NCAtMTguNDU1LC0yOC4zMzljLTguODk2LC04Ljg5NSAtMTcuODE5LC0xNC4zNjYgLTI4LjM0LC0xOC40NTVjLTEwLjE3NywtMy45NTUgLTIxLjgwOCwtNi42NiAtMzguODM4LC03LjQzN2MtMTcuMDY2LC0wLjc3OSAtMjIuNTE1LC0wLjk2MyAtNjUuOTY4LC0wLjk2M1ptMCwyOC44MjljNDIuNzIyLDAgNDcuNzgyLDAuMTYzIDY0LjY1NCwwLjkzM2MxNS42LDAuNzEyIDI0LjA3MSwzLjMxOCAyOS43MDksNS41MDljNy40NjksMi45MDIgMTIuNzk5LDYuMzcgMTguMzk3LDExLjk2OWM1LjYsNS41OTggOS4wNjcsMTAuOTI5IDExLjk2OSwxOC4zOTdjMi4xOTEsNS42MzggNC43OTgsMTQuMTA5IDUuNTA5LDI5LjcwOWMwLjc3LDE2Ljg3MiAwLjkzMywyMS45MzIgMC45MzMsNjQuNjU0YzAsNDIuNzIyIC0wLjE2Myw0Ny43ODIgLTAuOTMzLDY0LjY1NGMtMC43MTEsMTUuNiAtMy4zMTgsMjQuMDcxIC01LjUwOSwyOS43MDljLTIuOTAyLDcuNDY5IC02LjM2OSwxMi43OTkgLTExLjk2OSwxOC4zOTdjLTUuNTk4LDUuNiAtMTAuOTI4LDkuMDY3IC0xOC4zOTcsMTEuOTY5Yy01LjYzOCwyLjE5MSAtMTQuMTA5LDQuNzk4IC0yOS43MDksNS41MDljLTE2Ljg2OSwwLjc3IC0yMS45MjksMC45MzMgLTY0LjY1NCwwLjkzM2MtNDIuNzI1LDAgLTQ3Ljc4NCwtMC4xNjMgLTY0LjY1NCwtMC45MzNjLTE1LjYsLTAuNzExIC0yNC4wNzEsLTMuMzE4IC0yOS43MDksLTUuNTA5Yy03LjQ2OSwtMi45MDIgLTEyLjc5OSwtNi4zNjkgLTE4LjM5OCwtMTEuOTY5Yy01LjU5OSwtNS41OTggLTkuMDY2LC0xMC45MjggLTExLjk2OCwtMTguMzk3Yy0yLjE5MSwtNS42MzggLTQuNzk4LC0xNC4xMDkgLTUuNTEsLTI5LjcwOWMtMC43NywtMTYuODcyIC0wLjkzMiwtMjEuOTMyIC0wLjkzMiwtNjQuNjU0YzAsLTQyLjcyMiAwLjE2MiwtNDcuNzgyIDAuOTMyLC02NC42NTRjMC43MTIsLTE1LjYgMy4zMTksLTI0LjA3MSA1LjUxLC0yOS43MDljMi45MDIsLTcuNDY4IDYuMzY5LC0xMi43OTkgMTEuOTY4LC0xOC4zOTdjNS41OTksLTUuNTk5IDEwLjkyOSwtOS4wNjcgMTguMzk4LC0xMS45NjljNS42MzgsLTIuMTkxIDE0LjEwOSwtNC43OTcgMjkuNzA5LC01LjUwOWMxNi44NzIsLTAuNzcgMjEuOTMyLC0wLjkzMyA2NC42NTQsLTAuOTMzWm0wLDQ5LjAwOWMtNDUuMzc3LDAgLTgyLjE2MiwzNi43ODUgLTgyLjE2Miw4Mi4xNjJjMCw0NS4zNzcgMzYuNzg1LDgyLjE2MiA4Mi4xNjIsODIuMTYyYzQ1LjM3NywwIDgyLjE2MiwtMzYuNzg1IDgyLjE2MiwtODIuMTYyYzAsLTQ1LjM3NyAtMzYuNzg1LC04Mi4xNjIgLTgyLjE2MiwtODIuMTYyWm0wLDEzNS40OTVjLTI5LjQ1NSwwIC01My4zMzMsLTIzLjg3OCAtNTMuMzMzLC01My4zMzNjMCwtMjkuNDU1IDIzLjg3OCwtNTMuMzMzIDUzLjMzMywtNTMuMzMzYzI5LjQ1NSwwIDUzLjMzMywyMy44NzggNTMuMzMzLDUzLjMzM2MwLDI5LjQ1NSAtMjMuODc4LDUzLjMzMyAtNTMuMzMzLDUzLjMzM1ptMTA0LjYwOSwtMTM4Ljc0MWMwLDEwLjYwNCAtOC41OTcsMTkuMTk5IC0xOS4yMDEsMTkuMTk5Yy0xMC42MDMsMCAtMTkuMTk5LC04LjU5NSAtMTkuMTk5LC0xOS4xOTljMCwtMTAuNjA0IDguNTk2LC0xOS4yIDE5LjE5OSwtMTkuMmMxMC42MDQsMCAxOS4yMDEsOC41OTYgMTkuMjAxLDE5LjJaIi8+PC9zdmc+">
+                        </a>
+
+
+                        <a href="https://www.linkedin.com/in/wen-qi-ng/">
+                            <img class="icon" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoyOyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjEwMCUiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2VyaWY9Imh0dHA6Ly93d3cuc2VyaWYuY29tLyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNTYsMGMxNDEuMjksMCAyNTYsMTE0LjcxIDI1NiwyNTZjMCwxNDEuMjkgLTExNC43MSwyNTYgLTI1NiwyNTZjLTE0MS4yOSwwIC0yNTYsLTExNC43MSAtMjU2LC0yNTZjMCwtMTQxLjI5IDExNC43MSwtMjU2IDI1NiwtMjU2Wm0tODAuMDM3LDM5OS44NzFsMCwtMTk5LjkyMWwtNjYuNDY0LDBsMCwxOTkuOTIxbDY2LjQ2NCwwWm0yMzkuNjIsMGwwLC0xMTQuNjQ2YzAsLTYxLjQwOSAtMzIuNzg3LC04OS45NzYgLTc2LjUwOSwtODkuOTc2Yy0zNS4yNTUsMCAtNTEuMDQ3LDE5LjM4OSAtNTkuODg5LDMzLjAwN2wwLC0yOC4zMDZsLTY2LjQ0NywwYzAuODgxLDE4Ljc1NyAwLDE5OS45MjEgMCwxOTkuOTIxbDY2LjQ0NiwwbDAsLTExMS42NWMwLC01Ljk3NiAwLjQzLC0xMS45NSAyLjE5MSwtMTYuMjIxYzQuNzk1LC0xMS45MzUgMTUuNzM3LC0yNC4yOTkgMzQuMDk1LC0yNC4yOTljMjQuMDM0LDAgMzMuNjYzLDE4LjM0IDMzLjY2Myw0NS4yMDRsMCwxMDYuOTY2bDY2LjQ1LDBabS0yNzIuNDAzLC0yOTYuMzIxYy0yMi43NCwwIC0zNy41OTcsMTQuOTUgLTM3LjU5NywzNC41NDVjMCwxOS4xODIgMTQuNDA1LDM0LjU0NCAzNi43MTcsMzQuNTQ0bDAuNDI5LDBjMjMuMTc1LDAgMzcuNiwtMTUuMzYyIDM3LjYsLTM0LjU0NGMtMC40MywtMTkuNTk1IC0xNC40MjQsLTM0LjU0NSAtMzcuMTQ5LC0zNC41NDVaIi8+PC9zdmc+">
+                        </a>
+
+                    </div>
+
+        </div>
+    </div>
+	<br>
+	<br>
+
+
+
+	<!-- The Wildfire Crisis -->
+
+	<div class="splimage">
+        <img src="./data/header1.gif" alt="">
+    </div>
+
+
+	<!--
+	<div class="gifs">
+		<div class="abstract">
+		<img src="./data/icon1.jpg" alt="">
+            <center><h2>Subtitle 1</h2>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. </center>
+        </div>
+		<div class="abstract">
+		<img src="./data/icon1.jpg" alt="">
+            <center><h2>Subtitle 1</h2>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. </center>
+        </div>
+		<div class="abstract">
+		<img src="./data/icon1.jpg" alt="">
+            <center><h2>Subtitle 1</h2>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. </center>
+        </div>
+    </div>
+	-->
+
+
+    <div class="twocols" id="nmir">
+        <div class="abstract">
+
+            <h2>California: A state in flames</h2>
+			From earthquake resistant structures to floating, flood-proof cities, architecture has done it all when it comes to creating built environments able to withstand the unrelenting forces of nature… Or has it? While natural disasters such as hurricanes, floods, and earthquakes have been pondered over with numerous visionary design solutions, wildfires as an equally pertinent environmental challenge has yet to be met with the same level of enthusiasm. To better understand the magnitude of the wildfire crisis, this thesis turns its attention to California, the American state under the highest wildfire risk.
+			<br><br>
+			The following studies have revealed the worrying trends of California’s wildfire problem - from growing fire magnitude and frequency over the years to an increase in homes built along wildland-urban interface areas, the wildfire problem is a far-reaching one where trends point towards the ineffectiveness of current approaches to wildfire resilience (and in turn the need for an alternative solution).
+			<br><br>
+			In particular, suburban communities are currently bearing the brunt of the global wildfire crisis, the very communities which often find themselves financially incapable of recovering effectively after a wildfire. Hence, this thesis will explore the value of building resilience along highly affected, high risk suburban zones, in an endeavour to propose an alternative design solution for the wildfire crisis.
+
+
+		</div>
+        <img class="right" src="./data/IMG1.jpg" alt="">
+    </div>
+
+
+	<div class="single">
+        <img src="./data/S1.jpg" alt="">
+    </div>
+
+
+    <div class="twocols" id="nmir">
+        <div class="abstract">
+
+            <h2>Paradise, CA: 2018 Camp Fire</h2>
+
+            The 2018 Camp Fire occured during one of California’s hardest hit fire seasons, ravaging through the town of Paradise on November 8th.
+			<br><br>
+			Leaving 86 deaths and destroying 95% of homes and businesses in its wake, the town which was home to a quiet community of middle and lower income Americans was almost completely decimated over the course of 17 days.
+			<br><br>
+			One year on, Paradise’s response towards the aftermath of a wildfire this extensive has revealed the stark inadequacy in disaster recovery for an average American town: even as much of the vegetation has regrown, the rubble of a burnt McDonalds restaurant, the sooted metal of abandoned cars, and a largely displaced population remains. Nature’s resilience has clearly outpaced our own, beckoning the question of what went wrong, and what more can be done in terms of a community’s wildfire resilience.
+			<br><br>
+			The wake of the Camp Fire tragedy sets the precedent for this thesis project in attempting to designing for an alternative solution for wildfire vulnerable, suburban towns like Paradise.
+
+        </div>
+        <img class="right" src="./data/IMG2.gif" alt="">
+    </div>
+
+
+	<div class="single">
+        <img src="./data/S2.jpg" alt="">
+    </div>
+
+
+
+	<!-- Thesis Hypothesis -->
+
+
+	<div class="splimage">
+        <img src="./data/header4.gif" alt="">
+    </div>
+
+
+	<div class="single">
+        <img src="./data/S4.jpg" alt="">
+    </div>
+
+
+	<div class="twocols" id="nmir">
+        <div class="abstract">
+
+            <h2>Adaptive Resilience & Ecology</h2>
+			The thesis hypothesis explores the premise of adaptive resilience as an alternative, improved way of designing for future wildfire adapted communities.
+			<br><br>
+			The notion of adapting to wildfires rather than designing against them is not a novel one: many fire adapted ecosystems around the world through years of evolution have been designed to burn, with some species even depending on or benefitting from wildfires. Considering that they have fared far better than their urban counterparts in surviving fires, there is much to be learnt from ecology when it comes to urban resilience. By combining the idea of redesigning architecture for wildfire resilience and learning from fire-adapted ecosystems, this project seeks to tap on the lessons learnt from resilient wildfire ecosystems and translate it into an architectural design framework.
+			<br><br>
+			The idea was then to translate these mechanisms that provide ecosystems with the ability to sustain fires into architectural features with the implementation of design, material choices, and technology. For example, a fire-resistant bark is translated architecturally as a concrete fireproof core, high moisture content in a plant’s leaves is translated into the design of a water containing façade system, nutrient storing roots can be applied into off grid rainwater harvesting and solar power storage utilities, and so on.
+
+        </div>
+        <img class="right" src="./data/IMG3.gif" alt="">
+    </div>
+
+<br><br><br>
+
+	<div class="single">
+        <img src="./data/S3.gif" alt="">
+    </div>
+
+
+
+
+	<!-- Urban Design -->
+
+	<div class="splimage">
+        <img src="./data/header2.jpg" alt="">
+    </div>
+
+	<div class="single">
+        <img src="./data/S5.gif" alt="">
+    </div>
+
+
+	<div class="twocols" id="nmir">
+        <div class="abstract">
+
+            <h2>Urban planning for the future wildfire adapted community</h2>
+            To begin on the urban scale, wildfire risks were analysed across gridded plots based on fire history, vegetation density, and topography data. Blue areas represent low risk plots proposed for development, whereas red areas represent high risk plots in need of targeted landscape treatment.
+			<br><br>
+			Narrowing on a suburban site, the initial point of breach for Camp Fire was chosen, with the same risk analysis ran across a finer resolution of 50 x 50m plots.
+			By identifying urban areas as low and high risk zones, it provides an opportunity to plan for a redistributed urban density whereby the bulk of buildable, habitable areas are located in low wildfire risk areas.
+			<br><br>
+			Following time cycles of the ecological model, the masterplan takes on a phased approach, designing for residential and fire facility typologies as replicable models along Paradise’s suburban fringes.
+			Key master planning ideas are illustrated above that are employed during specific stages of the wildfire cycle.
+
+        </div>
+        <img class="right" src="./data/IMG4.gif" alt="">
+    </div>
+
+
+
+	<div class="single">
+        <img src="./data/S6.gif" alt="">
+    </div>
+
+
+	<!-- Building Design -->
+
+    <div class="splimage">
+        <img src="./data/header3.gif" alt="">
+    </div>
+
+    <div class="twocols" id="nmir">
+        <div class="abstract">
+            <h2>Housing Design: a strategically vulnerable model</h2>
+			Each housing block comprises of a highly fire-resistant, concrete housing core that protects key belongings in a wildfire. The core is protected by double skin ETFE water containing façade supplied by an underground water storage system. This forms the resistive element of the design. Exposed concrete frames are constructed around the core, providing structural support for semi outdoor living spaces. These are constructed using fire perishable materials designed to be rebuilt and reconfigured after a wildfire, forming the regenerative part of the design.
+			<br><br>
+			Each housing design feature (see section drawing below) serves a function that corresponds to the three types of ecological mechanisms (identified in the thesis hypothesis), and six housing blocks form a cluster community that function collectively as a resilient unit modelled after fire adapted ecosystems. Over time, the housing system, like ecological systems, will undergo a cycle of wildfire disturbance and recovery.
+
+        </div>
+        <img class="right" src="./data/icon6.gif" alt="">
+    </div>
+
+
+    <div class="single">
+        <img src="./data/A1.jpg" alt="">
+    </div>
+
+
+    <div class="single">
+        <img src="./data/S7.gif" alt="">
+    </div>
+
+
+    <div class="single">
+        <img src="./data/S9.jpg" alt="">
+    </div>
+
+
+    <div class="single">
+        <img src="./data/S8.gif" alt="">
+    </div>
+
+
+
+    <div class="twocols" id="nmir">
+        <div class="abstract">
+            <h2>Satellite Fire Facility Design: accomodating for seasonally adaptable spaces</h2>
+			The design of the satellite fire facility is aimed at supporting wildfire response along suburban fringes, while also providing a low risk venue for suburban recreation. Built on an open plaza paved with fire resistant, permeable hardscape, the complex is connected by three lift cores and three stair cores providing access to the flexible programmatic decks as well as the administrative core where fire planning offices and control tower is located.
+			<br><br>
+			The design is focused on an architecture that can support seasonally specific programmes across wildfire phases, where use cases shift from primarily recreational to fire support functions as needed.
+			Similar to the housing model, modules are designed to mirror resilient ecological mechanisms, with key features reflecting either resistive, adaptive or regenerative mechanisms.
+
+        </div>
+        <img class="right" src="./data/IMG5.gif" alt="">
+    </div>
+
+    <div class="single">
+        <img src="./data/A2.jpg" alt="">
+    </div>
+
+    <div class="single">
+        <img src="./data/S10.gif" alt="">
+    </div>
+
+	<div class="single">
+        <img src="./data/S11.gif" alt="">
+    </div>
+
+	<div class="single">
+        <img src="./data/S12.jpg" alt="">
+    </div>
+
+	<!-- End -->
+
+	<div class="splimage">
+        <img src="./data/header6.gif" alt="">
+    </div>
+
+
+    <div class="twocols" id="nmir">
+        <div class="abstract">
+            <h2>Paradise as a prototype: Urban sucession model vs. Ecological sucession model</h2>
+            <i>[Click image on the right to view project video] </i><br><br>
+			In conclusion, by questioning the fundamental ideas of resilience and the reflexive approach of recouping and rebuilding after a destructive loss, the thesis navigates the alternative premise of embracing the cycle of destruction as opportunities for adaptability and growth as the more constructive way forward, not just in California but in other wildfire-striken communities all over the world. It proposes a solution rooted in ecologically resilient systems, and a way of design that by working with rather than against nature, communities can be designed in a way which mediates the relationship between our built environment and forces of nature.
+			<br><br>
+			The final drawing below illustrates the urban succession system proposed for <i>Rebuilding Paradise</i>, and the parallels it shares with fire adapted, resilient ecosystems.
+
+		</div>
+
+		<a href="https://youtu.be/th7qCWe41Ds" target="_blank">
+		<br><br><br>
+		<img border="0" alt="W3Schools" src="./data/IMG6.gif" width="1000" height="330">
+
+    </div>
+	<br><br><br><br>
+
+	<div class="single">
+        <img src="./data/END.gif" alt="">
+    </div>
+	<br><br>
+
+
+
+
+    <div class="bottomlinks">
+        <h3><a href="javascript:goToTop()">Back to Top</a></h3>
+        <!-- <h3><a id="random">Randomise!</a></h3> -->
+    </div>
+
+</section>
+<div id="footer"></div>
+
+<script defer src="../../../js/navfixer.js"></script>
+<script src="../../../js/title.js"></script>
+</body>
+</html>

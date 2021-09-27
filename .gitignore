@@ -1,0 +1,11 @@
+
+
+#files to ignore
+
+*.swp
+
+*.DS_Store
+
+dev-hosting/
+bubbles-old/
+

@@ -1,0 +1,246 @@
+*:not(svg) {
+  transition: 0.25 ease-in-out;
+}
+
+body {
+  margin: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-family: "Roboto";
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.title {
+  font-size: 18px;
+  top: 60vh;
+  /* color: white; */
+  opacity: 0.5;
+  transition: 0.25s all;
+}
+
+text.title:hover {
+  font-size: 2.5rem;
+  opacity: 1;
+  /* transform: translateY(10px); */
+}
+
+.buttonbox {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 95vw;
+  justify-content: flex-start;
+  top: 18vh;
+  position: sticky;
+  position: -webkit-sticky;
+  z-index: 5;
+
+}
+
+button {
+  margin: 0.5vw;
+  background-color: #fcfcfc;
+  border: none;
+  border-width: 2px;
+  border-style: unset;
+  border-radius: 20px;
+  padding: 8px 18px;
+  text-align: center;
+  white-space: nowrap;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: lighter;
+  outline: none;
+}
+
+button:hover {
+  color: white;
+  background-color: black;
+  transition: ease-in-out;
+}
+
+.button.active {
+  background: orangered;
+  color: #fff;
+}
+
+.chart {
+  width: 100vw;
+  height: 100vh;
+}
+
+svg {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  z-index: -1;
+}
+
+.svg-container {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 100%;
+  vertical-align: top;
+}
+
+.svg-content {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 0.2rem;
+  font-family: inherit;
+  background: orangered;
+  color: #f9f9f9;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+  font-size: 1em;
+}
+
+.proftooltip {
+  /* margin-top: 20vh;
+  margin-left: 50vw; */
+  margin: 0 auto;
+  transition: 0.2s ease-in-out all;
+  width: 85vw;
+  color: white;
+  text-align: end;
+  margin-top: 22vh;
+  font-weight: lighter;
+}
+
+.proftooltip span {
+  background-color: orangered;
+  padding: 8px;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+.sus-img {
+  width: 100px;
+}
+
+.disabled {
+  display:none;
+}
+
+#exploreyear{
+  color: white;
+  background: rgb(30,30,30);
+  border: 1px solid rgb(100,100,100);
+  height: 100%;
+  font-size: 1.2rem;
+  padding: 0 15px 0 15px;
+  border-radius: 5px;
+}
+#exploreyear option  {
+  width: 100px;
+}
+
+
+#option.selector {
+    text-align: center;
+    background: black;
+    color: orangered;
+}
+
+.end {
+  margin: 5px 0 5px 0px;
+}
+
+.bbox:last-of-type {
+  margin-left: auto;
+}
+
+
+@media screen and (max-device-width: 1024px) {
+  .buttonbox {
+    top: 15vh;
+  }
+}
+
+@media screen and (max-device-width: 767px) {
+  /* #hamburger-9 {
+    top: 6vh !important;
+    right: 12vw !important;
+  } */
+
+  button {
+    border: none;
+    background-color: unset;
+    border-width: 0;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: lighter;
+  }
+
+  .buttonbox {
+    top: 14vh;
+    margin: 0 auto;
+    max-width: fit-content;
+    /* flex-direction: column; */
+    position: absolute;
+    justify-content: flex-start;
+    margin-left: 5vw;
+    border-radius: 20px;
+    background-color: rgba(80, 80, 80, 0.3);
+  }
+
+  /* .bbox {
+    filter: blur(2px);
+    -webkit-filter: blur(10px); */
+  /* backdrop-filter: saturate(20%) blur(1px);
+  } */
+
+  svg {
+    height: 250vh;
+  }
+
+  .svg-content {
+    top: -25vh;
+  }
+
+  li {
+    list-style: none;
+    display: block;
+    padding: 1.5rem;
+    /* margin: 1.5vh 0px 2.5vh 3vw; */
+  }
+
+  .title {
+    font-size: 1.2rem;
+    font-weight: lighter;
+  }
+
+  div.tooltip {
+    padding: 0.3rem;
+    border-radius: 30px;
+    font-size: 0.7rem;
+    font-weight: lighter;
+  }
+
+  .proftooltip {
+    display: none;
+  }
+
+  text.title:hover {
+    font-size: 1.5rem;
+    font-weight: lighter;
+  }
+
+  .bbox:last-of-type {
+    margin-left: initial;
+  }
+}

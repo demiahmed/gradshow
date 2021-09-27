@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  cursor: default;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  scrollbar-width: thin;
+  scrollbar-color: black gray;
+}
+
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: black;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: orangered;
+  /* border-radius: 20px; */
+  /* border: 3px solid black; */
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body,
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+}
+
+p {
+  text-align: left;
+}
+
+a {
+  color: grey;
+}
+/* Navbar and Logo */
+
+.section {
+  width: 100%;
+  /* border: 2px solid red; */
+  font-size: 1.4rem;
+  padding: 50px 75px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.section p {
+  padding: 25px 10px;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1.8em;
+}
+
+#section1 {
+  background-color: #f0ebeb;
+  color: rgb(51, 48, 48);
+}
+
+#section2,
+#section3 {
+  background-color: black;
+  color: white;
+}
+
+img {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.img {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  text-align: center;
+}
+
+#aerImgB {
+  background-image: url("../assets/bgimage/Aerial_blue_d.jpg");
+  min-height: 100vh;
+}
+#aerImgR {
+  background-image: url("../assets/bgimage/Aerial_red_d.jpg");
+  min-height: 150vh;
+}
+#aerImgG {
+  background-image: url("../assets/bgimage/Aerial_green_d.jpg");
+  min-height: 120vh;
+}
+#aerImgGG {
+  background-image: url("../assets/bgimage/forest_d.jpg");
+  min-height: 180vh;
+}
+
+#satImgB {
+  background-image: url("../assets/bgimage/Satellite_blue_d.jpg");
+  min-height: 140vh;
+}
+
+#satImgBB {
+  background-image: url("../assets/bgimage/Satellite_blue2_black.jpg");
+  min-height: 100vh;
+}
+
+#satImgY {
+  background-image: url("../assets/bgimage/Satellite_yellow_d.jpg");
+  min-height: 100vh;
+}
+
+#satImgGr {
+  background-image: url("../assets/bgimage/Satellite_grey_d.jpg");
+  min-height: 100vh;
+}
+
+#spaceImg {
+  background-image: url("../assets/bgimage/space_d.jpg");
+  min-height: 100vh;
+}
+
+#satImgGr {
+  background-image: url("../assets/bgimage/Satellite_grey_d.jpg");
+  min-height: 100vh;
+}
+
+#sutdGroup {
+  background-image: url("../assets/bgimage/sutd_group.jpg");
+  min-height: 100vh;
+}
+
+#sutdGroupM {
+  background-image: url("../assets/bgimage/sutd_group_m.jpg");
+  min-height: 100vh;
+}
+
+#sutdGroupBW {
+  background-image: url("../assets/bgimage/sutd_group_bw.jpg");
+  min-height: 100vh;
+}
+
+#sutdGroupMBW {
+  background-image: url("../assets/bgimage/sutd_group_m_bw.jpg");
+  min-height: 100vh;
+}
+
+.caption0 {
+  color: white;
+  margin: 0 auto;
+  padding: 25vh 0 20vh 0;
+  width: fit-content;
+  text-align: center;
+  font-size: 6vw;
+  font-weight: 100;
+  line-height: 160%;
+}
+
+.caption1 {
+  position: relative;
+  top: 25vh;
+  left: 28vw;
+  width: fit-content;
+  color: white;
+  font-size: 3vw;
+  font-weight: 100;
+}
+
+.caption2 {
+  color: white;
+  font-size: 3vw;
+  font-weight: 100;
+}
+
+.caption2 p {
+  margin: 0 auto;
+  padding-top: 10vh;
+  width: fit-content;
+  text-align: center;
+}
+
+.desc {
+  position: relative;
+  width: 100vw;
+  top: 30vh;
+  left: 8vw;
+}
+
+.desc p {
+  max-width: 60vw;
+  margin: 0 auto;
+  color: white;
+  font-weight: 100;
+  text-align: left;
+  font-size: 2vw;
+}
+
+.effect {
+  display: inline;
+  padding: 16px;
+}
+
+.peoplegrid {
+  display: flex;
+  padding-top: 10vh;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 0 auto;
+  justify-content: center;
+  width: 60vw;
+}
+
+.people {
+  padding: 2vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.thumb img {
+  width: 15vw;
+  border-radius: 50%;
+}
+
+.peoplename {
+  font-size: 1.5vw;
+  padding: 1.5vw;
+  color: white;
+  font-weight:  normal;
+}
+
+.peoplerole {
+  margin-top: -1vw;
+  color: white;
+  font-weight:  lighter;
+}
+
+@media screen and (max-device-width: 767px) {
+  *::-webkit-scrollbar {
+    width: 4px;
+  }
+  *::-webkit-scrollbar-track {
+    background: white;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-size: inherit;
+    background-position: center, center;
+    -webkit-background-size: inherit;
+    -moz-background-size: inherit;
+    -o-background-size: inherit;
+  }
+
+  .caption1,
+  .caption2,
+  .caption3 {
+    font-size: 2.5rem;
+    color: white;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .caption1 {
+    margin: 0 auto;
+    left: 0;
+    top: 16vh;
+  }
+
+  .caption1 p {
+    margin: 0 auto;
+    width: 90vw;
+  }
+
+  .desc {
+    left: 0;
+    margin: 0 auto;
+    top: 20vh;
+    max-width: 90vw;
+    color: white;
+    font-weight: lighter;
+  }
+
+  .desc p {
+    max-width: 100vw;
+    text-align: center;
+    font-size: 1.2rem;
+    left: 0;
+  }
+
+  .caption2 {
+    left: 10vw;
+    top: 4vw;
+  }
+
+  .caption2 p {
+    width: 90vw;
+  }
+
+  .caption3 {
+    left: 10vw;
+    padding-top: 4rem;
+  }
+
+  .thumb img {
+    width: 15rem;
+  }
+
+  .peoplename {
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .peoplerole {
+    margin-top: -2rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (max-device-width: 370px) {
+  .desc p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-device-width: 330px) {
+  .desc p {
+    font-size: 0.8rem;
+  }
+}

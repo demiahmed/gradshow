@@ -1,0 +1,440 @@
+<style>
+  .navibar {
+    display: flex;
+    width: 100vw;
+    position: fixed;
+    z-index: 6;
+    transition: 0.25s ease-in-out all;
+}
+
+.navibar ul li {
+  height: fit-content;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav .logo {
+  /* left: 20vw; */
+  display: flex;
+  margin: 20px 20px;
+}
+
+.sections {
+  display: flex;
+    /* top: 3.5vw; */
+    position: absolute;
+    right: 4%;
+    height: 100%;
+    align-items: center;
+}
+
+
+.sutd {
+  width: 16vw;
+}
+
+.asd {
+  margin: 2vw;
+  height: 40px;
+}
+
+.navibar ul li span:hover {
+  background-color: orangered;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: black;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.navibar .navlist {
+  list-style: none;
+  display: block;
+  margin: 0 1.5rem 0 1.5rem;
+  position: relative;
+
+}
+
+
+
+span {
+  font-family: "Roboto";
+  color: white;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 1.4vw;
+}
+
+
+.dropdown-content {
+    display: none;
+    background: orangered;
+    width: 100px;
+    /* margin: 20px 0 0 0; */
+    position: absolute;
+}
+
+.dropdown-content::before{
+  padding-top: 20px;
+}
+
+.active {
+  display: block;
+}
+
+
+
+/* #nav-dropdown:hover + ul {
+  display: block;
+} */
+
+
+
+.dropdown-content li {
+    padding: 10px;
+    text-align: right;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+}
+
+.dropdown-text {
+  font-weight: bold;
+  color: black;
+}
+
+.dropdown-text-box {
+  list-style: none;
+}
+.dropdown-text-box:hover {
+  background: rgb(199, 53, 0);
+  color: white;
+}
+
+.fa {
+  filter: invert(1);
+  width: 20px;
+  vertical-align: text-top;
+}
+
+
+@media screen and (max-device-width: 1024px) {
+  .asd {
+    height: 40px;
+  }
+}
+
+
+
+@media screen and (max-device-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  span {
+    color: black;
+  }
+
+  .navibar {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    width: 100vw;
+    height: 75px;
+  }
+
+  .navibar li {
+    padding-bottom: 4rem;
+    text-align: left;
+    width: 90vw;
+  }
+
+  div.logo {
+    height: max-content;
+    padding: 0;
+    left: 0vw;
+    position: absolute;
+    z-index: 12;
+  }
+
+  .asd {
+    height: 30px;
+  }
+
+
+  img.logo {
+    margin: 0.5rem;
+  }
+
+  .container{
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+  .toggle-button .line{
+    width: 50px;
+    height: 4px;
+    background-color: white;
+    display: block;
+    margin: 12px auto;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .toggle-button:hover{
+    cursor: pointer;
+  }
+
+
+  /* NINE */
+
+  #hamburger-9{
+    position: absolute;
+    top: 10px;
+    z-index: 999;
+    right: 8vw;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #hamburger-9.open{
+
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+  #hamburger-9.open .line{
+    width: 60px;
+  }
+
+  #hamburger-9.open .line:nth-child(2){
+    opacity: 0;
+  }
+
+  #hamburger-9.open .line:nth-child(1){
+    -moz-transform: translateY(18px);
+    -webkit-transform: translateY(18px);
+    -ms-transform: translateY(18px);
+    -o-transform: translateY(18px);
+    transform: translateY(18px);
+  }
+
+  #hamburger-9.open .line:nth-child(3){
+    -moz-transform: translateY(-14px) rotate(90deg);
+    -webkit-transform: translateY(-14px) rotate(90deg);
+    -ms-transform: translateY(-14px) rotate(90deg);
+    -o-transform: translateY(-14px) rotate(90deg);
+    transform: translateY(-14px) rotate(90deg);
+  }
+
+
+  .sections {
+    top: 0;
+    right: 0;
+  }
+
+  ul.sections {
+    transform: translateX(100%);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: orangered;
+    transition: 0.25s ease-in-out all;
+  }
+
+  ul.sections.active {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    align-items: left;
+    opacity: 1;
+    -ms-transition: ease-in-out 0.5s; /* Safari */
+    -o-transition: ease-in-out 0.5s; /* Safari */
+    -moz-transition: ease-in-out 0.5s; /* Safari */
+    -webkit-transition: ease-in-out 0.5s; /* Safari */
+    transition: ease-in-out 0.5s;
+    transform: translateX(0%);
+    transition-delay: 0.15s;
+  }
+
+  li {
+    text-align: left;
+    transform: translateY(20vh);
+  }
+
+  .navbox {
+    padding-top: 40%;
+  }
+
+  .navibar span {
+    text-decoration: none;
+    font-size: 12vw;
+    font-family: "Roboto";
+    font-weight: bolder;
+  }
+
+  ul.active {
+    display: flex;
+    position: absolute;
+    left: 0;
+    width: 100vw;
+  }
+
+  .fa {
+    width: 4rem;
+  height: 100%;
+  vertical-align: top;
+  }
+
+  .dropdown-content {
+    background: orangered;
+    margin: 0 auto;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dropdown-content li {
+    display: contents;
+  }
+
+  .dropdown-content a {
+    padding: 5px;
+    /* margin: 0 auto; */
+    border-bottom: 1px solid black;
+    width: 100%;
+  }
+
+  #drop-projects a, #drop-awards a {
+    display: none;
+  }
+
+  #drop-projects a.active, #drop-awards a.active {
+    display: block;
+  }
+
+  .dropdown-text-box {
+    list-style: none;
+    padding-bottom: 0 !important;
+    position: absolute;
+  }
+
+  #nav-dropdown:hover + ul {
+    display: flex;
+    flex-direction: column;
+}
+}
+
+</style>
+<script>
+
+    const toggleButton = document.getElementsByClassName('toggle-button')[0];
+    const navbarLinks = document.getElementsByClassName('sections')[0];
+
+    toggleButton.addEventListener('click', () => {
+
+    toggleButton.classList.toggle('open')
+    navbarLinks.classList.toggle('active')
+    });
+
+    const navDropdown = $("#nav-dropdown")
+    const navDropdownAward = $("#nav-dropdown-award")
+
+    navDropdown.hover(() => {
+      // console.log(`clicked`);
+      $("#drop-projects").toggleClass("active")
+      $("#drop-projects a ").toggleClass("active")
+    }, 
+    () => {
+      $("#drop-projects").removeClass("active")
+      $("#drop-projects a ").toggleClass("active")
+
+    })
+    navDropdownAward.hover(() => {
+      // console.log(`clicked`);
+      $("#drop-awards").toggleClass("active")
+      $("#drop-awards a ").toggleClass("active")
+
+    },
+    () => {
+      $("#drop-awards").removeClass("active")
+      $("#drop-awards a ").toggleClass("active")
+
+    })
+
+    // $(".nav-item").hover(() => {
+    //   $(this).css({
+    //     "background-color": "orangered",
+    //     "color": "white",
+    //     "text-decoration": "underline",
+    //     "text-decoration-color": "black",
+    //     "-webkit-transition": "0.2s ease-in-out",
+    //     "transition": "0.2s ease-in-out"
+    //   })
+    // })
+
+
+  //   $(document).click(function(){ 
+  //     if($("#drop-awards").classList.) 
+  //   $('#drop-awards').hide(); //hide the button
+
+  // });
+
+
+</script>
+
+<nav class= "navibar" >
+
+
+
+    <div class="logo">
+        <a href="https://asd.sutd.edu.sg">
+            <img class="asd" src="../../../../assets/logo/asd_logo.png" alt="ASD Logo"></a>
+    </div>
+
+    <div class="toggle-button" id="hamburger-9">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </div>
+
+
+        <ul class="sections">
+            <li class="navlist"><a class="nav-item" href="../../../../home"><span>Home</span></a></li>
+            <li class="navlist"><a class="nav-item" href="../../../../explore"><span>Explore</span></a></li>
+            <li class="has-dropdown navlist" id="nav-dropdown">
+              <a class="nav-item" href="../../../../projects"><span>Projects </span></a>
+              <!-- <i class="fa fa-chevron-down" > </i> -->
+              <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iMTI4cHgiIGlkPSJMYXllcl8xIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMjggMTI4OyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMTI4IDEyOCIgd2lkdGg9IjEyOHB4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48Zz48bGluZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMkYzNDM1O3N0cm9rZS13aWR0aDoxMjtzdHJva2UtbGluZWNhcDpzcXVhcmU7c3Ryb2tlLW1pdGVybGltaXQ6MTA7IiB4MT0iMTExIiB4Mj0iNjQiIHkxPSI0MC41IiB5Mj0iODcuNDk5Ii8+PGxpbmUgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2U6IzJGMzQzNTtzdHJva2Utd2lkdGg6MTI7c3Ryb2tlLWxpbmVjYXA6c3F1YXJlO3N0cm9rZS1taXRlcmxpbWl0OjEwOyIgeDE9IjY0IiB4Mj0iMTciIHkxPSI4Ny40OTkiIHkyPSI0MC41Ii8+PC9nPjwvc3ZnPg==" alt="Down Arrow" class="fa">
+              <ul class="dropdown-content" id="drop-projects">
+                <li class="dropdown-text-box "><a class="dropdown-text" href="../../../../projects">2021</a></li>
+                <li class="dropdown-text-box"><a class="dropdown-text" href="../../../../projects">2020</a></li>
+              </ul>   
+            </li>
+            <li class="navlist" id="nav-dropdown-award"><a class="nav-item" href="../../../../awards"><span>Awards</span></a>
+              <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iMTI4cHgiIGlkPSJMYXllcl8xIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMjggMTI4OyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMTI4IDEyOCIgd2lkdGg9IjEyOHB4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48Zz48bGluZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMkYzNDM1O3N0cm9rZS13aWR0aDoxMjtzdHJva2UtbGluZWNhcDpzcXVhcmU7c3Ryb2tlLW1pdGVybGltaXQ6MTA7IiB4MT0iMTExIiB4Mj0iNjQiIHkxPSI0MC41IiB5Mj0iODcuNDk5Ii8+PGxpbmUgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2U6IzJGMzQzNTtzdHJva2Utd2lkdGg6MTI7c3Ryb2tlLWxpbmVjYXA6c3F1YXJlO3N0cm9rZS1taXRlcmxpbWl0OjEwOyIgeDE9IjY0IiB4Mj0iMTciIHkxPSI4Ny40OTkiIHkyPSI0MC41Ii8+PC9nPjwvc3ZnPg==" alt="Down Arrow" class="fa">                <ul class="dropdown-content" id="drop-awards">
+                <li class="dropdown-text-box"><a class="dropdown-text" href="../../../../awards">2021</a></li>
+                <li class="dropdown-text-box"><a class="dropdown-text" href="../../../../awards">2020</a></li>
+              </ul>
+              </li>
+          </ul>
+
+
+
+</nav>

@@ -1,0 +1,576 @@
+<!-- SUTD MArc Template – V1.0  -->
+<!-- Please read the guide before editing -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <base href="/projects/"> -->
+    <meta charset="utf-8"><meta name="description" content="SUTD ASD M.Arch Virtual GradShow 2021">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="icon" href="../../../favicon.ico" type="image/gif">
+
+    <link rel="stylesheet" href="../student-style.css">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+      $(function() {
+        $("#header").load("../../../partials/projectnav.html");
+        $("#footer").load("../../../partials/footer.html");
+
+      });
+
+        function goToTop(){
+        window.scrollTo(0,0)
+        return false; //prevent page from reloading
+        }
+    </script>
+</head>
+
+<style>
+    body {
+        background-color: pink;
+        background-color: rgb(231, 231, 231);
+        background-color: rgb(183, 251, 253);
+        background-color: rgb(206, 253, 162);
+        background-color: rgb(255, 226, 192);
+        background-color: white;
+    }
+
+</style>
+<body >
+    <div id="header"></div>
+
+    <section class="cover">
+        <div class="mainimage">
+            <img src="./data/main.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="content">
+
+        <div  class="titletext">
+            Organic Constructions in Bamboo Architecture.
+        </div>
+
+
+    <div class="twocols invert">
+        <div class="abstract">
+            <h2>Summary</h2>
+            This thesis aims to explore the geometric, structural and spatial potential of bamboo as a construction material in organic buildings, namely through the adaptation of natural geometries from the illustrations of Ernst Haeckel.
+	    <br><br>
+	    The research focuses on the adaptation of organic 2-dimensional drawings and elements into 3-dimensional structure and space. The workflow constantly moves between the dimensions, working between the digital and physical, and develops in different scales. It aims to engage in an organic design process that allows variation of natural forms to suit different parameters and desired spatial qualities. It also explores taking a more suitable approach in the assembly process of erecting such structures.
+	    <br><br>
+	    These culminate in an application to a topographical site in Hopong, Myanmar. The selected geometry adapts and imprints upon the steep mountain slope, creating a beautiful and productive space that rejuvenates architecture and culture alike.
+            <br><br>
+            <h4>About Me</h4>
+            Phoebe is a Master of Architecture graduate from the Singapore University of Technology and Design.
+	    She earned her bachelor's degree in science with a major in Architecture and Sustainable Design from the same institution.
+	    Phoebe aims to integrate digital and physical tools into her design workflow to expand the potential of structure and space-making.
+	    Her interest lies greatly in fabrication: where material, methodology and design come together to create innovative systems and intimate moments of interactions.
+	    She also believes that good design should be for all to enjoy.
+        </div>
+
+        <div class="table">
+            <div class="thumb">
+                <img src="./phoebe-phyu.jpg" alt=""></div>
+                <div class="fields">
+                <h3>Name</h3>
+                <p>Phyu Sin Hnin, Phoebe</p></div>
+                <div class="fields">
+                  <h3>Mentor</h3>
+                  <p>Carlos Banon</p></div>
+                  <div class="fields">
+                  </div>
+                <div class="fields">
+                <h3 >Typology</h3>
+                <p>Rural, Cultural</p>
+                </div>
+                <div class="fields">
+                <h3>Site Location</h3>
+                <p>Myanmar</p>
+                </div>
+
+
+                    <div class="contact">
+                        <a href="mailto:phoebe.phyu@live.com">
+                            <img class="icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgLjAyYy02LjYyNyAwLTEyIDUuMzczLTEyIDEyczUuMzczIDEyIDEyIDEyIDEyLTUuMzczIDEyLTEyLTUuMzczLTEyLTEyLTEyem02Ljk5IDYuOThsLTYuOTkgNS42NjYtNi45OTEtNS42NjZoMTMuOTgxem0uMDEgMTBoLTE0di04LjUwNWw3IDUuNjczIDctNS42NzJ2OC41MDR6Ii8+PC9zdmc+">
+                        </a>
+
+                        <a href="https://www.issuu.com/phoebephyu">
+                            <img class="icon" src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1OTUuMjggNTk0Ljg5Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmlzc3V1LWljb24tMDwvdGl0bGU+PHBhdGggZD0iTTExLjU4LDEwLjcySDE4LjJjOTYuOSwwLDE5My44MS0uNjYsMjkwLjY5LjMzLDM3LjY3LjM4LDc0LDkuNzMsMTA4LjY4LDI1LjEyLDM2LDE2LDY2LjcsMzkuMyw5My4xOCw2OC4xMywyOC42OCwzMS4yMSw0OC44MSw2Ny4zOCw2MS42LDEwNy44OUM1ODQuMjYsMjUwLDU4Ni42NiwyODguNzMsNTg0LDMyNy42Yy0zLjc3LDU0LjcyLTIyLjI1LDEwNC41MS01NiwxNDguMzNhMjgwLjEzLDI4MC4xMywwLDAsMS04My4xNCw3Mi43M2MtMjguMzcsMTYuMjktNTksMjYuNS05MS4xLDMyLjQzLTIzLjYzLDQuMzYtNDcuNDMsMi4yNy03MS4xNSwyLjQ3LTM2LjUuMzEtNzAuNzItOS44NS0xMDMuODctMjQuMi0zMi42NC0xNC4xMy02MC44Ny0zNC42Ni04NS41Mi02MC4xMi0yNy44OS0yOC44Mi00OC42OS02Mi02MS4xMy0xMDAuMzctOC40LTI1Ljg3LTEyLjgzLTUyLjQ1LTE1LjkzLTc5LjQxLTQuNS0zOS00LjY4LTc4LjA5LTQuNi0xMTcuMjUuMTMtNjEuMDcsMC0xMjIuMTQsMC0xODMuMjFaTTEwNCwyOTkuMzJDMTAxLDQwNi4wNiwxOTIuODcsNDkzLjUsMjk3LjIyLDQ5NS4wN2MxMjMuNjksMS44NiwyMDEuNTYtOTMuNzksMjAzLTE5NC4xMSwxLjY2LTExNS43NS04Ni42MS0xOTYuMTktMTg3LjktMjAwQzE4OC45Myw5Ni4zLDEwMS42OSwxOTAuNzUsMTA0LDI5OS4zMloiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMDQsMjk5LjMyYy0yLjMtMTA4LjU3LDg0Ljk0LTIwMywyMDguMzItMTk4LjM3LDEwMS4yOSwzLjgyLDE4OS41Niw4NC4yNiwxODcuOSwyMDAtMS40MywxMDAuMzItNzkuMywxOTYtMjAzLDE5NC4xMUMxOTIuODcsNDkzLjUsMTAxLDQwNi4wNiwxMDQsMjk5LjMyWm01MS4zNi0yLjc0QzE1My43MSwzODAuNzIsMjIxLjI3LDQ0NCwyOTYuNjEsNDQ1LjRjODcuNDgsMS42OCwxNDkuMjQtNjMuNTMsMTUwLjUzLTE0My45MywxLjQ0LTg5LjkyLTYzLjM0LTE0NC44OC0xMzguNDMtMTQ3LjkxQzIxMi4zNywxNDkuNjksMTU1LjIsMjE5LjQ4LDE1NS4zNSwyOTYuNThaIi8+PHBhdGggZD0iTTE1NS4zNSwyOTYuNThjLS4xNS03Ny4xLDU3LTE0Ni44OSwxNTMuMzYtMTQzLDc1LjA5LDMsMTM5Ljg3LDU4LDEzOC40MywxNDcuOTEtMS4yOSw4MC40LTYzLjA1LDE0NS42MS0xNTAuNTMsMTQzLjkzQzIyMS4yNyw0NDQsMTUzLjcxLDM4MC43MiwxNTUuMzUsMjk2LjU4Wm0xNDguNzQtNjkuODRjLTQyLjUzLS41NC03My42MywyNy4wOS03My44OCw2OS0uMjYsNDQuNDQsMjkuNTEsNzYsNzIsNzUuNDcsNDMtLjUsNjkuNTgtMjcsNjkuNzEtNzMuODRDMzcyLjA2LDI1OC4yLDM0NS4zMSwyMjUuNywzMDQuMDksMjI2Ljc0WiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTMwNC4wOSwyMjYuNzRjNDEuMjItMSw2OCwzMS40Niw2Ny44Nyw3MC42NC0uMTMsNDYuODctMjYuNyw3My4zNC02OS43MSw3My44NC00Mi41My40OS03Mi4zLTMxLTcyLTc1LjQ3QzIzMC40NiwyNTMuODMsMjYxLjU2LDIyNi4yLDMwNC4wOSwyMjYuNzRaIi8+PC9zdmc+">
+                        </a>
+
+                        <a href="https://www.instagram.com/phobgrams">
+                            <img class="icon" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoyOyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjEwMCUiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2VyaWY9Imh0dHA6Ly93d3cuc2VyaWYuY29tLyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNTYsMGMxNDEuMjksMCAyNTYsMTE0LjcxIDI1NiwyNTZjMCwxNDEuMjkgLTExNC43MSwyNTYgLTI1NiwyNTZjLTE0MS4yOSwwIC0yNTYsLTExNC43MSAtMjU2LC0yNTZjMCwtMTQxLjI5IDExNC43MSwtMjU2IDI1NiwtMjU2Wm0wLDk2Yy00My40NTMsMCAtNDguOTAyLDAuMTg0IC02NS45NjgsMC45NjNjLTE3LjAzLDAuNzc3IC0yOC42NjEsMy40ODIgLTM4LjgzOSw3LjQzN2MtMTAuNTIxLDQuMDg5IC0xOS40NDQsOS41NiAtMjguMzM5LDE4LjQ1NWMtOC44OTUsOC44OTUgLTE0LjM2NiwxNy44MTggLTE4LjQ1NSwyOC4zMzljLTMuOTU1LDEwLjE3NyAtNi42NTksMjEuODA4IC03LjQzNywzOC44MzhjLTAuNzc4LDE3LjA2NiAtMC45NjIsMjIuNTE1IC0wLjk2Miw2NS45NjhjMCw0My40NTMgMC4xODQsNDguOTAyIDAuOTYyLDY1Ljk2OGMwLjc3OCwxNy4wMyAzLjQ4MiwyOC42NjEgNy40MzcsMzguODM4YzQuMDg5LDEwLjUyMSA5LjU2LDE5LjQ0NCAxOC40NTUsMjguMzRjOC44OTUsOC44OTUgMTcuODE4LDE0LjM2NiAyOC4zMzksMTguNDU1YzEwLjE3OCwzLjk1NCAyMS44MDksNi42NTkgMzguODM5LDcuNDM2YzE3LjA2NiwwLjc3OSAyMi41MTUsMC45NjMgNjUuOTY4LDAuOTYzYzQzLjQ1MywwIDQ4LjkwMiwtMC4xODQgNjUuOTY4LC0wLjk2M2MxNy4wMywtMC43NzcgMjguNjYxLC0zLjQ4MiAzOC44MzgsLTcuNDM2YzEwLjUyMSwtNC4wODkgMTkuNDQ0LC05LjU2IDI4LjM0LC0xOC40NTVjOC44OTUsLTguODk2IDE0LjM2NiwtMTcuODE5IDE4LjQ1NSwtMjguMzRjMy45NTQsLTEwLjE3NyA2LjY1OSwtMjEuODA4IDcuNDM2LC0zOC44MzhjMC43NzksLTE3LjA2NiAwLjk2MywtMjIuNTE1IDAuOTYzLC02NS45NjhjMCwtNDMuNDUzIC0wLjE4NCwtNDguOTAyIC0wLjk2MywtNjUuOTY4Yy0wLjc3NywtMTcuMDMgLTMuNDgyLC0yOC42NjEgLTcuNDM2LC0zOC44MzhjLTQuMDg5LC0xMC41MjEgLTkuNTYsLTE5LjQ0NCAtMTguNDU1LC0yOC4zMzljLTguODk2LC04Ljg5NSAtMTcuODE5LC0xNC4zNjYgLTI4LjM0LC0xOC40NTVjLTEwLjE3NywtMy45NTUgLTIxLjgwOCwtNi42NiAtMzguODM4LC03LjQzN2MtMTcuMDY2LC0wLjc3OSAtMjIuNTE1LC0wLjk2MyAtNjUuOTY4LC0wLjk2M1ptMCwyOC44MjljNDIuNzIyLDAgNDcuNzgyLDAuMTYzIDY0LjY1NCwwLjkzM2MxNS42LDAuNzEyIDI0LjA3MSwzLjMxOCAyOS43MDksNS41MDljNy40NjksMi45MDIgMTIuNzk5LDYuMzcgMTguMzk3LDExLjk2OWM1LjYsNS41OTggOS4wNjcsMTAuOTI5IDExLjk2OSwxOC4zOTdjMi4xOTEsNS42MzggNC43OTgsMTQuMTA5IDUuNTA5LDI5LjcwOWMwLjc3LDE2Ljg3MiAwLjkzMywyMS45MzIgMC45MzMsNjQuNjU0YzAsNDIuNzIyIC0wLjE2Myw0Ny43ODIgLTAuOTMzLDY0LjY1NGMtMC43MTEsMTUuNiAtMy4zMTgsMjQuMDcxIC01LjUwOSwyOS43MDljLTIuOTAyLDcuNDY5IC02LjM2OSwxMi43OTkgLTExLjk2OSwxOC4zOTdjLTUuNTk4LDUuNiAtMTAuOTI4LDkuMDY3IC0xOC4zOTcsMTEuOTY5Yy01LjYzOCwyLjE5MSAtMTQuMTA5LDQuNzk4IC0yOS43MDksNS41MDljLTE2Ljg2OSwwLjc3IC0yMS45MjksMC45MzMgLTY0LjY1NCwwLjkzM2MtNDIuNzI1LDAgLTQ3Ljc4NCwtMC4xNjMgLTY0LjY1NCwtMC45MzNjLTE1LjYsLTAuNzExIC0yNC4wNzEsLTMuMzE4IC0yOS43MDksLTUuNTA5Yy03LjQ2OSwtMi45MDIgLTEyLjc5OSwtNi4zNjkgLTE4LjM5OCwtMTEuOTY5Yy01LjU5OSwtNS41OTggLTkuMDY2LC0xMC45MjggLTExLjk2OCwtMTguMzk3Yy0yLjE5MSwtNS42MzggLTQuNzk4LC0xNC4xMDkgLTUuNTEsLTI5LjcwOWMtMC43NywtMTYuODcyIC0wLjkzMiwtMjEuOTMyIC0wLjkzMiwtNjQuNjU0YzAsLTQyLjcyMiAwLjE2MiwtNDcuNzgyIDAuOTMyLC02NC42NTRjMC43MTIsLTE1LjYgMy4zMTksLTI0LjA3MSA1LjUxLC0yOS43MDljMi45MDIsLTcuNDY4IDYuMzY5LC0xMi43OTkgMTEuOTY4LC0xOC4zOTdjNS41OTksLTUuNTk5IDEwLjkyOSwtOS4wNjcgMTguMzk4LC0xMS45NjljNS42MzgsLTIuMTkxIDE0LjEwOSwtNC43OTcgMjkuNzA5LC01LjUwOWMxNi44NzIsLTAuNzcgMjEuOTMyLC0wLjkzMyA2NC42NTQsLTAuOTMzWm0wLDQ5LjAwOWMtNDUuMzc3LDAgLTgyLjE2MiwzNi43ODUgLTgyLjE2Miw4Mi4xNjJjMCw0NS4zNzcgMzYuNzg1LDgyLjE2MiA4Mi4xNjIsODIuMTYyYzQ1LjM3NywwIDgyLjE2MiwtMzYuNzg1IDgyLjE2MiwtODIuMTYyYzAsLTQ1LjM3NyAtMzYuNzg1LC04Mi4xNjIgLTgyLjE2MiwtODIuMTYyWm0wLDEzNS40OTVjLTI5LjQ1NSwwIC01My4zMzMsLTIzLjg3OCAtNTMuMzMzLC01My4zMzNjMCwtMjkuNDU1IDIzLjg3OCwtNTMuMzMzIDUzLjMzMywtNTMuMzMzYzI5LjQ1NSwwIDUzLjMzMywyMy44NzggNTMuMzMzLDUzLjMzM2MwLDI5LjQ1NSAtMjMuODc4LDUzLjMzMyAtNTMuMzMzLDUzLjMzM1ptMTA0LjYwOSwtMTM4Ljc0MWMwLDEwLjYwNCAtOC41OTcsMTkuMTk5IC0xOS4yMDEsMTkuMTk5Yy0xMC42MDMsMCAtMTkuMTk5LC04LjU5NSAtMTkuMTk5LC0xOS4xOTljMCwtMTAuNjA0IDguNTk2LC0xOS4yIDE5LjE5OSwtMTkuMmMxMC42MDQsMCAxOS4yMDEsOC41OTYgMTkuMjAxLDE5LjJaIi8+PC9zdmc+">
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/phoebe-phyu">
+                            <img class="icon" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoyOyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjEwMCUiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2VyaWY9Imh0dHA6Ly93d3cuc2VyaWYuY29tLyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNTYsMGMxNDEuMjksMCAyNTYsMTE0LjcxIDI1NiwyNTZjMCwxNDEuMjkgLTExNC43MSwyNTYgLTI1NiwyNTZjLTE0MS4yOSwwIC0yNTYsLTExNC43MSAtMjU2LC0yNTZjMCwtMTQxLjI5IDExNC43MSwtMjU2IDI1NiwtMjU2Wm0tODAuMDM3LDM5OS44NzFsMCwtMTk5LjkyMWwtNjYuNDY0LDBsMCwxOTkuOTIxbDY2LjQ2NCwwWm0yMzkuNjIsMGwwLC0xMTQuNjQ2YzAsLTYxLjQwOSAtMzIuNzg3LC04OS45NzYgLTc2LjUwOSwtODkuOTc2Yy0zNS4yNTUsMCAtNTEuMDQ3LDE5LjM4OSAtNTkuODg5LDMzLjAwN2wwLC0yOC4zMDZsLTY2LjQ0NywwYzAuODgxLDE4Ljc1NyAwLDE5OS45MjEgMCwxOTkuOTIxbDY2LjQ0NiwwbDAsLTExMS42NWMwLC01Ljk3NiAwLjQzLC0xMS45NSAyLjE5MSwtMTYuMjIxYzQuNzk1LC0xMS45MzUgMTUuNzM3LC0yNC4yOTkgMzQuMDk1LC0yNC4yOTljMjQuMDM0LDAgMzMuNjYzLDE4LjM0IDMzLjY2Myw0NS4yMDRsMCwxMDYuOTY2bDY2LjQ1LDBabS0yNzIuNDAzLC0yOTYuMzIxYy0yMi43NCwwIC0zNy41OTcsMTQuOTUgLTM3LjU5NywzNC41NDVjMCwxOS4xODIgMTQuNDA1LDM0LjU0NCAzNi43MTcsMzQuNTQ0bDAuNDI5LDBjMjMuMTc1LDAgMzcuNiwtMTUuMzYyIDM3LjYsLTM0LjU0NGMtMC40MywtMTkuNTk1IC0xNC40MjQsLTM0LjU0NSAtMzcuMTQ5LC0zNC41NDVaIi8+PC9zdmc+">
+                        </a>
+
+                    </div>
+
+        </div>
+    </div>
+
+    <div class="splimage">
+	<img src="./data/divider-0.jpg" alt="">
+    </div>
+
+    <div class="twocols" id="mir">
+
+        <img class="left" src="./data/bamboo-parts.jpg" alt="">
+
+        <div class="mir_abstract">
+            <h4>Methodology</h4>
+        	The adaptability between 2-d and 3-d is first studied through the analysis of built <b>precedences</b>.
+		From understanding the built examples, it allows informed speculation and study in the structural and spatial potential of geometries.
+	    <br><br>
+	    <b>Geometric explorations</b> are then conducted through 2-dimensional abstraction of selected specimens in Haeckel’s body of works, followed by a series of geometric <b>transformations</b>.
+		Then, the <b>translation</b> from 2-d to 3-d is explored by working between the two dimensions, in the forms of drawings, physical models and <b>digitalisation</b>.
+		The possibilities in <b>constructing</b> these translations are then explored in several smaller scales.
+	    <br><br>
+		This workflow aims to engage in an organic design process that allows variation of natural forms to suit different parameters and desired spatial qualities,
+		And works with the material beauty of bamboo being raw and imperfect, yet having vast engineering and construction potential.
+	    <h4>Motivation</h4>
+		This topic of research was inspired by an interest in bamboo and geometry, specifically in the adaptation of curved natural forms into organic buildings.
+		This interest was driven by the growing rigidity in modern architecture. Hence, organic architecture is a direction that responds to this condition by taking inspiration from nature.
+	    <h4>Material</h4>
+		Bamboo is the choice of material in this topic not just for its sustainability, but its elemental nature and flexibility that make it very suitable in constructing organic architecture while imposing natural constraints.
+		While the material’s inhomogeneity and limited lengths impose restrictions in construction, it is the introduction of these natural constraints that retain more intimate human proportions.
+		Its ability to bend also creates opportunities for beautiful structures when worked with instead of against or ignored.
+		<br><br>
+        </div>
+    </div>
+
+    <div class="single">
+	However, a critique of organic bamboo constructions is the discretisation of elements into typical beams and columns, which then largely constrain organic qualities to the roof element.
+	The material’s flexibility and span give it potential to be used more as a continuous element that could produce even more harmonious spaces.
+	Hence, continuity is a key quality this thesis aims towards in the design outcome.
+    </div>
+
+    <div class="splimage">
+	<img src="./data/divider-01.png" alt="">
+    </div>
+
+    <div class="twocols" id="nmir">
+        <div class="abstract">
+            <h2>Ernst Haeckel | Art Forms in Nature</h2>
+            Ernst Heinrich Haeckel was a celebrated German biologist and evolutionist.
+	    His book, Art Forms in Nature, was one of the two key books in the early 20th century that enhanced the search for models in nature to be used in architectural design.
+	    <br><br>
+	    <h4>Protozoa</h4>
+	    Among the notable prints are microscopic, unicellular organisms called protozoa.
+	    They are marine organisms that possess very intricate geometries for their size and exhibit qualities of space-making with hierarchy, regulation, and dynamism in their geometric make-up.
+	    They are hence the key subjects for abstraction in this thesis.
+	    <br><br>
+	    Of the varieties of existing protozoa, this thesis looks into two specific types: radiolaria and foraminifera (foram).
+	    While radiolaria tend to be organised more fractally and are composed of arches and lattices, forams are shelled organisms.
+        </div>
+        <img class="right" src="./data/ernst-artforms.jpg" alt="">
+    </div>
+
+    <div class="splimage">
+	<img src="./data/divider-02.png" alt="">
+    </div>
+
+     <div class="twocols">
+
+        <img class="left" src="./data/projectatlas-01.jpg" alt="">
+        <img class="right" src="./data/projectatlas-02.jpg" alt="">
+    </div>
+
+    <div class="single">
+	<center>
+	<h4>Project Atlas</h4>
+	The atlas seeks to catalogue the variety of organic bamboo projects around the world, majority of which are located in the Southeast Asian region.
+	<br>The selection focuses on projects whose forms or structures take after nature, the morphology of which is represented in the iconography.
+	<br><br>
+	</center>
+    </div>
+
+    <div class="single">
+	<br><br>
+        <img src="./data/projectatlas-03.jpg" alt="">
+    </div>
+
+    <div class="single">
+	<center>
+	<h4>Classification Chart</h4>
+	The projects are then arranged across this classification map that recalls that of a phylogenetic tree, where the branching diagram shows the relationship between the species based on their phylogeny.
+	Based on this, a progression of dimensionality in form and structure was observed.
+	</center>
+    </div>
+
+    <div class="single">
+        <br><br>
+	<img src="./data/casestudies-explodedaxons.jpg" alt="">
+    </div>
+
+    <div class="single">
+	<center>
+	<h2>Case Studies</h2>
+	Based on the catalogue of works, key case studies are selected and dissected into three levels of analysis: <b>elements</b>, <b>loads</b> and <b>spaces</b>.
+	<br>This system of examining the built forms in three distinct aspects aims to study them in a holistic manner as feasible organic structures that produce compelling spaces.
+	<br><br>
+	4 case studies are selected for their distinct structural formations and geometries that can be categorised by their dimensionality.
+	<br>First, <i>Bamboo Sports Hall</i> falls within the 2-dimensional class, where its organic qualities are created using repeated trusses in a singular direction
+	<br><i>Son La Ceremony Dome</i> is in the in-between of 2-D and 3-D as its section crafts the structure in an axial domular manner
+	<br><i>Heart of School</i> and <i>LUUM Temple</i> are 3-D structures where the key geometry transcend a single plane, possessing more complex structural make-ups.
+	<br>Yet even between these 2, the translation from geometry to structure differs in their continuum and produce varied spatial qualities.
+	</center>
+    </div>
+
+    <div class="single">
+	<br><br>
+        <img src="./data/casestudies-elements.jpg" alt="">
+    </div>
+
+    <div class="single">
+	<center>
+	<h4>Elements</h4>
+	First, elements look at the structures locally, identifying typical rules or strategies such as repetition in elements or order in geometry.
+	<br>Lessons in translating the organic geometry to built form in the 2-dimensional plane can be extracted from this.
+	</center>
+    </div>
+
+    <div class="single">
+	<br><br>
+        <img src="./data/casestudies-loads.jpg" alt="">
+    </div>
+
+    <div class="single">
+	<center>
+	<h4>Loads</h4>
+	Loads examines the buildings globally, namely at its structural configuration.
+	<br>It examines how the geometric elements come together to support one another, such that the overall flow of forces exist in equilibrium to ensure the building’s structural integrity.
+	</center>
+    </div>
+
+    <div class="single">
+	<br><br>
+        <img src="./data/casestudies-spaces.jpg" alt="">
+    </div>
+
+    <div class="single">
+	<center>
+	<h4>Spaces</h4>
+	Spaces looks at space making within the structural elements.
+	<br>The spatial qualities associate spatial experience with perception and are formalised into the definitions of enclosure, viewfield and continuity in this analysis.
+	</center>
+    </div>
+
+    <div class="splimage">
+	<img src="./data/divider-03.png" alt="">
+    </div>
+
+    <div class="single">
+	<center>
+	<h2>Geometric Explorations</h2>
+	Amongst the documented specimens, several specimens of radiolaria and forams have been selectively chosen for abstraction.
+	<br>Following which, suitable transformations were applied.
+	<br><br>
+	The transformation operations applied are adapted from Joseph Choma’s methodology of exploring geometric variations in his book, <i>Morphing</i>.
+	<br>While there is a parametric logic behind the operations, this thesis rather adapts and applies them in a more abstract geometric manner.
+	</center>
+    </div>
+
+    <div class="splimage">
+        <img src="./data/r1.jpg" alt="">
+    </div>
+
+    <div class="splimage">
+        <img src="./data/r2.jpg" alt="">
+    </div>
+
+    <div class="splimage">
+        <img src="./data/f1.jpg" alt="">
+    </div>
+
+    <div class="splimage">
+        <img src="./data/f2.jpg" alt="">
+    </div>
+
+    <div class="splimage">
+	<img src="./data/divider-04.png" alt="">
+    </div>
+
+    <div class="single">
+	<center>
+	<h2>Translations</h2>
+	Following the iterations of transformations, several 2-d geometric forms are selected and physically translated into 3-d forms through the making of sketch models, and analysed for their structural and spatial qualities.
+	The process involves some liberties in abstracting the bending elements from the lines into intersection, termination and foundation nodes from the points.
+	The building is done while intentionally attempting to actualise the spatial potentials or challenges noted in the geometries in their 2-d form.
+	</center>
+    </div>
+
+    <div class="splimage">
+        <img src="./data/r1sp1.jpg" alt="">
+    </div>
+
+    <div class="splimage">
+        <img src="./data/r2p1.jpg" alt="">
+    </div>
+
+    <div class="splimage">
+        <img src="./data/f1a1.jpg" alt="">
+    </div>
+
+    <div class="splimage">
+        <img src="./data/f2f1.jpg" alt="">
+    </div>
+
+    <div class="splimage">
+	<img src="./data/divider-05.png" alt="">
+    </div>
+
+    <div class="single">
+	<center><h2>Digitalisation</h2>
+	With a physical form to reference, an attempt to digitalise a specimen is made, such that its parameters may be varied based on different desired conditions.
+	<br>This is paired with Karamba to visually analyse the structural performance of the form.
+	<br><br>
+	The first specimen is selected for this study as it shows the most potential in parameterisation given its dynamic structure and ordered member interactions.</center>
+    </div>
+
+    <div class="gifs">
+        <img src="./data/2d-geometry.jpg" alt="">
+        <img src="./data/3d-wireframe.jpg" alt="">
+        <img src="./data/3d-karamba.jpg" alt="">
+    </div>
+
+    <div class="gifs">
+        <img src="./data/karamba-divisions.gif" alt="">
+        <img src="./data/karamba-bundle.gif" alt="">
+        <img src="./data/karamba-curvature.gif" alt="">
+    </div>
+
+    <div class="splimage">
+	<img src="./data/divider-06.png" alt="">
+    </div>
+
+    <div class="single">
+	<center>
+	<h2>Construction Explorations</h2>
+	Traditionally, bamboo buildings are constructed with rigid joints for linear connections, or lashed with rope for flexibility.
+	To construct organically, there is an opportunity for the exploration of assembly processes such that there may be a more directed approach to erecting organic structures.
+	An important consideration is to allow sliding and flexibility in fixing to different angles.
+	<br><br>
+	For this, 2 scales are worked at:
+	<br>1:50 - a standard model scale used in the industry for prototyping, and
+	<br>1:5 - to test certain types of joints in more detail and with real material
+	</center>
+    </div>
+
+    <div class="twocols" id="mir">
+
+        <img class="left" src="./data/joints-1-50.jpg" alt="">
+
+        <div class="mir_abstract">
+            <h4>1:50</h4>
+            Beginning at the 1:50 scale, the details consist of bundling pieces, sliding pieces at intersections and terminating pieces at several options of fixed angles.
+	    Shown below is basic demonstration of how these connection pieces may be used to assemble structure.
+	    This logic of assembly has been applied as a test to a part of the first specimen that exhibited structure that this style of assembly may be suitable for.
+        </div>
+    </div>
+
+    <div class="single">
+	<img src="./data/demo-process.jpg" alt="">
+    </div>
+
+    <div class="gifs">
+        <img src="./data/spiral-01.jpg" alt="">
+        <img src="./data/spiral-02.jpg" alt="">
+        <img src="./data/spiral-03.jpg" alt="">
+    </div>
+
+    <div class="twocols" id="mir">
+
+        <img class="left" src="./data/joints-1-5.jpg" alt="">
+
+        <div class="mir_abstract">
+            <h4>1:5</h4>
+            At the 1:5 scale, rotational joints are specifically tested out.
+	    Different types of typical joints that allow multi-angular movement were tested out in the bamboo context.
+	    Most importantly, they allow movement at the intersections for the bamboo to bend, slide, rotate and lock before being secured and tightened.
+	    <br><br>
+	    Below shows a demo of the joints allowing rotation.
+	    These are still constrained to certain angles and are brittle as prototypes with minimal contact at the connection point while allowing too much initial sliding.
+	    This is left for future explorations.
+        </div>
+    </div>
+
+    <div class="gifs">
+        <img src="./data/demo-ball-n-socket.gif" alt="">
+        <img src="./data/demo-nut-n-bolt.gif" alt="">
+        <img src="./data/demo-terminating.gif" alt="">
+    </div>
+
+    <div class="splimage">
+	<img src="./data/divider-07.png" alt="">
+    </div>
+
+    <div class="splimage">
+	<img src="./data/poppy-to-coffee.jpg" alt="">
+    </div>
+
+    <div class="single">
+	<center><h2>From Poppy to Coffee</h2>
+	For the application to site, a topographic site was desired for the opportunity to explore how these organic structures may equally organically adapt to or even form their environments.
+	<br><br>
+	Myanmar has been chosen as the place of interest, as it is the country possessing the 3rd largest density of bamboo forests after China and India, hence the largest in Southeast Asia.
+	Within the country, the Shan State is one of the regions in which many of these forests are found.
+	After speaking to a local bamboo worker there, The Hopong District in the Taunggyi Township was focused on, where their copious bamboo forests are undervalued by the local Pa’O people, and are instead gradually destroyed to make land for other lucrative means.
+	Within the district, the village of Bant Sauk has been selected as the site of interest.
+	Topographically, Bant Sauk is nestled between two gentle ridges.
+	<br><br>
+	This village is also part of a collective in the region that now actively farms specialty coffee in a fight against farming opium.
+	The region’s agricultural field has been plagued with the issue of illegal opium farming.
+	Myanmar is the second biggest source of opium in the world, with this state being its main production hub.
+	The farmers have hence long since faced persecution by the government, but the lucrativeness of the trade binds them.
+	<br><br>
+	Hence, to give greater value to organic bamboo architecture in its place of application, it is made more productive with a purpose that serves the community.
+	The goal is hence to design a coffee production-related space that may invigorate the spirit of honest work, promote the beauty of organic bamboo architecture and draw visitors from the major cities.</center>
+    </div>
+
+    <div class="twocols">
+        <img class="left" src="./data/site-hopong.jpg" alt="">
+        <img class="right" src="./data/site-bantsauk.jpg" alt="">
+    </div>
+
+    <div class="twocols" id="mir">
+
+        <img class="left" src="./data/zoning-plan.jpg" alt="">
+
+        <div class="mir_abstract">
+            <h4>Programme Distribution</h4>
+            A mountainous area about 3km away from the village centre is selected, where agricultural plots condense around the site.
+	    <br><br>
+	    Several key degrees of slopes exist in this mountain, that may be more suitable for certain programmes.
+	    These 3 key areas were selected where each slope varies drastically, 2 being the most gentle, 1 very steep and 3 being in between.
+	    The areas are allocated the production, experience and community zones respectively.
+	    This thesis shall focus on the experience zone, which serves to allow visitors and community alike to enjoy a taste of the region’s agricultural produce, learn about the processes and enjoy spaces shaped from bamboo.
+	    <br><br>
+	    <h4>Application to Site</h4>
+	    Following the selection of site, a system of application of the research findings is explored.
+	    To emphasise the geometry's adaptibility, it is made biased to site via the lines that flow along and across the site's topography.
+	    The interaction between bamboo and ground is also focused upon as the grounds of where the relationship between the elements are built,
+	    and is intensified to emphasise how bamboo and ground adapt to each other.
+	    <br><br>
+	    The geometry of F1Sp1 has been selected for application and development due to its adaptivity and construction potential that has been explored in the research.
+        </div>
+    </div>
+
+    <div class="twocols">
+        <img class="left" src="./data/ground-reformation.jpg" alt="">
+        <img class="right" src="./data/exploded-axon.jpg" alt="">
+    </div>
+
+    <div class="twocols" id="nmir">
+        <div class="abstract">
+            <h4>Final Structure</h4>
+	    A 1:100 process model is built to test the material and geometry's ability to "transform" to the sloped site, during which difficulties arose in the areas of maintaining the structure's shape and strength.
+	    Hence, before constructing the larger-scaled model, the material and structural needs are reconsidered.
+	    <br><br>
+	    Bundling is an important factor in each member’s strength and flexibility.
+	    Hence, taking two main structural diameters of bamboo (15cm and 10cm) and several standard configurations, structural analysis is run through Karamba and the most optimal bundle is selected for each member.
+        </div>
+        <img class="right" src="./data/bundling-chart.jpg" alt="">
+    </div>
+
+    <div class="gifs">
+        <img src="./data/circular-analysis.gif" alt="">
+        <img src="./data/rectangular-analysis.gif" alt="">
+        <img src="./data/squared-analysis.gif" alt="">
+    </div>
+
+    <div class="splimage">
+	<img src="./data/divider-07.png" alt="">
+    </div>
+
+    <div class="single">
+	<center><h2>Bant Sauk Coffee House</h2>
+	The programmes of the architecture follow the coffee bean's progress from plantation to consumption; providing the necessary spaces for production and consumers alike.
+	The frontal areas are dedicated to visitors, where the observation and roastery floors are located.
+	The woven roof peels back to reveal the view of endless mountain ranges and the bustle of agricultural activites below.
+	A large floor situated next to a generous area of earthen ground is designated for production. This is where workers may carry about their processing of coffee beans harvested from the plantations around while easily tending to the nursery of coffee seedlings.
+	Finally, a playground constructed from bamboo occupies the final floor, whose circulation is the smoothest to adjacent floors to allow children to freely run through and about.
+	<br><br>
+	The experience through these spaces are visualised below, following a formalisation of the structure digitally and physically based on prior research findings at a 1:50 scale.
+	</center>
+    </div>
+
+    <div class="splimage">
+        <img src="./data/plan-01.jpg" alt="">
+    </div>
+
+    <div class="splimage">
+	<img src="./data/plan-02.jpg" alt="">
+    </div>
+
+    <div class="splimage">
+	<img src="./data/section-long.jpg" alt="">
+    </div>
+
+    <div class="gifs">
+        <img src="./data/plan.jpg" alt="">
+        <img src="./data/front-elevation.jpg" alt="">
+        <img src="./data/perspective-01.jpg" alt="">
+    </div>
+
+    <div class="gifs">
+        <img src="./data/side-elevation-01.jpg" alt="">
+        <img src="./data/side-elevation-02.jpg" alt="">
+        <img src="./data/perspective-02.jpg" alt="">
+    </div>
+
+    <div class="gifs">
+        <img src="./data/structure-plan.jpg" alt="">
+        <img src="./data/structure-elevation.jpg" alt="">
+        <img src="./data/joints-final.jpg" alt="">
+    </div>
+
+    <div class="splimage">
+	<img src="./data/render-entry.jpg" alt="">
+    </div>
+
+    <div class="splimage">
+	<img src="./data/render-roastery.jpg" alt="">
+    </div>
+
+    <div class="splimage">
+	<img src="./data/render-play.jpg" alt="">
+    </div>
+
+    <div class="splimage">
+	<img src="./data/render-production.jpg" alt="">
+    </div>
+
+    <div class="splimage">
+	<img src="./data/render-nursery.jpg" alt="">
+    </div>
+
+    <div class="single">
+	<center>Thank you!</center>
+    </div>
+
+    <div class="splimage">
+	<img src="./data/divider-07.png" alt="">
+    </div>
+
+    <div class="bottomlinks">
+        <h3><a href="javascript:goToTop()">Back to Top</a></h3>
+        <!-- <h3><a id="random">Randomise!</a></h3> -->
+    </div>
+
+</section>
+<div id="footer"></div>
+
+<script defer src="../../../js/navfixer.js"></script>
+<script src="../../../js/title.js"></script>
+</body>
+</html>

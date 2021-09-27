@@ -1,0 +1,29 @@
+nav.footerbox {
+  background-color: orangered;
+  display: flex;
+  padding: 1vh 0 1vh 0;
+  justify-content: center;
+  z-index: 10;
+}
+.footerbox img {
+  margin: 0.5rem;
+  z-index: 12;
+}
+
+footer {
+  position: relative;
+}
+
+.footerbox img {
+  width: 3rem;
+}
+
+@media screen and (max-device-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .footerbox img {
+    width: 2.5rem;
+  }
+}
