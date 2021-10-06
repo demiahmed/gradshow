@@ -245,16 +245,11 @@ function restart(data) {
     circles = circles.data(data)
     
 
-    // Update and restart the simulation.
-    simulation = d3.forceSimulation()
-    .force("collide",d3.forceCollide( function(d){
-          return radiusScale(d.radius) + 1 }).iterations(60)
-    )
-    .force("charge", d3.forceManyBody())
-    .force("y", d3.forceY().y(midlineY))
-    .force("x", d3.forceX().x(w / 2))
-
-
+    // // Update and restart the simulation.
+    // simulation = d3.forceSimulation()
+    // .force("collide",d3.forceCollide( function(d){
+    //       return radiusScale(d.radius) + 1 }).iterations(60)
+    // )
     }
 
 

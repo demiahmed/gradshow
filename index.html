@@ -13,28 +13,68 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="./assets/favicon/site.webmanifest">
 	<!-- keep the line below for OpenProcessing compatibility -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-    <script src="./js/p5sketch.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+    <script src="./js/p5sketch_1.js"></script>
     <link rel="stylesheet" href="./css/p5splash.css">
 
 </head>
 
 
 
-<body>   
+<body>  
+    <!-- <div class="preload-bg"> 
+    <div id="p5_loading">
+        <svg 
+        class="loader" 
+        version="1.1" 
+        id="L3"
+        xmlns="http://www.w3.org/2000/svg" 
+        xmlns:xlink="http://www.w3.org/1999/xlink" 
+        x="0px" 
+        y="0px"
+        viewBox="0 0 100 100" 
+        enable-background="new 0 0 0 0" 
+        xml:space="preserve">
+
+        <circle 
+        fill="none" 
+        stroke="orangered" 
+        stroke-width="4" 
+        cx="50" 
+        cy="50" 
+        r="44" 
+        style="opacity:0.5;"/>
+
+        <circle 
+        fill="#fff" 
+        stroke="white" 
+        stroke-width="3" 
+        cx="8" 
+        cy="54" 
+        r="6" >
+
+        <animateTransform
+        attributeName="transform"
+        dur="2s"
+        type="rotate"
+        from="0 50 48"
+        to="360 50 52"
+        repeatCount="indefinite" />
+        </circle>
+        </svg>
+    </div>
+</div> -->
 	<div class="background">
         <div class="svg-container">
-            <svg viewBox="0 0 100vw 100vh">
-                <text x="70%" y="70vh" dy=".35em" text-anchor="left" id="hero">
+            <svg id="main" viewBox="0 0 640 360">
+                <text x="70%" y="70%" dy=".35em" text-anchor="left" id="hero">
                     2021 
                 </text>
-                <text x="40px" y="82vh" dy=".35em" text-anchor="right">
-                    M.Arch 
-                    
+                <text x="50" y="80%" dy=".35em" text-anchor="right" class="sub-hero">
+                    M.Arch   
                 </text>
-                <text x="40px" y="89vh" dy=".35em" text-anchor="right">
-                    GradShow 
-                    
+                <text x="50" y="90%" dy=".35em" text-anchor="right" class="sub-hero last">
+                    GradShow                     
                 </text>
             </svg>	
             <div class="enter-container">
@@ -44,5 +84,12 @@
         </div>
     </div>
 </body>
+
+<script type="module">
+    if(window.screen.width < 767) {
+     let svg = document.querySelector("svg")
+    //  svg.setAttribute("viewBox", "0 0 360 640");
+    }
+</script>
 
 </html>

@@ -10,9 +10,9 @@ for(var i=0;i<data.length;i++) {
         id: i,
         category: data[i].Topic,
         name: data[i].name,
-        url: processedName,
+        url: `../projects/${document.querySelector("script").getAttribute('year')}/${processedName}`,
         //iu: "./explore/" + String(data[i].name) ,
-        path: `../projects/2020/${processedName}/${processedName}`
+        path: `../projects/${document.querySelector("script").getAttribute('year')}/${processedName}/${processedName}`
     };
     PHOTODATA.push(photo);
 
@@ -42,7 +42,7 @@ var Photo =  React.createClass({
 
 render: function(){
 return (
-    <a className = "photo-container" href= {String(this.props.path) + ".html"} >
+    <a className = "photo-container" href= {String(this.props.url)} >
         <div className= "wrapper" data-category={this.props.category} >
             
 
@@ -126,7 +126,7 @@ return (
             {
 
                 this.state.displayedCategories.map(function(el){
-                            return <Photo key={el.id} imageUrl={el.imageUrl} category={el.category} path={el.path} name={el.name} />
+                            return <Photo key={el.id} url={el.url} category={el.category} path={el.path} name={el.name} />
                         })
 
             }

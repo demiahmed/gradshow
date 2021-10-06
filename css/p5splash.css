@@ -4,6 +4,7 @@ body {
 	padding: 0;
     overflow: hidden;
 	font-family: "Inter" ,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	background: black;
 }
 .background {
     z-index: 999;
@@ -16,6 +17,29 @@ body {
 
 }
 
+#p5_loading {
+	/* background: black; */
+
+}
+
+/* .main {
+	width: 100vw;
+	height: auto;
+} */
+
+.preload-bg {
+	width: 100%;
+	height: 100%;
+	background: black;
+}
+  .loader{
+	width: 300px;
+	/* height: 100px; */
+	/* display: inline-block; */
+	margin: 0 auto;
+
+  }
+
 @keyframes mymove {
   from {background-color: rgba(0, 0, 0, 0);}
   to {background-color: rgba(0, 0, 0, 0.616);}
@@ -23,7 +47,7 @@ body {
 
 
 svg {
-	font-family: 'Russo One', sans-serif;
+	/* font-family: 'Russo One', sans-serif; */
 	position: absolute; 
 	width: 100%; height: 100%;
 }
@@ -31,7 +55,7 @@ svg text {
 	animation: stroke 5s infinite alternate;
 	stroke-width: 2;
 	stroke: white;
-	font-size: 60px
+	/* font-size: 24px */
 }
 
 i {
@@ -43,7 +67,7 @@ i {
 
 .enter-container {
     position: absolute;
-    bottom: 14vh;
+    bottom: 15%;
     left: 70%;
     display: flex;
     width: max-content;
@@ -72,15 +96,19 @@ a.enter {
 	transform: rotateZ(360deg);
 }
 #hero {
-  font-size: 6rem;
+  font-size: 3rem;
+}
+
+.sub-hero {
+	font-size: 2rem;
 }
 @keyframes stroke {
 	0%   {
 		fill: rgba(72,138,20,0); stroke: white;
-		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: .5;
 	}
 	70%  {fill: rgba(72,138,20,0); stroke: white; }
-	80%  {fill: rgba(72,138,20,0); stroke: white; stroke-width: 3; }
+	80%  {fill: rgba(72,138,20,0); stroke: white; stroke-width: 1; }
 	100% {
 		fill: white; stroke: rgba(54,95,160,0); 
 		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
@@ -89,10 +117,43 @@ a.enter {
 
 
 @media screen and (max-device-width: 767px) {
-  #hero .enter-container {
-    transform: translateX(-30%);
+  #hero {
+	font-size: 6rem;
+	transform: translate(-15%, -10%);
+  }
+  .sub-hero {
+	font-size: 6rem;
+	transform: translate(0, 60%);
+  }
+  .last {
+	transform: translate(0, 90%);
   }
   .enter-container {
-	transform: translateY(100%);
+	left: 50%;
+	bottom: 50%;
+  }
+  .enter-icon {
+    width: 60px;
+  }
+}
+
+@media screen and (max-device-width: 1024px) {
+  #hero {
+	font-size: 6rem;
+	transform: translate(-15%, -10%);
+  }
+  .sub-hero {
+	font-size: 4rem;
+	transform: translate(0, 40%);
+  }
+  .last {
+	transform: translate(0, 60%);
+  }
+  .enter-container {
+	left: 50%;
+	bottom: 30%;
+  }
+  .enter-icon {
+    width: 60px;
   }
 }

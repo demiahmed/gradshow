@@ -78,6 +78,7 @@ img {
 .mainimage img {
   max-width: 100%;
   transform: translateY(-15%);
+  width: 100%;
 }
 
 .titletext {
@@ -132,7 +133,7 @@ h3 {
   font-size: 1.5rem;
   font-weight: bold;
   font-weight: normal;
-  padding: 1vh 0 1vh 0;
+  padding: 0 0 15px 0;
   text-align: start;
 }
 
@@ -144,7 +145,7 @@ h4 {
 }
 
 .table p {
-  padding: 1.5vh 0 1vh 0;
+  padding: 0 0 15px 0;
   text-align: end;
 }
 
@@ -252,6 +253,13 @@ img.left {
   color: black;
 }
 
+
+@media screen and (max-width: 1024px) {
+h3 {
+  font-size: 1rem;
+}
+}
+
 @media screen and (max-width: 767px) {
   iframe {
     width: 100vw;
@@ -322,12 +330,8 @@ img.left {
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: lighter;
-  }
-
-  .table p {
-    padding: 3vw 0 1vw 0;
   }
 
   .gifs {

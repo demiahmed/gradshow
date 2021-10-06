@@ -48,6 +48,7 @@ var simulation = d3.forceSimulation()
               return radiusScale(d.radius) + 1 }).iterations(60)
         )
         .force("charge", d3.forceManyBody())
+        // .force("center", d3.forceCenter(w/2, midlineY))
         .force("y", d3.forceY().y(midlineY))
         .force("x", d3.forceX().x(w / 2))
 
@@ -87,7 +88,7 @@ d3.csv(`../assets/${document.querySelector("#data-provider").getAttribute("filen
   d3.csv(`../assets/${d3.select(this).property('value')}`, function(data){
     restart(data)
     // console.log(data);
-    simulation.alpha(1).restart()
+   
   })
 })
 })
@@ -95,10 +96,10 @@ d3.csv(`../assets/${document.querySelector("#data-provider").getAttribute("filen
 var circles
 
 function restart(data) {
-    data.forEach(function(d){
-        d.x = w / 2;
-        d.y = h / 2;
-      })
+    // data.forEach(function(d){
+    //     d.x = w / 2;
+    //     d.y = h / 2;
+    //   })
 
     // transition
     var t = d3.transition()
@@ -155,27 +156,28 @@ function restart(data) {
 
         circles
         .transition(t)
-            .attr("r", (d) => radiusScale(d.radius));
+            .attr("r", (d) => radiusScale(d.radius))
+
 
       let enter = circles
         .enter()
         .append("circle")
+        .attr("r", 1e-6) 
         .attr("class", "artist")
-        .attr("r", function(d) {
-              return radiusScale(d.radius);
-            })
+        // .attr("r", function(d) {
+        //       return radiusScale(d.radius);
+        //     })
         .style("pointer-events", "all")
-        // .merge(circles)
         .call(d3.drag()
                 .on("start", dragstarted)
                 .on("drag", dragged)
                 .on("end", dragended))
         .attr("fill", function(d) {
-            return "url(#" + d.key + ")"
+            return `url(#${d.key})`
           })    
     
         .on('click', function(d) {
-              window.open("./projects/" + d.key + "/" + d.key + ".html")
+              window.open(`../projects/2020/${d.key}/`)
         })
     
         .on('mouseover', function (d, i) {
@@ -211,7 +213,13 @@ function restart(data) {
             divProf.transition()
             .duration(50)
             .style("opacity", 0);
+            susGoals.html(`<img class="sus-img" src="../assets/ungoals/black.jpg" alt="Sustainability Goals">`)
+            .duration(50)
+            .style("opacity", 1);
         })
+        .transition(t)
+            .attr("r", (d) => radiusScale(d.radius));
+
 
         circles = circles.merge(enter)
 
@@ -235,7 +243,7 @@ function restart(data) {
             .attr("preserveAspectRatio", "none")
             .attr("xmlns:xlink", "https://www.w3.org/1999/xlink")
             .attr("xlink:href", function(d) {
-                return "../projects/2020/" + d.key + "/" + d.key + ".jpg"
+                return `../projects/2020/${d.key}/${d.key}.jpg`
             })
             
         defs = defs.merge(defEnter)
@@ -246,7 +254,10 @@ function restart(data) {
     .nodes(data)
     .on("tick", ticked);
 
-
+    hideTitles();
+    d3.selectAll('.button').classed("active", false);
+    d3.select('.button').classed("active", true);
+    groupBubbles()
 
   function ticked() {
     //console.log("tick")
@@ -256,7 +267,17 @@ function restart(data) {
         .attr("cy", function(d){ return d.y; });
   }
 
-    // simulation.alpha(1).restart();
+  function groupBubbles() {
+    hideTitles();
+
+    // @v4 Reset the 'x' force to draw the bubbles to the center.
+    simulation     
+    
+    .force("y", d3.forceY().y(midlineY))
+    .force("x", d3.forceX().x(w / 2))
+    .alpha(1).restart();
+    }
+
 
 
     // @v4 We can reset the alpha value and restart the simulation
