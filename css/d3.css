@@ -215,7 +215,7 @@ div.tooltip {
   li {
     list-style: none;
     display: block;
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
     /* margin: 1.5vh 0px 2.5vh 3vw; */
   }
 

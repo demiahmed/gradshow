@@ -3,7 +3,7 @@ let imgs_arr = [];
 let num = 45;
 
 function preload() {
-  table = loadTable('../assets/students.csv', 'csv', 'header')
+  table = loadTable('assets/students.csv', 'csv', 'header')
   // console.log(table.getColumn('radius'));
   //     for (let i = 0; i < num; i++) {
   //   imgs[i] = loadImage("https://picsum.photos/300/300/?image=" + i);

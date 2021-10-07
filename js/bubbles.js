@@ -78,7 +78,7 @@ var defs = svg.append('defs')
 
 
 
-d3.csv(`../assets/${document.querySelector("script").getAttribute("filename")}`, function(data){ 
+d3.csv(`../assets/${document.querySelector("#data-provider").getAttribute("filename")}`, function(data){ 
     restart(data)
 
   d3.select('#exploreyear')

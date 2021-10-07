@@ -104,11 +104,11 @@ a.enter {
 }
 @keyframes stroke {
 	0%   {
-		fill: rgba(72,138,20,0); stroke: white;
+		fill: rgba(72,138,20,0); stroke: orangered;
 		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: .5;
 	}
-	70%  {fill: rgba(72,138,20,0); stroke: white; }
-	80%  {fill: rgba(72,138,20,0); stroke: white; stroke-width: 1; }
+	70%  {fill: rgba(72,138,20,0); stroke: orangered; }
+	80%  {fill: rgba(72,138,20,0); stroke: orangered; stroke-width: 1; }
 	100% {
 		fill: white; stroke: rgba(54,95,160,0); 
 		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
