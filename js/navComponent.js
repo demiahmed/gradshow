@@ -362,18 +362,18 @@ class navComponent extends HTMLElement {
       
       
               <ul class="sections">
-                  <li class="navlist"><a class="nav-item" href="${link}home"><span>Home</span></a></li>
-                  <li class="navlist"><a class="nav-item" href="${link}explore"><span>Explore</span></a></li>
+                  <li class="navlist"><a class="nav-item" href="${link}home/"><span>Home</span></a></li>
+                  <li class="navlist"><a class="nav-item" href="${link}explore/"><span>Explore</span></a></li>
                   <li class="has-dropdown navlist" id="nav-dropdown">
-                    <a class="nav-item" href="${link}projects"><span>Projects </span></a>
+                    <a class="nav-item" href="${link}projects/"><span>Projects </span></a>
                     <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iMTI4cHgiIGlkPSJMYXllcl8xIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMjggMTI4OyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMTI4IDEyOCIgd2lkdGg9IjEyOHB4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48Zz48bGluZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMkYzNDM1O3N0cm9rZS13aWR0aDoxMjtzdHJva2UtbGluZWNhcDpzcXVhcmU7c3Ryb2tlLW1pdGVybGltaXQ6MTA7IiB4MT0iMTExIiB4Mj0iNjQiIHkxPSI0MC41IiB5Mj0iODcuNDk5Ii8+PGxpbmUgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2U6IzJGMzQzNTtzdHJva2Utd2lkdGg6MTI7c3Ryb2tlLWxpbmVjYXA6c3F1YXJlO3N0cm9rZS1taXRlcmxpbWl0OjEwOyIgeDE9IjY0IiB4Mj0iMTciIHkxPSI4Ny40OTkiIHkyPSI0MC41Ii8+PC9nPjwvc3ZnPg==" alt="Down Arrow" class="fa">
                     <ul class="dropdown-content" id="drop-projects">
-                      <a class="dropdown-text" href="${link}projects/2020">2020</a>
+                      <a class="dropdown-text" href="${link}projects/2020/">2020</a>
                     </ul>   
                   </li>
-                  <li class="navlist" id="nav-dropdown-award"><a class="nav-item" href="${link}awards"><span>Awards</span></a>
+                  <li class="navlist" id="nav-dropdown-award"><a class="nav-item" href="${link}awards/"><span>Awards</span></a>
                     <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iMTI4cHgiIGlkPSJMYXllcl8xIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMjggMTI4OyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMTI4IDEyOCIgd2lkdGg9IjEyOHB4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48Zz48bGluZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMkYzNDM1O3N0cm9rZS13aWR0aDoxMjtzdHJva2UtbGluZWNhcDpzcXVhcmU7c3Ryb2tlLW1pdGVybGltaXQ6MTA7IiB4MT0iMTExIiB4Mj0iNjQiIHkxPSI0MC41IiB5Mj0iODcuNDk5Ii8+PGxpbmUgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2U6IzJGMzQzNTtzdHJva2Utd2lkdGg6MTI7c3Ryb2tlLWxpbmVjYXA6c3F1YXJlO3N0cm9rZS1taXRlcmxpbWl0OjEwOyIgeDE9IjY0IiB4Mj0iMTciIHkxPSI4Ny40OTkiIHkyPSI0MC41Ii8+PC9nPjwvc3ZnPg==" alt="Down Arrow" class="fa">                <ul class="dropdown-content" id="drop-awards">
-                      <a class="dropdown-text" href="${link}awards/2020">2020</a>
+                      <a class="dropdown-text" href="${link}awards/2020/">2020</a>
                     </ul>
                     </li>
                 </ul>
@@ -385,7 +385,64 @@ class navComponent extends HTMLElement {
     }
 }
 
+class footerComponent extends HTMLElement {
+  connectedCallback() {
+      this.innerHTML = 
+      `<style>
+      nav.footerbox {
+    background-color: orangered;
+    display: flex;
+    padding: 1vh 0 1vh 0;
+    justify-content: center;
+    z-index: 10;
+  }
+  .footerbox img {
+    margin: 0.5rem;
+    z-index: 12;
+    width: 3rem;
+  }
+  
+  footer {
+    position: relative;
+  }
+  
+  @media screen and (max-device-width: 767px) {
+    body {
+      overflow-x: hidden;
+    }
+  
+    .footerbox img {
+      width: 2.5rem;
+    }
+  }
+  
+  </style>
+  <footer>
+  <nav class="footerbox">
+      <a href="mailto:asd@sutd.edu.sg">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgLjAyYy02LjYyNyAwLTEyIDUuMzczLTEyIDEyczUuMzczIDEyIDEyIDEyIDEyLTUuMzczIDEyLTEyLTUuMzczLTEyLTEyLTEyem02Ljk5IDYuOThsLTYuOTkgNS42NjYtNi45OTEtNS42NjZoMTMuOTgxem0uMDEgMTBoLTE0di04LjUwNWw3IDUuNjczIDctNS42NzJ2OC41MDR6Ii8+PC9zdmc+">
+      </a>
+  
+      <a href="https://www.facebook.com/pg/SUTDASD">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMGMtNi42MjcgMC0xMiA1LjM3My0xMiAxMnM1LjM3MyAxMiAxMiAxMiAxMi01LjM3MyAxMi0xMi01LjM3My0xMi0xMi0xMnptMyA4aC0xLjM1Yy0uNTM4IDAtLjY1LjIyMS0uNjUuNzc4djEuMjIyaDJsLS4yMDkgMmgtMS43OTF2N2gtM3YtN2gtMnYtMmgydi0yLjMwOGMwLTEuNzY5LjkzMS0yLjY5MiAzLjAyOS0yLjY5MmgxLjk3MXYzeiIvPjwvc3ZnPg==">
+      </a>
+  
+      <a href="https://www.instagram.com/sutd_asd">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTQuODI5IDYuMzAyYy0uNzM4LS4wMzQtLjk2LS4wNC0yLjgyOS0uMDRzLTIuMDkuMDA3LTIuODI4LjA0Yy0xLjg5OS4wODctMi43ODMuOTg2LTIuODcgMi44Ny0uMDMzLjczOC0uMDQxLjk1OS0uMDQxIDIuODI4cy4wMDggMi4wOS4wNDEgMi44MjljLjA4NyAxLjg3OS45NjcgMi43ODMgMi44NyAyLjg3LjczNy4wMzMuOTU5LjA0MSAyLjgyOC4wNDEgMS44NyAwIDIuMDkxLS4wMDcgMi44MjktLjA0MSAxLjg5OS0uMDg2IDIuNzgyLS45ODggMi44Ny0yLjg3LjAzMy0uNzM4LjA0LS45Ni4wNC0yLjgyOXMtLjAwNy0yLjA5LS4wNC0yLjgyOGMtLjA4OC0xLjg4My0uOTczLTIuNzgzLTIuODctMi44N3ptLTIuODI5IDkuMjkzYy0xLjk4NSAwLTMuNTk1LTEuNjA5LTMuNTk1LTMuNTk1IDAtMS45ODUgMS42MS0zLjU5NCAzLjU5NS0zLjU5NHMzLjU5NSAxLjYwOSAzLjU5NSAzLjU5NGMwIDEuOTg1LTEuNjEgMy41OTUtMy41OTUgMy41OTV6bTMuNzM3LTYuNDkxYy0uNDY0IDAtLjg0LS4zNzYtLjg0LS44NCAwLS40NjQuMzc2LS44NC44NC0uODQuNDY0IDAgLjg0LjM3Ni44NC44NCAwIC40NjMtLjM3Ni44NC0uODQuODR6bS0xLjQwNCAyLjg5NmMwIDEuMjg5LTEuMDQ1IDIuMzMzLTIuMzMzIDIuMzMzcy0yLjMzMy0xLjA0NC0yLjMzMy0yLjMzM2MwLTEuMjg5IDEuMDQ1LTIuMzMzIDIuMzMzLTIuMzMzczIuMzMzIDEuMDQ0IDIuMzMzIDIuMzMzem0tMi4zMzMtMTJjLTYuNjI3IDAtMTIgNS4zNzMtMTIgMTJzNS4zNzMgMTIgMTIgMTIgMTItNS4zNzMgMTItMTItNS4zNzMtMTItMTItMTJ6bTYuOTU4IDE0Ljg4NmMtLjExNSAyLjU0NS0xLjUzMiAzLjk1NS00LjA3MSA0LjA3Mi0uNzQ3LjAzNC0uOTg2LjA0Mi0yLjg4Ny4wNDJzLTIuMTM5LS4wMDgtMi44ODYtLjA0MmMtMi41NDQtLjExNy0zLjk1NS0xLjUyOS00LjA3Mi00LjA3Mi0uMDM0LS43NDYtLjA0Mi0uOTg1LS4wNDItMi44ODYgMC0xLjkwMS4wMDgtMi4xMzkuMDQyLTIuODg2LjExNy0yLjU0NCAxLjUyOS0zLjk1NSA0LjA3Mi00LjA3MS43NDctLjAzNS45ODUtLjA0MyAyLjg4Ni0uMDQzczIuMTQuMDA4IDIuODg3LjA0M2MyLjU0NS4xMTcgMy45NTcgMS41MzIgNC4wNzEgNC4wNzEuMDM0Ljc0Ny4wNDIuOTg1LjA0MiAyLjg4NiAwIDEuOTAxLS4wMDggMi4xNC0uMDQyIDIuODg2eiIvPjwvc3ZnPg==">
+      </a>
+  
+      <a href="https://twitter.com/sutdsg">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMGMtNi42MjcgMC0xMiA1LjM3My0xMiAxMnM1LjM3MyAxMiAxMiAxMiAxMi01LjM3MyAxMi0xMi01LjM3My0xMi0xMi0xMnptNi4wNjYgOS42NDVjLjE4MyA0LjA0LTIuODMgOC41NDQtOC4xNjQgOC41NDQtMS42MjIgMC0zLjEzMS0uNDc2LTQuNDAyLTEuMjkxIDEuNTI0LjE4IDMuMDQ1LS4yNDQgNC4yNTItMS4xODktMS4yNTYtLjAyMy0yLjMxNy0uODU0LTIuNjg0LTEuOTk1LjQ1MS4wODYuODk1LjA2MSAxLjI5OC0uMDQ5LTEuMzgxLS4yNzgtMi4zMzUtMS41MjItMi4zMDQtMi44NTMuMzg4LjIxNS44My4zNDQgMS4zMDEuMzU5LTEuMjc5LS44NTUtMS42NDEtMi41NDQtLjg4OS0zLjgzNSAxLjQxNiAxLjczOCAzLjUzMyAyLjg4MSA1LjkyIDMuMDAxLS40MTktMS43OTYuOTQ0LTMuNTI3IDIuNzk5LTMuNTI3LjgyNSAwIDEuNTcyLjM0OSAyLjA5Ni45MDcuNjU0LS4xMjggMS4yNy0uMzY4IDEuODI0LS42OTctLjIxNS42NzEtLjY3IDEuMjMzLTEuMjYzIDEuNTg5LjU4MS0uMDcgMS4xMzUtLjIyNCAxLjY0OS0uNDUzLS4zODQuNTc4LS44NyAxLjA4NC0xLjQzMyAxLjQ4OXoiLz48L3N2Zz4=">
+      </a>
+  
+  
+  </nav>
+  </footer>`
+  }
+}
+
 
 
 
 window.customElements.define('nav-i', navComponent)
+window.customElements.define('footer-i', footerComponent)

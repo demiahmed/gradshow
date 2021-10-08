@@ -1,6 +1,6 @@
-// console.log(document.currentScript.getAttribute('filename'));
+// console.log(document.querySelector("script").getAttribute('filepath'));
 
-d3.csv(`../assets/${document.querySelector("script").getAttribute('filename')}`, function(data){
+d3.csv(`${document.querySelector("script").getAttribute('filepath')}`, function(data){
     //console.log(data);
 var PHOTODATA = [];
 
@@ -10,9 +10,9 @@ for(var i=0;i<data.length;i++) {
         id: i,
         category: data[i].Topic,
         name: data[i].name,
-        url: `../projects/${document.querySelector("script").getAttribute('year')}/${processedName}`,
+        url: `${document.querySelector('script').getAttribute('prefix')}../projects/${document.querySelector("script").getAttribute('year')}/${processedName}`,
         //iu: "./explore/" + String(data[i].name) ,
-        path: `../projects/${document.querySelector("script").getAttribute('year')}/${processedName}/${processedName}`
+        path: `${document.querySelector('script').getAttribute('prefix')}../projects/${document.querySelector("script").getAttribute('year')}/${processedName}/${processedName}`
     };
     PHOTODATA.push(photo);
 
