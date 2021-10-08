@@ -23,7 +23,7 @@ class navComponent extends HTMLElement {
       
       nav .logo {
         display: flex;
-        margin: 20px 20px;
+        margin: 40px 40px;
       }
       
       .sections {
@@ -35,13 +35,7 @@ class navComponent extends HTMLElement {
           align-items: center;
       }
       
-      
-      .sutd {
-        width: 16vw;
-      }
-      
       .asd {
-        margin: 2vw;
         height: 40px;
       }
       
@@ -122,8 +116,34 @@ class navComponent extends HTMLElement {
         width: 20px;
         vertical-align: text-top;
       }
+
+      @media screen and (min-device-width: 3840px) {
+        .asd {
+          height: 100px;
+        }
+
+        span {
+          font-size:2.4rem;
+        }
+
+        .content {
+          font-size: 3rem;
+      }
+      }
       
       
+      @media screen and (min-device-width: 2560px) {
+        .asd {
+          height: 80px;
+        }
+      }
+
+      @media screen and (max-device-width: 1366px) {
+        nav .logo {
+          margin: 30px 30px;
+        }
+      }
+
       @media screen and (max-device-width: 1024px) {
         .asd {
           height: 40px;

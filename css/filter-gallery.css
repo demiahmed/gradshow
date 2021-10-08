@@ -84,7 +84,6 @@ button.button {
   padding: 0.3rem 0.8rem;
   text-align: center;
   font-size: 1rem;
-  font-weight: lighter;
 }
 
 .filter-panel button:hover {
@@ -125,16 +124,11 @@ button.button:focus {
   position: absolute;
   bottom: 10px;
   left: 10px;
-  /* display: block; */
-  /* text-align: left; */
   display: flex;
-  /* text-align: left; */
   width: min-content;
-  /* transform: translate(20%, 0%);
-  -ms-transform: translate(20%, 125%); */
+  font-weight: 400;
   color: white;
   font-size: 1.2rem;
-  font-weight:  normal;
 }
 
 .overlay {
