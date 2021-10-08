@@ -9,6 +9,8 @@ class navComponent extends HTMLElement {
           position: fixed;
           z-index: 6;
           transition: 0.25s ease-in-out all;
+          background: rgba(0,0,0,0.5);
+          backdrop-filter: blur(5px);
       }
       
       .navibar ul li {
@@ -63,7 +65,6 @@ class navComponent extends HTMLElement {
       
       
       span {
-        font-family: "Roboto";
         color: white;
         font-weight: normal;
         text-decoration: none;
@@ -289,7 +290,6 @@ class navComponent extends HTMLElement {
         .navibar span {
           text-decoration: none;
           font-size: 12vw;
-          font-family: "Roboto";
           font-weight: bolder;
         }
     
