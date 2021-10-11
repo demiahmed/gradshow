@@ -198,9 +198,11 @@ function restart(data) {
                 .style("top", (d3.event.pageY - 15) + "px");
         
             susGoals.html(`<img class="sus-img" src="../assets/ungoals/${ d.SDG }.png" alt="Sustainability Goals">`)
-            .style("opacity", 1)
-            .style("position", "absolute")
-            .style("right", "100px")})
+                .style("opacity", 1)
+                .style("display", (window.screen.width <767 )? "none" : "initial" )
+                .style("position", "absolute")
+                .style("right", "100px")
+              })
         
     
         .on('mouseout', function (d, i) {
@@ -214,7 +216,7 @@ function restart(data) {
             .duration(50)
             .style("opacity", 0);
             susGoals.html(`<img class="sus-img" src="../assets/ungoals/black.jpg" alt="Sustainability Goals">`)
-            .duration(50)
+            // .duration(50)
             .style("opacity", 1);
         })
         .transition(t)
