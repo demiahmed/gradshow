@@ -199,17 +199,17 @@ class navComponent extends HTMLElement {
         text-align: center;
       }
       
-        .toggle-button .line{
-          width: 50px;
-          height: 4px;
-          background-color: white;
-          display: block;
-          margin: 12px auto;
-          -moz-transition: all 0.3s ease-in-out;
-          -webkit-transition: all 0.3s ease-in-out;
-          -o-transition: all 0.3s ease-in-out;
-          transition: all 0.3s ease-in-out;
-        }
+      .toggle-button .line{
+        width: 50px;
+        height: 4px;
+        background-color: white;
+        display: block;
+        margin: 12px auto;
+        -moz-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+      }
       
         .toggle-button:hover{
           cursor: pointer;
@@ -327,7 +327,7 @@ class navComponent extends HTMLElement {
         .fa {
           width: 4rem;
         height: min-content;
-        vertical-align: top;
+        vertical-align: top !important;
         }
     
     
