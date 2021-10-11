@@ -92,8 +92,13 @@ a.enter {
 }
 
 .enter-icon:hover {
-	/* transform: translateX(20px); */
+	/*transform: translateX(20px);
+	*/
 	transform: rotateZ(360deg);
+	-webkit-transform: rotateZ(360deg);
+	-moz-transform: rotateZ(360deg);
+	-ms-transform: rotateZ(360deg);
+	-o-transform: rotateZ(360deg);
 }
 
 #hero {
@@ -121,13 +126,26 @@ a.enter {
 	#hero {
 	  font-size: 6rem;
 	  transform: translate(-15%, -10%);
+	  -webkit-transform: translate(-15%, -10%);
+	  -moz-transform: translate(-15%, -10%);
+	  -ms-transform: translate(-15%, -10%);
+	  -o-transform: translate(-15%, -10%);
+
 	}
 	.sub-hero {
 	  font-size: 4rem;
 	  transform: translate(0, 40%);
+	  -webkit-transform: translate(0, 40%);
+	  -moz-transform: translate(0, 40%);
+	  -ms-transform: translate(0, 40%);
+	  -o-transform: translate(0, 40%);
 	}
 	.last {
 	  transform: translate(0, 60%);
+	  -webkit-transform: translate(0, 60%);
+	  -moz-transform: translate(0, 60%);
+	  -ms-transform: translate(0, 60%);
+	  -o-transform: translate(0, 60%);
 	}
 	.enter-container {
 	  left: 55%;
@@ -142,13 +160,25 @@ a.enter {
   #hero {
 	font-size: 6rem;
 	transform: translate(-15%, -10%);
+	-webkit-transform: translate(-15%, -10%);
+	-moz-transform: translate(-15%, -10%);
+	-ms-transform: translate(-15%, -10%);
+	-o-transform: translate(-15%, -10%);
   }
   .sub-hero {
 	font-size: 6rem;
 	transform: translate(0, 60%);
+	-webkit-transform: translate(0, 60%);
+	-moz-transform: translate(0, 60%);
+	-ms-transform: translate(0, 60%);
+	-o-transform: translate(0, 60%);
   }
   .last {
 	transform: translate(0, 90%);
+	-webkit-transform: translate(0, 90%);
+	-moz-transform: translate(0, 90%);
+	-ms-transform: translate(0, 90%);
+	-o-transform: translate(0, 90%);
   }
   .enter-container {
 	left: 50%;
