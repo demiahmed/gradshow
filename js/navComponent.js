@@ -117,6 +117,10 @@ class navComponent extends HTMLElement {
         vertical-align: text-top;
       }
 
+      a.nav-item {
+        display: inline-block;
+      }
+
       @media screen and (min-device-width: 3840px) {
         .asd {
           height: 100px;
@@ -326,8 +330,7 @@ class navComponent extends HTMLElement {
       
         .fa {
           width: 4rem;
-        height: min-content;
-        vertical-align: top !important;
+        vertical-align: bottom;
         }
     
     
