@@ -43,12 +43,24 @@
 </body>
 
 <script>
+
+  if (window.screen.width < 767) {
+    document.querySelector(".sub-hero").setAttribute("y","140%")
+    document.querySelector(".last").setAttribute("y","180%")
+  }
+  if (window.screen.width < 1024) {
+    document.querySelector("#hero").setAttribute("x","55%")
+    document.querySelector("#hero").setAttribute("y","60%")
+    document.querySelector(".sub-hero").setAttribute("y","120%")
+    document.querySelector(".last").setAttribute("y","150%")
+  }
+
 let imgs = [];
 let imgs_arr = [];
 let num = 45;
 
 function preload() {
-  table = loadTable('./assets/sudents.csv', 'csv', 'header')
+  table = loadTable('./assets/students.csv', 'csv', 'header')
   // console.log(table.getColumn('radius'));
   //     for (let i = 0; i < num; i++) {
   //   imgs[i] = loadImage("https://picsum.photos/300/300/?image=" + i);
@@ -113,6 +125,10 @@ class Type {
     translate(this.x, this.y, this.z);
     texture(this.img)
     image(this.img, 50, 50);
+    if (window.screen.width < 767) {
+      this.img.resize(100,100)
+    }
+
     pop();
   }
 }

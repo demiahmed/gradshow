@@ -125,28 +125,28 @@ a.enter {
 @media screen and (max-device-width: 1024px) {
 	#hero {
 	  font-size: 6rem;
-	  transform: translate(-15%, -10%);
+	  /* transform: translate(-15%, -10%);
 	  -webkit-transform: translate(-15%, -10%);
 	  -moz-transform: translate(-15%, -10%);
 	  -ms-transform: translate(-15%, -10%);
-	  -o-transform: translate(-15%, -10%);
+	  -o-transform: translate(-15%, -10%); */
 
 	}
 	.sub-hero {
 	  font-size: 4rem;
-	  transform: translate(0, 40%);
+	  /* transform: translate(0, 40%);
 	  -webkit-transform: translate(0, 40%);
 	  -moz-transform: translate(0, 40%);
 	  -ms-transform: translate(0, 40%);
-	  -o-transform: translate(0, 40%);
+	  -o-transform: translate(0, 40%); */
 	}
-	.last {
+	/* .last {
 	  transform: translate(0, 60%);
 	  -webkit-transform: translate(0, 60%);
 	  -moz-transform: translate(0, 60%);
 	  -ms-transform: translate(0, 60%);
 	  -o-transform: translate(0, 60%);
-	}
+	} */
 	.enter-container {
 	  left: 55%;
 	  bottom: 35%;
@@ -159,27 +159,27 @@ a.enter {
 @media screen and (max-device-width: 767px) {
   #hero {
 	font-size: 6rem;
-	transform: translate(-15%, -10%);
+	/* transform: translate(-15%, -10%);
 	-webkit-transform: translate(-15%, -10%);
 	-moz-transform: translate(-15%, -10%);
 	-ms-transform: translate(-15%, -10%);
-	-o-transform: translate(-15%, -10%);
-  }
+	-o-transform: translate(-15%, -10%);*/
+  } 
   .sub-hero {
 	font-size: 6rem;
-	transform: translate(0, 60%);
+	/* transform: translate(0, 60%);
 	-webkit-transform: translate(0, 60%);
 	-moz-transform: translate(0, 60%);
 	-ms-transform: translate(0, 60%);
-	-o-transform: translate(0, 60%);
+	-o-transform: translate(0, 60%); */
   }
-  .last {
+  /* .last {
 	transform: translate(0, 90%);
 	-webkit-transform: translate(0, 90%);
 	-moz-transform: translate(0, 90%);
 	-ms-transform: translate(0, 90%);
 	-o-transform: translate(0, 90%);
-  }
+  } */
   .enter-container {
 	left: 50%;
 	bottom: 50%;
