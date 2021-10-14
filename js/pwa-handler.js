@@ -4,7 +4,7 @@ const serviceWorker = navigator.serviceWorker;
 // Register our ServiceWorker script, if serviceWorker is available.
 if (serviceWorker) {
     serviceWorker
-        .register("../service-worker.js")
+        .register("./service-worker.js")
         .then(() => console.log("Enjoy GradShow 2021!"))
         .catch(() => console.log("Failed to Register the ServiceWorker."));
 }

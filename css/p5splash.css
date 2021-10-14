@@ -142,6 +142,23 @@ a.enter {
 	  }
   }
 
+  #install {
+	  position: absolute;
+	  right: 10%;
+	  top: 5%;
+	  background: orangered;
+	  font-weight: bold;
+	  font-family: inherit;
+	  font-size: 1rem;
+	  color: white;
+	  border-radius: 25px;
+	  -webkit-border-radius: 25px;
+	  -moz-border-radius: 25px;
+	  -ms-border-radius: 25px;
+	  -o-border-radius: 25px;
+	  padding: 8px 16px;
+}
+
 /* @keyframes stroke {
 	0%   {
 		fill: rgba(72,138,20,0); stroke: orangered;
