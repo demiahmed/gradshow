@@ -34,11 +34,11 @@ let urlsToCache = [
     "./css/p5splash.css",
     "./css/style.css",
     "./explore/index.html",
-    "projects/index.html",
-    "projects/2020/index.html",
-    "projects/2020/student-style.css",
+    "./projects/index.html",
+    "./projects/2020/index.html",
+    "./projects/2020/student-style.css",
     "./awards/index.html",
-    "./awards/2020/index.html",
+    "./awards/2020/index.html"
 ];
 
 // Cache all the selected items once application is installed.
