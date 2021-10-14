@@ -22,18 +22,14 @@
 
 <body>  
 	<div class="background">
-        <div class="svg-container">
-            <svg id="main" viewBox="0 0 640 360">
-                <text x="70%" y="70%" dy=".35em" text-anchor="left" id="hero">
+        <div class="container">
+                <p text-anchor="left" id="hero">
                     2021 
-                </text>
-                <text x="50" y="80%" dy=".35em" text-anchor="right" class="sub-hero">
-                    M.Arch   
-                </text>
-                <text x="50" y="90%" dy=".35em" text-anchor="right" class="sub-hero last">
-                    GradShow                     
-                </text>
-            </svg>	
+                </p>
+                <p text-anchor="right" class="sub-hero">
+                    SUTD M.Arch GradShow   
+                </p>
+
             <div class="enter-container">
                 <img class="enter-icon" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgYmFzZVByb2ZpbGU9InRpbnkiIGhlaWdodD0iMjRweCIgdmVyc2lvbj0iMS4yIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZyBpZD0iTGF5ZXJfMSI+PHBhdGggZD0iTTEzLjI5Myw3LjI5M2MtMC4zOTEsMC4zOTEtMC4zOTEsMS4wMjMsMCwxLjQxNEwxNS41ODYsMTFIOGMtMC41NTIsMC0xLDAuNDQ4LTEsMXMwLjQ0OCwxLDEsMWg3LjU4NmwtMi4yOTMsMi4yOTMgICBjLTAuMzkxLDAuMzkxLTAuMzkxLDEuMDIzLDAsMS40MTRDMTMuNDg4LDE2LjkwMiwxMy43NDQsMTcsMTQsMTdzMC41MTItMC4wOTgsMC43MDctMC4yOTNMMTkuNDE0LDEybC00LjcwNy00LjcwNyAgIEMxNC4zMTYsNi45MDIsMTMuNjg0LDYuOTAyLDEzLjI5Myw3LjI5M3oiLz48L2c+PC9zdmc+" alt="Enter Icon">
                 <a href="./home/" class="enter">Enter</a>
@@ -43,17 +39,6 @@
 </body>
 
 <script>
-
-  if (window.screen.width < 767) {
-    document.querySelector(".sub-hero").setAttribute("y","140%")
-    document.querySelector(".last").setAttribute("y","180%")
-  }
-  if (window.screen.width < 1025) {
-    document.querySelector("#hero").setAttribute("x","55%")
-    document.querySelector("#hero").setAttribute("y","60%")
-    document.querySelector(".sub-hero").setAttribute("y","120%")
-    document.querySelector(".last").setAttribute("y","150%")
-  }
 
 let imgs = [];
 let imgs_arr = [];
