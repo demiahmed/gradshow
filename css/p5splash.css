@@ -152,11 +152,23 @@ a.enter {
 	  font-size: 1rem;
 	  color: white;
 	  border-radius: 25px;
+	  border: 2px solid orangered;
 	  -webkit-border-radius: 25px;
 	  -moz-border-radius: 25px;
 	  -ms-border-radius: 25px;
 	  -o-border-radius: 25px;
 	  padding: 8px 16px;
+	  transition: .10s ease-in-out all;
+	  -webkit-transition: .10s ease-in-out all;
+	  -moz-transition: .10s ease-in-out all;
+	  -ms-transition: .10s ease-in-out all;
+	  -o-transition: .10s ease-in-out all;
+}
+
+#install:hover {
+	background: white;
+	color: orangered;
+	border: 2px solid white;
 }
 
 /* @keyframes stroke {

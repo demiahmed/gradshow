@@ -41,6 +41,7 @@ let urlsToCache = [
     "./awards/2020/index.html"
 ];
 
+
 // Cache all the selected items once application is installed.
 self.addEventListener("install", (event) => {
     event.waitUntil(
