@@ -1,7 +1,7 @@
 {
     "theme_color": "#ff4500",
     "background_color": "#333",
-    "display": "fullscreen",
+    "display": "standalone",
     "scope": "./",
     "start_url": "./",
     "name": "SUTD ASD M.Arch GradShow 2021",
