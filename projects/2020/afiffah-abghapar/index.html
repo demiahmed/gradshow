@@ -14,21 +14,14 @@
     <link rel="icon" href="../../../favicon.ico" type="image/gif">
 
     <link rel="stylesheet" href="../student-style.css">
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script
-    src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script>
-      $(function() {
-        $("#header").load("../../../partials/projectnav.html");
-        $("#footer").load("../../../partials/footer.html");
+    <script src="../../../js/d3.v4.min.js"></script>
+    <script src="../../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../../js/webComponents.js"></script>
+    <script src="../../../js/navComponent.js"></script>
+    <script defer src="../../../js/navHover.js"></script>
 
-      });
 
-        function goToTop(){
-        window.scrollTo(0,0)
-        return false; //prevent page from reloading
-        }
-    </script>
+
 </head>
 
 <style>
@@ -43,7 +36,8 @@
 
 </style>
 <body >
-    <div id="header"></div>
+    <nav-i anchor="../../../"></nav-i>
+
 
     <section class="cover">
         <div class="mainimage">
@@ -270,7 +264,7 @@
     </div>
 
     <div class="bottomlinks">
-        <h3><a href="javascript:goToTop()">Back to Top</a></h3>
+        <h3><a href=".navibar">Back to Top</a></h3>
         <!-- <h3><a id="random">Randomise!</a></h3> -->
     </div>
 
@@ -279,6 +273,6 @@
 
 <script defer src="../../../js/navfixer.js"></script>
 <script src="../../../js/title.js"></script>
-<script src="../../js/darkmode.js"></script>
+<script src="../../../js/darkmode.js"></script>
 </body>
 </html>
