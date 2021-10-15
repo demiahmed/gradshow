@@ -54,7 +54,7 @@ img {
 
 *::selection {
   color: white;
-  background: black;
+  background: orangered;
 }
 
 .mainimage {
@@ -247,6 +247,10 @@ img.left {
 h3 {
   font-size: 1rem;
 }
+
+.table {
+  width: 25vw;
+}
 }
 
 @media screen and (max-width: 767px) {
@@ -257,7 +261,7 @@ h3 {
   }
 
   .cover img {
-    margin-top: 20vh;
+    margin-top: 17vh;
   }
   .titletext {
     width: 90vw;

@@ -162,7 +162,7 @@ class navComponent extends HTMLElement {
         }
       
         span {
-          color: black;
+          color: black !important;
         }
       
         .navibar {
@@ -370,7 +370,7 @@ class navComponent extends HTMLElement {
       
       </style>
       
-      <nav class= "navibar" >
+      <nav class="navibar" id="top" >
        
           <div class="logo">
               <a href="https://asd.sutd.edu.sg">

@@ -20,25 +20,16 @@
     <link rel="icon" href="../../../favicon.ico" type="image/gif">
 
     <link rel="stylesheet" href="../student-style.css">
-    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="../../../js/d3.v4.min.js"></script>
     <script
-    src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    src="../../../js/jquery-3.5.1.min.js"></script>
     <script 	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 	integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 	crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 	integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 	crossorigin="anonymous"></script>
 
 
-    <script>
-      $(function() {
-        $("#header").load("../../../partials/projectnav.html");
-        $("#footer").load("../../../partials/footer.html");
-
-      });
-
-        function goToTop(){
-        window.scrollTo(0,0)
-        return false; //prevent page from reloading
-        }
-    </script>
+    <script src="../../../js/webComponents.js"></script>
+    <script src="../../../js/navComponent.js"></script>
+    <script defer src="../../../js/navHover.js"></script>
 </head>
 
 <style>
@@ -83,7 +74,7 @@
 	}
 </style>
 <body >
-    <div id="header"></div>
+    <nav-i anchor="../../../"></nav-i>
 
 
 <div class="iframe-container">
@@ -535,12 +526,12 @@
 
 
     <div class="bottomlinks">
-        <h3><a href="javascript:goToTop()">Back to Top</a></h3>
+        <h3><a href="#top">Back to Top</a></h3>
         <!-- <h3><a id="random">Randomise!</a></h3> -->
     </div>
 
 </section>
-<div id="footer"></div>
+<footer-i></footer-i>
 
 <script defer src="../../../js/navfixer.js"></script>
 <script src="../../../js/title.js"></script>
