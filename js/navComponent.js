@@ -11,6 +11,7 @@ class navComponent extends HTMLElement {
           transition: 0.25s ease-in-out all;
           background: rgba(0,0,0,0.5);
           backdrop-filter: blur(5px);
+          -webkit-backdrop-filter: blur(5px);
       }
       
       .navibar ul li {
