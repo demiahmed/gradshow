@@ -16,20 +16,20 @@ let beforeInstallEvent;
 const installButton = document.getElementById("install");
 
 // Watch for the beforeinstallevent and defer it.
-window.addEventListener("beforeinstallprompt", (event) => {
-    event.preventDefault();
-    beforeInstallEvent = event;
-    installButton.style.display = "block";
-});
+// window.addEventListener("beforeinstallprompt", (event) => {
+//     event.preventDefault();
+//     beforeInstallEvent = event;
+//     installButton.style.display = "block";
+// });
 
 // Prompt for Installation when install button is clicked.
-installButton.addEventListener("click", () => {
-    beforeInstallEvent
-        .prompt()
-        .then((choice) => {
-            // Hide the install button as its purpose is over.
-            if (choice.outcome == "accepted") {
-                installButton.style.display = "none";
-            }
-        });
-});
+// installButton.addEventListener("click", () => {
+//     beforeInstallEvent
+//         .prompt()
+//         .then((choice) => {
+//             // Hide the install button as its purpose is over.
+//             if (choice.outcome == "accepted") {
+//                 installButton.style.display = "none";
+//             }
+//         });
+// });
