@@ -67,7 +67,7 @@ let num = 45;
 
 function preload() {
   // table = loadTable('./assets/drivers/2020.csv', 'csv', 'header')
-  table = loadTable('./assets/drivers/2021.csv', 'csv', 'header')
+  table = loadTable('./assets/drivers/2020.csv', 'csv', 'header')
   // console.log(table);
   // console.log(table.getColumn('radius'));
   //     for (let i = 0; i < num; i++) {
@@ -78,7 +78,7 @@ function preload() {
 function processCSV(csv) {
   let imgLinks = [];
   csv.getColumn('key').forEach((e,i) => {
-    let link = `./projects/2021/${e}/${e}-project.jpg`
+    let link = `./projects/2020/${e}/${e}-project.jpg`
     // console.log(link);
     imgLinks[i] = loadImage(link)
   }); 

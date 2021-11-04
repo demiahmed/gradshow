@@ -55,7 +55,7 @@ var simulation = d3.forceSimulation()
 var radiusScale = d3.scaleSqrt().domain([60, 200]).range([12, 80])
 
 if(window.screen.width<767) {
-  console.log(window.screen.width)
+  // console.log(window.screen.width)
   var radiusScale = d3.scaleSqrt().domain([60, 200]).range([12, 20])
 }
 
