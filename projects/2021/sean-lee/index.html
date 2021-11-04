@@ -22,7 +22,7 @@
     <script
     src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/studentComponents.js"></script>
-    <script defer src="../../../js/navfixer.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/navfixer.js"></script>
     <script defer src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/bootstrap.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/popper.min.js"></script>
 
@@ -30,81 +30,146 @@
     <!-- <script defer src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/darkmode.js"></script> -->
 
 
-    <script src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/navComponent.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/navHover.js"></script>
-    <script src="../../../js/navComponent.js"></script>
-    <script defer src="../../../js/navHover.js"></script>
+    <script>
+      $(function() {
+        $("#header").load("../../../partials/projectnav.html");
+        $("#footer").load("../../../partials/footer.html");
+      });
+    </script>
 
 </head>
 
 <body >
-    <nav-i
-    anchor="../../../"></nav-i>
-
+    <div id="header"></div>
+    <!--
     <video-container url="https://www.youtube.com/embed/QAUzWtLMnU0"></video-container>
+    --> 
+    <hero-image url="./data/Hyper Village.jpg"></hero-image>
 
-    <hero-image url="./data/main.gif"></hero-image>
-
-    <title-text title="Lorem ipsum dolor, sit amet consectetur adipisicing elit."></title-text>
+    <title-text title="Hyper Village: The Urban Antithesis"></title-text>
 
     <project-bio 
-    main-title="Summarsy"
-    summary="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.
+    main-title="Summary"
+    summary="This thesis design takes on a speculative vision of urban renewal in Singapore's heartlands, exploring the resuscitation of the countryside whilst building on existing city infrastructure. The project seeks to imagine a sustainable future that employs the efficiency of cities and the stewardship of resources in the hinterlands.
     <br><br>  
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat." 
+    The Hyper Village is an oscillatory condition between the urban and rural, a ruban community that functions as a complete ecosystem." 
     student-title="About Me"
-    aboutme="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.
+    aboutme="A student of architecture passionate about many things, from exploring the post-urban condition beyond our metropolises to social design that impacts the quality of life for the marginalised. The passion for people extends beyond academia where I volunteer with the People's Association at Yio Chu Kang GRC as a prospective youth leader.  
      <br><br>          
-     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat."
-    name="Rem Koolhass"
-    portfolio-link="URL-to-Portfolio"
-    portrait="./fname-lname.jpg"
-    mentor="Zaha Hadid"
-    typology="Cultural, Retail"
-    location="Houston"
-    email="contact@sutd.edu.sg"
-    issuu="https://www.issuu.com"
+     Involved with activities outside of architecture as well, taking on roles of a coach for Touch Rugby at SUTD and Sheares Hall in NUS while being a representative of the Singapore team."
+    name="Sean Lee Jun Wei
+    portfolio-link="URL-to-Portfolio" 
+    portrait="./sean-lee.jpg"
+    mentor="Asst Prof Sam Conrad Joyce"
+    typology="Sustainable Cities, Resilience"
+    location="Singapore"
+    email="sean.leejw@gmail.com"
+    issuu="https://issuu.com/sean.leejw/docs/portfolio_undergrad_compressed"
     website="https://www.google.com"
-    instagram="https://instagram.com"
-    linkedin="https://www.linkedin.com"
+    instagram="https://www.instagram.com/jw_snaps/"
+    linkedin="https://www.linkedin.com/in/sean-lee-985261168/?originalSubdomain=sg"
      ></project-bio>
 
-    <special-image url="./data/splimage.jpg"></special-image>
+    <special-image url="./data/spimage01.png"></special-image>
+    <special-image url="./data/spimage02.png"></special-image>
+    <special-image url="./data/spimage03.jpg"></special-image>
 
-    <triple-images 
-    first="./data/bw1.gif" 
-    second="./data/bw2.gif" 
-    third="./data/bw3.gif">
-    </triple-images>
+    <image-carousel
+    images='{"images": [
+      "./data/01.jpg",
+      "./data/02.jpg",
+      "./data/03.jpg",
+      "./data/04.jpg",
+      "./data/05.jpg",
+      "./data/06.jpg"
+      ]}'
+    ></image-carousel>
+
+
 
     <text-image 
-    title="Subtitle 1" 
-    text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.Lorem ipsum dolor sit, amet consectetur adipisicing elit." 
-    image="./data/1400x1400.png">
+    title="Multi-tiered Approach" 
+    text="The project seeks to approach climate action and sustainable living by proposing additions to the existing Singapore Green Plan 2030. It takes a bolder stance by looking at achieving ambitious goals through re-evaluating the way cities traditionally approach urban renewal. The key factor is the resuscitation of the countryside in the fully urbanised city-state of Singapore. The motivation behind this is to create prototypical community within a city that can be adapted and repurposed in cities around the world.
+    <br>
+    <br>
+    The idea of the democratisation of ownership is drawn from Frank Lloyd Wright's Broadacre City and is critical in the functioning of the Hyper Village. Traditionally, authorities in the cities are the caretakers of the populace, with little involvment from the people apart from democratic processes like voting. This multi-tiered collaboration that sees partnerships between resident cooperatives, the authorities and the private sector seeks to offer a greater sense of ownership to the residents whilst employing the efficiency of cities in the form of consultation with authorities and leveraging on the profitability of the private sector.
+    <br>
+    <br>
+    ""
+    image="./data/tri.png">
+
 
     </text-image>
 
+    <hr />
+
+    <text-image 
+    title="Investigating Productive Typologies" 
+    text="These key typologies of productive systems inform the functions of the Hyper Village. 
+    <br>
+    <br>
+    The Sawak Tambak Rice Fish Aquaculture is a popular practice in Java, Indonesia. It is viable for Singapore due to its suitability to lowland ecosystems and its adaptive polyculture provides for multiple streams of food production and enhances the biodiversity as it supports species like ducks, freshwater prawns and frogs.
+    <br>
+    <br>
+    High-tech aquaculture and hydroponic systems produce a drastically higher yield compared to low-tech systems and is more efficient in land-use which is critical for the land-scarce Singapore. Local aquaculture farms like Eco-Ark is able to produce 1660 tonnes of fish per hectare annually which is 790% more yield per hectare compared to traditional aquaculture systems.
+    <br>
+    <br>
+    Localised food processing facilites are important as well as it reduces transport time and reduces the chances of vegetables and seafood from going bad. The close proximity of these facilities to food production centres reduce the carbon footprint induced for transport.
+    <br>
+    <br>
+    <hr />
+    <h2>Integration of Productive Systems</h2>
+    These systems when integrated in tandem with energy production infrastructure, feed into a self-sufficiency loop to create a self-sufficient community in the Hyper Village.
+    ""
+    image="./data/typology.png">
+
+    </text-image>
+    <special-image url="./data/loop.png"></special-image>
+
+    <special-image url="./data/site.jpg"></special-image>
+
     <image-text
-    image="./data/800x800.png"
-    title="Subtitle 2"
-    text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+    image="./data/Site larger context_background.jpg"
+    title="Urban Form"
+    text="The current urban fabric follows Modernist masterplanning rules that are expressed on a single plane, bound by height restrictions in specific zones. This ensuing architectural expression becomes a collage of generic individualism, contributing to illegibility and consequently, a visual chaos in urban disorder."
     ></image-text>
 
     <image-carousel
     images='{"images": [
-      "./data/iso1.jpg",
-      "./data/iso2.jpg",
-      "./data/iso3.jpg",
-      "./data/splimage.jpg"
+      "./data/concept01.png",
+      "./data/concept02.png"
       ]}'
     ></image-carousel>
 
-    <single-image url="./data/1920x1080.png"></single-image>
+    <single-image url="./data/inform.png"></single-image>
 
+    <image-text
+    image="./data/New Site Plan.jpg"
+    title="Legibility through Parametricism"
+    text="The projected Hyper Village masterplan offers a relational approach as opposed to a bounding box through which architects and developers work within. Parametricism offers open-ended compositions through associative logics and give rise to a collective form.
+    <br>
+    <br>
+    In achieving this collective form, the expression of materiality and aesthetics must aim to be coherent to maintain legibility as well."
+    ></image-text>
 
-    <special-image url="./data/1920x1080.png"></special-image>
+    <special-image url="./data/contrast.png"></special-image>
 
+    <image-carousel
+    images='{"images": [
+      "./data/m08.png",
+      "./data/m01.png",
+      "./data/m02.png",
+      "./data/m03.png",
+      "./data/m04.png",
+      "./data/m05.png",
+      "./data/m06.png",
+      "./data/m07.png"
+      ]}'
+    ></image-carousel>
 
+    <special-image url="./data/axo.jpg"></special-image>
+
+    <!--
     <triple-images
     first="./data/1080x1920.png"
     second="./data/360x640.png"
@@ -116,19 +181,13 @@
     second="./data/1080x1920.png"
     ></image-image>
 
-    <text-only
-    title="Summary"
-    content="The proposed system is implemented in the context of Japan - the average lifespan of a residential building in Japan is said to be only 25 years due to the rampant ‘scrap and build’ approach. In addition, the timber stocks from the national reforestation effort in Japan after the World War 2 have matured and Japan is currently actively promoting the use of their local timber in the construction industry.
-    However, due to more affordable imported timber in the 70s, there is a decrease in plantation rates in the Japanese forestry business and this is represented by both the low proportion of domestic timber use and an age gap in timber stocks. Therefore, the increased use of Japanese timber needs to be carried out in a holistic perspective, keeping in mind the possible shortage of timber resources in the future. This includes the promotion of reuse of timber stocks to guarantee the supply of timber resources in the long run. Gotanda in Tokyo was chosen as a site due to its position as a growing start-up community.
-    Contrary to the more common buy-and-sell manner of development, this project proposes a cooperative housing system that sources and maintains their building components as a collective. First, owners will select the number of polyvalent units they would like to occupy and the number of extensions required. Ownership will come in the form of shares and residents pay for a corresponding proportion of the land lease according to their number of planning units. Subsequently, owners can select the number of building components required. This polyvalent planning method will allow for a large variety of unit configurations to suit different residents’ needs.
-    The architecture is designed in a manner that allows for a controlled expansion following circulation pathways. As the building expands with an increased number of residents, a highly interconnected development is created where residents can access different spaces through elevated pathways."
-    ></text-only>
+    -->
 
     <div class="bottomlinks">
-        <h3><a href="#topofpage">Back to Top</a></h3>
+        <h3><a href="#header">Back to Top</a></h3>
     </div>
 
-<footer-i></footer-i>
+<div id="footer"></div>
 
 </body>
 </html>
