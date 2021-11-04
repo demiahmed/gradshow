@@ -312,6 +312,18 @@ class ImageCarousel extends HTMLElement {
     }
 }
 
+class TextOnly extends HTMLElement {
+    connectedCallback() {
+        let title = this.getAttribute('title')
+        let text = this.getAttribute('content')
+        this.innerHTML = 
+        `<div class="fullsize">
+        <h2>${title}</h2>
+    <p style="text-align:justify;">${text}</p>
+        </div>`
+    }
+}
+
 
 
 
@@ -323,6 +335,7 @@ window.customElements.define('title-text', TitleText)
 window.customElements.define('project-bio', ProjectBio)
 window.customElements.define('special-image', SpecialImage)
 window.customElements.define('triple-images', TripleImages)
+window.customElements.define('text-only', TextOnly)
 window.customElements.define('text-image', TextImage)
 window.customElements.define('image-text', ImageText)
 window.customElements.define('single-image', SingleImage)

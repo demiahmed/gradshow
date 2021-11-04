@@ -1,11 +1,12 @@
 // console.log(document.querySelector("script").getAttribute('filepath'));
 
 d3.csv(`${document.querySelector("script").getAttribute('filepath')}`, function(data){
-    //console.log(data);
+    console.log(data);
 var PHOTODATA = [];
+let processedName
 
 for(var i=0;i<data.length;i++) {
-    let processedName = data[i].name.toLowerCase().replace(/ /g, "-")
+    processedName = data[i].key
     var photo = {
         id: i,
         category: data[i].Topic,
@@ -14,6 +15,7 @@ for(var i=0;i<data.length;i++) {
         //iu: "./explore/" + String(data[i].name) ,
         path: `${document.querySelector('script').getAttribute('prefix')}../projects/${document.querySelector("script").getAttribute('year')}/${processedName}/${processedName}`
     };
+    // console.log(photo.url, photo.path);
     PHOTODATA.push(photo);
 
 }

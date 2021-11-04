@@ -1,0 +1,42 @@
+id,name_full,key,name,radius,SDG,SDGname,Advisor,mainAdvisor,Location,Topic,Subtopic,Scale,Height,Time
+1002688,Ngiam Ju Jin Lucas,lucas-ngiam,Lucas Ngiam,80,15,Life on Land,Frederick Peter Ortner,Peter Ortner,Singapore,Urbanism,Housing,Large,High-Rise,Future
+1003060,Goh Min Rui,goh-minrui,Goh Minrui,80,3,Good Health and Well-being,Daniel Joseph Whittaker,Daniel Whittaker,Singapore,Housing,Community,Medium,Medium,Present
+1002730,Benjamin Chong Mun Choen,benjamin-chong,Benjamin Chong,80,12,Responsible Consumption and Production,Thomas Schroepfer,Thomas Schroepfer,Singapore,Resilience,Community,Large,Medium,Present
+1001285,Anirudh Rathi ,anirudh-rathi,Anirudh Rathi,80,9,"Industry, Innovation and Infrastructure",Frederick Peter Ortner,Peter Ortner,Singapore,Computation,Urbanism,Large,High-Rise,Future
+1002771,Lester Lim Hai Heng,lester-lim,Lester Lim,80,11,Sustainable Cities and Communities,Frederick Peter Ortner,Peter Ortner,"Detroit, Michigan. ",Density,Housing,Large,Medium,Future
+1002717,Heong Kheng Boon,khengboon-heong,Khengboon Heong,80,16,Peace and Justice Strong Institutions,Eva Castro,Eva Castro,Singapore,Urbanism,Community,Extra large,Medium,Far-Future
+1003152,Goh Ee Yan Eion,eion-goh,Eion Goh,80,9,"Industry, Innovation and Infrastructure",Sam Conrad Joyce,Sam Joyce,Singapore,Social,Community,Medium,Low-Rise,Future
+1003013,Song Tingxuan,tingxuan-song,Tingxuan Song,80,7,Affordable and Clean Energy,Thomas Schroepfer,Thomas Schroepfer,Singapore & Malaysia,Sustainability,Resilience,Large,High-Rise,Future
+1002813,Simon-Kyle Rocknathan,simon-rocknathan,Simon Rocknathan,80,9,"Industry, Innovation and Infrastructure",Kenneth Tracy,Kenneth Tracy,Singapore,Resilience,Urbanism,Large,High-Rise,Future
+1005596,Giannina Sedler ,giannina-sedler,Giannina Sedler,80,13,Climate Action,Thomas Schroepfer,Thomas Schroepfer,Singapore,Sustainability,Urbanism,Large,Super-Tall,Future
+1002991,wan mengcheng,mengcheng-wan,Mengcheng Wan,80,3,Good Health and Well-being,Frederick Peter Ortner,Peter Ortner,"Shenzhen,China",Transportation,Housing,Medium,Medium,Future
+1001691,Tiffany Christy,tiffany-christy,Tiffany Christy,80,3,Good Health and Well-being,Chong Keng Hua,Chong Keng Hua,Indonesia,Housing,Community,Medium,Low-Rise,Future
+1002835,Chen Ran,ran-chen,Ran Chen,80,15,Life on Land,Thomas Schroepfer,Thomas Schroepfer,Singapore,Sustainability,Restoration/Reuse,Small,High-Rise,Future
+1002453,Ong Hui Sin,huisin-ong,Huisin Ong,80,11,Sustainable Cities and Communities,Daniel Joseph Whittaker,Daniel Whittaker,Singapore,Housing,Community,Medium,High-Rise,Future
+1002873,Nurul Nabilah Izzati Bte Rohaizad,nabilah-rohaizad,Nabilah Rohaizad,80,17,Partnerships to achieve the Goal,Bige Tuncer,Bige Tuncer,Singapore,Transportation,Social,Medium,Low-Rise,Present
+1002881,Kiang Ching,kiang-ching,Kiang Ching,80,11,Sustainable Cities and Communities,Chong Keng Hua,Chong Keng Hua,Japan,Social,Community,Small,Low-Rise,Present
+1002987,Lau Ruiqi Rachel,rachel-lau,Rachel Lau,80,12,Responsible Consumption and Production,Michael Budig,Michael Budig,Indonesia,Sustainability,Manufacturing,Extra large,Super-Tall,Future
+1002665,Tan Jee Khang Benedict,benedict-tan,Benedict Tan,80,17,Partnerships to achieve the Goal,Eva Castro,Eva Castro,Arctic / Barents Sea,Sustainability,Urbanism,Extra large,High-Rise,Far-Future
+1005595,Munshi Mukhtar Toh,munshi-toh,Munshi Toh,80,11,Sustainable Cities and Communities,Zheng Kai,Zheng Kai,Singapore,Sustainability,Density,Medium,High-Rise,Future
+1002855,Naomi Marcelle Bachtiar,naomi-bachtiar,Naomi Bachtiar,80,10,Reduced Inequality,Frederick Peter Ortner,Peter Ortner,Indonesia,Urbanism,Community,Large,High-Rise,Future
+1002866,Nidhi Hegde,nidhi-hegde,Nidhi Hegde,80,14,Life Below Water,Eva Castro,Eva Castro,Peru,Sustainability,Resilience,Extra large,Medium,Far-Future
+1002942,May Thinzar Lin,may-lin,May Lin,80,9,"Industry, Innovation and Infrastructure",Eva Castro,Eva Castro,Indonesia,Urbanism,Resilience,Extra large,Medium,Future
+1002655,Adler Teo,adler-teo,Adler Teo,80,9,"Industry, Innovation and Infrastructure",Daniel Joseph Whittaker,Daniel Whittaker,Singapore,Restoration/Reuse,Urbanism,Medium,High-Rise,Future
+1002760,Thet Naung Oo@Chi Jia Cai,thet-naungoo,Thet Naungoo,80,9,"Industry, Innovation and Infrastructure",Frederick Peter Ortner,Peter Ortner,Singapore,Density,Sustainability,Medium,High-Rise,Present
+1003149,Grace Sim I-En,grace-sim,Grace Sim,80,14,Life Below Water,Stylianos Dritsas,Stylianos Dritsas,Singapore,Restoration/Reuse,Sustainability,Large,Low-Rise,Present
+1002743,Samson Sim,samson-sim,Samson Sim,80,10,Reduced Inequality,Yeo Kang Shua,Yeo Kang Shua,Singapore,Community,Housing,Medium,High-Rise,Future
+1003087,Natalie Tsang Yan Ting,natalie-tsang,Natalie Tsang,80,11,Sustainable Cities and Communities,Chong Keng Hua,Chong Keng Hua,Singapore,Community,Sustainability,Medium,Medium,Present
+1003082,Lim Xin Yan,lim-xinyan,Lim Xinyan,80,8,Decent Work and Economic Growth,Sam Conrad Joyce,Sam Joyce,Singapore,Sustainability,Restoration/Reuse,Large,Medium,Future
+1002785,Zhang Guoxian,guoxian-zhang,Guoxian Zhang,80,11,Sustainable Cities and Communities,Sam Conrad Joyce,Sam Joyce,Japan,Urbanism,Sustainability,Large,Medium,Future
+1002799,Wesley Koh Zhi Peng,wesley-koh,Wesley Koh,80,3,Good Health and Well-being,Yeo Kang Shua,Yeo Kang Shua,Singapore ,Social,Community,Medium,Medium,Present
+1003065,"Chan Jia Qi, Audrey",audrey-chan,Audrey Chan,80,9,"Industry, Innovation and Infrastructure",Chong Keng Hua,Chong Keng Hua,Mars,Urbanism,Community,Extra large,Super-Tall,Far-Future
+1002710,Sean Lee Jun Wei,sean-lee,Sean Lee,80,11,Sustainable Cities and Communities,Sam Conrad Joyce,Sam Joyce,Singapore,Urbanism,Resilience,Large,Medium,Future
+1002832,Lee Hsien Toong,hsien-toong,Hsien Toong,80,11,Sustainable Cities and Communities,Jason Lim,Jason Lim,Singapore,Housing,Restoration/Reuse,Medium,Medium,Present
+1002285,Jiaxin Yu,jiaxin-yu,Jiaxin Yu,80,3,Good Health and Well-being,Christine Yogiaman,Christine Yogiaman,Singapore,Housing,Urbanism,Small,Low-Rise,Future
+1002989,Chin Kee Ting,keeting-chin,Keeting Chin,80,13,Climate Action,Jason Lim,Jason Lim,Philippines,Resilience,Computation,Small,Low-Rise,Present
+1003123,Yeo Kai Lin,kailin-yeo,Kailin Yeo,80,11,Sustainable Cities and Communities,Jason Lim,Jason Lim,Public Space,VR/Immersive-Environments,Community,Medium,Medium,Future
+1002152,Elvin Kee Jun Yew,elvin-kee,Elvin Kee,80,11,Sustainable Cities and Communities,Carlos Banon,Carlos Banon,Kakuma City,Computation,Sustainability,Medium,Low-Rise,Present
+1003109,Wong Shu Miin Naomi,naomi-wong,Naomi Wong,80,11,Sustainable Cities and Communities,Thomas Schroepfer,Thomas Schroepfer,Singapore,Sustainability,Resilience,Medium,Medium,Present
+1002436,Kelly Yeo Jing Er,kelly-yeo,Kelly Yeo,80,11,Sustainable Cities and Communities,Eva Castro,Eva Castro,Myanmar,Sustainability,Community,Extra large,Medium,Far-Future
+1002256,Xiao Yiming Xavier,yiming-xiao,Yiming Xiao,80,9,"Industry, Innovation and Infrastructure",Christine Yogiaman,Christine Yogiaman,Singapore,VR/Immersive-Environments,Urbanism,Medium,High-Rise,Present
+1003147,Chiew Jia Hui,chiew-jiahui,Jia Hui Chiew,80,10,Reduced Inequality,Bige Tuncer,Bige Tuncer,Singapore,Community,Restoration/Reuse,Medium,Low-Rise,Present

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Page | ASD GradShow 2021 | Sustainability</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="SUTD ASD M.Arch Virtual GradShow 2021">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="icon" href="../../../favicon.ico" type="image/gif">
+
+    <!-- StyleSheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/bootstrap-fixer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/student-style.css">
+
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/d3.v4.min.js"></script>
+    <script
+    src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/studentComponents.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/navfixer.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/bootstrap.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/popper.min.js"></script>
+
+    <!-- Enable below line if for Dark Theme -->
+    <!-- <script defer src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/darkmode.js"></script> -->
+
+    <!-- Leaflet JS library-->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <!-- Custom Styles -->
+    <style>
+      html, body {height: 100%;width: 100%;padding: 0;margin: 0; font-size: 24px;}
+
+      .container{position: relative;max-width: 75%;height: auto;display: block;margin-left: auto;margin-right: auto;padding-top: 35px;}
+
+      .mapButton {border: none;background-color: #eee;padding: 14px 20px;cursor: pointer;display: inline-block;}
+      .mapButton:hover {background: #C0C0C0;}
+      .map{width: 75%;height: 50%;display: block;block;margin-left: auto;margin-right: auto;}
+
+      .bannerImg {opacity: 1;display: block;width: 100%;height: auto;transition: .5s ease;backface-visibility: hidden;}
+      .statement {transition: .5s ease;opacity: 0;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%)}
+      .banner:hover .bannerImg{opacity: 0.3;}
+      .banner:hover .statement{opacity: 1;}
+      .statementText {background-color: rgba(255,255,255,0.7);color: black;font-size: 28px;padding: 16px 32px;}
+
+      .twocols{margin-top: 35px;}
+    </style>
+
+    <script>
+      $(function() {$("#header").load("../../../partials/projectnav.html");$("#footer").load("../../../partials/footer.html");});</script>
+
+</head>
+
+<body >
+    <nav-i anchor="../../../"></nav-i>
+    <hero-image url="./data/Images/Banner.gif"></hero-image>
+    
+    <title-text id="title" title="Water City"></title-text>
+
+    <project-bio 
+    main-title="Abstract"
+
+    summary=
+    "The effects of Urban Heat Island (UHI) is becoming an increasingly critical topic. The worsening effects of global warming and rapid increase in the world's population further propogates the intensity of UHI especially within high-density cities.
+    <br><br>
+    Much of the existing mitigation strategies today provide prescriptions in the form of urban morphological guidelines. While these may be useful in the design of new cities, these do little as strategies for existing built-up cities.
+    <br><br>
+    This thesis aims to propose utilising evaporative cooling as a suitable UHI mitigation strategy that can be implemented into existing built-up cities with minimal disruption to the urban fabric. Evaporative cooling is a cooling method utilising the absorption of energy during the phase change of water from liquid to gaseous states." 
+    student-title="About Me"
+
+    aboutme=
+    "Munshi is a current M.Arch student with the Singapore University of Technology and Design and B.A (Architecture) graduate from the National University of Singapore. His interests are in environmental sustainability in the built environment notably in topics such as thermal comfort and wind ventilation. Munshi also has interests in computational and paramteric design, utitlising both graphical and scripting languages for iterative design.
+    <br>"
+
+    name="Munshi Toh"
+    portfolio-link="javascript:;"
+    portrait="./munshi-toh.jpg"
+    mentor="Dr. Zheng Kai"
+    typology="Civic"
+    location="Singapore"
+    email="munshi_toh@mymail.sutd.edu.sg"
+    issuu="javascript:;"
+    website="javascript:;"
+    instagram="https://www.instagram.com/munshtohgraphy/"
+    linkedin="https://www.linkedin.com/in/munshi-toh-3ba82a136/"
+     ></project-bio>
+
+     <div class="container">
+        <img class="bannerImg" src="./data/Images/Banner.jpg">
+        <div class="statement">
+          <div class="statementText">
+          To mitigate urban heat island in existing cities through the tactical introduction of water cooling strategies for minimal disruption with maximal effect.
+          </div>
+        </div>
+     </div>
+
+     <text-image
+    title="Introduction"
+
+    text="
+    The relatively recent advancements in medical technology has led to lower mortality rates, extending the average lifespan and improving birth survival rates. This has led to a steep increase in the world’s population over the last several decades. The start of this increase coincided with the start of the Industrial revolution in 1760 and since then, the world population has grown more than ten-fold.
+    <br><br>
+    In addition, the increase in affluence has further contributed to urban sprawl where larger percentages of the population are moving into the cities to work and live. As such, the urban cities are growing larger and denser while the buildings are getting taller and more compact to meet the spatial demands. Closely packed buildings causes a higher concentration of human activities, leading to worsening urban heat island.
+    <br><br>
+    Cooling Singapore describes UHI as the difference in air temperature between rural and urban areas. Major causes of UHI include the extensive use of heat trapping and impermeable materials, the lack of vegetation, high concentrations of anthropogenic heat and poor dissipation of heat due to poor wind flow.
+    <br><br>
+    With global warming on the rise, UHI is becoming an increasingly troubling issue with adverse effects. Chan et al (2010) reported a 1.8% increased mortality in relation to 1°C mean daily temperature over 28.2°C. This affirms urgency in the need to mitigate UHI."
+
+    image="./data/Images/Population-Chart.jpg">
+    </text-image>    
+
+    <div class="container">
+      <div class="mir_abstract" style="max-width: 100%;padding: 0px;">
+        <h2>Urban Morphology</h2>
+        Urban morphology plays a crucial role in UHI due to its influence on wind porosity. This can be seen through the large amounts of research that has gone into studying urban morphology and prescribing urban design guidelines to counter UHI. These is usually in the form of building and urban typologies relating to building shape, size and placement. However, while these prescriptions are effective for the designing of new cities, they do little in the improvement of existing cities, where changes can be difficult and costly. Mitigation strategies should be focused on improving existing built up cities to be more resilient.
+        <br><br>
+        Urban morphology provides useful insight into the microclimatic conditions in relation to the built environment. Data such as Ground Coverage Ratio (GCR) can be calculated to visualise the urban density at a higher resolution than generic numerical data across regions, while Frontal Area Density (FAD) provides an estimation of the pedestrian level wind conditions. Climatic data extracted from official weather stations provides a way to validate GCR and FAD visualisations prior to identifying areas of interests in relation to UHI.
+      </div>
+    </div>
+
+    <div class="container">
+      <button id="gcrButton"class="mapButton" type="button">Ground Coverage Ratio</button>
+      <button id="fadButton"class="mapButton" type="button">Frontal Area Density</button>
+      <button id="stationButton"class="mapButton" type="button">Weather Stations</button>
+      <button id="conservationButton"class="mapButton" type="button">Conservation</button>
+      <button id="industrialButton"class="mapButton" type="button">Industrial</button>
+      <button id="landedButton"class="mapButton" type="button">Landed Housing</button>
+      <button id="siteButton"class="mapButton" type="button">Site</button>
+    </div>
+    <div id="map" class="map"></div>
+
+    <image-text
+    image="./data/Images/AOE.jpg"
+
+    title="Proposed Strategy"
+
+    text="
+    Urban acupuncture is a design concept taking inspiration from traditional Chinese medicine involving strategic pinpricks to improve a larger meridian. Applied in the urban context, a strategically located design has the potential to provide a larger area of effect and benefits. Implementing urban acupuncture in existing cities is useful due to the minimal disruption it causes to the existing urban fabric when applied.
+    <br><br>
+    Coupled with a cooling method such as evaporative cooling, a cooling strategy has the potential to be deployed in an 'area of effect' that extends beyond the immediate site of the design intervention. Evaporative cooling is a cooling method utilising the absorption of energy during the phase change of water from liquid to gaseous states.
+    <br><br>
+    Urban morphological studies shall provide a methodological way of identifying the site of intervention through a multi-scale analysis."
+    ></image-text>
+
+    <div class="container">
+      <img style="max-width: 100%;" src="./data/Images/Methodology.jpg">
+    </div>
+
+    <text-image
+    title="Region"
+
+    text="
+    Humidity is shown to have an inverse relationship with the rate of evaporation. As such, the climate of interest shall be within the equatorial climatic region, with high temperatures and humidity. Singapore is an ideal country within the equatorial region with a high population density as well, associating to higher concentrations of human activity, and urban density – aspects of higher UHI intensity.
+    <br><br>
+    Singapore has a relative humidity that varies throughout the day between 60% and above 90%, a relatively uniform temperature with highs of 31°C to 33°C and a high population density of 8,286 people per km2"
+
+    image="./data/Images/Singapore.jpg">
+    </text-image>    
+
+    <div class="container">
+      <div class="mir_abstract" style="max-width: 100%;padding: 0px;">
+        <h2>Site Selection</h2>
+        <img style="width:33%;padding-bottom: 35px;" src="./data/Images/SLA.jpg">
+        <img style="width:33%;padding-bottom: 35px" src="./data/Images/GCR.jpg">
+        <img style="width:33%;padding-bottom: 35px" src="./data/Images/FAD.jpg">
+        Most readily available maps display density in the form of the number of people within the  districts. However, when considering urban morphology, building footprint would provide a better estimation of wind flow and thus, UHI intensity. Hence, GCR and FAD visualisations provide better representations of UHI by considering the building's footprint. For this study, the maps are computed into a 500m grid utilising GIS data.
+        </div>
+    </div>
+
+    <image-text 
+    image="./data/Images/KeyPrograms.jpg"
+
+    title=""
+
+    text="
+    Areas of higher density can also be identified and rationalised. Key typologies associated with areas of high densities are industrial buildings, landed housing, and conserved buildings.
+    <br><br>
+    Industrial buildings are closely packed together due to the smaller building setback requirements set by The Urban Redevelopment Authority. Landed housing is also closely packed side by side with narrow roads running though the areas. Conserved buildings such as shophouses tend to be closely packed together due to its joined typology. In addition, such buildings were constructed with older regulations with potentially smaller setback requirements.
+    <br><br>
+    These 3 building types, while placed compactly together, are generally buildings of low aspect ratios with low height. This maintains a relatively high skyview factor allowing for better heat dissipation. As such, taller buildings such as skyscrapers within the CBD pose higher risk of impeding wind flow."
+    ></image-text>
+
+    <text-image
+    title="Weather Stations"
+
+    text="
+    Understanding of the micro scale climatic conditions is important to understand the building’s impact on its micr climate. Readily available climatic data provides a generic estimation of the conditions for the larger area, which may not be as accurate for a more specific study. UHI requires a higher resolution of climatic data specific to the urban site’s micro climate.
+    <br><br>
+    Extracting the raw data from official weather stations provide high resolution readings per minute or per 5 minutes. This data can be further analysed and studied to understand the site conditions through site specific visualisations such as wind rose diagrams which can be used to validate FAD findings.
+    "
+
+    image="./data/Images/Stations.jpg">
+    </text-image> 
+
+    <div class="container">
+      <div class="mir_abstract" style="max-width: 100%;padding: 0px;">
+        <h2>Data Extraction & Validation</h2>
+        <img style="width:33%;padding-bottom: 35px;" src="./data/Images/Data Extraction.jpg">
+        <img style="width:36%;padding-bottom: 35px" src="./data/Images/Wind Rose.jpg">
+        <img style="width:30%;padding-bottom: 35px" src="./data/Images/Wind Rose Map.jpg">
+        Using a self-written python script, the data can be extracted from the official API by Data.Gov and its raw data processed and evaluated into monthly and yearly breakdowns. For FAD validation, site specific wind rose diagrams are generated using Rhino-Grasshopper and appended onto the FAD map to rationalise if the wind flow is in coherent with its surrouding environment.
+        <br><br>
+        The weather stations in close proximity with the CBD area are selected for this validation.
+      </div>
+    </div>
+
+    <image-text 
+    image="./data/Images/MacroSim.gif"
+
+    title="Macro-Scale Simulation"
+
+    text="
+    Using the weather data collected as input parameters, the boundary condition can be set up to run the marco-scale CFD simulation. This simulation shows the areas with poor windflow potential, and in turn poor heat dissipation and higher UHI intensity. The area with poor windflow shall move on to the micro scale simulation"
+    ></image-text>
+
+    <image-text 
+    image="./data/Images/MicroSim.gif"
+
+    title="Micro-Scale Simulation"
+
+    text="
+    The micro-scale simulation tries to located an area with good windflow within the larger of poor windflow. TThe reason for selecting the area of good wind flow within the larger region of poor wind flow is reinforced by the concept of urban acupuncture, where implementing a design within the site of good wind flow could potentially spread that effect outwards to the areas of poorer wind flow."
+    ></image-text>
+
+    <div class="container">
+      <div class="mir_abstract" style="max-width: 100%;padding: 0px;">
+        <h2>Design Concept</h2>
+        <img style="width:45%;padding-bottom: 35px;" src="./data/Images/Site.jpg">
+        <img style="width:45%;padding-bottom: 35px;" src="./data/Images/WaterCycle.jpg"><br>
+        The design concept would be to include architecture into the water cycle. The water cycle describes the cyclic movement of water between the earth and its atmosphere. This movement has the potential to cool down the urban areas and mitigate UHI through its phase change. Integrating the building with the water cycle has may would allow the building to benefit from an additional passive cooling strategy.
+      </div>
+    </div>
+
+    <image-text 
+    image="./data/Images/Design Strategy.gif"
+
+    title="Features"
+
+    text="
+    Water flowing through the building will move the same way through the water cycle from collection (run-off), storage (body) and release (evaporation).
+    <br><br>
+    These design features will be further re-designed to be integrated into the building..."
+    ></image-text>
+
+    <div class="bottomlinks">
+        <h3><a href="#topofpage">Back to Top</a></h3>
+    </div>
+
+<footer-i></footer-i>
+</body>
+
+<!-- Call js code -->
+    <script src="./data/js/map.js"></script>
+</html>

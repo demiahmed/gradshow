@@ -10,8 +10,8 @@ class navComponent extends HTMLElement {
           z-index: 6;
           transition: 0.25s ease-in-out all;
           background: rgba(0,0,0,0.5);
-          backdrop-filter: blur(5px);
-          -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: saturate(150%) blur(15px);
+          -webkit-backdrop-filter: saturate(150%) blur(15px);
       }
       
       .navibar ul li {
@@ -143,9 +143,9 @@ class navComponent extends HTMLElement {
         }
       }
 
-      @media screen and (max-device-width: 1366px) {
+      @media screen and (min-device-width: 1366px) {
         nav .logo {
-          margin: 30px 30px;
+          margin: 20px 30px;
         }
       }
 

@@ -57,6 +57,12 @@ img {
   background: orangered;
 }
 
+.fullsize {
+  padding-top: 5vw;
+  max-width: 75.5vw;
+  margin: 0 auto;
+}
+
 .mainimage {
   text-align: center;
   margin: 0 auto;

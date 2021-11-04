@@ -68,32 +68,18 @@ var divProf = d3.select("body").append("div")
 .style("opacity", 0)
 
 
-var susGoals = d3.select("body").append("div")
-.attr("class", "sus-goals")
-.style("opacity", 0)
 
 var circles
 // var circlesEnter
 var defs = svg.append('defs')
 
+let file = document.querySelector("#data-provider").getAttribute("filename")
 
-
-d3.csv(`../assets/${document.querySelector("#data-provider").getAttribute("filename")}`, function(data){ 
+// d3.csv(`../assets/drivers/${file}`, function(data){ 
+d3.csv(`../assets/drivers/${file}`, function(data){ 
     restart(data)
-
-  d3.select('#exploreyear')
-    .on('change', function() {
-//   console.log(d3.select(this).property('value'));
-  d3.select("#nationgoals").classed("disabled", !d3.select("#nationgoals").classed("disabled"))
-  d3.csv(`../assets/${d3.select(this).property('value')}`, function(data){
-    restart(data)
-    // console.log(data);
-   
-  })
-})
 })
 
-var circles
 
 function restart(data) {
     // data.forEach(function(d){
@@ -126,6 +112,7 @@ function restart(data) {
         Height: 'height',
         Time: 'time',
         SDGname: 'SDGname'
+
     
     
       }
@@ -138,6 +125,7 @@ function restart(data) {
         a['height'].push(d.Height)
         a['time'].push(d.Time)
         a['SDGname'].push(d.SDGname)
+
     
       })
       a['advisor'].sort();
@@ -145,6 +133,31 @@ function restart(data) {
       a['topic'].sort();
       a['subtopic'].sort();
       a['SDGname'].sort();
+
+
+    
+      defs = svg.select('defs').selectAll('pattern')
+      .data(data)
+      defs.exit().remove()
+
+  let defEnter = defs
+      .enter().append("pattern")
+      .attr("id", function(d) {
+          return d.key
+      })
+      .attr("height", "100%")
+      .attr("width", "100%")
+      .attr("patternContentUnits", "objectBoundingBox")
+      .append("image")
+      .attr("height", "1")
+      .attr("width", "1")
+      .attr("preserveAspectRatio", "none")
+      .attr("xmlns:xlink", "https://www.w3.org/1999/xlink")
+      .attr("xlink:href", function(d) {
+          return `../../projects/2021/${d.key}/${d.key}.jpg`
+      })
+      
+  defs = defs.merge(defEnter)
     
     
     // console.log(circles);
@@ -177,7 +190,7 @@ function restart(data) {
           })    
     
         .on('click', function(d) {
-              window.open(`../projects/2020/${d.key}/`)
+              window.open(`../projects/2021/${d.key}/`)
         })
     
         .on('mouseover', function (d, i) {
@@ -195,14 +208,8 @@ function restart(data) {
     
             div.html(d.name)
                 .style("left", (d3.event.pageX + 10) + "px")
-                .style("top", (d3.event.pageY - 15) + "px");
-        
-            susGoals.html(`<img class="sus-img" src="../assets/ungoals/${ d.SDG }.png" alt="Sustainability Goals">`)
-                .style("opacity", 1)
-                .style("display", (window.screen.width <767 )? "none" : "initial" )
-                .style("position", "absolute")
-                .style("right", "100px")
-              })
+                .style("top", (d3.event.pageY - 15) + "px")
+        })
         
     
         .on('mouseout', function (d, i) {
@@ -215,9 +222,6 @@ function restart(data) {
             divProf.transition()
             .duration(50)
             .style("opacity", 0);
-            susGoals.html(`<img class="sus-img" src="../assets/ungoals/black.jpg" alt="Sustainability Goals">`)
-            // .duration(50)
-            .style("opacity", 1);
         })
         .transition(t)
             .attr("r", (d) => radiusScale(d.radius));
@@ -225,30 +229,6 @@ function restart(data) {
 
         circles = circles.merge(enter)
 
-
-    
-        defs = svg.select('defs').selectAll('pattern')
-            .data(data)
-        defs.exit().remove()
-
-        let defEnter = defs
-            .enter().append("pattern")
-            .attr("id", function(d) {
-                return d.key
-            })
-            .attr("height", "100%")
-            .attr("width", "100%")
-            .attr("patternContentUnits", "objectBoundingBox")
-            .append("image")
-            .attr("height", "1")
-            .attr("width", "1")
-            .attr("preserveAspectRatio", "none")
-            .attr("xmlns:xlink", "https://www.w3.org/1999/xlink")
-            .attr("xlink:href", function(d) {
-                return `../projects/2020/${d.key}/${d.key}.jpg`
-            })
-            
-        defs = defs.merge(defEnter)
 
 
     // Update and restart the simulation.
