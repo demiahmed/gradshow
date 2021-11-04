@@ -64,10 +64,11 @@
 let imgs = [];
 let imgs_arr = [];
 let num = 45;
-let cacheImgs;
 
 function preload() {
+  // table = loadTable('./assets/drivers/2020.csv', 'csv', 'header')
   table = loadTable('./assets/drivers/2021.csv', 'csv', 'header')
+  // console.log(table);
   // console.log(table.getColumn('radius'));
   //     for (let i = 0; i < num; i++) {
   //   imgs[i] = loadImage("https://picsum.photos/300/300/?image=" + i);
@@ -81,7 +82,6 @@ function processCSV(csv) {
     // console.log(link);
     imgLinks[i] = loadImage(link)
   }); 
-  cacheImgs = imgLinks
     return imgLinks
 }
 

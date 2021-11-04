@@ -5,6 +5,8 @@ const CACHE = "cacheV1";
 let urlsToCache = [
     "/",
     "./index.html",
+    "./assets/drivers/2021.csv",
+    "./assets/drivers/2020.csv",
     "./js/bootstrap.bundle.min.js",
     "./js/bootstrap.min.js",
     "./js/browser.js",
