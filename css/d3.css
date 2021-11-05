@@ -133,7 +133,7 @@ div.tooltip {
 }
 
 .disabled {
-  display:none;
+  display:none !important;
 }
 
 #exploreyear{

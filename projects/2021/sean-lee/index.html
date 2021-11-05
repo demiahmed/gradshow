@@ -30,17 +30,13 @@
     <!-- <script defer src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/darkmode.js"></script> -->
 
 
-    <script>
-      $(function() {
-        $("#header").load("../../../partials/projectnav.html");
-        $("#footer").load("../../../partials/footer.html");
-      });
-    </script>
+    <script src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/navComponent.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/navHover.js"></script>
 
 </head>
 
 <body >
-    <div id="header"></div>
+    <nav-i anchor="../../../"></nav-i>
     <!--
     <video-container url="https://www.youtube.com/embed/QAUzWtLMnU0"></video-container>
     --> 
@@ -184,10 +180,10 @@
     -->
 
     <div class="bottomlinks">
-        <h3><a href="#header">Back to Top</a></h3>
+        <h3><a  href="javascript:window.scrollTo(0,0)">Back to Top</a></h3>
     </div>
 
-<div id="footer"></div>
+<footer-i></footer-i>
 
 </body>
 </html>

@@ -55,7 +55,7 @@ var simulation = d3.forceSimulation()
 var radiusScale = d3.scaleSqrt().domain([60, 200]).range([12, 80])
 
 if(window.screen.width<767) {
-  console.log(window.screen.width)
+  // console.log(window.screen.width)
   var radiusScale = d3.scaleSqrt().domain([60, 200]).range([12, 20])
 }
 
@@ -74,7 +74,7 @@ var susGoals = d3.select("body").append("div")
 
 var circles
 // var circlesEnter
-var defs = svg.append('defs')
+// var defs = svg.append('defs')
 
 let file = d3.select("#exploreyear").node().value
 // let file = `${document.querySelector("#data-provider").getAttribute("filename")}-${year}.csv`
@@ -88,10 +88,11 @@ d3.csv(`../assets/drivers/${fullname}`, function(data){
     .on('change', function() {
 //   console.log(d3.select(this).property('value'));
   d3.select("#nationgoals").classed("disabled", !d3.select("#nationgoals").classed("disabled"))
+  d3.select(".sus-goals").classed("disabled", !d3.select(".sus-goals").classed("disabled"))
   let changedValue = d3.select(this).property('value')
   d3.csv(`../assets/drivers/${changedValue}.csv`, function(data){
     restart(data,changedValue)
-    // console.log(data);
+    console.log(data);
    
   })
 })
@@ -151,9 +152,9 @@ function restart(data, year) {
       a['SDGname'].sort();
 
     
-      defs = svg.select('defs').selectAll('pattern')
-      .data(data)
+      defs = svg.selectAll('pattern')
       defs.exit().remove()
+      defs = defs.data(data)
 
   let defEnter = defs
       .enter().append("pattern")
@@ -176,19 +177,20 @@ function restart(data, year) {
     
     
     // console.log(circles);
-      circles = svg.selectAll("circle").data(data)
+      circles = svg.selectAll("circle")
       circles.exit()        
-        .transition(t)
-            .attr("r", 1e-6) 
-            .remove()
-
-        circles
-        .transition(t)
-            .attr("r", (d) => radiusScale(d.radius))
-
+      .transition(t)
+      .attr("r", 1e-6) 
+      .remove()
+      
+      circles
+      .transition(t)
+      .attr("r", (d) => radiusScale(d.radius))
+      
+      circles = circles.data(data)
 
       let enter = circles
-        .enter()
+        .enter().transition(t)
         .append("circle")
         .attr("r", 1e-6) 
         .attr("class", "artist")
@@ -201,7 +203,7 @@ function restart(data, year) {
                 .on("drag", dragged)
                 .on("end", dragended))
         .attr("fill", function(d) {
-            return `url(#${d.key})`
+            return `url(green)`
           })    
     
         .on('click', function(d) {

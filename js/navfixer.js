@@ -4,3 +4,7 @@ document.querySelectorAll(".navibar")[0].setAttribute("style","background: rgba(
 })
 
 
+function backToTop() {
+    window.scrollTo(0,0)
+    return false; //prevent page from reloading
+}
