@@ -185,6 +185,7 @@ class navComponent extends HTMLElement {
           left: 0vw;
           position: absolute;
           z-index: 12;
+          margin: 30px 25px;
         }
       
         .asd {
@@ -331,7 +332,7 @@ class navComponent extends HTMLElement {
       
         .fa {
           width: 4rem;
-        vertical-align: bottom;
+          position:absolute;
         }
     
     
