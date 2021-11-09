@@ -38,7 +38,6 @@
     <meta name="og:image" content="assets/logo/site-banner.jpg"/>
     <meta name="og:site_name" content="SUTD"/>
     <meta name="og:description" content="Annual Graduation Exhibition portal showcasing the work of over 80 students from the Singapore University of Technology and Design SUTD to a global audience. Visit asd.sutd.edu.sg/gradshow/"/>
-    <link rel="stylesheet" href="./style.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
@@ -95,7 +94,14 @@ let lgth
 
 function preload() {
   // table = loadTable('./assets/drivers/2020.csv', 'csv', 'header')
-  table = loadTable('./assets/drivers/2021.csv', 'csv', 'header')
+  table = loadTable(
+    './assets/drivers/2021.csv', 
+    'csv', 
+    'header',
+    () => {
+      // console.log(table);
+      studentImages = processCSV(table)
+    })
   // console.log(table)
 }
 
@@ -116,7 +122,7 @@ function processCSV(csv) {
 }
 
 function setup() {
-  let studentImages = processCSV(table)
+  // let studentImages = processCSV(table)
   lgth = studentImages.length
   // console.log(studentImages);
   createCanvas(windowWidth, windowHeight, WEBGL);
