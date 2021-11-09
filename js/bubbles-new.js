@@ -353,7 +353,7 @@ function restart(data, year) {
         })
         .style('fill', 'white')
         .attr('text-anchor', 'middle')
-        .text(function (d) { return ' ' + d; });
+        .text(function (d) { return ' ' + d });
     }
 
     if(window.screen.width < 767) {
@@ -403,19 +403,18 @@ function dragstarted(d,i) {
     d.fy = d.y;
   }
 
-  function dragged(d,i) {
-    //console.log("dragged " + i)
-    d.fx = d3.event.x;
-    d.fy = d3.event.y;
-  }
+function dragged(d,i) {
+  //console.log("dragged " + i)
+  d.fx = d3.event.x;
+  d.fy = d3.event.y;
+}
 
-  function dragended(d,i) {
-    //console.log("dragended " + i)
-    if (!d3.event.active) simulation.alphaTarget(0);
-    d.fx = null;
-    d.fy = null;
-    var me = d3.select(this)
-    console.log(me.classed("selected"))
-    me.classed("selected", !me.classed("selected"))
-
-  }
+function dragended(d,i) {
+  //console.log("dragended " + i)
+  if (!d3.event.active) simulation.alphaTarget(0);
+  d.fx = null;
+  d.fy = null;
+  var me = d3.select(this)
+  console.log(me.classed("selected"))
+  me.classed("selected", !me.classed("selected"))
+}
