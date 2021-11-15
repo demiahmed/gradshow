@@ -100,6 +100,33 @@ img {
   text-align: center;
 }
 
+.pagetitle-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.pre-title {
+  color: white;
+  position: absolute;
+  padding: 22vh 0 20vh 0;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  opacity: 0.5;
+}
+
+.caption0 {
+  color: white;
+  margin: 0 auto;
+  padding: 25vh 0 20vh 0;
+  width: fit-content;
+  text-align: center;
+  font-size: 6vw;
+  font-weight: 100;
+  line-height: 160%;
+}
+
 #aerImgB {
   background-image: url("../assets/bgimage/Aerial_blue_d.jpg");
   min-height: 100vh;
@@ -167,16 +194,7 @@ img {
   min-height: 100vh;
 }
 
-.caption0 {
-  color: white;
-  margin: 0 auto;
-  padding: 25vh 0 20vh 0;
-  width: fit-content;
-  text-align: center;
-  font-size: 6vw;
-  font-weight: 100;
-  line-height: 160%;
-}
+
 
 .caption1 {
   position: relative;
@@ -257,7 +275,7 @@ img {
   font-weight:  lighter;
 }
 
-@media screen and (max-device-width: 767px) {
+@media screen and (max-device-width: 768px) {
   *::-webkit-scrollbar {
     width: 4px;
   }
@@ -272,6 +290,10 @@ img {
     -webkit-background-size: inherit;
     -moz-background-size: inherit;
     -o-background-size: inherit;
+  }
+
+  .caption0 {
+    font-size: 4rem;
   }
 
   .caption1,
@@ -339,15 +361,29 @@ img {
     margin-top: -2rem;
     padding-bottom: 1rem;
   }
+
+  .column {
+    flex-direction: column;
+  }
 }
 
+@media screen and (max-device-width: 480px) {
+  .caption0 {
+    font-size: 2rem;
+  }
+
+  .pre-title {
+    font-size: 1rem;
+  }
+
+}
 @media screen and (max-device-width: 370px) {
   .desc p {
     font-size: 1rem;
   }
 }
 
-@media screen and (max-device-width: 330px) {
+@media screen and (max-device-width: 320px) {
   .desc p {
     font-size: 0.8rem;
   }

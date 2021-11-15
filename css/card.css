@@ -1,0 +1,88 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.column {
+    display: flex;
+    
+}
+
+.card {
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    background: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.title, .timing {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.description, .details, .title {
+    text-align: left;
+    color: white;
+}
+
+.details {
+    margin-top: 20px;
+}
+
+#livestream {
+    margin: 20px 0 20px 0;
+    padding: 8px 16px;
+    background: orangered;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+#livestream:hover {
+    color: black;
+    background: red;
+}
+
+@media screen and (max-device-width: 768px) {
+    .card {
+        margin: 10px 0 10px 0;
+    }
+}
+
+@media screen and (max-device-width: 480px) {
+    .title, .timing {
+      font-size: 1.6rem !important;
+    }
+}
+  
+  @media screen and (max-device-width: 320px) {
+    .title, .timing {
+      font-size: 1.4rem !important;
+    }
+  }
+  
