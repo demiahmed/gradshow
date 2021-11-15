@@ -132,6 +132,10 @@ div.tooltip {
   width: 100px;
 }
 
+.nogoals {
+  opacity: 0;
+}
+
 .disabled {
   display:none !important;
 }
@@ -221,7 +225,7 @@ div.tooltip {
   }
 
   .title {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: lighter;
   }
 
