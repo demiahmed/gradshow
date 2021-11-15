@@ -65,6 +65,12 @@ var circles
 let file = d3.select("#exploreyear").node().value
 let fullname = `${file}.csv`
 
+let goals;
+
+d3.json("../assets/drivers/goals.json", (error, data) => {
+  goals = data 
+})
+
 d3.csv(`../assets/drivers/${fullname}`, function(data){ 
     restart(data, file)
 
@@ -132,7 +138,7 @@ function restart(data, year) {
       a['location'].sort();
       a['topic'].sort();
       a['subtopic'].sort();
-      a['SDGname'].sort();
+      // a['SDGname'].sort();
 
     
       defs = svg.selectAll('pattern')
@@ -335,6 +341,16 @@ function restart(data, year) {
     svg.selectAll('.title').remove();
   }
 
+  function multiLineText(text) {
+    let splitted = text.match(/((?:(?:\S+\s){2})|(?:.+)(?=\n|$))/gm)
+    let tspan = splitted.map(e => {
+      return `<tspan class="crumbs">${e}</tspan>`
+    })
+
+    // console.log(tspan);
+    return tspan.join("")
+  }
+
   function showTitles(byVar, scale) {
     // Another way to do this would be to create
     // the year texts once and then just hide them.
@@ -342,19 +358,52 @@ function restart(data, year) {
       .data(scale.domain());
 
     if(window.screen.width > 767) {
-    titles.enter().append('text')
-          .attr('class', 'title')
-        .merge(titles)
+        // condition to display images for SDGs
+      if (byVar === "SDGname") {
+        hideTitles()
+        titles.enter().append("svg:image")
+          .attr("class", "titleImage")
         .attr('x', function (d) { return scale(d); })
         .attr('y', function (d,i) { //added up-down-up heights to names in case of clash
             if (centerScale.domain().length<minNameOffsetNum){ //if few just use baseline
-              return 4.5*(h/5);
-            } return 4.5*(h/5)- ((i+1)%2*(h*0.45));
+              return 4*(h/5) + (h/50);
+            } return 4*(h/5)- ((i+1)%2*(h*0.45)) + (h/50);
         })
-        .style('fill', 'white')
-        .attr('text-anchor', 'middle')
-        .text(function (d) { return ' ' + d });
+        .attr("width", 80)
+        .attr("height", 80)
+        .attr("opacity", 0.5)
+        .attr("xlink:href", (d) => {
+          let t = goals[`${d}`]
+          // console.log(t);
+          return `../assets/ungoals/${t}.png`
+        })
+  }
+  else {
+    try {
+      d3.selectAll("svg > .titleImage").remove()
+      // console.log(byVar)
+      titles.enter().append('text')
+            .attr('class', 'title')
+          .merge(titles)
+          .attr('x', function (d) { return scale(d); })
+          .attr('y', function (d,i) { //added up-down-up heights to names in case of clash
+              if (centerScale.domain().length<minNameOffsetNum){ //if few just use baseline
+                return 4.5*(h/5);
+              } return 4.5*(h/5)- ((i+1)%2*(h*0.45));
+          })
+          .style('fill', 'white')
+          .attr('text-anchor', 'middle')
+          .html((d) => multiLineText(d));
+          // .text(function (d) { multiLineText(d) ; return ' ' + d.replace(/(.*?\s.*?\s)/g, '$1'+'\n') });
+      
+      d3.selectAll(".goals").remove()
+      // .attr("xlink:href", "../assets/ungoals/black.jpg")     
+      // .attr("class", "nogoals")     
+    } catch (error) {
+      console.log(error);
     }
+  }
+}
 
     if(window.screen.width < 767) {
       titles.enter().append('text')
