@@ -434,9 +434,10 @@ function restart(data, year) {
         // Get the id of the button
         var buttonId = button.attr('id');
 
-          // console.log(buttonId)
+        // console.log(buttonId)
         // Toggle the bubble chart based on
         // the currently clicked button.
+        splitBubbles(buttonId);
         splitBubbles(buttonId);
       });
   }

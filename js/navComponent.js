@@ -10,6 +10,7 @@ class navComponent extends HTMLElement {
           z-index: 6;
           transition: 0.25s ease-in-out all;
           background: rgba(0,0,0,0.5);
+          border-bottom: 1px solid rgb(80,80,80);
           backdrop-filter: saturate(150%) blur(15px);
           -webkit-backdrop-filter: saturate(150%) blur(15px);
       }
@@ -52,11 +53,9 @@ class navComponent extends HTMLElement {
       .navibar .navlist {
         list-style: none;
         display: block;
-        margin: 0 1.5rem 0 1.5rem;
-        position: relative;
-    
-      }
-      
+        margin: 0 15px 0 15px;
+        position: relative;    
+      }  
       
       
       span {
