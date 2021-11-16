@@ -34,6 +34,10 @@
     color: white;
 }
 
+.title {
+    padding-right: 10px;
+}
+
 .title, .timing {
     font-size: 2rem;
     font-weight: bold;
