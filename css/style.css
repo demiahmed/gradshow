@@ -242,7 +242,7 @@ img {
   color: white;
   font-weight: 100;
   text-align: left;
-  font-size: 2vw;
+  font-size: 1.5rem;
 }
 
 .effect {
@@ -260,9 +260,9 @@ img {
   width: 60vw;
 }
 
-.hop {
+/* .hop {
   padding-top: 20%;
-}
+} */
 
 .people {
   padding: 2vw;
