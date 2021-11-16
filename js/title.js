@@ -1,1 +1,1 @@
-document.title = 'SUTD ASD M.Arch 2020';
+document.title = 'Sustainable Futures | SUTD M.Arch GradShow 2021';
