@@ -29,18 +29,6 @@ else {
     .attr("width", w)
     .attr("height", h)
 }
-// var defs = svg.append("defs");
-
-// defs.append("pattern")
-// .attr("id", "student")
-// .attr("height", "100%")
-// .attr("width", "100%")
-// .attr("patternContentUnits", "objectBoundingBox")
-// .append("image")
-// .attr("height", "1")
-// .attr("width", "1")
-// .attr("preserveAspectRatio", "none")
-// .attr("xmlns:xlink", "https://www.w3.org/1999/xlink")
 
 
 var simulation = d3.forceSimulation()
@@ -68,30 +56,50 @@ var divProf = d3.select("body").append("div")
 .style("opacity", 0)
 
 
+var susGoals = d3.select("body").append("div")
+.attr("class", "sus-goals")
+.style("opacity", 0)
 
 var circles
-// var circlesEnter
-var defs = svg.append('defs')
 
-let file = document.querySelector("#data-provider").getAttribute("filename")
+let file = d3.select("#exploreyear").node().value
+let fullname = `${file}.csv`
 
-// d3.csv(`../assets/drivers/${file}`, function(data){ 
-d3.csv(`../assets/drivers/${file}`, function(data){ 
-    restart(data)
+let goals;
+
+d3.json("../assets/drivers/goals.json", (error, data) => {
+  goals = data 
 })
 
+d3.csv(`../assets/drivers/${fullname}`, function(data){ 
+    restart(data, file)
 
-function restart(data) {
-    // data.forEach(function(d){
-    //     d.x = w / 2;
-    //     d.y = h / 2;
-    //   })
+  d3.select('#exploreyear')
+    .on('change', function() {
+//   console.log(d3.select(this).property('value'));
+  d3.select("#nationgoals").classed("disabled", !d3.select("#nationgoals").classed("disabled"))
+  d3.select(".sus-goals").classed("disabled", !d3.select(".sus-goals").classed("disabled"))
+  let changedValue = d3.select(this).property('value')
+  d3.csv(`../assets/drivers/${changedValue}.csv`, function(data){
+    restart(data,changedValue)
+    // console.log(data);
+   
+  })
+})
+})
+
+var circles
+
+function restart(data, year) {
+
+    svg.selectAll('circle').remove()
+    svg.selectAll('pattern').remove()
+    // console.log("all removed")
 
     // transition
     var t = d3.transition()
     .duration(750);
 
-      //console.table(data);
       a = {
         advisor: [],
         location: [],
@@ -112,7 +120,6 @@ function restart(data) {
         Height: 'height',
         Time: 'time',
         SDGname: 'SDGname'
-
     
     
       }
@@ -125,54 +132,53 @@ function restart(data) {
         a['height'].push(d.Height)
         a['time'].push(d.Time)
         a['SDGname'].push(d.SDGname)
-
     
       })
       a['advisor'].sort();
       a['location'].sort();
       a['topic'].sort();
       a['subtopic'].sort();
-      a['SDGname'].sort();
-
+      // a['SDGname'].sort();
 
     
-      defs = svg.select('defs').selectAll('pattern')
-      .data(data)
-      defs.exit().remove()
+      defs = svg.selectAll('pattern')
 
-  let defEnter = defs
-      .enter().append("pattern")
-      .attr("id", function(d) {
-          return d.key
-      })
-      .attr("height", "100%")
-      .attr("width", "100%")
-      .attr("patternContentUnits", "objectBoundingBox")
-      .append("image")
-      .attr("height", "1")
-      .attr("width", "1")
-      .attr("preserveAspectRatio", "none")
-      .attr("xmlns:xlink", "https://www.w3.org/1999/xlink")
-      .attr("xlink:href", function(d) {
-          return `../../projects/2021/${d.key}/${d.key}.jpg`
-      })
+      defs
+        .transition(t)
+        .attr("r", (d) => radiusScale(d.radius))
+
+      defs = defs.data(data)
+
+      let defEnter = defs
+          .enter().append("pattern")
+          .attr("id", function(d) {
+              return d.key
+          })
+          .attr("height", "100%")
+          .attr("width", "100%")
+          .attr("patternContentUnits", "objectBoundingBox")
+          .append("image")
+          .attr("height", "1")
+          .attr("width", "1")
+          .attr("preserveAspectRatio", "none")
+          .attr("xmlns:xlink", "https://www.w3.org/1999/xlink")
+          .attr("xlink:href", function(d) {
+              return `../projects/${year}/${d.key}/${d.key}-project.jpg`
+          })
       
-  defs = defs.merge(defEnter)
+      defs = defs.merge(defEnter)
     
     
     // console.log(circles);
-      circles = svg.selectAll("circle").data(data)
-      circles.exit()        
-        .transition(t)
-            .attr("r", 1e-6) 
-            .remove()
+      circles = svg.selectAll("circle")
 
-        circles
-        .transition(t)
-            .attr("r", (d) => radiusScale(d.radius))
+      circles
+      .transition(t)
+      .attr("r", (d) => radiusScale(d.radius))
+      
+      circles = circles.data(data)
 
-
-      let enter = circles
+      let enter = circles.data(data)
         .enter()
         .append("circle")
         .attr("r", 1e-6) 
@@ -188,9 +194,10 @@ function restart(data) {
         .attr("fill", function(d) {
             return `url(#${d.key})`
           })    
+        // .attr('fill', "orange")    
     
         .on('click', function(d) {
-              window.open(`../projects/2021/${d.key}/`)
+              window.open(`../projects/${year}/${d.key}/`)
         })
     
         .on('mouseover', function (d, i) {
@@ -208,8 +215,18 @@ function restart(data) {
     
             div.html(d.name)
                 .style("left", (d3.event.pageX + 10) + "px")
-                .style("top", (d3.event.pageY - 15) + "px")
-        })
+                .style("top", (d3.event.pageY - 15) + "px");
+
+            
+            // console.log("SDG" in d);
+            if("SDG" in d) {
+            susGoals.html(`<img class="sus-img" src="../assets/ungoals/${ d.SDG }.png" alt="Sustainability Goals">`)
+                .style("opacity", 1)
+                .style("display", (window.screen.width <767 || year===2020 )? "none" : "initial" )
+                .style("position", "absolute")
+                .style("right", "100px")
+            }
+              })
         
     
         .on('mouseout', function (d, i) {
@@ -222,6 +239,9 @@ function restart(data) {
             divProf.transition()
             .duration(50)
             .style("opacity", 0);
+            susGoals.html(`<img class="sus-img" src="../assets/ungoals/black.jpg" alt="Sustainability Goals">`)
+            // .duration(50)
+            .style("opacity", 1);
         })
         .transition(t)
             .attr("r", (d) => radiusScale(d.radius));
@@ -270,7 +290,7 @@ function restart(data) {
       //var a = [];
       // a.push(d[byVar])
 
-      //console.log("test" + compareDict[byVar]);
+    //   console.log("test" + compareDict[byVar]);
       return a[compareDict[byVar]][i]; }));
       // return d[byVar]; }));
     if(byVar == "all"){
@@ -321,6 +341,16 @@ function restart(data) {
     svg.selectAll('.title').remove();
   }
 
+  function multiLineText(text) {
+    let splitted = text.match(/((?:(?:\S+\s){2})|(?:.+)(?=\n|$))/gm)
+    let tspan = splitted.map(e => {
+      return `<tspan class="crumbs">${e}</tspan>`
+    })
+
+    // console.log(tspan);
+    return tspan.join("")
+  }
+
   function showTitles(byVar, scale) {
     // Another way to do this would be to create
     // the year texts once and then just hide them.
@@ -328,19 +358,52 @@ function restart(data) {
       .data(scale.domain());
 
     if(window.screen.width > 767) {
-    titles.enter().append('text')
-          .attr('class', 'title')
-        .merge(titles)
+        // condition to display images for SDGs
+      if (byVar === "SDGname") {
+        hideTitles()
+        titles.enter().append("svg:image")
+          .attr("class", "titleImage")
         .attr('x', function (d) { return scale(d); })
         .attr('y', function (d,i) { //added up-down-up heights to names in case of clash
             if (centerScale.domain().length<minNameOffsetNum){ //if few just use baseline
-              return 4.5*(h/5);
-            } return 4.5*(h/5)- ((i+1)%2*(h*0.45));
+              return 4*(h/5) + (h/50);
+            } return 4*(h/5)- ((i+1)%2*(h*0.45)) + (h/50);
         })
-        .style('fill', 'white')
-        .attr('text-anchor', 'middle')
-        .text(function (d) { return ' ' + d; });
+        .attr("width", 80)
+        .attr("height", 80)
+        .attr("opacity", 0.5)
+        .attr("xlink:href", (d) => {
+          let t = goals[`${d}`]
+          // console.log(t);
+          return `../assets/ungoals/${t}.png`
+        })
+  }
+  else {
+    try {
+      d3.selectAll("svg > .titleImage").remove()
+      // console.log(byVar)
+      titles.enter().append('text')
+            .attr('class', 'title')
+          .merge(titles)
+          .attr('x', function (d) { return scale(d); })
+          .attr('y', function (d,i) { //added up-down-up heights to names in case of clash
+              if (centerScale.domain().length<minNameOffsetNum){ //if few just use baseline
+                return 4.5*(h/5);
+              } return 4.5*(h/5)- ((i+1)%2*(h*0.45));
+          })
+          .style('fill', 'white')
+          .attr('text-anchor', 'middle')
+          .html((d) => multiLineText(d));
+          // .text(function (d) { multiLineText(d) ; return ' ' + d.replace(/(.*?\s.*?\s)/g, '$1'+'\n') });
+      
+      d3.selectAll(".goals").remove()
+      // .attr("xlink:href", "../assets/ungoals/black.jpg")     
+      // .attr("class", "nogoals")     
+    } catch (error) {
+      console.log(error);
     }
+  }
+}
 
     if(window.screen.width < 767) {
       titles.enter().append('text')
@@ -389,19 +452,18 @@ function dragstarted(d,i) {
     d.fy = d.y;
   }
 
-  function dragged(d,i) {
-    //console.log("dragged " + i)
-    d.fx = d3.event.x;
-    d.fy = d3.event.y;
-  }
+function dragged(d,i) {
+  //console.log("dragged " + i)
+  d.fx = d3.event.x;
+  d.fy = d3.event.y;
+}
 
-  function dragended(d,i) {
-    //console.log("dragended " + i)
-    if (!d3.event.active) simulation.alphaTarget(0);
-    d.fx = null;
-    d.fy = null;
-    var me = d3.select(this)
-    console.log(me.classed("selected"))
-    me.classed("selected", !me.classed("selected"))
-
-  }
+function dragended(d,i) {
+  //console.log("dragended " + i)
+  if (!d3.event.active) simulation.alphaTarget(0);
+  d.fx = null;
+  d.fy = null;
+  var me = d3.select(this)
+  console.log(me.classed("selected"))
+  me.classed("selected", !me.classed("selected"))
+}
