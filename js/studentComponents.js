@@ -324,6 +324,16 @@ class TextOnly extends HTMLElement {
     }
 }
 
+class ImgCaption extends HTMLElement {
+    connectedCallback() {
+        let text = this.getAttribute('content')
+        this.innerHTML = 
+        `<div class="fullsize">
+        <p style="text-align:center;">${text}</p>
+        </div>`
+    }
+}
+
 
 
 
@@ -336,6 +346,7 @@ window.customElements.define('project-bio', ProjectBio)
 window.customElements.define('special-image', SpecialImage)
 window.customElements.define('triple-images', TripleImages)
 window.customElements.define('text-only', TextOnly)
+window.customElements.define('img-caption', ImgCaption)
 window.customElements.define('text-image', TextImage)
 window.customElements.define('image-text', ImageText)
 window.customElements.define('single-image', SingleImage)
