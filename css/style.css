@@ -144,6 +144,7 @@ img {
 #aerImgR {
   background-image: url("../assets/bgimage/Aerial_red_d.jpg");
   min-height: 150vh;
+  padding-top: 25%;
 }
 #aerImgG {
   background-image: url("../assets/bgimage/Aerial_green_d.jpg");
