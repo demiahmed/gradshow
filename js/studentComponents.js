@@ -1,3 +1,13 @@
+let mainPath = window.location.href
+let studentPath = mainPath.split("/")[mainPath.split("/").length-2]
+let imgPath = `${mainPath}${studentPath}-project.jpg`
+// console.log(imgPath);
+var ogmetatag = document.createElement('meta');
+ogmetatag.setAttribute('property', 'og:image');
+ogmetatag.setAttribute('content', imgPath);
+document.head.appendChild(ogmetatag);
+
+
 class VideoContainer extends HTMLElement {
     connectedCallback() {
         this.attachShadow( { mode: 'open' } )
