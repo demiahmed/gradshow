@@ -413,6 +413,10 @@ img {
   .column {
     flex-direction: column;
   }
+
+  .herothumb img {
+    width: 80%;
+  }
 }
 
 @media screen and (max-device-width: 480px) {
