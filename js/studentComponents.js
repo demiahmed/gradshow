@@ -338,7 +338,7 @@ class ImgCaption extends HTMLElement {
     connectedCallback() {
         let text = this.getAttribute('content')
         this.innerHTML = 
-        `<div class="fullsize">
+        `<div class="imgcaption">
         <p style="text-align:center;">${text}</p>
         </div>`
     }
