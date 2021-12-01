@@ -263,7 +263,7 @@ img {
 }
 
 #award-title {
-  font-size: 3vw;
+  font-size: 2rem;
   padding-bottom: 25px;
 }
 
@@ -318,6 +318,12 @@ img {
   font-weight:  lighter;
 }
 
+@media screen and (max-device-width: 1024px) {
+  .desc {
+    margin-top: 25%;
+  }
+}
+
 @media screen and (max-device-width: 768px) {
   *::-webkit-scrollbar {
     width: 4px;
@@ -367,6 +373,7 @@ img {
     max-width: 90vw;
     color: white;
     font-weight: lighter;
+    margin-top: 25%;
   }
 
   .desc p {
