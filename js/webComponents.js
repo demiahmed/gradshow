@@ -4,8 +4,8 @@ class AwardIntro extends HTMLElement {
         let paragraph = this.getAttribute('paragraph')
         this.innerHTML = 
         `        <div class="img" id="satImgB">
-        <div class="caption1 effect"><p>${title}</p></div>
         <div class="desc ">
+            <p id="award-title">${title}</p>
             <p>${paragraph}</p>
         </div>
     </div>`
@@ -24,7 +24,7 @@ class AwardItem extends HTMLElement {
         ` <div class="img" id="aerImgG">
         <br><br><br><br> 
         <div class="caption2">${awardName}</div>
-        <div class="peoplegrid">
+        <div class="peoplegrid-award">
             <div class="people">
                 <a href ="${linkToPage}"><div class="thumb">
                     <img src="${thumbnailURL}" alt="Award Recipient">

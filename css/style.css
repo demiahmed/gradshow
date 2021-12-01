@@ -139,7 +139,7 @@ img {
 }
 
 .cover-wrapper {
-  padding-top: 25vh;
+  padding-top: 20vh;
 }
 
 #aerImgB {
@@ -211,10 +211,8 @@ img {
 }
 
 
-
 .caption1 {
   position: relative;
-  top: 25vh;
   left: 28vw;
   width: fit-content;
   color: white;
@@ -264,9 +262,13 @@ img {
   display: flex;
 }
 
+#award-title {
+  font-size: 3vw;
+  padding-bottom: 25px;
+}
+
 .effect {
   display: inline;
-  padding: 16px;
 }
 
 .peoplegrid {
@@ -275,6 +277,14 @@ img {
   align-content: flex-start;
   margin: 0 auto;
   justify-content: flex-end;
+  width: 60vw;
+}
+
+.peoplegrid-award {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
   width: 60vw;
 }
 
