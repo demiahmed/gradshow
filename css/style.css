@@ -139,7 +139,7 @@ img {
 }
 
 .cover-wrapper {
-  padding-top: 20vh;
+  padding-top: 12vh;
 }
 
 #aerImgB {
@@ -206,7 +206,7 @@ img {
 }
 
 #sutdGroupMBW {
-  background-image: url("../assets/bgimage/sutd_group_m_bw.jpg");
+  background-image: url("../assets/bgimage/sutd_group_ml_bw_169.jpg");
   min-height: 100vh;
 }
 
@@ -276,7 +276,7 @@ img {
   flex-wrap: wrap;
   align-content: flex-start;
   margin: 0 auto;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   width: 60vw;
 }
 
@@ -340,6 +340,11 @@ img {
     -moz-background-size: inherit;
     -o-background-size: inherit;
   }
+
+  .cover-wrapper {
+    padding-top: 25vh;
+  }
+  
 
   .caption0 {
     font-size: 4rem;
