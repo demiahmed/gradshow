@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title> | ASD GradShow 2021 | Sustainability</title>
+    <title> | Sustainable Futures | ASD GradShow 2021</title>
     <meta charset="utf-8">
     <meta name="description" content="SUTD ASD M.Arch Virtual GradShow 2021">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,27 +11,27 @@
 
   
     <!-- StyleSheets -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/bootstrap-fixer.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/student-style.css">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/bootstrap-fixer.css">
+    <link rel="stylesheet" href="../../../css/student-style.css">
 
 
     <!-- Libraries -->
 
-    <script src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/d3.v4.min.js"></script>
+    <script src="../../../js/d3.v4.min.js"></script>
     <script
-    src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/studentComponents.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/navfixer.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/bootstrap.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/popper.min.js"></script>
+    src="../../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../../js/studentComponents.js"></script>
+    <script defer src="../../../js/navfixer.js"></script>
+    <script defer src="../../../js/bootstrap.min.js"></script>
+    <script defer src="../../../js/popper.min.js"></script>
 
     <!-- Enable below line if for Dark Theme -->
-    <!-- <script defer src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/darkmode.js"></script> -->
+    <!-- <script defer src="../../../js/darkmode.js"></script> -->
 
 
-    <script src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/navComponent.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/navHover.js"></script>
+    <script src="../../../js/navComponent.js"></script>
+    <script defer src="../../../js/navHover.js"></script>
 
 </head>
 
@@ -39,17 +39,17 @@
     <nav-i anchor="../../../"></nav-i>
     <hero-image url="./data/main.gif"></hero-image>
 
-    <title-text title="Jellyfish Architecture"></title-text>
+    <title-text title="Stratoculmuliform Envelope"></title-text>
 
     <project-bio 
     main-title="Summary"
-    summary="I'm sorry Peter, I will do better for the final one. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.
-    <br><br>  
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat." 
+    summary="<p><i>Strato</i>(“layer”)<i>cumulus</i>(“heap”) Clouds are a layer of puffy,  low-lying clouds. Large and autonomous, they emerge as a response to a set of specific environmental conditions. Architecture has long toyed with the idea of responsive, active systems, and the integration of computation into architectural infrastructure, empowers it to adapt and respond to user needs and external stimuli, processing complex environmental information in real-time. This brings the promise of a resilience that the static paradigm cannot afford.
+    <br><br> 
+    <p><i>Stratoculmuliform Envelope</i> imagines a soft, moving, permeable skin as the mediator between the human infrastructure and our environment. This thesis explores the use of a large-scale active-responsive system that manipulates windflow and ventilation as a means of disrupting the undesirable heating effects of the city."
+
+
     student-title="About Me"
-    aboutme="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.
-     <br><br>          
-     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat."
+    aboutme="Simon is a Master of Architecture graduate enthralled by architecture’s potential for generosity. His thesis was inspired by the desire for an architecture that expresses sensitivity to its surrounding environment, his interest in architecture technologies and fabrication, and the story of an extra-dimensional squid."
     name="Simon-Kyle Rocknathan"
     portfolio-link="https://issuu.com/simonrocknathan8665/docs/portfolio__simon-kyle_rocknathan"
     portrait="./simon-rocknathan.jpg"
@@ -58,10 +58,17 @@
     location="Singapore"
     email="simon_rocknathan@mymail.sutd.edu.sg"
     issuu="https://issuu.com/simonrocknathan8665/docs/portfolio__simon-kyle_rocknathan"
-    linkedin="https://www.linkedin.com"
+    
      ></project-bio>
 
-    <special-image url="./data/main.gif"></special-image>
+    
+    <image-carousel
+    images='{"images": [
+      "./data/model.gif",
+      "./data/model_1.jpg",
+      "./data/model_2.jpg"
+      ]}'
+    ></image-carousel>
 
     <!--triple-images 
     first="./data/bw1.gif" 
@@ -71,48 +78,78 @@
 
     <text-image 
     title="Responsive Architecture" 
-    text="the special image abve will be a gif of the final kinetic model the three below will be more pics of the model/prototyping process idk, <br> <br> this intro paragraph will talk about responsive archi and its applcation in microclimate control and its uself its useful k m dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.Lorem ipsum dolor sit, amet consectetur adipisicing elit." 
-    image="./data/flipflop.gif">
+    text="The most prevalent way buildings in our current age respond to the environment is through building control systems. These systems often rely heavily on air-conditioning – pumping cool air around and releasing hot air into the environment to create a comfortable interior microclimate. This method i problematic, furher exacerbating the heat it works to mitigate.
+    <br><br>
+    Research into responsive building skins seeks to provide a sustainable alternative. 
+    Passive-responsive systems leverage inherent material properties, for example hygroscopy or bimetaliics, as well as intelligent geometry to directly respond to changes in the external environment. Active-responsive systems use sensors to determine environmental data, and adjust their mechanical systems accordingly.
+    <br><br>
+    Drawing inspiration from speculative architecture of the 60s, this thesis explores the use of an active system on a large-scale, to address the city-scale heat problems many developed countries face. This high-performance, naturally ventilated envelope was developed with three strategies to "
+
+
+    image="./data/sys_strat.gif">
     </text-image>
 
-    <triple-images
-    first="./data/1400x1400.png"
-    second="./data/1400x1400.png"
-    third="./data/1400x1400.png"
-    ></triple-images>
-
+    <hero-image url="./data/sg_uhi.jpg"></hero-image>
+    <!--<img-caption content="<i>Mapping of Urban Heat Island effect across Singapore, based on a simulation found in Cooling Sinagpore’s Potential of District Cooling in Singapore: From Micro to Mesoscale report (Riegelbauer et al., 2020)</i>"></img-caption>
+    -->
     <text-image 
     title="Site Selection" 
-    text="the gif on the right will show the UHI mapping of sg, then the hot spots and low rise commercial, then zoom in to the rochor site. <br> <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.Lorem ipsum dolor sit, amet consectetur adipisicing elit." 
-    image="./data/site_selection.gif">
+    text="Singapore is no strangerr to Urban Heat Island effect, as seen from the ampping above,derived from a simulation found in <i>Cooling Singapore</i>’s Potential of District Cooling in Singapore: From Micro to Mesoscale report (Riegelbauer et al., 2020).
+     The site on Rochor was selected because of: 1. The severity of the effects of UHI effect on the area, 2. Its concentration of clustered, low-mid rise commercial developments–namely conserved shophouses, makes it a great candidate for the system, and 3. The vacant plot in between Kampong Glam and Little India, though well connected, is victim to an absence of city grain and high exposure to sunlight.
+    <br><br> 
+    The programmatic mapping on the left shows its diverse offering – ranging from intimate, everyday houding developments, to commercial mixed-use malls, it is understandable why it is traverse by many diverse demographics. This site specifically is in close proximity to three distinct characters in Rochor's urban fabric. It is opposite what used to be Rochor Centre – the iconic multi-colored HDB tower and podium development. The Sungei Rd Thieves Market operated on the site and was also recently removed. And finally Ban San Bus Terminal, which remains in the plot adjacent to the site – behind many locals' fond memories of weekend getaways to Johor Bahru."
+    
+    image="./data/urban_plan_prog.jpg">
     </text-image>
 
-    <triple-images
+    <hero-image url="./data/rochor-collage.jpg"></hero-image>
+    
+
+    <!--<triple-images
     first="./data/sqpln_1.png"
     second="./data/sqpln_2.png"
     third="./data/sqpln_3.png"
     ></triple-images>
 
+    <hero-image url="./data/main.gif"></hero-image>
+    -->
+
+    <text-ONLY 
+    title="Siting Programs" 
+    content="Referencing the surrounding programs as well as the three icons of the area, a rough zoning of activities began to emerge. Imposing the 30x30m structural grid of the Envelope onto the site helped further organise the zoning. A circulatioN scheme was proposed, taking into account the existing MRT station and relocating the bus terminal as it would benefit from a naturally ventilated canopy. With 5m subdivisions, modules corresponding to the spectrum of <i>Intimate</i> and <i>Commercial</i> were developed. This system allows for flexibily of programs and innumerable configurations, maximizing the space."
+    <br><br> 
+    </text-only>
+
     <image-carousel
     images='{"images": [
-      "./data/site_plan_1.jpg",
-      "./data/site_plan_2.jpg",
-      "./data/site_plan_3.jpg"
+      "./data/SITEPLAN_1.jpg",
+      "./data/SITEPLAN_2.jpg",
+      "./data/SITEPLAN_3.jpg",
+      "./data/SITEPLAN_TRANSPORT.jpg",
+      "./data/MODULES.jpg",
+      "./data/SITEPLAN_MODULES.jpg"
       ]}'
     ></image-carousel>
 
-    <text-image 
-    title="Massing Strategy" 
-    text="the gif on the right will show a parti diagram explaining the massing <br> <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.Lorem ipsum dolor sit, amet consectetur adipisicing elit." 
-    image="./data/site_selection.gif">
-    </text-image>
+    <text-ONLY 
+    title="The Envelope" 
+    content="Stratoculmuliform Envelope can be decribed with three layers of components – the column grid, which supports the long spanning envvelope, the gridshell substructure, which uses unique nodes and mostly uniform-length struts, and the textile skin, which contains static panels that redistribute rainwater runoff for collection and active panels, which serve to augment interior windflow.  "
+    <br><br> 
+    </text-only>
 
-    <single-image url="./data/1920x1080.png" alt="Girl in a jacket"></single-image></single-image>
+    <hero-image url="./data/explode"></hero-image>
 
-    <special-image url="./data/1920x1080.png"></special-image>
-    <special-image url="./data/1920x1080.png"></special-image>
-    <special-image url="./data/1920x1080.png"></special-image>
 
+
+    <image-carousel
+    images='{"images": [
+      "./data/DETAILS_1.jpg",
+      "./data/DETAILS_2.jpg",
+      "./data/DETAILS_3.jpg",
+      "./data/DETAILS_4.jpg"
+      ]}'
+    ></image-carousel>
+  
 
     <!--triple-images
     first="./data/1080x1920.png"
@@ -126,7 +163,7 @@
     ></image-image-->
 
     <div class="bottomlinks">
-        <h3><a  href="javascript:window.scrollTo(0,0)">Back to Top</a></h3>
+        <h3><a  href="javascript:window.scrollTo(0,0)"">Back to Top</a></h3>
     </div>
 
 <footer-i></footer-i>

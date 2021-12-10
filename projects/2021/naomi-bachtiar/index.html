@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title> | ASD GradShow 2021 | Sustainability</title>
+    <title> | Sustainable Futures | ASD GradShow 2021</title>
     <meta charset="utf-8">
     <meta name="description" content="SUTD ASD M.Arch Virtual GradShow 2021">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,37 +11,39 @@
 
   
     <!-- StyleSheets -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/bootstrap-fixer.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/student-style.css">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/bootstrap-fixer.css">
+    <link rel="stylesheet" href="../../../css/student-style.css">
 
 
     <!-- Libraries -->
 
-    <script src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/d3.v4.min.js"></script>
+    <script src="../../../js/d3.v4.min.js"></script>
     <script
-    src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/studentComponents.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/navfixer.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/bootstrap.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/popper.min.js"></script>
+    src="../../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../../js/studentComponents.js"></script>
+    <script defer src="../../../js/navfixer.js"></script>
+    <script defer src="../../../js/bootstrap.min.js"></script>
+    <script defer src="../../../js/popper.min.js"></script>
 
     <!-- Enable below line if for Dark Theme -->
-    <!-- <script defer src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/darkmode.js"></script> -->
-    
+    <!-- <script defer src="../../../js/darkmode.js"></script> -->
 
-    <script src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/navComponent.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/navHover.js"></script>
+    <script>
+      $(function() {
+        $("#header").load("../../../partials/projectnav.html");
+        $("#footer").load("../../../partials/footer.html");
+      });
+    </script>
 
 </head>
 
 <body >
-    <nav-i anchor="../../../"></nav-i>
+    <div id="header"></div>
 
-    <video-container url="https://www.youtube-nocookie.com/embed/OpymSmcv8Zg"></video-container>
+    <video-container url="https://youtu.be/fTz5cJBLUt8"></video-container>
+
     
-
-   <!-- <hero-image url="./data/main.gif"></hero-image> -->
 
     <title-text title="Katakita"></title-text>
 
@@ -51,33 +53,31 @@
     student-title="About Me"
     aboutme="I am an aspiring architect / urban designer. I believe that the way we design is as important if not more than the design itself. 
     <br><br>     
-    The greatest tool that we have as designers is empathy. A large portion of our time is used to think about how would a user experience a space and and about the social implications of certain design choices. This belief drove me to create Katakita. Translated to 'Our Say', Katakita aims to give a voice to stakeholders of different background. In the future, I hope to see this tool be used in real-world projects."
+    The greatest tool that we have as designers is empathy. A large portion of our time is used to think about how would a user experience a space and and about the social implications of certain design choices. This belief drove me to create Katakita. Translated to 'Our Say', Katakita aims to give a voice to stakeholders of different background. In the future, I hope to see this tool be used in real-world projects.<br><br><br><br>"
     name = "Naomi Bachtiar"
     portfolio-link="https://issuu.com/naomibachtiar/docs/architecture_portfolio"
     portrait="./naomi-bachtiar.jpg"
     mentor="Peter Ortner"
     typology="Urban, Mixed-use"
     location="Jakarta, Indonesia"
-    email="naomi_bachtiar@mymail.sutd.edu.sg"
+    email="naomibachtiar@gmail.com"
     issuu="https://issuu.com/naomibachtiar/docs/architecture_portfolio"
     linkedin="https://linkedin.com/in/naomi-bachtiar"
      ></project-bio>
 
-    <special-image url="./data/process_original.png"></special-image>
-
-
-
+     
+    
     <text-image 
     title="Abstract: Profitability vs Equitability" 
-    text="The ongoing MRT development in Jakarta has the potential to greatly improve mobility. In city which has long faced problems with traffic congestions and poor public transportation system, this MRT development can be key for driving equality. However, it runs the risk of causing displacement for the lower income group.
+    text="The ongoing MRT development in Jakarta has the potential to greatly improve mobility. In a city which has long faced problems with traffic congestions and poor public transportation system, this MRT development can be key for driving equality. However, it runs the risk of causing displacement for the lower income group.
     <br><br>
     This thesis looks into equitable transit-oriented development through understanding the risk of displacement for the vulnerable communities when a new transit node is introduced. It aims to challenge the typical redensification model which rely upon the demolition of existing infrastructures. Instead, it will explore the possiblity of developing a design process that allow for the introduction of a new transit node to be beneficial for the existing community. 
     In particular, participatory planning process will be explored as a way to drive a community-centric development.
     <br><br>
     As the problem of displacement is strongly linked to financial reasons, this thesis shall explore a design process that can balance the profitability of a project with equitability." 
     image="./data/overall-map-with-legend.jpg">
-
-    </text-image>
+    <single-image url="./data/Slide2.png"></single-image>
+    <img-caption content = "Forced Eviction Data from 2015 - 2018"></img-caption>
 
     <text-image 
     title="Context" 
@@ -90,9 +90,35 @@
     image="./data/population_pyramid.png">
 
     </text-image>
+    
+    <text-only title="Mapping the Vulnerable Communities" content="The thesis shall focus on phase 3 and 4 of the MRT development. This is scheduled to take place between 2020 to 2034. <br><br>
+      Based on ten variables, the statistics bureau of Jakarta has classified different subdistricts according to the extent of slum-like qualities. <br><br>
+      
+      These variables are: population density, building density, housing construction method, ventilation and lighting, sanitation, waste management, drainage and water piping, road condition, lighting condition of public road and building layout. 
+      <br><br>
+      "> </text-only>
+      <single-image url="./data/slides_phase.png"></single-image>
+
+
+    <text-only title="" content="6 neighbourhoods are classified as moderate and heavy slums near the phase 3 and 4 MRT lines. Based on the distance and population impacted, it is further narrowed down to two neighbourhoods which are located in close proximity to each other.
+        <br><br>
+        "> </text-only>   
+        
+        
+    <single-image url="./data/slides_6neighbourhoods.png"></single-image>
 
     <image-text
-    image="./data/game_condensed.jpg"
+    image="./data/site-to-board.gif"
+    title="Setting the Game Board and Pieces"
+    text="For site selection, all the slum areas in Jakarta is first mapped. This data is then overlayed with the population density distribution and the planned MRT routes. The site selected is based on the number of population impacted, proximity to the MRT line and their slum-like qualities.
+    <br><br>
+    After the site is selected, the plots are defined. It is then translated to a 10 x 10m grid to become the game board.
+    <br><br>
+    The game pieces consist of of a series of standard-sized building modules (10 x 10m) and micro-sized building modules (5 x 5m). Each of these modules will have different values associated to them. These values are relevant for the scoring system"
+    ></image-text>
+    
+    <image-text
+    image="./data/game_condensed.png"
     title="Game as a Participatory Design Tool"
     text="Katakita is a game that aims to help stakeholders navigate the complex issues associated with a development project. This function is facilitated by several key features.
     <br><br>
@@ -102,65 +128,86 @@
       <li>In-game Roles Selection: Allow for stakeholders to understand different perspectives. Faciliates consensus-building.</li><br>
       <li>Real-time Scoring System: Immediate feedback on the impact that different decisions have. i.e. rental values, equitability ratio, total number of displaced people and demolished buildings, total green space, ground coverage.</li>
       <br>
-    </ol>"
+    </ol> <br><br>
+    For full explanation on how the game works, watch the video at the top (link can be found below). "
     ></image-text>
-
-    <single-image url="./data/site-to-board.gif"></single-image>
-    <image-text
-    image="./data/game_board.png"
-    title="Setting the Game Board and Pieces"
-    text="For site selection, all the slum areas in Jakarta is first mapped. This data is then overlayed with the population density distribution and the planned MRT routes. The site selected is based on the number of population impacted, proximity to the MRT line and their slum-like qualities.
-    <br><br>
-    After the site is selected, the plots are defined. It is then translated to a 10 x 10m grid to become the game board.
-    <br><br>
-    The game pieces consist of of a series of standard-sized building modules (10 x 10m) and micro-sized building modules (5 x 5m). Each of these modules will have different values associated to them. These values are relevant for the scoring system"
-    ></image-text>
-
     <triple-images 
     first="./data/modules_housing.gif" 
     second="./data/modules_others.gif" 
     third="./data/modules_OS.gif">
     </triple-images>
+    <div class="bottomlinks">
+      <h3><a href="#header">Game Explanation Video</a></h3>
+  </div>
 
-    <image-text
-    image="./data/axon_transition.png"
-    title="Further Development"
-    text="The game's final design can be saved as a .json file which is then transferred to Rhino3D for further development. The idea is that multiple gameplays can be run in different focus group discussions for the development project. After which, the optimal design based on selected criterias can be chosen.
-    <br><br>
-    Of course, the result of the game is not a finished design product. Instead, it acts as a baseline for the urban planner to work on. One of the difficulties in comparing between design options is the lack of numerical data that comes with it. Working based on the optimal design can help inform the urban planner of the viability of his/her design.
-    <br><br>
-    It is also important to note that what is referred to as optimal design is not the absolute optimal design. Instead it is the relative optimal design as compared to other design results arising from the different gameplays. This relative optimal design is perhaps more valuable than an absolute one because there is the user input aspect that cannot be captured purely by numbers. This human touch is what separates Katakita from a simple optimisation algorithm.
-    "
-    ></image-text>
-
-    <image-carousel
-    images='{"images": [
-      "./data/plan.png",
-      "./data/axon_lifted.png"
-      ]}'
-    ></image-carousel>
-
-
-
-    <special-image url="./data/process_new.png"></special-image>
+  <image-text
+  image="./data/leaderboard.jpg"
+  title="Leaderboard System: Choosing the Optimised Design"
+  text="Scores from each game sessions are submitted to an online database (Firebase). Players can then generate a leaderboard based on the criteria selected. What is the best output for one criteria may not be the best in another. There are six criteria to choose from and players can choose a maximum of two criteria to optimise for.
+  <br><br>
+ The criteria are:
+  <ol>
+    <li>Rent (maximised)</li><br>
+    <li>Equitability ratio (closest to 1)</li><br>
+    <li>Number of people dissplaced (minimised)</li>
+    <br>
+    <li>Number of buildings demolished</li><br>
+    <li>Ground coverage (minimised except when below 20%)</li><br>
+    <li>Green space area (maximised)</li><br>
+  </ol> <br><br>"
+  ></image-text>
+  
 
 
-    <!--<triple-images
-    first="./data/1080x1920.png"
-    second="./data/360x640.png"
-    third="./data/360x640.png"
-    ></triple-images>
+  <image-text
+  image="./data/toRhino.png"
+  title="Further Development Stage"
+  text="Once the optimised design has been selected, we can retrieve the saved file in a .json format. This file can then be transferred into Rhino using a grasshopper script for further development.
+  <br><br>
+  A workflow has been created to convert the optimised output into a viable urban design proposal. The steps are:
+  <ol>
+    <li>Define circulation. The basic vehicular circulation is defined. Integration with the surrounding and accessibility of the site are important things to consider.</li><br>
+    <li>Check boundary condition. The border between game border and actual site is studied and modified. Buildings are reoriented accordingly. Green buffer and vehicular circulation (drop off and underground parking access) are introduced.</li><br>
+    <li>Clarify spatial strategy. This includes the overall green network strategy and zoning proposal.</li>
+    <br>
+    <li>Design optimisation. Adjacency between buildings and overall design intention is evaluated. Adjustments are made at the discretion of the urban planner / architect. </li>
+  </ol> <br><br>"
+  ></image-text>
+<single-image url="./data/devt_process.png"></single-image>
+<single-image url="./data/plan_gif.gif"></single-image>
+<img-caption content = "Further Development Workflow"></img-caption>
 
-    <image-image
-    first="./data/1080x1920.png"
-    second="./data/1080x1920.png"
-    ></image-image> -->
+<text-only title="Emergent Behaviour" content="There are some observed design trends which arise from the way scores are calculated and the types of modules given. Beyond optimisation, the design is a reflection of the stakeholders' vision.
+<br><br>
+"> </text-only> 
+
+
+<image-carousel
+images='{"images": [
+  "./data/s1-01.png",
+  "./data/s2.1-01.png",
+  "./data/s2.2-01.png",
+  "./data/s3-01.png",
+  "./data/s4-01.png",
+  "./data/s5-01.png"
+  ]}'
+></image-carousel>
+
+<text-only title="Community-led and Developer-led" content="Katakita can be used to build both large-scale and small-scale developments. By involving the residents, Katakita can open up the possibility for a more community-centric development model.
+<br><br>
+"> </text-only> 
+
+
+    <single-image url="./data/elevation_with modules-01.png"></single-image>
+
+    <hero-image url="./data/full_axon.png"></hero-image>
+
 
     <div class="bottomlinks">
-        <h3><a  href="javascript:window.scrollTo(0,0)">Back to Top</a></h3>
+        <h3><a href="#header">Back to Top</a></h3>
     </div>
 
-<footer-i></footer-i>
+<div id="footer"></div>
 
 </body>
 </html>

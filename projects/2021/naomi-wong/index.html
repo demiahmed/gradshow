@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title> | ASD GradShow 2021 | Sustainability</title>
+    <title> | Sustainable Futures | ASD GradShow 2021</title>
     <meta charset="utf-8">
     <meta name="description" content="SUTD ASD M.Arch Virtual GradShow 2021">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,27 +11,31 @@
 
   
     <!-- StyleSheets -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/bootstrap-fixer.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/student-style.css">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/bootstrap-fixer.css">
+    <link rel="stylesheet" href="../../../css/student-style.css">
 
 
     <!-- Libraries -->
 
-    <script src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/d3.v4.min.js"></script>
+    <script src="../../../js/d3.v4.min.js"></script>
     <script
-    src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/studentComponents.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/navfixer.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/bootstrap.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/popper.min.js"></script>
+    src="../../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../../js/studentComponents.js"></script>
+    <script defer src="../../../js/navfixer.js"></script>
+    <script defer src="../../../js/bootstrap.min.js"></script>
+    <script defer src="../../../js/popper.min.js"></script>
 
     <!-- Enable below line if for Dark Theme -->
-    <!-- <script defer src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/darkmode.js"></script> -->
+    <!-- <script defer src="../../../js/darkmode.js"></script> -->
 
 
-    <script src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/navComponent.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/gh/demiahmed/dev-hosting@latest/navHover.js"></script>
+    <script>
+      $(function() {
+        $("#header").load("../../../partials/projectnav.html");
+        $("#footer").load("../../../partials/footer.html");
+      });
+    </script>
 
     <style>
     title-text {color: #388F92;}
@@ -45,9 +49,9 @@
 </head>
 
 <body >
-    <nav-i anchor="../../../"></nav-i>
+    <div id="header"></div>
 
-    <hero-image url="./data/main.gif"></hero-image>
+    <hero-image url="./data/Render 1.jpg"></hero-image>
 
     <title-text title="ARCHIPELIC - Coney Island a Living Lab"></title-text>
 
@@ -59,79 +63,106 @@
     <br><br>
     Modular systems developed in this thesis aim to be adaptable across all costal developments in Singapore. With the current site being Coney island it would make a suitable testing ground for new explorations of such measures. " 
     student-title="About Me"
-    aboutme="I believe architecture is beautiful as it is the intersection between math, science, art & design. Having studied art for many years, architecture is a new kind of experience for me, designing spaces for people to live and interact. Unlike many of the other arts, architecture requires a lot of teamwork which I really enjoy. Working with my friends, professors and colleagues has enabled me to learn more and push the boundaries of my creativity.
+    aboutme="Architecture studies has been an enjoyable experience. Having studied art for many years, architecture is a new kind of experience for me, designing spaces for people to live and interact. Unlike many of the other arts, architecture requires a lot of teamwork which I really enjoy. Working with my friends, professors and colleagues has enabled me to learn more and push the boundaries of my creativity.
     <br><br>          
      "
     name="Naomi Wong"
     portfolio-link="URL-to-Portfolio"
     portrait="./naomi-wong.jpg"
-    mentor="Thomas Schoepfer"
-    typology="Mixed Development"
-    location="Coney Island,
-    <br><br> Singapore"
+    mentor="Thomas Schröpfer"
+    typology="Coastal Mixed Development System"
+    location="Coney Island, Singapore"
     email="naomi_wong@mymail.sutd.edu.sg"
     issuu="https://issuu.com/naomao"
     website="https://www.google.com"
-    instagram="https://instagram.com/naomao"
+    instagram="https://www.instagram.com/dont_cri_craft/"
     linkedin="https://www.linkedin.com/in/naomi-wong-shumiin"
      ></project-bio>
 
-    <special-image url="./data/Section-Shore.jpg"></special-image>
-
+    <special-image url="./data/Render 8.jpg"></special-image>
+    <h2 style="margin-left: 5em;"> Thesis Research </h2>
  <triple-images
     first="./data/Biocapacity-1.jpg"
     second="./data/Biocapacity-2.jpg"
     third="./data/Biocapacity-3.jpg"
     ></triple-images>
 
- <special-image url="./data/ConeyIsland-Timeline.JPG"></special-image>
+    <single-image url="./data/Prep 1.jpg"></single-image>
+
+    <h2 style="margin-left: 5em;"> Coney Island </h2>
+
+    <special-image url="./data/Coney Island Timeline.jpg"></special-image>
+
+    <single-image url="./data/Coney Island 3.jpg"></single-image>
+
+    <single-image url="./data/Coney Island 4.jpg"></single-image>
+
+    <special-image url="./data/Render 2.jpg"></special-image>
 
     <text-image 
-    title="Subtitle 1" 
-    text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.Lorem ipsum dolor sit, amet consectetur adipisicing elit." 
-    image="./data/ModuleDiagram-2.jpg">
+    title="Structural System" 
+    text="The structure developed mimics the mangroves roots, to achieve greater points of contact with the seabed. This is done with the intention to provide basic support and shelter for budding plants from the incoming waves. Natural soil erosion occurs along coasts, and with Coney Island being mostly reclaimed land, this structural system will help the built coast retain its sediments as well as encourage natural sedimentation. Naturally, this is how a coast would grow, and this structure facilites this by allowing some soil retention. This achieves a balanced relationship between the structure, the coast as well as the growing mangroves that will also facilitate in recovering shorelines.
+    <br><br>
+The parametric and modular structure enables the structure to be easily develop to adapt to the various coastal and slope conditions. The structure can be assembled in parts with 2 types of joints and columns of various lengths. The upper points of the structure compliments the modular massing systems and its beams under it. Thus, creating a system that flows through from the ground to the top of the building.
+" 
+    image="./data/Structure.gif">
 
     </text-image>
 
+    <single-image url="./data/Shore.gif"></single-image>
+
+    <special-image url="./data/Render 3.jpg"></special-image>
+
     <image-text
-    image="./data/ModuleDiagram-1.jpg"
-    title="Subtitle 2"
-    text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis suscipit aperiam laborum necessitatibus quae alias recusandae nostrum eum soluta corrupti quidem temporibus ipsa voluptatum nemo optio, libero, eveniet totam. Fugiat.Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+    image="./data/Site.gif"
+    title="Massing System"
+    text="A key feature of mangroves are their root systems at occupy the zone of the changing tides. The thesis prep phase also explore the concept of branching of mangrove roots, the branching observed naturally formed pockets of spaces between the roots. Hence, this was used to develop the hexagonal grid and the massing modules. These basic module forms mimics that of the branching systems as it intuitively created open courtyards when propogated along the coast. A catalogue of modules have been derived from the original massing to allow for better vertical connections and agglomerations. A heiarchy is also established with the 4 basic modules. With some found more prominiently out in the ocean and some found more grounded on the land.
+
+<br><br>
+  The 4 basic massings developed are adaptable for various programmatic functions. Creating various areas that can be used for residential, sports, living labs and observatories. Its mendering path along the shore also creates a new green sky walk over the ocean. Allowing current trails to be extended and potentially allowing it to grow as the modules are propogated.
+
+"
+
     ></image-text>
+
+    <special-image url="./data/Render 5.jpg"></special-image>
 
     <image-carousel
     images='{"images": [
-      "./data/ProtoProj-Shore.jpg",
-      "./data/ProtoProj-Sea.jpg",
-      "./data/ProtoProj-Land.jpg",
-      "./data/ShoreSectionCut.jpg"
+      "./data/Massing 1.jpg",
+      "./data/Massing 2.jpg",
+      "./data/Massing 3.jpg",
+      "./data/Massing 4.jpg",
+      "./data/Massing 5.jpg",
+      "./data/Massing 6.jpg",
+      "./data/Model Gif.gif"
       ]}'
     ></image-carousel>
 
-    <single-image url="./data/Site-Analysis.jpg"></single-image>
+    
 
 
-    <special-image url="./data/1920x1080.png"></special-image>
+    <special-image url="./data/Render 7.jpg"></special-image>
 
 
    
 
     <triple-images 
-    first="./data/bw1.gif" 
-    second="./data/bw2.gif" 
-    third="./data/bw3.gif">
+    first="./data/Model 1.jpg" 
+    second="./data/Model 3.jpg" 
+    third="./data/Model 2.jpg">
     </triple-images>
 
-    <image-image
-    first="./data/1080x1920.png"
-    second="./data/1080x1920.png"
-    ></image-image>
+    <special-image url="./data/Section 1.jpg"></special-image>
 
+    <special-image url="./data/Render 4.jpg"></special-image>
+
+    
     <div class="bottomlinks">
-        <h3><a  href="javascript:window.scrollTo(0,0)">Back to Top</a></h3>
+        <h3><a href="#header">Back to Top</a></h3>
     </div>
 
-<footer-i></footer-i>
+<div id="footer"></div>
 
 </body>
 </html>
