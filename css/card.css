@@ -67,9 +67,13 @@
     -o-border-radius: 20px;
 }
 
-#livestream:hover {
+a {
+    color: white;
+}
+
+a:hover {
     color: black;
-    background: red;
+    cursor: pointer;
 }
 
 @media screen and (max-device-width: 768px) {
