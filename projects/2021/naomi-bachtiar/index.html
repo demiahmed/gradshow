@@ -22,26 +22,22 @@
     <script
     src="../../../js/jquery-3.5.1.min.js"></script>
     <script src="../../../js/studentComponents.js"></script>
+    <script src="../../../js/navComponent.js"></script>
     <script defer src="../../../js/navfixer.js"></script>
+    <script defer src="../../../js/navHover.js"></script>
     <script defer src="../../../js/bootstrap.min.js"></script>
     <script defer src="../../../js/popper.min.js"></script>
 
     <!-- Enable below line if for Dark Theme -->
     <!-- <script defer src="../../../js/darkmode.js"></script> -->
 
-    <script>
-      $(function() {
-        $("#header").load("../../../partials/projectnav.html");
-        $("#footer").load("../../../partials/footer.html");
-      });
-    </script>
 
 </head>
 
 <body >
-    <div id="header"></div>
+    <nav-i anchor="../../../"></nav-i>
 
-    <video-container url="https://youtu.be/fTz5cJBLUt8"></video-container>
+    <video-container url="https://www.youtube.com/embed/fTz5cJBLUt8"></video-container>
 
     
 
@@ -63,6 +59,8 @@
     email="naomibachtiar@gmail.com"
     issuu="https://issuu.com/naomibachtiar/docs/architecture_portfolio"
     linkedin="https://linkedin.com/in/naomi-bachtiar"
+    website=""
+    instagram=""
      ></project-bio>
 
      
@@ -204,10 +202,9 @@ images='{"images": [
 
 
     <div class="bottomlinks">
-        <h3><a href="#header">Back to Top</a></h3>
-    </div>
-
-<div id="footer"></div>
+      <h3><a  href="javascript:window.scrollTo(0,0)">Back to Top</a></h3>
+  </div>
+<footer-i></footer-i>
 
 </body>
 </html>

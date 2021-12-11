@@ -21,7 +21,9 @@
     <script src="../../../js/d3.v4.min.js"></script>
     <script src="../../../js/jquery-3.5.1.min.js"></script>
     <script src="../../../js/studentComponents.js"></script>
+    <script src="../../../js/navComponent.js"></script>
     <script defer src="../../../js/navfixer.js"></script>
+	<script defer src="../../../js/navHover.js"></script>
     <script defer src="../../../js/bootstrap.min.js"></script>
     <script defer src="../../../js/popper.min.js"></script>
 
@@ -29,13 +31,6 @@
     <!-- <script defer src="../../../js/darkmode.js"></script> -->
 
 
-    <script>
-      $(function() {
-        $("#header").load("../../../partials/projectnav.html");
-        $("#footer").load("../../../partials/footer.html");
-      });
-    </script>
-	
 	<style>
 	body {background-color: #FFFCE1;}
 	title-text {color: #EE3669;} 
@@ -44,7 +39,7 @@
 </head>
 
 <body >
-    <div id="header"></div>
+    <nav-i anchor="../../../"></nav-i>
 
     <hero-image url="./data/images/collage-final.jpg"></hero-image>
 
@@ -78,7 +73,7 @@
 	
 	<div style="left: 0; width: 100%; position: relative; padding-top: 56.25%;">
 		<iframe style="border:none; top: 5em; left: 15%; width: 70%; height: 70%; position: absolute;" 
-		src="https://youtu.be/KBoIpSoUIqU?modestbranding=1&showinfo=0&controls=0&autohide=1"
+		src="https://www.youtube.com/embed/KBoIpSoUIqU?modestbranding=1&showinfo=0&controls=0&autohide=1"
 		title="Agropolis: Reimagining Food Security Video" allowfullscreen>
 		</iframe>
 	</div>
@@ -343,7 +338,7 @@
         <h3 style="color: #EE3669; text-decoration: none;"><a href="#header" style="color: #EE3669; text-decoration: none;">Back to Top</a></h3>
     </div>
 
-<div id="footer"></div>
+<footer-i></footer-i>
 
 </body>
 </html>

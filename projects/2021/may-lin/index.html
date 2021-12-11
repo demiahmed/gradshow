@@ -22,6 +22,7 @@
     <script
     src="../../../js/jquery-3.5.1.min.js"></script>
     <script src="../../../js/studentComponents.js"></script>
+    <script src="../../../js/navComponent.js"></script>
     <script defer src="../../../js/navfixer.js"></script>
     <script defer src="../../../js/bootstrap.min.js"></script>
     <script defer src="../../../js/popper.min.js"></script>
@@ -30,19 +31,13 @@
     <script defer src="../../../js/darkmode.js"></script>
 
 
-    <script>
-      $(function() {
-        $("#header").load("../../../partials/projectnav.html");
-        $("#footer").load("../../../partials/footer.html");
-      });
-    </script>
 
 </head>
 
 <body >
-    <div id="header"></div>
+    <nav-i anchor="../../../"></nav-i>
 
-    <video-container url="https://youtu.be/v-9zjOfLiYQ"></video-container>
+    <video-container url="https://www.youtube.com/embed/v-9zjOfLiYQ"></video-container>
     <hero-image url="./data/render3.png"></hero-image>
 
     <title-text title="The Waste Euphoria"></title-text>
@@ -68,6 +63,7 @@
     issuu="https://issuu.com/maythinzarlin?issuu_product=header&issuu_subproduct=solutions_design_portfolio&issuu_context=link&issuu_cta=profile"
     instagram= "https://www.instagram.com/may__orchid/"
     linkedin="https://www.linkedin.com/in/may-thinzar-lin-a972b3158/"
+    website=""
      ></project-bio>
 
     <special-image url="./data/Full_site.png"></special-image>
@@ -140,14 +136,14 @@
 
     <hero-image url="./data/render.png"></hero-image>
     
-    <video-container url="https://youtu.be/q1lHtcEne6I"></video-container>
+    <video-container url="https://www.youtube.com/embed/q1lHtcEne6I"></video-container>
 
 
-    <div class="bottomlinks">
-        <h3><a href="#header">Back to Top</a></h3>
-    </div>
+  <div class="bottomlinks">
+      <h3><a  href="javascript:window.scrollTo(0,0)">Back to Top</a></h3>
+  </div>
 
-<div id="footer"></div>
+<footer-i></footer-i>
 
 </body>
 </html>

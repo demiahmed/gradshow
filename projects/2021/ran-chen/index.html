@@ -22,7 +22,9 @@
     <script
     src="../../../js/jquery-3.5.1.min.js"></script>
     <script src="../../../js/studentComponents.js"></script>
+    <script src="../../../js/navComponent.js"></script>
     <script defer src="../../../js/navfixer.js"></script>
+    <script defer src="../../../js/navHover.js"></script>
     <script defer src="../../../js/bootstrap.min.js"></script>
     <script defer src="../../../js/popper.min.js"></script>
 
@@ -30,17 +32,12 @@
     <!-- <script defer src="../../../js/darkmode.js"></script> -->
 
 
-    <script>
-      $(function() {
-        $("#header").load("../../../partials/projectnav.html");
-        $("#footer").load("../../../partials/footer.html");
-      });
-    </script>
+
 
 </head>
 
 <body >
-    <div id="header"></div>
+    <nav-i anchor="../../../"></nav-i>
 
     <!video-container url="https://www.youtube.com/embed/QAUzWtLMnU0"></video-container>
 
@@ -66,7 +63,7 @@
     location="Singapore"
     email="ran_chen@mymail.edu.sutd.sg"
     issuu="https://issuu.com/ranchen0/docs/portfolio-2021"
-    website="https://www.google.com"
+    website=""
     instagram="https://www.instagram.com/iranahranahrun/"
     linkedin="https://www.linkedin.com/in/chrstinechenran/"
      ></project-bio>
@@ -187,11 +184,11 @@ The space in between the exoskeleton and the central core is branch-like “infi
     ></image-carousel>
 	
 	
-	<div class="bottomlinks">
-        <h3><a href="#header">Back to Top</a></h3>
+    <div class="bottomlinks">
+        <h3><a  href="javascript:window.scrollTo(0,0)">Back to Top</a></h3>
     </div>
 
-<div id="footer"></div>
+<footer-i></footer-i>
 
 </body>
 </html>
