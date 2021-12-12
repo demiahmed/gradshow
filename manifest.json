@@ -4,9 +4,9 @@
     "display": "standalone",
     "scope": "./",
     "start_url": "./",
-    "name": "SUTD ASD M.Arch GradShow 2021",
-    "short_name": "ASD GradShow 2021",
-    "description": "Virtual Exhibition site for graduating M.Arch students",
+    "name": "Sustainable Futures | ASD GradShow 2021",
+    "short_name": "Sustainable Futures",
+    "description": "Annual Graduation Exhibition portal showcasing the work of over 80 students from the Singapore University of Technology and Design SUTD to a global audience. Visit asd.sutd.edu.sg/gradshow/",
     "icons": [
         {
             "src": "./assets/favicon/splash-android/android-launchericon-96-96.png",
