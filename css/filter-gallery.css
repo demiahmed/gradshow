@@ -161,7 +161,7 @@ button.button:focus {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   div.photo-container {
     top: 1rem;
     left: 0;
@@ -177,12 +177,14 @@ button.button:focus {
   }
 
   .photo-container img {
+    max-width: 100%;
+    width: 20vw;
     margin: 0 auto;
   }
 
-  .photo-container img {
-    max-width: 100%;
-    width: 75px;
+  .wrapper {
+    width: 20vw;
+    height: 20vw;
   }
 
   .filter-panel {
