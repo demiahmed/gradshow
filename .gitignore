@@ -6,9 +6,6 @@
 
 *.DS_Store
 
-dev-hosting/
-bubbles-old/
-temp-sitedata/
 .vs/
 .vscode/
 
