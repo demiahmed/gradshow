@@ -57,6 +57,10 @@ img {
   background: orangered;
 }
 
+.cover img {
+  padding-top: 80px;
+}
+
 .fullsize {
   padding-top: 5vw;
   max-width: 75.5vw;
@@ -72,7 +76,7 @@ img {
 
 .mainimage img {
   max-width: 100%;
-  transform: translateY(-15%);
+  /* transform: translateY(-15%); */
   width: 100%;
 }
 
@@ -266,9 +270,6 @@ h3 {
     z-index: 999;
   }
 
-  .cover img {
-    margin-top: 17vh;
-  }
   .titletext {
     width: 90vw;
     margin: 0 auto;

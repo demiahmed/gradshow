@@ -152,11 +152,15 @@ class navComponent extends HTMLElement {
         .asd {
           height: 40px;
         }
+
+        nav .logo {
+          margin: 20px 40px
+        }
       }
       
       
       
-      @media screen and (max-device-width: 767px) {
+      @media screen and (max-device-width: 768px) {
         body {
           overflow-x: hidden;
         }
