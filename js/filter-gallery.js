@@ -1,9 +1,7 @@
-// console.log(document.querySelector("script").getAttribute('filepath'));
-
-d3.csv(`${document.querySelector("script").getAttribute('filepath')}`, function(data){
+d3.csv(`${document.querySelector("#router").getAttribute('filepath')}`, function(data){
     console.log(data);
 var PHOTODATA = [];
-let processedName
+let processedName;
 
 for(var i=0;i<data.length;i++) {
     processedName = data[i].key
@@ -11,9 +9,9 @@ for(var i=0;i<data.length;i++) {
         id: i,
         category: data[i].Topic,
         name: data[i].name,
-        url: `${document.querySelector('script').getAttribute('prefix')}../projects/${document.querySelector("script").getAttribute('year')}/${processedName}`,
+        url: `${document.querySelector('#router').getAttribute('prefix')}../projects/${document.querySelector("#router").getAttribute('year')}/${processedName}`,
         //iu: "./explore/" + String(data[i].name) ,
-        path: `${document.querySelector('script').getAttribute('prefix')}../projects/${document.querySelector("script").getAttribute('year')}/${processedName}/${processedName}`
+        path: `${document.querySelector('#router').getAttribute('prefix')}../projects/${document.querySelector("#router").getAttribute('year')}/${processedName}/${processedName}`
     };
     // console.log(photo.url, photo.path);
     PHOTODATA.push(photo);
