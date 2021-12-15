@@ -206,7 +206,9 @@ img {
 }
 
 #sutdGroupMBW {
-  background-image: url("../assets/bgimage/sutd_group_ml_bw_169.jpg");
+  background-image: url("../assets/bgimage/sutd_group_m_bw_169.jpg");
+  background-size: cover;
+  background-attachment: fixed;
   min-height: 100vh;
 }
 
