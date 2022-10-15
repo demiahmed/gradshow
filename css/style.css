@@ -422,7 +422,9 @@ img {
     font-size: 1.5rem;
     padding-bottom: 2rem;
     width: max-content;
+    width: 90vw;
     margin: 0 auto;
+    margin-bottom: 20px;
   }
 
   .peoplegrid {

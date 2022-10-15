@@ -1,11 +1,21 @@
 let mainPath = window.location.href
 let studentPath = mainPath.split("/")[mainPath.split("/").length-2]
 let imgPath = `${mainPath}${studentPath}-project.jpg`
+// let description = "Annual Graduate Exhibition Showcase of the Singapore University of Technology and Design's outgoing Architecture students. Visit asd.sutd.edu.sg/gradshow/"
 // console.log(imgPath);
-var ogmetatag = document.createElement('meta');
-ogmetatag.setAttribute('property', 'og:image');
-ogmetatag.setAttribute('content', imgPath);
-document.head.appendChild(ogmetatag);
+var ogMetaImgtag = document.createElement('meta');
+var ogMetaTitletag = document.createElement('meta');
+var ogMetaDesctag = document.createElement('meta');
+
+ogMetaImgtag.setAttribute('property', 'og:image');
+ogMetaImgtag.setAttribute('content', imgPath);
+
+ogMetaTitletag.setAttribute('property', 'og:title');
+ogMetaDesctag.setAttribute('property', 'og:description');
+
+document.head.appendChild(ogMetaImgtag);
+document.head.appendChild(ogMetaTitletag);
+document.head.appendChild(ogMetaDesctag);
 
 
 class VideoContainer extends HTMLElement {
@@ -34,11 +44,9 @@ class TitleText extends HTMLElement {
     connectedCallback() {
 
         let title = this.getAttribute('title')
-        document.querySelector('meta[name="description"]').content = title
-        document.title = `${title} | ASD GradShow 2021`
-
-
-
+        let tabTitle = `${title} | Sustainable Futures | ASD GradShow 2021`
+        document.title = tabTitle
+        ogMetaTitletag.setAttribute('content', tabTitle);
         this.innerHTML = 
         `<div  class="titletext">
         ${title}
@@ -49,7 +57,7 @@ class TitleText extends HTMLElement {
 
 class ProjectBio extends HTMLElement {
     connectedCallback() {
-
+        
         let mainTitle = this.getAttribute('main-title')
         let summary = this.getAttribute('summary')
         let aboutme = this.getAttribute('aboutme')
@@ -65,6 +73,10 @@ class ProjectBio extends HTMLElement {
         let instagram = this.getAttribute('instagram')
         let linkedin = this.getAttribute('linkedin')
 
+        document.querySelector('meta[name="description"]').content = summary
+        ogMetaDesctag.setAttribute('content', summary);
+
+        
         this.innerHTML = 
         `<div class="twocols invert">
         <div class="abstract">
