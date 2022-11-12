@@ -1,11 +1,10 @@
-    
-const toggleButton = document.getElementsByClassName('toggle-button')[0];
-const navbarLinks = document.getElementsByClassName('sections')[0];
-
-toggleButton.addEventListener('click', () => {
-
-toggleButton.classList.toggle('open')
-navbarLinks.classList.toggle('active')
+// const toggleButton = document.getElementsByClassName('toggle-button')[0];
+// const navbarLinks = document.getElementsByClassName('sections')[0];
+// console.log(document.querySelectorAll(".toggle-button"));
+$(".toggle-button").click(() => {
+  // console.log(this,"clicked");
+  $(".toggle-button").toggleClass('open')
+  $(".sections").toggleClass('active')
 });
 
 const navDropdown = $("#nav-dropdown")
@@ -31,6 +30,5 @@ navDropdownAward.hover(() => {
   $("#drop-awards a ").toggleClass("Yactive")
 
 })
-
 
 

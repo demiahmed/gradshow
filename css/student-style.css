@@ -185,6 +185,7 @@ img.left {
 .fields {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .splimage {

@@ -150,7 +150,7 @@ class navComponent extends HTMLElement {
 
       @media screen and (max-device-width: 1024px) {
         .asd {
-          height: 40px;
+          height: 2em;
         }
 
         nav .logo {
@@ -188,7 +188,7 @@ class navComponent extends HTMLElement {
           left: 0vw;
           position: absolute;
           z-index: 12;
-          margin: 30px 25px;
+          margin: 25px 25px;
         }
       
         .asd {
@@ -345,7 +345,9 @@ class navComponent extends HTMLElement {
         }
     
         .Xactive  {
+          margin-top:5%;
           width: 80% ;
+          flex-direction: row;
         }
       
     
@@ -396,17 +398,19 @@ class navComponent extends HTMLElement {
                   <a class="nav-item" href="${link}projects/"><span>Projects </span></a>
                   <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iMTI4cHgiIGlkPSJMYXllcl8xIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMjggMTI4OyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMTI4IDEyOCIgd2lkdGg9IjEyOHB4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48Zz48bGluZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMkYzNDM1O3N0cm9rZS13aWR0aDoxMjtzdHJva2UtbGluZWNhcDpzcXVhcmU7c3Ryb2tlLW1pdGVybGltaXQ6MTA7IiB4MT0iMTExIiB4Mj0iNjQiIHkxPSI0MC41IiB5Mj0iODcuNDk5Ii8+PGxpbmUgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2U6IzJGMzQzNTtzdHJva2Utd2lkdGg6MTI7c3Ryb2tlLWxpbmVjYXA6c3F1YXJlO3N0cm9rZS1taXRlcmxpbWl0OjEwOyIgeDE9IjY0IiB4Mj0iMTciIHkxPSI4Ny40OTkiIHkyPSI0MC41Ii8+PC9nPjwvc3ZnPg==" alt="Down Arrow" class="fa">
                   <ul class="dropdown-content" id="drop-projects">
-                  <a class="dropdown-text" href="${link}projects/">2021</a>
+                  <a class="dropdown-text" href="${link}projects/">2022</a>
+                  <a class="dropdown-text" href="${link}projects/2021/">2021</a>
                   <a class="dropdown-text" href="${link}projects/2020/">2020</a>
                   </ul>   
                   </li>
                   <li class="navlist" id="nav-dropdown-award"><a class="nav-item" href="${link}awards/"><span>Awards</span></a>
                   <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iMTI4cHgiIGlkPSJMYXllcl8xIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMjggMTI4OyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMTI4IDEyOCIgd2lkdGg9IjEyOHB4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48Zz48bGluZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMkYzNDM1O3N0cm9rZS13aWR0aDoxMjtzdHJva2UtbGluZWNhcDpzcXVhcmU7c3Ryb2tlLW1pdGVybGltaXQ6MTA7IiB4MT0iMTExIiB4Mj0iNjQiIHkxPSI0MC41IiB5Mj0iODcuNDk5Ii8+PGxpbmUgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2U6IzJGMzQzNTtzdHJva2Utd2lkdGg6MTI7c3Ryb2tlLWxpbmVjYXA6c3F1YXJlO3N0cm9rZS1taXRlcmxpbWl0OjEwOyIgeDE9IjY0IiB4Mj0iMTciIHkxPSI4Ny40OTkiIHkyPSI0MC41Ii8+PC9nPjwvc3ZnPg==" alt="Down Arrow" class="fa">                <ul class="dropdown-content" id="drop-awards">
-                  <a class="dropdown-text" href="${link}awards/">2021</a>
+                  <a class="dropdown-text" href="${link}awards/">2022</a>
+                  <a class="dropdown-text" href="${link}awards/2021/">2021</a>
                   <a class="dropdown-text" href="${link}awards/2020/">2020</a>
                   </ul>
                   </li>
-                  <li class="navlist"><a class="nav-item" href="https://asd.sutd.edu.sg/programme/master-of-architecture/"><span>Info</span></a></li>
+                  <li class="navlist"><a class="nav-item" href="${link}about/"><span>About</span></a></li>
                 </ul>
       
       
