@@ -393,6 +393,7 @@ class navComponent extends HTMLElement {
       
               <ul class="sections">
                   <li class="navlist"><a class="nav-item" href="${link}home/"><span>Home</span></a></li>
+                  <li class="navlist"><a class="nav-item" href="${link}about/"><span>Intro</span></a></li>
                   <li class="navlist"><a class="nav-item" href="${link}explore/"><span>Explore</span></a></li>
                   <li class="has-dropdown navlist" id="nav-dropdown">
                   <a class="nav-item" href="${link}projects/"><span>Projects </span></a>
@@ -410,7 +411,6 @@ class navComponent extends HTMLElement {
                   <a class="dropdown-text" href="${link}awards/2020/">2020</a>
                   </ul>
                   </li>
-                  <li class="navlist"><a class="nav-item" href="${link}about/"><span>About</span></a></li>
                 </ul>
       
       

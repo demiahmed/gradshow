@@ -19,6 +19,7 @@
 /* Works on Chrome/Edge/Safari */
 *::-webkit-scrollbar {
   width: 8px;
+  font-family: ;
 }
 *::-webkit-scrollbar-track {
   background: black;
@@ -161,7 +162,7 @@ img {
 }
 #aerImgR {
   background-image: url("../assets/bgimage/Aerial_red_d.jpg");
-  min-height: 150vh;
+  height: 200vh;
   padding-top: 25%;
 }
 #aerImgG {
@@ -185,7 +186,7 @@ img {
 
 #satImgY {
   background-image: url("../assets/bgimage/Satellite_yellow_d.jpg");
-  min-height: 100vh;
+  min-height: 350vh;
 }
 
 #spaceImg {
@@ -195,7 +196,7 @@ img {
 
 #satImgGr {
   background-image: url("../assets/bgimage/Satellite_grey_d.jpg");
-  min-height: 400vh;
+  min-height: 200vh;
 }
 
 #sutdGroup {
@@ -232,6 +233,7 @@ img {
 
 .caption2 {
   color: white;
+  margin-bottom: 2%;
   font-size: 2rem;
   font-weight: 100;
   /* max-width: 30vw; */
@@ -328,7 +330,7 @@ p.solo, #award-title {
   width: 90vw;
   margin: 0 auto;
   display: grid;
-  grid-gap: 5% 3%;
+  grid-gap: 5% 1%;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: auto;
 }
@@ -389,6 +391,12 @@ p.solo, #award-title {
   font-weight:  lighter;
 }
 
+.reachus-container {
+  margin: 0 auto;
+  width: 80vw;
+  position: relative;
+}
+
 @media screen and (max-device-width: 1024px) {
   /* .desc {
     margin-top: 25%;
@@ -399,11 +407,34 @@ p.solo, #award-title {
   }
 
   .award-item {
-    min-height: 45vh;
+    min-height: 55vh;
+  }
+
+  #aerImgR {
+    height: 100vh;
+  }
+
+  #satImgY {
+    height: 400vh;
   }
 }
 
 @media screen and (max-device-width: 768px) {
+
+  #aerImgR {
+    height: 300vh;
+    padding-top: 90%;
+  }
+
+  #satImgGr {
+    padding-top: 25%;
+    min-height: 400vh;
+  }
+
+  #satImgY {
+    height: 800vh;
+  }
+
   *::-webkit-scrollbar {
     width: 4px;
   }
@@ -538,6 +569,11 @@ p.solo, #award-title {
   .award-item {
     min-height: 60vh;
     /* word-wrap: break-word; */
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 2% 4%;
   }
 }
 
