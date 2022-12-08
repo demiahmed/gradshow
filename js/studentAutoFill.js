@@ -31,5 +31,11 @@ d3.csv(`../../../assets/drivers/2022.csv`, function(data){
 </div>`)
     $("body").append(`<footer-i></footer-i>`)
 
+
+    // Removing icons which aren't needed
+    let icons = $(".contact > a")
+    elemsToRemove = [studentData.email, studentData.issuu, studentData.website, studentData.instagram, studentData.linkedin].map((e,i) => e=="0"? i:undefined).filter(x => x)
+    elemsToRemove.map(e => icons[e].remove())
+
 })
 
