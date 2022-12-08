@@ -80,9 +80,42 @@ class AwardItem extends HTMLElement {
     }
 }
 
+class JuryItem extends HTMLElement {
+    connectedCallback() {
+        let awardName = this.getAttribute('award-name')
+        let linkToPage = this.getAttribute('link-to-page')
+        let thumbnailURL = this.getAttribute('thumbnail-url')
+        let studentName = this.getAttribute('student-name')
+        let projectName = this.getAttribute('project-name')
+        let judgedBy = this.getAttribute('judged-by')
+        this.innerHTML = 
+        ` 
+        <div class="award-item">
+            <p class="caption2">${awardName}</p>
+                    <div class="people">
+                            <div class="thumb">
+                                <img src="${thumbnailURL}" alt="Award Recipient">
+                            </div>
+                            <div class="peoplename">
+                            ${studentName} <br>
+                            <p class="project-name">${projectName}</p>
+                            </div>
+                        <div style="text-align:left;" class="peoplerole">
+                             <br>
+                            ${judgedBy}
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+`
+    }
+}
+
 
 
 
 
 window.customElements.define('award-intro', AwardIntro)
 window.customElements.define('award-item', AwardItem)
+window.customElements.define('jury-item', JuryItem)
