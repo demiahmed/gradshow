@@ -64,6 +64,11 @@
     margin-top: 20px;
 }
 
+.details, .description {
+    font-weight: lighter;
+    opacity: 0.6;
+}
+
 #livestream {
     margin: 20px 0 20px 0;
     padding: 8px 16px;
@@ -94,7 +99,6 @@
 
     .wrapper {
         grid-auto-flow: row;
-        overflow: auto;
     }
 }
 
