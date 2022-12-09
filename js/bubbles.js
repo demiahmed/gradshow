@@ -76,10 +76,20 @@ d3.csv(`../assets/drivers/${fullname}`, function(data){
 
   d3.select('#exploreyear')
     .on('change', function() {
-//   console.log(d3.select(this).property('value'));
-  d3.select("#nationgoals").classed("disabled", !d3.select("#nationgoals").classed("disabled"))
-  d3.select(".sus-goals").classed("disabled", !d3.select(".sus-goals").classed("disabled"))
-  let changedValue = d3.select(this).property('value')
+      let changedValue = d3.select(this).property('value')
+  console.log(changedValue);
+
+  if (changedValue == 2021) {
+    d3.select("#nationgoals").classed("disabled", false) 
+    d3.select(".sus-goals").classed("disabled", false)
+    
+  }
+  
+  else {
+    d3.select("#nationgoals").classed("disabled", true) 
+    d3.select(".sus-goals").classed("disabled", true)
+  }
+
   d3.csv(`../assets/drivers/${changedValue}.csv`, function(data){
     restart(data,changedValue)
     // console.log(data);
@@ -108,7 +118,8 @@ function restart(data, year) {
         scale: [],
         height: [],
         time:[],
-        SDGname: []
+        SDGname: [],
+        all: []
       };
     
       compareDict = {
@@ -119,7 +130,8 @@ function restart(data, year) {
         Scale: 'scale',
         Height: 'height',
         Time: 'time',
-        SDGname: 'SDGname'
+        SDGname: 'SDGname',
+        all: ""
     
     
       }
@@ -132,6 +144,7 @@ function restart(data, year) {
         a['height'].push(d.Height)
         a['time'].push(d.Time)
         a['SDGname'].push(d.SDGname)
+        a["all"].push(d.all)
     
       })
       a['advisor'].sort();
@@ -295,6 +308,7 @@ function restart(data, year) {
       // return d[byVar]; }));
     if(byVar == "all"){
       hideTitles()
+      console.log("ff");
     } else {
         showTitles(byVar, centerScale);
     }
