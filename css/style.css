@@ -57,9 +57,11 @@ a {
   font-weight: bold;
 }
 
+
 a:hover {
   cursor: pointer;
   text-decoration: underline;
+  color: orangered;
 }
 /* Navbar and Logo */
 
@@ -120,7 +122,7 @@ img {
 
 
 .pagetitle-wrapper {
-  padding-top: 20vh;
+  /* padding-top: 20vh; */
   display: flex;
   flex-direction: column;
 }
@@ -135,29 +137,38 @@ img {
 }
 
 .bottom {
-  color: white;
+  color: #888;
   margin: 0 auto;
   width: 100%;
   text-align: center;
-  font-size: 2rem;
-  opacity: 0.5;
+  font-size: 1.2rem;
+  /* opacity: 0.5; */
+}
+
+.left {
+  text-align: left;
 }
 
 .caption0 {
   color: white;
   width: 100%;
-  text-align: center;
+  /* text-align: center; */
   font-size: 6vw;
-  font-weight: 100;
-  line-height: 160%;
+  font-weight: bold;
+  padding: 5% 0;
 }
 
 .cover-wrapper {
-  padding-top: 12vh;
+  padding-top: 2vh;
 }
 
 #aerImgB {
   background-image: url("../assets/bgimage/Aerial_blue_d.jpg");
+  min-height: 100vh;
+}
+
+#dbz {
+  background-image: url("../assets/bgimage/dbz_d.jpg");
   min-height: 100vh;
 }
 #aerImgR {
@@ -256,7 +267,7 @@ img {
 .desc p {
   max-width: 60vw;
   /* margin: 0 auto; */
-  color: white;
+  color: #888;
   font-weight: 100;
   text-align: left;
   font-size: 1.5rem;
@@ -283,7 +294,9 @@ p.solo, #award-title {
   gap: 5% 2%;
   grid-template-columns: 1fr 3fr;
   grid-template-areas: " photo text ";
-  margin-top: 5%;
+  padding-top: 5%;
+  margin: 0 auto;
+  max-width: 80vw;
 }
 
 .grid-photo {
@@ -308,9 +321,9 @@ p.solo, #award-title {
   flex-wrap: wrap;
   align-content: flex-start;
   margin: 0 auto; */
-  margin: 0 5%;
+  margin: 0 0;
   justify-content: space-evenly;
-  width: 30vw;
+  width: 25vw;
 }
 
 .team-grid {
@@ -327,7 +340,8 @@ p.solo, #award-title {
 }
 
 .award-grid {
-  width: 90vw;
+  width: 80vw;
+  padding-top: 5%;
   margin: 0 auto;
   display: grid;
   grid-gap: 5% 1%;
@@ -339,6 +353,9 @@ p.solo, #award-title {
   padding: 5%;
   min-height: 90vh;
   border: 1px solid #555;
+  display: grid;
+  grid-template-rows: subgrid;
+  align-content: baseline;
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -356,10 +373,11 @@ p.solo, #award-title {
 
 
 .people {
-  padding: 2vw;
+  /* padding: 0 1vw; */
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+  gap: 3em;
 }
 
 .thumb img {
@@ -368,7 +386,8 @@ p.solo, #award-title {
 }
 
 .herothumb img {
-  width: 20vw;
+  width: 100%;
+  /* float: left; */
 }
 
 .peoplename {
@@ -383,6 +402,7 @@ p.solo, #award-title {
   opacity: 0.6;
   text-align: center;
   word-wrap: break-word;
+  height: 3.5rem;
 }
 
 .peoplerole {
@@ -395,6 +415,10 @@ p.solo, #award-title {
   margin: 0 auto;
   width: 80vw;
   position: relative;
+}
+
+.reachus-item img {
+  max-width: 100%;
 }
 
 @media screen and (max-device-width: 1024px) {
@@ -452,12 +476,13 @@ p.solo, #award-title {
   }
 
   .cover-wrapper {
-    padding-top: 25vh;
+    padding-top: 12vh;
   }
   
 
   .caption0 {
     font-size: 4rem;
+    padding-top: 20%;
   }
 
   .caption1,
@@ -467,9 +492,17 @@ p.solo, #award-title {
     color: white;
   }
 
+  .caption2 {
+    margin-bottom: 10%;
+  }
+
   p {
     text-align: center;
   }
+
+  /* p.solo {
+    padding-top: 20%;
+  } */
 
   .caption1 {
     margin: 0 auto;
@@ -483,25 +516,18 @@ p.solo, #award-title {
   }
 
   .desc {
-    left: 0;
+    /* left: 0; */
     margin: 0 auto;
-    max-width: 90vw;
     color: white;
     font-weight: lighter;
-    margin-top: 25%;
+    margin-top: 15%;
   }
 
   .desc p {
-    max-width: 100vw;
-    text-align: center;
+    max-width: 80vw;
     font-size: 1.2rem;
   }
 
-  .desc h2 {
-    text-align: center;
-    max-width: 80vw;
-
-  }
 
   .intro-wrapper {
     grid-template-columns: 1fr;
@@ -543,6 +569,7 @@ p.solo, #award-title {
 
   .peoplegrid {
     justify-content: center;
+    max-width: 80vw;
   }
 
   .peoplerole {
@@ -580,8 +607,12 @@ p.solo, #award-title {
 @media screen and (max-device-width: 480px) {
   .caption0 {
     font-size: 2.5rem;
-    /* line-height: normal; */
   }
+
+  /* p.solo {
+    margin-top: 20%;
+
+  } */
 
   .pre-title, .bottom {
     font-size: 1rem;

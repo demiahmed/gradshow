@@ -67,11 +67,11 @@
     -o-border-radius: 20px;
 }
 
-a {
+#livestream a {
     color: white;
 }
 
-a:hover {
+#livestream a:hover {
     color: black;
     cursor: pointer;
 }
