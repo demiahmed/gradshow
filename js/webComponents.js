@@ -55,24 +55,24 @@ class AwardItem extends HTMLElement {
         this.innerHTML = 
         ` 
         <div class="award-item">
-            <p class="caption2">${awardName}</p>
-                    <div class="people">
-                        <a href ="${linkToPage}">
-                            <div class="thumb">
-                                <img src="${thumbnailURL}" alt="Award Recipient">
-                            </div>
-                        </a>
-                        <a href="${linkToPage}">
-                            <div class="peoplename">
-                            ${studentName} <br>
-                            <p class="project-name">${projectName}</p>
-                            </div>
-                        </a>
-                        <div class="peoplerole">
-                            Judged By <br>
-                            ${judgedBy}
-                        </div>
+            <div class="people">
+                <p class="caption2">${awardName}</p>
+                <a href ="${linkToPage}">
+                    <div class="thumb">
+                        <img src="${thumbnailURL}" alt="Award Recipient">
                     </div>
+                </a>
+                <a href="${linkToPage}">
+                    <div class="peoplename">
+                    ${studentName} <br>
+                    <p class="project-name">${projectName}</p>
+                    </div>
+                </a>
+                <div class="peoplerole">
+                    Judged By <br>
+                    ${judgedBy}
+                </div>
+            </div>
 
             </div>
         </div>
