@@ -1,180 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="SUTD ASD M.Arch Virtual GradShow 2021">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../favicon.ico" type="image/gif">
+        <!-- Favicon -->
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    
+        <meta name="keywords" content="Architecture, Singapore, SUTD, Graduation, Virtual, Exhibition, gradshow, D3, JS, NUS, AI, Computation, Parametric Design, Machine Learning"/>
+        <meta name="description" content="Annual Graduate Exhibition Showcase of the Singapore University of Technology and Design's outgoing Architecture students. Visit asd.sutd.edu.sg/gradshow/"/>
+        <meta name="subject" content="Annual Graduation Ceremony conducted online for over 80 undergraduate and graduate Architecture students">
+        <meta name="copyright"content="©Singapore University of Technology and Design">
+        <meta name="language" content="EN">
+        <meta name="robots" content="index,follow" />
+        <meta name="abstract" content="Virtual Exhibition showcase of Graduating Architecture students from the Singapore University of Technology and Design SUTD, Singapore. This year's GradShow marks the second year of the online portal for Undergraduate BSc and Graduate M.Arch students from SUTD">
+        <meta name="Classification" content="Architecture">
+        <meta name="author" content="Singapore University of Technology and Design, contact@sutd.edu.sg">
+        <meta name="designer" content="Ahmed Meeran">
+        <meta name="owner" content="Singapore University of Technology and Design, contact@sutd.edu.sg">
+        <meta name="url" content="https://www.asd.sutd.edu.sg/gradshow/">
+        <meta name="identifier-URL" content="https://www.asd.sutd.edu.sg/gradshow/">
+        <meta name="category" content="Exhibition">
+        <meta name="coverage" content="Worldwide">
+        <meta name="distribution" content="Global">
+        <meta name="revisit-after" content="7 days">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Cache-Control" content="no-cache">
+    
+        <meta name="og:title" content="Sustainable Futures | SUTD M.Arch GradShow 2021"/>
+        <meta name="og:type" content="website"/>
+        <meta name="og:url" content="https://www.asd.sutd.edu.sg/gradshow/"/>
+        <meta name="og:image"  content="/gradshow/march/assets/logo/site-banner.jpg"/>
+        <meta name="og:site_name" content="SUTD"/>
+        <meta name="og:description" content="Annual Graduate Exhibition Showcase of the Singapore University of Technology and Design's outgoing Architecture students. Visit asd.sutd.edu.sg/gradshow/"/>
+    
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/three-style.css">
+        <link rel="stylesheet" href="./css/filter-gallery.css">
+        <link rel="stylesheet" href="./css/d3.css">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Inter'>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover">
-    <meta name="description" content="SUTD ASD M.Arch Virtual GradShow 2021">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#ff4500">
-
-    <meta name="keywords" content="Architecture, Singapore, SUTD, Graduation, Virtual, Exhibition, gradshow, D3, JS, NUS, AI, Computation, Parametric Design, Machine Learning"/>
-    <meta name="description" content="Annual Graduate Exhibition Showcase of the Singapore University of Technology and Design's outgoing Architecture students. Visit asd.sutd.edu.sg/gradshow/"/>
-    <meta name="subject" content="Annual Graduation Ceremony conducted online for over 80 undergraduate and graduate Architecture students">
-    <meta name="copyright"content="©Singapore University of Technology and Design">
-    <meta name="language" content="EN">
-    <meta name="robots" content="index,follow" />
-    <meta name="abstract" content="Virtual Exhibition showcase of Graduating Architecture students from the Singapore University of Technology and Design SUTD, Singapore. This year's GradShow marks the second year of the online portal for Undergraduate BSc and Graduate M.Arch students from SUTD">
-    <meta name="Classification" content="Architecture">
-    <meta name="author" content="Singapore University of Technology and Design, contact@sutd.edu.sg">
-    <meta name="designer" content="Ahmed Meeran">
-    <meta name="owner" content="Singapore University of Technology and Design, contact@sutd.edu.sg">
-    <meta name="url" content="https://www.asd.sutd.edu.sg/gradshow/">
-    <meta name="identifier-URL" content="https://www.asd.sutd.edu.sg/gradshow/">
-    <meta name="category" content="Exhibition">
-    <meta name="coverage" content="Worldwide">
-    <meta name="distribution" content="Global">
-    <meta name="revisit-after" content="7 days">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Cache-Control" content="no-cache">
-
-    <meta name="og:title" content="Sustainable Futures | SUTD M.Arch GradShow 2021"/>
-    <meta name="og:type" content="website"/>
-    <meta name="og:url" content="https://www.asd.sutd.edu.sg/gradshow/"/>
-    <meta name="og:image" content="/gradshow/march/assets/logo/site-banner.jpg"/>
-    <meta name="og:site_name" content="SUTD"/>
-    <meta name="og:description" content="Annual Graduate Exhibition Showcase of the Singapore University of Technology and Design's outgoing Architecture students. Visit asd.sutd.edu.sg/gradshow/"/>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./manifest.json">
-
-    <!-- iOS Splash icons -->
-    <link href="./assets/favicon/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-    <link href="./assets/favicon/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-    <link href="./assets/favicon/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
-    <link href="./assets/favicon/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
-    <link href="./assets/favicon/splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-    <link href="./assets/favicon/splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
-    <link href="./assets/favicon/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-    <link href="./assets/favicon/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-    <link href="./assets/favicon/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-    <link href="./assets/favicon/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-
-
-  	<script src="./js/p5.min.js"></script>
-    <!-- <script src="./js/p5sketch_1.js"></script> -->
-    <link rel="stylesheet" href="./css/p5splash.css">
-    <script defer src="./js/pwa-handler.js"></script>
-    <script defer src="./js/title.js"></script>
-
-
-</head>
-
-
-
-<body>  
-	<div class="background">
-        <div class="container">
-            <!-- <button id="install">Install</button> -->
-                <p text-anchor="left" id="hero">
-                    2021 
-                </p>
-                <p text-anchor="right" class="sub-hero">
-                    SUTD M.Arch GradShow   
-                </p>
-
-            <div class="enter-container">
-                <img class="enter-icon" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgYmFzZVByb2ZpbGU9InRpbnkiIGhlaWdodD0iMjRweCIgdmVyc2lvbj0iMS4yIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZyBpZD0iTGF5ZXJfMSI+PHBhdGggZD0iTTEzLjI5Myw3LjI5M2MtMC4zOTEsMC4zOTEtMC4zOTEsMS4wMjMsMCwxLjQxNEwxNS41ODYsMTFIOGMtMC41NTIsMC0xLDAuNDQ4LTEsMXMwLjQ0OCwxLDEsMWg3LjU4NmwtMi4yOTMsMi4yOTMgICBjLTAuMzkxLDAuMzkxLTAuMzkxLDEuMDIzLDAsMS40MTRDMTMuNDg4LDE2LjkwMiwxMy43NDQsMTcsMTQsMTdzMC41MTItMC4wOTgsMC43MDctMC4yOTNMMTkuNDE0LDEybC00LjcwNy00LjcwNyAgIEMxNC4zMTYsNi45MDIsMTMuNjg0LDYuOTAyLDEzLjI5Myw3LjI5M3oiLz48L2c+PC9zdmc+" alt="Enter Icon">
-                <a href="./home/" class="enter">Enter</a>
+    <body>
+        <div class="container-fluid" style="z-index: 100; position:absolute; height: 100%; pointer-events: none;">
+            <div class="row flex-wrap" style="height:100%">
+                <div class="col-md-2 adjustHeight" style="padding: 2.5vw;">
+                    <div class="row d-flex float-sm-left flex-md-column adjustHeight" id="buttonContainer" style="width: 100%;">
+                        <button class="button p-2" id="textBtn0" style="pointer-events: all; height: fit-content;">Exhibition</button>
+                        <button class="button p-2" id="textBtn1" style="pointer-events: all; height: fit-content;">Reviews</button>
+                        <a href="./home" class="enterBtn mt-md-auto p-2" id="enterBtn">Enter</a>
+                    </div>
+                </div>
+                <div class="col-md-4 offset-md-6 align-self-md-start align-self-end" style="padding: 0px; pointer-events: all;">
+                    <div class="textBox" id="contentBox" style="display: none;">
+                        <div class="mainTitle" id="contentTitle"></div>
+                        <div class="secondaryInfo" id="contentSecondLine"></div>
+                    </div>
+                    <div class="textBox" id="defaultBox">
+                        <div class="mainTitle outlineFont">SUTD M.Arch GradShow 2022</div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</body>
+    </body>
 
-<script>
+    <script type="x-shader/x-vertex" id="vertexshader">
+        varying vec2 vUv;
+        void main() {
+            vUv = uv;
+            gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+        }
+    </script>
 
-let imgs = [];
-let imgs_arr = [];
-let lgth
-
-function preload() {
-  // table = loadTable('./assets/drivers/2020.csv', 'csv', 'header')
-  table = loadTable(
-    './assets/drivers/2021.csv', 
-    'csv', 
-    'header',
-    () => {
-      // console.log(table);
-      studentImages = processCSV(table)
-    })
-  // console.log(table)
-}
-
-function processCSV(csv) {
-  let imgLinks = [];
-
-  csv.getColumn('key').forEach((e,i) => {
-    // console.log(e);
-    let link = `./projects/2021/${e}/${e}-project.jpg`
-    let studentLink = `./projects/2021/${e}/${e}.jpg`
-    // console.log(link);
-    imgLinks.push(loadImage(link))
-    // imgLinks.push(loadImage(studentLink))
+    <script type="x-shader/x-fragment" id="fragmentshader">
+        uniform sampler2D baseTexture;
+        uniform sampler2D bloomTexture;
+        varying vec2 vUv;
+        void main() {
+            gl_FragColor = ( texture2D( baseTexture, vUv ) + vec4( 1.0 ) * texture2D( bloomTexture, vUv ) );
+        }
+    </script>
     
-  });
-  // console.log(imgLinks);
-    return imgLinks
-}
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
 
-function setup() {
-  // let studentImages = processCSV(table)
-  lgth = studentImages.length
-  // console.log(studentImages);
-  createCanvas(windowWidth, windowHeight, WEBGL);
-  colorMode(HSB, 360, 100, 100, 100);
-  for (let i = 0; i < studentImages.length; i++) {
-    let x = random(-width , width);
-    let y = random(-height, height);
-    let z = random(-width*5, width);
-    // console.log(imgs[i]);
-        let texture = new Type(studentImages[i], x, y, z)
-    imgs_arr.push(texture);
-  }
-}
+    <script  src="./js/three.min.js"></script>
 
-function draw() {
-  background(0,0,0);
-  orbitControl();
-  for (let i = 0; i < lgth; i++) {
-    // console.log(imgs_arr[i]);
-    imgs_arr[i].update();
-    imgs_arr[i].display();
-  }
-}
+    <script src="./js/d3.v4.min.js"></script>
+    <script type="module" src="./js/script.js"></script>
 
-class Type {
-  constructor(_img, _x, _y, _z) {
-    this.img = _img;
-    this.x = _x;
-    this.y = _y;
-    this.z = _z;
-  }
+    <script src="./js/gsap.min.js"></script>
 
-  update() {
-    this.z += 5;
-    if(this.z > width/2){
-        this.z = -width*5;
-    }
-  }
-    
+    <script src="./js/general.js"></script>
 
-  display() {
-    push();
-    translate(this.x, this.y, this.z);
-    // console.log(this.img);
-    texture(this.img)
-    image(this.img, 50, 50);
-    if (window.screen.width < 767) {
-      this.img.resize(100,100)
-    }
-
-    pop();
-  }
-}
-</script>
-
+    <script src='./js/EffectComposer.js'></script>
+    <script src='./js/RenderPass.js'></script>
+    <script src='./js/ShaderPass.js'></script>
+    <script src='./js/CopyShader.js'></script>
+    <script src="./js/FXAAShader.js"></script>
+    <script src="./js/LuminosityHighPassShader.js"></script>
+    <script src="./js/UnrealBloomPass.js"></script>
+    <script src="./js/title.js"></script>
 </html>

@@ -48,7 +48,7 @@
 
     <script src="../js/jquery-3.5.1.min.js"></script>
     <script src="../js/d3.v4.min.js"></script>
-    <script id="data-provider" defer src="../js/bubbles.js" filename="2021"></script>
+    <script id="data-provider" defer src="../js/bubbles.js" filename="2022"></script>
 
     <script src="../js/navComponent.js"></script>
     <script defer src="../js/navHover.js"></script>
@@ -64,8 +64,9 @@ anchor="../"
 <div class = "buttonbox" id="toolbar">
     <div class="bbox">
     <button onclick="window.location.reload();" class="button active">All</button>
+    <!-- <button id="all" class="button active">All</button> -->
     </div>
-    <div id="nationgoals" class="bbox">
+    <div id="nationgoals" class="bbox disabled">
       <button id="SDGname" class="button">By UN-SDGs</button>
     </div>
     <div class="bbox">
@@ -91,6 +92,7 @@ anchor="../"
     </div>
     <div class="bbox end">
       <select name="cars" id="exploreyear">
+        <option class="selector" val="students-2022.csv" id="2022">2022</option>
         <option class="selector" val="students-2021.csv" id="2021">2021</option>
         <option class="selector" val="students-2020.csv" id="2020">2020</option>
       </select>
