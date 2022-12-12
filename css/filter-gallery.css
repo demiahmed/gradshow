@@ -119,7 +119,6 @@ button.button:focus {
   height: 10vw;
   margin: 0 auto;
   position: relative;
-  clip-path: border-box;
 }
 
 .content {

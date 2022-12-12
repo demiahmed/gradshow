@@ -149,6 +149,16 @@ img {
   text-align: left;
 }
 
+.medium {
+  font-size: 2rem;
+  color: white;
+  opacity: 0.6;
+}
+
+.center {
+  text-align: center;
+}
+
 .caption0 {
   color: white;
   width: 100%;
@@ -301,6 +311,7 @@ p.solo, #award-title {
 
 .grid-photo {
   grid-area: photo;
+  margin-bottom: 20%;
 }
 
 .grid-text {
@@ -386,7 +397,7 @@ p.solo, #award-title {
 }
 
 .herothumb img {
-  width: 100%;
+  width: 80%;
   /* float: left; */
 }
 
@@ -586,7 +597,7 @@ p.solo, #award-title {
   }
 
   .herothumb img {
-    width: 20rem;
+    width: 60%;
   }
 
   .award-grid {
