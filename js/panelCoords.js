@@ -70,7 +70,7 @@ export const dict = {
     PNL_17: {"clockwise": false, 
             "studio":["MArch Intro", "Artificial Architecture"], 
             "coords": [-13242, -1563],
-            "key": ["img0", "lynus-lim"]},
+            "key": ["", "lynus-lim"]},
     PNL_18: {"clockwise": true, 
             "studio":["Artificial Architecture", "Future Cities"], 
             "coords": [-10050, -1563],

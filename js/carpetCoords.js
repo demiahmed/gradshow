@@ -3,10 +3,10 @@ export const dict = {
                 "coords": [-7159, 9125],
                 "shape": "triangle",
                 "desc": "Daniel Whittaker is leader of the Combined Thesis Studio, which brings together students with independent advisors in a customized design studio that builds shared methods and dialogue. With his advisees Daniel develops theses related to adaptive reuse, tectonics and heritage.  "},
-        CRP_1: {"studio":["Yeo Kang Shua & Bige Tuncer"], 
+        CRP_1: {"studio":["Yeo Kang Shua & IDL"], 
                 "coords": [1811, 9125],
                 "shape": "triangle",
-                "desc": "Professors Bige Tuncer and Yeo Kang Shua act as advisors for the independent MArch thesis, bringing their respective expertise in data-driven design and heritage and conservation design to support students with diverse topics.  "},
+                "desc": "Professors Yeo Kang Shua & Bige Tuncer with her Informed Design Lab (IDL) act separately as advisors for the independent MArch thesis, bringing their respective expertise in data-driven design and heritage and conservation design to support students with diverse topics.  "},
         CRP_2: {"studio":["Meta Design Lab"], 
                 "coords": [10781, 9125],
                 "shape": "triangle",
@@ -38,5 +38,5 @@ export const dict = {
         CRP_9: {"studio":["M.Arch Intro"], 
                 "coords": [-16129, -3875],
                 "shape": "trap",
-                "desc": "Welcome to SUTd M.Arch Grad Show!"}
+                "desc": "Welcome to SUTD M.Arch Grad Show!"}
 }

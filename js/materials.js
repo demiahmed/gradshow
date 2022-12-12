@@ -7,6 +7,13 @@ export const basicMat = new THREE.MeshToonMaterial( {
     emissive: 0xa000000
 } );
 
+let shadowTexture = new THREE.TextureLoader().load( 'assets/landingimage/shadowTexture.png' );
+export const shadowMat = new THREE.MeshToonMaterial( { 
+    transparent: true,
+    opacity: 0.25,
+    map: shadowTexture
+} );
+
 export const transparentMat = new THREE.MeshBasicMaterial( {
     transparent: true,
     side: THREE.DoubleSide,

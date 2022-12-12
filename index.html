@@ -1,45 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="description" content="SUTD ASD M.Arch Virtual GradShow 2021">
-    
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="../favicon.ico" type="image/gif">
-        <!-- Favicon -->
-    
-        <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
-        <link rel="manifest" href="../assets/favicon/site.webmanifest">
-    
-        <meta name="keywords" content="Architecture, Singapore, SUTD, Graduation, Virtual, Exhibition, gradshow, D3, JS, NUS, AI, Computation, Parametric Design, Machine Learning"/>
-        <meta name="description" content="Annual Graduate Exhibition Showcase of the Singapore University of Technology and Design's outgoing Architecture students. Visit asd.sutd.edu.sg/gradshow/"/>
-        <meta name="subject" content="Annual Graduation Ceremony conducted online for over 80 undergraduate and graduate Architecture students">
-        <meta name="copyright"content="©Singapore University of Technology and Design">
-        <meta name="language" content="EN">
-        <meta name="robots" content="index,follow" />
-        <meta name="abstract" content="Virtual Exhibition showcase of Graduating Architecture students from the Singapore University of Technology and Design SUTD, Singapore. This year's GradShow marks the second year of the online portal for Undergraduate BSc and Graduate M.Arch students from SUTD">
-        <meta name="Classification" content="Architecture">
-        <meta name="author" content="Singapore University of Technology and Design, contact@sutd.edu.sg">
-        <meta name="designer" content="Ahmed Meeran">
-        <meta name="owner" content="Singapore University of Technology and Design, contact@sutd.edu.sg">
-        <meta name="url" content="https://www.asd.sutd.edu.sg/gradshow/">
-        <meta name="identifier-URL" content="https://www.asd.sutd.edu.sg/gradshow/">
-        <meta name="category" content="Exhibition">
-        <meta name="coverage" content="Worldwide">
-        <meta name="distribution" content="Global">
-        <meta name="revisit-after" content="7 days">
-        <meta http-equiv="Pragma" content="no-cache">
-        <meta http-equiv="Cache-Control" content="no-cache">
-    
-        <meta name="og:title" content="Sustainable Futures | SUTD M.Arch GradShow 2021"/>
-        <meta name="og:type" content="website"/>
-        <meta name="og:url" content="https://www.asd.sutd.edu.sg/gradshow/"/>
-        <meta name="og:image"  content="/gradshow/march/assets/logo/site-banner.jpg"/>
-        <meta name="og:site_name" content="SUTD"/>
-        <meta name="og:description" content="Annual Graduate Exhibition Showcase of the Singapore University of Technology and Design's outgoing Architecture students. Visit asd.sutd.edu.sg/gradshow/"/>
-    
+        <title>SUTD MArch</title>
         <link rel="stylesheet" href="./css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/three-style.css">
         <link rel="stylesheet" href="./css/filter-gallery.css">
@@ -48,22 +13,24 @@
     </head>
 
     <body>
+        <div class="loader" id="loader">
+            <div class="spinner" id="spinner"></div>
+         </div>
         <div class="container-fluid" style="z-index: 100; position:absolute; height: 100%; pointer-events: none;">
             <div class="row flex-wrap" style="height:100%">
                 <div class="col-md-2 adjustHeight" style="padding: 2.5vw;">
                     <div class="row d-flex float-sm-left flex-md-column adjustHeight" id="buttonContainer" style="width: 100%;">
-                        <button class="button p-2" id="textBtn0" style="pointer-events: all; height: fit-content;">Exhibition</button>
-                        <button class="button p-2" id="textBtn1" style="pointer-events: all; height: fit-content;">Reviews</button>
-                        <a href="./home" class="enterBtn mt-md-auto p-2" id="enterBtn">Enter</a>
+                        <div class="mainTitle outlineFont" id="gradshow" style="margin-bottom: 2vh;">SUTD M.Arch GradShow 2022</div>
+                        <button class="button" id="textBtn0" style="pointer-events: all; height: fit-content;">Exhibition</button>
+                        <button class="button" id="textBtn1" style="pointer-events: all; height: fit-content;">Reviews</button>
+                        <a href="./home" class="enterBtn" id="enterBtn">Enter</a>
                     </div>
                 </div>
-                <div class="col-md-4 offset-md-6 align-self-md-start align-self-end" style="padding: 0px; pointer-events: all;">
+                <div class="col-md-4 offset-md-6 align-self-md-start align-self-end" style="padding: 3vh; pointer-events: all;">
                     <div class="textBox" id="contentBox" style="display: none;">
                         <div class="mainTitle" id="contentTitle"></div>
                         <div class="secondaryInfo" id="contentSecondLine"></div>
-                    </div>
-                    <div class="textBox" id="defaultBox">
-                        <div class="mainTitle outlineFont">SUTD M.Arch GradShow 2022</div>
+                        <div class="secondaryInfo" id="contentThirdLine" style="display: none;"><i>Full students works will be on display by January 15 2023</i></div>
                     </div>
                 </div>
             </div>
@@ -91,7 +58,7 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
 
-    <script  src="./js/three.min.js"></script>
+    <script src="./js/three.min.js"></script>
 
     <script src="./js/d3.v4.min.js"></script>
     <script type="module" src="./js/script.js"></script>
@@ -107,5 +74,4 @@
     <script src="./js/FXAAShader.js"></script>
     <script src="./js/LuminosityHighPassShader.js"></script>
     <script src="./js/UnrealBloomPass.js"></script>
-    <script src="./js/title.js"></script>
 </html>

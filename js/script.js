@@ -7,14 +7,21 @@ import * as REV from './reviewCoords.js'
 import * as FUNCT from './functions.js'
 import * as MAT from './materials.js'
 
+if (window.innerWidth < 480 || window.innerHeight < 720){
+    document.getElementById("gradshow").style.display = "none"
+}
+
 const bloomLayer = new THREE.Layers();
 bloomLayer.set( BLOOM_SCENE );
 
-init();
+init().then( async m => {
+    console.log("done")
+    document.getElementById("loader").style.display = "none"
+})
 FUNCT.toMainSpace();
 animate();
 
-function init() {
+async function init() {
     scene = new THREE.Scene();
     scene.background = new THREE.Color( 0x222222);
     scene.fog = new THREE.FogExp2( 0x222222, 0.00255);
@@ -243,7 +250,7 @@ function init() {
     const panelGeom = new THREE.BoxGeometry( panelLength, panelWidth, panelHeight);
 
     let panelKeys = Object.keys(PANEL.dict)
-    panelKeys.forEach(function (e, i) {
+    await panelKeys.forEach(function (e, i) {
         let frontMat = panelMat["aMat" + i]
         let backMat = panelMat["bMat" + i]
         let materialArray = [MAT.basicMat, MAT.basicMat, frontMat, backMat, MAT.basicMat, MAT.basicMat]
@@ -261,6 +268,21 @@ function init() {
         }
         mesh.scale.set(0.01, 0.01, 0.01);
         interactiveObjects[e] = mesh;
+        scene.add( mesh );
+    })
+
+    // FAKE SHADOW TEXTURE
+    const shadowGeom = new THREE.PlaneBufferGeometry(panelLength, panelWidth);
+    panelKeys.forEach(function (e, i) {
+        var mesh = new THREE.Mesh( shadowGeom, MAT.shadowMat  );
+        mesh.name = "shadow"
+        mesh.position.set(PANEL.dict[e].coords[0]/1000, PANEL.dict[e].coords[1]/1000, 0.001);
+        if (PANEL.dict[e].clockwise){
+            mesh.rotation.z = panelRotation / 180 * Math.PI;
+        } else {
+            mesh.rotation.z = (180 - panelRotation) / 180 * Math.PI;
+        }
+        mesh.scale.set(0.012, 0.06, 0.015);
         scene.add( mesh );
     })
 
@@ -366,7 +388,7 @@ function onMouseUp(event) {
             }
 
             document.getElementById("contentBox").style.display = "none"
-            document.getElementById("defaultBox").style.display = "block"
+            document.getElementById("contentThirdLine").style.display = "none"
             if (pointedType == "panel"){
                 if (selectedFace == 4 || selectedFace == 5){
                     // textLeftDict[selectedKey].visible = true
@@ -375,20 +397,22 @@ function onMouseUp(event) {
                         if (window.innerWidth < 480){
                             var camOffset = [-8, 8, 2.75, 0, -1, -0.6]
                         } else {
-                            var camOffset = [-8, 8, 2.75, 0, -2.35, -0.6]
+                            var camOffset = [-8, 8, 2.75, 0, -1.5, -0.6]
                         }
                     } else {
                         if (window.innerWidth < 480){
                             var camOffset = [-8, -8, 3, 0, 1, -0.15]
                         } else {
-                            var camOffset = [-8, -8, 3, 0, -0.25, -0.15]
+                            var camOffset = [-8, -8, 3, 0, 0.35, -0.15]
                         }
                     }
                     if (interactiveObjects[selectedKey]["aKey"] != ""){
-                        document.getElementById("defaultBox").style.display = "none"
-                        document.getElementById("contentBox").style.display = "block"
-                        document.getElementById("contentTitle").innerHTML = studentDetails[interactiveObjects[selectedKey]["aKey"]]["title"]
-                        document.getElementById("contentSecondLine").innerHTML = studentDetails[interactiveObjects[selectedKey]["aKey"]]["name"]
+                        if (interactiveObjects[selectedKey]["aKey"].slice(0,3) != "img"){
+                            document.getElementById("contentBox").style.display = "block"
+                            document.getElementById("contentTitle").innerHTML = studentDetails[interactiveObjects[selectedKey]["aKey"]]["title"]
+                            document.getElementById("contentSecondLine").innerHTML = studentDetails[interactiveObjects[selectedKey]["aKey"]]["name"]
+                            document.getElementById("contentThirdLine").style.display = "block"
+                        }
                     }
                 } else if (selectedFace == 6 || selectedFace == 7){
                     // textRightDict[selectedKey].visible = true
@@ -397,20 +421,20 @@ function onMouseUp(event) {
                         if (window.innerWidth < 480){
                             var camOffset = [8, -8, 3, 1, -1, 0.2]
                         } else {
-                            var camOffset = [8, -8, 3, 1, 0, 0.2]
+                            var camOffset = [8, -8, 3, 1, -0.5, 0.2]
                         }   
                     } else {
                         if (window.innerWidth < 480){
                             var camOffset = [8, 8, 3, 0, 1, 0.5]
                         } else {
-                            var camOffset = [8, 8, 3, 0, 1.75, 0.5]
+                            var camOffset = [8, 8, 3, 0, 1.5, 0.4]
                         }
                     }
                     if (interactiveObjects[selectedKey]["bKey"] != ""){
-                        document.getElementById("defaultBox").style.display = "none"
                         document.getElementById("contentBox").style.display = "block"
                         document.getElementById("contentTitle").innerHTML = studentDetails[interactiveObjects[selectedKey]["bKey"]]["title"]
                         document.getElementById("contentSecondLine").innerHTML = studentDetails[interactiveObjects[selectedKey]["bKey"]]["name"]
+                        document.getElementById("contentThirdLine").style.display = "block"
                     }
                 }
 
@@ -460,19 +484,26 @@ function onMouseUp(event) {
                 } );
 
                 cameraState = 0
+                document.getElementById("textBtn0").innerHTML = "Go back"
                 FUNCT.disableCarpet()
             } else if (pointedType == "carpet" && cameraState == 1){
                 // console.log(interactiveObjects[selectedKey])
 
                 FUNCT.greyCarpet()
                 FUNCT.toggleMaterial(interactiveObjects[selectedKey], true)
-                document.getElementById("defaultBox").style.display = "none"
                 document.getElementById("contentBox").style.display = "block"
                 document.getElementById("contentTitle").innerHTML = CARP.dict[pointedKey]["studio"]
                 document.getElementById("contentSecondLine").innerHTML = CARP.dict[pointedKey]["desc"]
             }
             // console.log(selectedKey)
             // console.log(selectedFace)
+        } else {
+            // remove selection
+            if (selectedKey.slice(0,3) == "CRP"){
+                FUNCT.enableCarpet()
+            }
+            document.getElementById("contentBox").style.display = "none"
+            selectedKey = undefined
         }
     } else if (event.target.id == "" && cameraState == 2) {
         if ((Math.abs(mouse_down.x - event.clientX) > 10) || (Math.abs(mouse_down.y - event.clientY) > 10)) {
@@ -488,17 +519,20 @@ function onMouseUp(event) {
             selectedFace = pointedFace
             
             document.getElementById("contentBox").style.display = "none"
-            document.getElementById("defaultBox").style.display = "block"
+            document.getElementById("contentThirdLine").style.display = "none"
             if (pointedType == "rev"){
                 FUNCT.greyReviews()
                 FUNCT.toggleMaterial(interactiveObjects[selectedKey], true)
-                document.getElementById("defaultBox").style.display = "none"
                 document.getElementById("contentBox").style.display = "block"
                 document.getElementById("contentTitle").innerHTML = REV.dict[pointedKey]["title"]
                 document.getElementById("contentSecondLine").innerHTML = REV.dict[pointedKey]["desc"]
             }
             // console.log(selectedKey)
             // console.log(selectedFace)
+        } else {
+            FUNCT.enableReviews()
+            document.getElementById("contentBox").style.display = "none"
+            selectedKey = undefined
         }
     }
 }

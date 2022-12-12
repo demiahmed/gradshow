@@ -72,6 +72,7 @@ export function resetState() {
     controls.maxDistance = 100;
     controls.autoRotate = true
     cameraState = 1
+    document.getElementById("textBtn0").innerHTML = "Exhibition"
     brightenAllPanel()
     // clear selection
     if (selectedKey){
@@ -80,7 +81,6 @@ export function resetState() {
         }
         selectedKey = undefined
         document.getElementById("contentBox").style.display = "none"
-        document.getElementById("defaultBox").style.display = "block"
     }
 }
 
