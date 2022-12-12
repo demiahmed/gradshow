@@ -210,6 +210,11 @@ function restart(data, year) {
         // .attr('fill', "orange")    
     
         .on('click', function(d) {
+              let changedValue = d3.select("#exploreyear").property("value")
+              if (changedValue == 2022) {
+                d3.preventDefault()
+                window.open(`#`)
+              }
               window.open(`../projects/${year}/${d.key}/`)
         })
     
@@ -479,6 +484,6 @@ function dragended(d,i) {
   d.fx = null;
   d.fy = null;
   var me = d3.select(this)
-  console.log(me.classed("selected"))
+  // console.log(me.classed("selected"))
   me.classed("selected", !me.classed("selected"))
 }
