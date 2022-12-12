@@ -4,8 +4,8 @@
     "display": "standalone",
     "scope": "./",
     "start_url": "./",
-    "name": "Sustainable Futures - ASD GradShow 2021",
-    "short_name": "Sustainable Futures",
+    "name": "Design Beyond Zero - ASD GradShow 2021",
+    "short_name": "Design Beyond Zero",
     "description": "Annual Graduate Exhibition Showcase of the Singapore University of Technology and Design's outgoing Architecture students. Visit asd.sutd.edu.sg/gradshow/",
     "icons": [
         {

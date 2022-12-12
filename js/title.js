@@ -1,1 +1,1 @@
-document.title = 'Sustainable Futures | SUTD M.Arch GradShow 2021';
+document.title = 'Design Beyond Zero | SUTD M.Arch GradShow 2021';
