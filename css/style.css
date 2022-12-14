@@ -213,6 +213,7 @@ img {
 #spaceImg {
   background-image: url("../assets/bgimage/space_d.jpg");
   min-height: 100vh;
+  padding-top: 20vh;
 }
 
 #satImgGr {
@@ -637,7 +638,11 @@ p.solo, #award-title {
     font-size: 1rem;
   }
 
+
+
 }
+
+
 @media screen and (max-device-width: 370px) {
   .desc p {
     font-size: 1rem;
@@ -648,4 +653,18 @@ p.solo, #award-title {
   .desc p {
     font-size: 0.8rem;
   }
+}
+
+@media screen and (max-device-width: 375px) and (max-device-height: 690px) {
+  #aerImgG {
+    padding-block-start: 90vh;
+    }
+
+    #aerImgR {
+      height: 400vh;
+    }
+
+    .navlist {
+      margin-bottom: 2rem;
+    }
 }
