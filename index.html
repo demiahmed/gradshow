@@ -5,9 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
         <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+        <link type="image/x-icon" rel="shortcut icon" href="../assets/favicon/favicon-16x16.png">
         <link rel="manifest" href="../assets/favicon/site.webmanifest">
         <link rel="stylesheet" href="../css/font-awesome.min.css">
     
@@ -31,18 +33,18 @@
         <meta http-equiv="Pragma" content="no-cache">
         <meta http-equiv="Cache-Control" content="no-cache">
     
-        <meta name="og:title" content="ASD Gradshow 2021"/>
+        <meta name="og:title" content="ASD GradShow 2022"/>
         <meta name="og:type" content="website"/>
         <meta name="og:url" content="https://www.asd.sutd.edu.sg/gradshow/"/>
         <meta name="og:image"  content="/gradshow/march/assets/logo/site-banner.jpg"/>
         <meta name="og:site_name" content="SUTD"/>
         <meta name="og:description" content="Annual Graduate Exhibition Showcase of the Singapore University of Technology and Design's outgoing Architecture students. Visit asd.sutd.edu.sg/gradshow/"/>
-        <title>SUTD MArch</title>
+
         <link rel="stylesheet" href="./css/bootstrap.min.css">
-        <link rel="stylesheet" href="./css/three-style.css">
         <link rel="stylesheet" href="./css/filter-gallery.css">
         <link rel="stylesheet" href="./css/d3.css">
-        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Inter'>
+        <link rel="stylesheet" href="./css/three-style.css">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Inter:wght@100;800'>
     </head>
 
     <body>
@@ -51,19 +53,19 @@
          </div>
         <div class="container-fluid" style="z-index: 100; position:absolute; height: 100%; pointer-events: none;">
             <div class="row flex-wrap" style="height:100%">
-                <div class="col-md-2 adjustHeight" style="padding: 2.5vw;">
-                    <div class="row d-flex float-sm-left flex-md-column adjustHeight" id="buttonContainer" style="width: 100%;">
-                        <div class="mainTitle outlineFont" id="gradshow" style="margin-bottom: 2vh;">SUTD M.Arch GradShow 2022</div>
+                <div class="col-sm-2 adjustHeight" style="padding: 3.5vw;">
+                    <div class="row d-flex float-sm-left flex-sm-column adjustHeight" id="buttonContainer" style="width: 100%; margin-left: 0px;">
+                        <div class="outlineFont mainTitle" id="gradshow" style="margin-bottom: 2vh;">SUTD M.Arch GradShow 2022</div>
                         <button class="button" id="textBtn0" style="pointer-events: all; height: fit-content;">Exhibition</button>
-                        <button class="button" id="textBtn1" style="pointer-events: all; height: fit-content;">Reviews</button>
-                        <a href="./home" class="enterBtn" id="enterBtn">Enter</a>
+                        <button class="button" id="textBtn1" style="pointer-events: all; height: fit-content;">Prize Juries</button>
+                        <button  onclick='location.href="./home"' class="button invertButton" id="enterBtn" style="font-size: 1.1rem;"><b>E N T E R</b></button>
                     </div>
                 </div>
-                <div class="col-md-4 offset-md-6 align-self-md-start align-self-end" style="padding: 3vh; pointer-events: all;">
+                <div class="col-lg-4 offset-lg-6 col-sm-5 offset-sm-5 align-self-sm-start align-self-end" style="padding: 3vh; pointer-events: all;">
                     <div class="textBox" id="contentBox" style="display: none;">
                         <div class="mainTitle" id="contentTitle"></div>
                         <div class="secondaryInfo" id="contentSecondLine"></div>
-                        <div class="secondaryInfo" id="contentThirdLine" style="display: none;"><i>Full students works will be on display by January 15 2023</i></div>
+                        <div class="secondaryInfo" id="contentThirdLine" style="display: none; color: #888888;"><i>Full students works will be on display by January 15 2023</i></div>
                     </div>
                 </div>
             </div>
