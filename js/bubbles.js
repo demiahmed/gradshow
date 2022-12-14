@@ -412,7 +412,7 @@ function restart(data, year) {
           })
           .style('fill', 'white')
           .attr('text-anchor', 'middle')
-          .html((d) => multiLineText(d));
+          .html((d) => d);
           // .text(function (d) { multiLineText(d) ; return ' ' + d.replace(/(.*?\s.*?\s)/g, '$1'+'\n') });
       
       d3.selectAll(".goals").remove()
