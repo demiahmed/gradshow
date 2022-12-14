@@ -1,7 +1,7 @@
 import * as PANEL from './panelCoords.js'
 
 export const basicMat = new THREE.MeshToonMaterial( { 
-    color: 0xf3f3f3,
+    color: 0x4d392a,
     transparent: false,
     side: THREE.DoubleSide,
     emissive: 0xa000000

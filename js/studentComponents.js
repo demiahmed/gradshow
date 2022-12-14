@@ -44,7 +44,7 @@ class TitleText extends HTMLElement {
     connectedCallback() {
 
         let title = this.getAttribute('title')
-        let tabTitle = `${title} | Design Beyond Zero | ASD GradShow 2021`
+        let tabTitle = `${title} | Design Beyond Zero | ASD GradShow 2022`
         document.title = tabTitle
         ogMetaTitletag.setAttribute('content', tabTitle);
         this.innerHTML = 

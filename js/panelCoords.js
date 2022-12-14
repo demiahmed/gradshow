@@ -86,7 +86,7 @@ export const dict = {
     PNL_21: {"clockwise": false, 
             "studio":["Circular Cities", "Regenerative Assemblies"],
             "coords": [4699, -1563],
-            "key": ["phoebe-kong", "varsah-gunasagar"]},
+            "key": ["phoebe-kong", "varshah-gunasagar"]},
     PNL_22: {"clockwise": true, 
             "studio":["Regenerative Assemblies", "Form Axioms"], 
             "coords": [7891, -1563],

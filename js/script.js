@@ -7,15 +7,11 @@ import * as REV from './reviewCoords.js'
 import * as FUNCT from './functions.js'
 import * as MAT from './materials.js'
 
-if (window.innerWidth < 480 || window.innerHeight < 720){
-    document.getElementById("gradshow").style.display = "none"
-}
-
 const bloomLayer = new THREE.Layers();
 bloomLayer.set( BLOOM_SCENE );
 
 init().then( async m => {
-    console.log("done")
+    // console.log("done")
     document.getElementById("loader").style.display = "none"
 })
 FUNCT.toMainSpace();

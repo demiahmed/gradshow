@@ -42,7 +42,9 @@ for (let i=0; i<2; i++){
 let panelMat = {}
 
 let studentDetails = {}
-d3.csv("../assets/drivers/2022.csv", function(data) {
+d3.csv("./assets/drivers/2022.csv", function(data) {
+    // data = d3.csvParseRows(text)
+    console.log(data);
     for (var i = 0; i < data.length; i++) {
         studentDetails[data[i].key] = {}
         studentDetails[data[i].key]["name"] = data[i].name
