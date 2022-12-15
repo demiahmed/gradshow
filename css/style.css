@@ -576,15 +576,15 @@ p.solo, #award-title {
   }
 
   .thumb img {
-    width: 15rem;
+    width: 60%
   }
 
   .peoplename {
     font-size: 1.2rem;
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
     width: 80vw;
     margin: 0 auto;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
 
   .peoplegrid {
@@ -592,6 +592,9 @@ p.solo, #award-title {
     max-width: 80vw;
   }
 
+  .people {
+    gap: 2em;
+  }
   .peoplerole {
     margin-top: -2rem;
     padding-bottom: 1rem;
