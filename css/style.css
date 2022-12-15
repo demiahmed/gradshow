@@ -597,6 +597,14 @@ p.solo, #award-title {
     padding-bottom: 1rem;
   }
 
+  .people > :last-child {
+    min-height: unset;
+  }
+
+  .people > .caption2 {
+    margin-bottom: 0;
+  }
+
   .column {
     flex-direction: column;
   }
@@ -608,7 +616,7 @@ p.solo, #award-title {
   .award-grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    grid-gap: 1% 0;
+    grid-gap: 1em;
     width: auto;
     margin: 0 5%;
   }
