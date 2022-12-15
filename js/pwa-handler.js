@@ -13,7 +13,7 @@ if (serviceWorker) {
 let beforeInstallEvent;
 
 // Reference the install button from DOM.
-const installButton = document.getElementById("install");
+// const installButton = document.getElementById("install");
 
 // Watch for the beforeinstallevent and defer it.
 // window.addEventListener("beforeinstallprompt", (event) => {
