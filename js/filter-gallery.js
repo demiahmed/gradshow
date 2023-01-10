@@ -46,8 +46,8 @@ return (
         <div className= "wrapper" data-category={this.props.category} >
             
 
-                <img className = "back-image" src={this.props.path + ".jpg"} />
-                <img className = "front-image" src={this.props.path + "-project.jpg"} />
+                <img className = "back-image" src={this.props.path + ".jpg"} onError={(e) => ((e.target.src = "../../assets/fallbackimgs/missing.jpg"))} />
+                <img className = "front-image" src={this.props.path + "-project.jpg"} onError={(e) => ((e.target.src = "../../assets/fallbackimgs/missing.jpg"))} />
                 {/* <img className = "front-image" src="./assets/awards/zaha.jpg" /> */}
                 <div className= "overlay">
                     <div className="content">{this.props.name}
