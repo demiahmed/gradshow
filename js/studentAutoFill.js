@@ -25,6 +25,17 @@ d3.csv(`../../../assets/drivers/2022.csv`, function(data){
     linkedin="${studentData.linkedin}"
      ></project-bio>`)
 
+     $(".titletext").css("padding-top", "10vw")
+     $(".titletext").css("margin-top", "0")
+     $(".abstract").css("padding-bottom", "4vh")
+
+
+
+    for (let index = 1; index < 12; index++) {
+        $("body").append(`<special-image url="./data/${index}.jpg"></special-image>`)
+
+        
+    }
     //  <special-image url="./data/Untitled-1.jpg"></special-image>
     $("body").append(`<div class="bottomlinks">
     <h3><a  href="javascript:window.scrollTo(0,0)">Back to Top</a></h3>
