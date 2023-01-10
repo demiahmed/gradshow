@@ -178,6 +178,10 @@ function restart(data, year) {
           .attr("xlink:href", function(d) {
               return `../projects/${year}/${d.key}/${d.key}-project.jpg`
           })
+          .on('error', function(d) {
+            // specify a default path for the image
+            d3.select(this).attr("xlink:href", "../assets/fallbackimgs/missing.jpg");
+          });
       
       defs = defs.merge(defEnter)
     
