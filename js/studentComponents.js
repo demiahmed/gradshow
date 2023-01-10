@@ -151,7 +151,7 @@ class SpecialImage extends HTMLElement {
         let specialImage = this.getAttribute('url')
         this.innerHTML = 
         ` <div class="splimage">
-            <img src="${specialImage}" alt="Special Image">
+            <img src="${specialImage}" alt="Special Image" onerror="this.parentNode.style.display='none'">
         </div>`
     }
 }

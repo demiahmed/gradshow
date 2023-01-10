@@ -31,7 +31,7 @@ d3.csv(`../../../assets/drivers/2022.csv`, function(data){
 
 
 
-    for (let index = 1; index < 12; index++) {
+    for (let index = 1; index < 20; index++) {
         $("body").append(`<special-image url="./data/${index}.jpg"></special-image>`)
 
         
