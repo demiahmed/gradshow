@@ -73,6 +73,7 @@ class ProjectBio extends HTMLElement {
         let instagram = this.getAttribute('instagram')
         let linkedin = this.getAttribute('linkedin')
 
+
         document.querySelector('meta[name="description"]').content = summary
         ogMetaDesctag.setAttribute('content', summary);
 
@@ -89,7 +90,7 @@ class ProjectBio extends HTMLElement {
 
         <div class="table">
             <div class="thumb">
-                <img src="${portrait}" alt="Student Image"></div>
+                <img src="${portrait}" alt="Student Image" onerror="this.src='../../../assets/fallbackimgs/blank.jpg'"></div>
                 <div class="fields">
                 <h3>Name</h3>
                 <p>${name}</p>
