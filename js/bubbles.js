@@ -215,11 +215,11 @@ function restart(data, year) {
     
         .on('click', function(d) {
               let changedValue = d3.select("#exploreyear").property("value")
-              if (changedValue == 2022) {
-                d3.preventDefault()
-                window.open(`#`)
-              }
-              window.open(`../projects/${year}/${d.key}/`)
+              // if (changedValue == 2022) {
+              //   d3.preventDefault()
+              //   window.open(`#`)
+              // }
+              window.open(`../projects/${changedValue}/${d.key}/`)
         })
     
         .on('mouseover', function (d, i) {
