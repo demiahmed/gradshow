@@ -317,7 +317,7 @@ async function init() {
 	document.addEventListener('mouseup', onMouseUp, false);
     document.getElementById("projectBtn").addEventListener("click", () => {
         window.open(
-            '/projects/2022/' + studentkey,
+            '/gradshow/march/projects/2022/' + studentkey,
             '_blank'
         );
     })
