@@ -11,7 +11,7 @@ const bloomLayer = new THREE.Layers();
 bloomLayer.set( BLOOM_SCENE );
 
 init().then( async m => {
-    // console.log("done")
+    console.log("done")
     document.getElementById("loader").style.display = "none"
 })
 FUNCT.toMainSpace();
@@ -315,7 +315,12 @@ async function init() {
     document.addEventListener('mousemove', onMouseMove, false );
     document.addEventListener('mousedown', onMouseDown, false);
 	document.addEventListener('mouseup', onMouseUp, false);
-
+    document.getElementById("projectBtn").addEventListener("click", () => {
+        window.open(
+            '/projects/2022/' + studentkey,
+            '_blank'
+        );
+    })
 }
 
 function onWindowResize() {
@@ -365,7 +370,7 @@ function onMouseDown(event) {
 
 // Handle mouse click events
 function onMouseUp(event) {
-    if (event.target.id == "" && cameraState != 2){
+    if (event.target.id == "" && cameraState != 2 && events){
         if ((Math.abs(mouse_down.x - event.clientX) > 10) || (Math.abs(mouse_down.y - event.clientY) > 10)) {
             // we are dragging, so no nothing
             return;
@@ -385,6 +390,7 @@ function onMouseUp(event) {
 
             document.getElementById("contentBox").style.display = "none"
             document.getElementById("contentThirdLine").style.display = "none"
+            document.getElementById("projectBtn").style.display = "none"
             if (pointedType == "panel"){
                 if (selectedFace == 4 || selectedFace == 5){
                     // textLeftDict[selectedKey].visible = true
@@ -408,6 +414,9 @@ function onMouseUp(event) {
                             document.getElementById("contentTitle").innerHTML = studentDetails[interactiveObjects[selectedKey]["aKey"]]["title"]
                             document.getElementById("contentSecondLine").innerHTML = studentDetails[interactiveObjects[selectedKey]["aKey"]]["name"]
                             document.getElementById("contentThirdLine").style.display = "block"
+                            document.getElementById("contentThirdLine").innerHTML = studentDetails[interactiveObjects[selectedKey]["aKey"]]["summary"]
+                            document.getElementById("projectBtn").style.display = "block"
+                            studentkey = interactiveObjects[selectedKey]["aKey"]
                         }
                     }
                 } else if (selectedFace == 6 || selectedFace == 7){
@@ -431,6 +440,9 @@ function onMouseUp(event) {
                         document.getElementById("contentTitle").innerHTML = studentDetails[interactiveObjects[selectedKey]["bKey"]]["title"]
                         document.getElementById("contentSecondLine").innerHTML = studentDetails[interactiveObjects[selectedKey]["bKey"]]["name"]
                         document.getElementById("contentThirdLine").style.display = "block"
+                        document.getElementById("contentThirdLine").innerHTML = studentDetails[interactiveObjects[selectedKey]["bKey"]]["summary"]
+                        document.getElementById("projectBtn").style.display = "block"
+                        studentkey = interactiveObjects[selectedKey]["bKey"]
                     }
                 }
 
@@ -516,6 +528,7 @@ function onMouseUp(event) {
             
             document.getElementById("contentBox").style.display = "none"
             document.getElementById("contentThirdLine").style.display = "none"
+            document.getElementById("projectBtn").style.display = "none"
             if (pointedType == "rev"){
                 FUNCT.greyReviews()
                 FUNCT.toggleMaterial(interactiveObjects[selectedKey], true)
@@ -603,3 +616,6 @@ textBtnColl.forEach(e => {
         e.addEventListener("click", FUNCT.toReviewSpace)
     }
 })
+
+document.getElementById("projectBtn").addEventListener("mouseenter", () => (events = false));
+document.getElementById("projectBtn").addEventListener("mouseleave", () => (events = true));
