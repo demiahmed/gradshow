@@ -603,7 +603,7 @@ p.solo, #award-title {
     gap: 3em;
   }
   .peoplerole {
-    margin-top: -2rem;
+    /* margin-top: -2rem; */
     padding-bottom: 1rem;
     height: unset;
   }
