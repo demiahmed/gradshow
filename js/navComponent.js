@@ -119,6 +119,7 @@ class navComponent extends HTMLElement {
 
       a.nav-item {
         display: inline-block;
+        text-decoration: none;
       }
 
       @media screen and (min-device-width: 3840px) {
@@ -319,7 +320,7 @@ class navComponent extends HTMLElement {
         .navibar span {
           text-decoration: none;
           font-size: 12vw;
-          font-weight: bolder;
+          font-weight: bold;
         }
     
         .navibar .navlist {
