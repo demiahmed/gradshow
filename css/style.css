@@ -159,6 +159,12 @@ img {
   text-align: center;
 }
 
+.reachus-item > figcaption {
+  color: darkgray;
+  padding-block-start: 1%;
+  font-style: italic;
+ }
+
 .caption0 {
   color: white;
   width: 100%;
@@ -419,7 +425,7 @@ p.solo, #award-title {
   opacity: 0.6;
   text-align: center;
   word-wrap: break-word;
-  line-height: 3rem;
+  line-height: 1.5rem;
   height: 9rem;
 }
 
