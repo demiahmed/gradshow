@@ -188,7 +188,7 @@ img {
 }
 #aerImgG {
   background-image: url("../assets/bgimage/Aerial_green_d.jpg");
-  min-height: 120vh;
+  /* min-height: 120vh; */
 }
 #aerImgGG {
   background-image: url("../assets/bgimage/forest_d.jpg");
@@ -207,7 +207,7 @@ img {
 
 #satImgY {
   background-image: url("../assets/bgimage/Satellite_yellow_d.jpg");
-  min-height: 350vh;
+  min-height: 380vh;
 }
 
 #spaceImg {
@@ -255,12 +255,13 @@ img {
 
 .caption2 {
   color: white;
-  margin-bottom: 2%;
+  margin-bottom: 10%;
   font-size: 2rem;
   font-weight: 100;
   /* max-width: 30vw; */
   text-align: center;
-  min-height: 100px;
+  line-height: 3rem;
+  height: 6rem;
 }
 
 .caption2 p {
@@ -363,7 +364,7 @@ p.solo, #award-title {
 
 .award-item {
   padding: 5%;
-  min-height: 90vh;
+  /* min-height: 90vh; */
   border: 1px solid #555;
   display: grid;
   grid-template-rows: subgrid;
@@ -386,15 +387,15 @@ p.solo, #award-title {
 
 .people {
   /* padding: 0 1vw; */
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   justify-content: center;
-  gap: 3em;
+  /* grid-auto-rows: 1fr; */
 }
 
-.people > :last-child {
+/* .people > :last-child {
   min-height: 40vh;
-}
+} */
 
 .thumb img {
   width: 15vw;
@@ -418,13 +419,15 @@ p.solo, #award-title {
   opacity: 0.6;
   text-align: center;
   word-wrap: break-word;
-  height: 3.5rem;
+  line-height: 3rem;
+  height: 9rem;
 }
 
 .peoplerole {
-  margin-top: -1vw;
   color: white;
   font-weight:  lighter;
+  line-height: 1.2rem;
+  height: 14rem;
 }
 
 .reachus-container {
@@ -438,24 +441,23 @@ p.solo, #award-title {
 }
 
 @media screen and (max-device-width: 1024px) {
-  /* .desc {
-    margin-top: 25%;
-  } */
 
   .award-grid {
     grid-template-columns: repeat(2,1fr);
+    gap: 10px;
   }
 
-  .award-item {
-    min-height: 55vh;
-  }
 
   #aerImgR {
     height: 100vh;
   }
 
   #satImgY {
-    height: 400vh;
+    height: 430vh;
+  }
+
+  .people {
+    gap: 0;
   }
 }
 
@@ -472,7 +474,7 @@ p.solo, #award-title {
   }
 
   #satImgY {
-    height: 800vh;
+    height: 1000vh;
   }
 
   #aerImgGG {
@@ -581,7 +583,6 @@ p.solo, #award-title {
 
   .peoplename {
     font-size: 1.2rem;
-    /* padding-bottom: 2rem; */
     width: 80vw;
     margin: 0 auto;
     /* margin-bottom: 20px; */
@@ -593,11 +594,16 @@ p.solo, #award-title {
   }
 
   .people {
-    gap: 2em;
+    gap: 3em;
   }
   .peoplerole {
     margin-top: -2rem;
     padding-bottom: 1rem;
+    height: unset;
+  }
+
+  .project-name {
+    line-height: unset;
   }
 
   .people > :last-child {
@@ -624,10 +630,6 @@ p.solo, #award-title {
     margin: 0 5%;
   }
 
-  .award-item {
-    min-height: 60vh;
-    /* word-wrap: break-word; */
-  }
 
   .team-grid {
     grid-template-columns: 1fr;
