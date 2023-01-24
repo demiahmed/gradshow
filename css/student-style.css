@@ -196,7 +196,7 @@ img.left {
   margin: 0vw 0vw 4vw 0vw;
   /* max-height: 100vh; */
   overflow-y: hidden;
-  aspect-ratio: 16/9;
+  /* aspect-ratio: 16/9; */
 }
 
 .single {
@@ -215,6 +215,7 @@ img.left {
 .splimage img {
   width: 100vw;
   max-width: 100%;
+  aspect-ratio: 3/2;
 }
 
 .gifs {
