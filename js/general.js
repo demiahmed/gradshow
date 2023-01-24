@@ -57,7 +57,6 @@ d3.csv("./assets/drivers/2022.csv", function(data) {
             sliced = sliced.slice(0, lastspace)
             studentDetails[data[i].key]["summary"] = sliced + "..."
         }
-        studentDetails[data[i].key]["summary"] = data[i].summary
     }
 });
 // *** TO DO (camera related) ***
