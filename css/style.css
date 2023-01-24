@@ -433,6 +433,14 @@ p.solo, #award-title {
   color: white;
   font-weight:  lighter;
   line-height: 1.2rem;
+  height: 20rem;
+}
+
+.team-member > .peoplerole {
+  height: unset;
+}
+
+.award-item > .people > .peoplerole {
   height: 14rem;
 }
 
@@ -465,6 +473,10 @@ p.solo, #award-title {
   .people {
     gap: 0;
   }
+
+  .award-item > .people > .peoplerole {
+    height: 20rem;
+}
 }
 
 @media screen and (max-device-width: 768px) {
@@ -584,7 +596,7 @@ p.solo, #award-title {
   }
 
   .thumb img {
-    width: 60%
+    width: 45%
   }
 
   .peoplename {
