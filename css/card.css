@@ -97,8 +97,9 @@
     .card {
         margin: 0;
     }
-
+    
     .wrapper {
+        grid-template-columns: 1fr;
         grid-auto-flow: row;
     }
 }
