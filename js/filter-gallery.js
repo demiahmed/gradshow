@@ -9,7 +9,7 @@ for(var i=0;i<data.length;i++) {
         id: i,
         category: data[i].Topic,
         name: data[i].name,
-        url: `${document.querySelector('#router').getAttribute('prefix')}../projects/${document.querySelector("#router").getAttribute('year')}/${processedName}`,
+        url: `${document.querySelector('#router').getAttribute('prefix')}../projects/${document.querySelector("#router").getAttribute('year')}/${processedName}/`,
         //iu: "./explore/" + String(data[i].name) ,
         path: `${document.querySelector('#router').getAttribute('prefix')}../projects/${document.querySelector("#router").getAttribute('year')}/${processedName}/${processedName}`
     };
