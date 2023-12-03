@@ -149,6 +149,10 @@ img {
   text-align: left;
 }
 
+.white {
+  color: white;
+}
+
 .medium {
   font-size: 2rem;
   color: white;
@@ -189,11 +193,12 @@ img {
 }
 #aerImgR {
   background-image: url("../assets/bgimage/Aerial_red_d.jpg");
-  height: 200vh;
+  /* height: 200vh; */
   padding-top: 25%;
 }
 #aerImgG {
   background-image: url("../assets/bgimage/Aerial_green_d.jpg");
+  padding-top: 15%;
   /* min-height: 120vh; */
 }
 #aerImgGG {
@@ -294,6 +299,11 @@ img {
 p.solo, #award-title {
   max-width: 80vw;
   margin: 0 auto;
+}
+
+.waiting {
+  color: white;
+  font-size: 1.5rem;
 }
 
 .desc h2 {
@@ -441,7 +451,7 @@ p.solo, #award-title {
 }
 
 .award-item > .people > .peoplerole {
-  height: 14rem;
+  height: 22rem;
 }
 
 .reachus-container {
@@ -463,7 +473,12 @@ p.solo, #award-title {
 
 
   #aerImgR {
-    height: 100vh;
+    /* height: 130vh; */
+    padding-top: 5%;
+  }
+
+  #aerImgGG {
+    height: 380vh;
   }
 
   #satImgY {
@@ -497,6 +512,10 @@ p.solo, #award-title {
 
   #aerImgGG {
     height: 240vh;
+  }
+
+  #aerImgG {
+    padding-top: 120%;
   }
 
   *::-webkit-scrollbar {
@@ -617,11 +636,12 @@ p.solo, #award-title {
   .peoplerole {
     /* margin-top: -2rem; */
     padding-bottom: 1rem;
-    height: unset;
+    height: auto !important;
   }
 
   .project-name {
     line-height: unset;
+    height: auto;
   }
 
   .people > :last-child {
