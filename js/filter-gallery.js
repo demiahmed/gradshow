@@ -131,8 +131,7 @@ d3.csv(
                 );
               })}
               <button className="resetBtn" onClick={this.resetFilter}>
-                {" "}
-                Reset Filter{" "}
+                Reset Filter
               </button>
             </div>
             <div className="PhotoGallery">
