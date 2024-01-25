@@ -218,7 +218,8 @@ img {
 
 #satImgY {
   background-image: url("../assets/bgimage/Satellite_yellow_d.jpg");
-  min-height: 380vh;
+  min-height: 610vh;
+  /* background: #111; */
 }
 
 #spaceImg {
