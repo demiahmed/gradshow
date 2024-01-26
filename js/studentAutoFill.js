@@ -1,8 +1,8 @@
 d3.csv(`../../../assets/drivers/2023.csv`, function (data) {
   try {
     let studentName = window.location.href.split("/").at(-2);
-    // console.log(data);
     studentData = data.filter((e) => e.key == String(studentName))[0];
+    // console.log(studentData);
 
     // $("body").append(``)
     $("body").append(`<title-text title="${studentData.title}"></title-text>`);
@@ -37,7 +37,7 @@ d3.csv(`../../../assets/drivers/2023.csv`, function (data) {
 
       // Append the image elements with both JPG and PNG formats
       $("body").append(`<special-image url="${imageUrlJpg}"></special-image>`);
-    //   $("body").append(`<special-image url="${imageUrlJPG}"></special-image>`);
+      // $("body").append(`<special-image url="${imageUrlJPG}"></special-image>`);
       $("body").append(`<special-image url="${imageUrlPng}"></special-image>`);
     }
     //  <special-image url="./data/Untitled-1.jpg"></special-image>
