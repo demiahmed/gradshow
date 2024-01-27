@@ -1,4 +1,4 @@
-d3.csv(`../../../assets/drivers/2022.csv`, function (data) {
+d3.csv(`../../../assets/drivers/2023.csv`, function (data) {
   try {
     let studentName = window.location.href.split("/").at(-2);
     studentData = data.filter((e) => e.key == String(studentName))[0];
