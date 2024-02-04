@@ -467,6 +467,12 @@ p.solo, #award-title {
   max-width: 100%;
 }
 
+@media screen and (max-device-width: 1366px) {
+  #satImgY {
+    min-height: 750vh;
+  }
+}
+
 @media screen and (max-device-width: 1024px) {
 
   .award-grid {
